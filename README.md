@@ -10,12 +10,10 @@ Automatisierte KI-News-Aggregation + Glossar-Verwaltung mit Claude Cloud Routine
 
 ## Cloud Routines (2 aktive)
 
-| Routine | Schedule | Status | Prompt |
-|---|---|---|---|
-| **#1 KI-Wochenrückblick** | Mo 06:00 Zürich | ✅ LIVE | `agent-source/routines/weekly-post.md` |
-| **#3 Glossary-Update** | 1. d. Monats 06:00 | ✅ LIVE | `agent-source/routines/glossary-update.md` |
-
-**Note:** Routine #2 (Migration) war einmalig, bereits completed → gelöscht.
+| Routine | Schedule | Status | Prompt | Delivery |
+|---|---|---|---|---|
+| **#1 KI-Wochenrückblick** | Mo 06:00 Zürich | ✅ LIVE | `agent-source/routines/weekly-post.md` | https://github.com/roger-infanger-weibel/ghostwriter.ai/tree/main/posts |
+| **#3 Glossary-Update** | 1. d. Monats 06:00 | ✅ LIVE | `agent-source/routines/glossary-update.md` | https://github.com/roger-infanger-weibel/ghostwriter.ai/tree/main/glossary/rendered |
 
 ---
 
