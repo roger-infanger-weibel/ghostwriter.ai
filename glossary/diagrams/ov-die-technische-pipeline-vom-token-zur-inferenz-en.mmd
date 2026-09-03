@@ -1,0 +1,30 @@
+graph LR
+    Input[Input Text] --> Tok[Tokenization / BPE]
+    Tok --> Emb[Embeddings / Latent Space]
+    Emb --> PE[Positional Encoding]
+
+    subgraph "Transformer Block (Stacked L-times)"
+        subgraph "Attention Layer"
+            Att[Multi-Head Attention]
+            FA[Flash Attention / O-N Speedup]
+            Att --- FA
+        end
+
+        subgraph "Processing Layer"
+            MoE[Mixture of Experts / Routing]
+            Expert1[Expert 1]
+            Expert2[Expert 2]
+            MoE --> Expert1
+            MoE --> Expert2
+        end
+
+        Att --> MoE
+    end
+
+    PE --> Att
+    Expert1 --> Norm[Layer Norm / Softmax]
+    Expert2 --> Norm
+
+    Norm --> Logits[Logits / Probabilities]
+    Logits --> NTP[Next Token Prediction]
+    NTP --> Output[Inference Result]

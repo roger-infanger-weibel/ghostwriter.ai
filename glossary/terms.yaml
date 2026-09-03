@@ -7,12 +7,10 @@ terms:
   status: active
   term_de: Kuenstliche Intelligenz
   term_en: Artificial Intelligence (AI)
-  explanation_de: Computersysteme, die menschliche Faehigkeiten wie Sehen, Sprechen
-    oder Entscheiden nachahmen.
-  explanation_en: Computersysteme, die menschliche Faehigkeiten wie Sehen, Sprechen
-    oder Entscheiden nachahmen.
+  explanation_de: Computersysteme, die menschliche Faehigkeiten wie Sehen, Sprechen oder Entscheiden nachahmen.
+  explanation_en: Computer systems that mimic human abilities such as seeing, speaking, or making decisions.
   context_de: Der umfassende Oberbegriff.
-  context_en: Der umfassende Oberbegriff.
+  context_en: The umbrella term for the whole field.
   sources:
   - https://moterra.ai/blog/ai-map-simplified-understanding-ai-ml-dl-and-genai
   - https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf
@@ -22,12 +20,10 @@ terms:
   status: active
   term_de: Maschinelles Lernen
   term_en: Machine Learning (ML)
-  explanation_de: Systeme lernen automatisch aus Mustern in Daten, statt explizit
-    programmiert zu werden.
-  explanation_en: Systeme lernen automatisch aus Mustern in Daten, statt explizit
-    programmiert zu werden.
+  explanation_de: Systeme lernen automatisch aus Mustern in Daten, statt explizit programmiert zu werden.
+  explanation_en: Systems learn automatically from patterns in data instead of being explicitly programmed.
   context_de: Teilmenge der KI.
-  context_en: Teilmenge der KI.
+  context_en: A subset of AI.
   sources:
   - https://www.ki.nrw/ki-schluesselbegriffe/
   - https://www.coursera.org/de-DE/articles/ai-vs-deep-learning-vs-machine-learning-beginners-guide
@@ -37,12 +33,10 @@ terms:
   status: active
   term_de: Tiefes Lernen
   term_en: Deep Learning (DL)
-  explanation_de: ML mit kuenstlichen neuronalen Netzen, die viele Schichten („tief“)
-    besitzen.
-  explanation_en: ML mit kuenstlichen neuronalen Netzen, die viele Schichten („tief“)
-    besitzen.
+  explanation_de: ML mit kuenstlichen neuronalen Netzen, die viele Schichten („tief“) besitzen.
+  explanation_en: ML using artificial neural networks with many layers ("deep").
   context_de: Teilmenge von ML.
-  context_en: Teilmenge von ML.
+  context_en: A subset of ML.
   sources:
   - https://www.coursera.org/de-DE/articles/ai-vs-deep-learning-vs-machine-learning-beginners-guide
   - https://www.youtube.com/watch?v=KI-Lernen
@@ -52,12 +46,10 @@ terms:
   status: active
   term_de: Generative KI
   term_en: Generative AI (GenAI)
-  explanation_de: Eine Form der KI, die neue Inhalte (Texte, Bilder, Musik, Code)
-    erschaft.
-  explanation_en: Eine Form der KI, die neue Inhalte (Texte, Bilder, Musik, Code)
-    erschaft.
+  explanation_de: Eine Form der KI, die neue Inhalte (Texte, Bilder, Musik, Code) erschaft.
+  explanation_en: A form of AI that creates new content (text, images, music, code).
   context_de: Teilbereich der KI.
-  context_en: Teilbereich der KI.
+  context_en: A branch of AI.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   - https://digitaleneuordnung.de/blog/ki-begriffe
@@ -67,12 +59,10 @@ terms:
   status: active
   term_de: Starke KI
   term_en: General AI (AGI)
-  explanation_de: Eine theoretische KI, die jede kognitive Aufgabe so gut wie ein
-    Mensch loesen kann.
-  explanation_en: Eine theoretische KI, die jede kognitive Aufgabe so gut wie ein
-    Mensch loesen kann.
+  explanation_de: Eine theoretische KI, die jede kognitive Aufgabe so gut wie ein Mensch loesen kann.
+  explanation_en: A theoretical AI that could solve any cognitive task as well as a human.
   context_de: Fernziel der Forschung.
-  context_en: Fernziel der Forschung.
+  context_en: A long-term research goal.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   - https://our-languages.canada.ca/en/artificial-intelligence-terminology-concept-map-eng
@@ -82,12 +72,10 @@ terms:
   status: active
   term_de: Schwache KI
   term_en: Narrow AI (ANI)
-  explanation_de: KI, die fuer eine ganz spezifische Aufgabe (z.B. Schach) optimiert
-    ist.
-  explanation_en: KI, die fuer eine ganz spezifische Aufgabe (z.B. Schach) optimiert
-    ist.
+  explanation_de: KI, die fuer eine ganz spezifische Aufgabe (z.B. Schach) optimiert ist.
+  explanation_en: AI optimized for one very specific task (e.g. chess).
   context_de: Fast alle heutigen Systeme.
-  context_en: Fast alle heutigen Systeme.
+  context_en: Almost all of today's systems.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   - https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf
@@ -97,12 +85,10 @@ terms:
   status: active
   term_de: Superintelligenz
   term_en: Superintelligence (ASI)
-  explanation_de: Eine KI, die die menschliche Intelligenz in allen Bereichen weit
-    uebertrifft.
-  explanation_en: Eine KI, die die menschliche Intelligenz in allen Bereichen weit
-    uebertrifft.
+  explanation_de: Eine KI, die die menschliche Intelligenz in allen Bereichen weit uebertrifft.
+  explanation_en: An AI that far exceeds human intelligence in every domain.
   context_de: Folgt theoretisch auf die AGI.
-  context_en: Folgt theoretisch auf die AGI.
+  context_en: Theoretically follows AGI.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -111,12 +97,11 @@ terms:
   status: active
   term_de: Singularitaet
   term_en: Singularity
-  explanation_de: Zeitpunkt, ab dem KI sich so schnell selbst verbessert, dass Menschen
-    nicht mehr folgen koennen.
-  explanation_en: Zeitpunkt, ab dem KI sich so schnell selbst verbessert, dass Menschen
-    nicht mehr folgen koennen.
+  explanation_de: Zeitpunkt, ab dem KI sich so schnell selbst verbessert, dass Menschen nicht mehr folgen
+    koennen.
+  explanation_en: The point at which AI improves itself so fast that humans can no longer keep up.
   context_de: Zukunftsszenario (ca. 2045).
-  context_en: Zukunftsszenario (ca. 2045).
+  context_en: A future scenario (around 2045).
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -125,12 +110,10 @@ terms:
   status: active
   term_de: Turing-Test
   term_en: Turing Test
-  explanation_de: 'Ein Test von 1950: Kann eine KI im Chat so tun, als sei sie ein
-    Mensch?.'
-  explanation_en: 'Ein Test von 1950: Kann eine KI im Chat so tun, als sei sie ein
-    Mensch?.'
+  explanation_de: 'Ein Test von 1950: Kann eine KI im Chat so tun, als sei sie ein Mensch?.'
+  explanation_en: 'A 1950 test: can an AI convince a human it is human in chat?'
   context_de: Historischer Masstab fuer Intelligenz.
-  context_en: Historischer Masstab fuer Intelligenz.
+  context_en: A historical benchmark for intelligence.
   sources:
   - https://www.ki.nrw/ki-schluesselbegriffe/
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
@@ -141,9 +124,9 @@ terms:
   term_de: Algorithmus
   term_en: Algorithm
   explanation_de: Eine genaue Schritt-fuer-Schritt-Vorschrift zur Loesung einer Aufgabe.
-  explanation_en: Eine genaue Schritt-fuer-Schritt-Vorschrift zur Loesung einer Aufgabe.
+  explanation_en: A precise, step-by-step procedure for solving a task.
   context_de: Mathematische Basis jeder Software.
-  context_en: Mathematische Basis jeder Software.
+  context_en: The mathematical basis of every piece of software.
   sources:
   - https://www.ki.nrw/ki-schluesselbegriffe/
   - https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf
@@ -153,14 +136,11 @@ terms:
   status: active
   term_de: Künstliche allgemeine Intelligenz
   term_en: Artificial General Intelligence (AGI)
-  explanation_de: Eine theoretische KI, die jede intellektuelle Aufgabe eines Menschen
-    in allen Bereichen erfüllen kan
-  explanation_en: Eine theoretische KI, die jede intellektuelle Aufgabe eines Menschen
-    in allen Bereichen erfüllen kan
-  context_de: Gilt als "heiliger Gral" der KI-Forschung; existiert zum heutigen Stand
-    noch nic
-  context_en: Gilt als "heiliger Gral" der KI-Forschung; existiert zum heutigen Stand
-    noch nic
+  explanation_de: Eine theoretische KI, die jede intellektuelle Aufgabe eines Menschen in allen Bereichen
+    erfüllen kann.
+  explanation_en: A theoretical AI able to perform any intellectual task a human can, across all domains.
+  context_de: Gilt als "heiliger Gral" der KI-Forschung; existiert zum heutigen Stand noch nicht.
+  context_en: Considered the "holy grail" of AI research; does not exist yet today.
   sources:
   - https://www.zendesk.de/blog/ai/generative-ai-glossary/
   updated: '2026-09-03'
@@ -169,14 +149,12 @@ terms:
   status: active
   term_de: Basismodell
   term_en: Foundation Model
-  explanation_de: Massiv trainierte Modelle, die als breite technologische Basis für
-    viele verschiedene Anwendungen di
-  explanation_en: Massiv trainierte Modelle, die als breite technologische Basis für
-    viele verschiedene Anwendungen di
-  context_de: Ermöglicht es, ein einzelnes Modell (z. B. GPT-4) für hunderte verschiedene
-    Aufg
-  context_en: Ermöglicht es, ein einzelnes Modell (z. B. GPT-4) für hunderte verschiedene
-    Aufg
+  explanation_de: Massiv trainierte Modelle, die als breite technologische Basis für viele verschiedene
+    Anwendungen dienen.
+  explanation_en: Massively trained models that serve as a broad technological base for many different
+    applications.
+  context_de: Ermöglicht es, ein einzelnes Modell (z. B. GPT-4) für hunderte verschiedene Aufgaben einzusetzen.
+  context_en: Lets a single model (e.g. GPT-4) be used for hundreds of different tasks.
   sources:
   - https://joerg-loehr.com/ki-glossar
   updated: '2026-09-03'
@@ -185,12 +163,11 @@ terms:
   status: active
   term_de: Grosses Sprachmodell
   term_en: Large Language Model (LLM)
-  explanation_de: Ein riesiges neuronales Netz, das darauf trainiert wurde, Sprache
-    zu verstehen und zu erzeugen.
-  explanation_en: Ein riesiges neuronales Netz, das darauf trainiert wurde, Sprache
-    zu verstehen und zu erzeugen.
+  explanation_de: Ein riesiges neuronales Netz, das darauf trainiert wurde, Sprache zu verstehen und zu
+    erzeugen.
+  explanation_en: A huge neural network trained to understand and generate language.
   context_de: Basis fuer ChatGPT, Claude etc..
-  context_en: Basis fuer ChatGPT, Claude etc..
+  context_en: The basis for ChatGPT, Claude, etc.
   sources:
   - https://mdai.ch/blog/von-llm-bis-halluzination/
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
@@ -200,14 +177,11 @@ terms:
   status: active
   term_de: Sprachverarbeitung
   term_en: Natural Language Processing (NLP)
-  explanation_de: Ein KI-Feld, das Computern hilft, menschliche Sprache zu verstehen,
-    zu interpretieren und zu erzeuge
-  explanation_en: Ein KI-Feld, das Computern hilft, menschliche Sprache zu verstehen,
-    zu interpretieren und zu erzeuge
-  context_de: Ermöglicht Funktionen wie Textklassifizierung, Stimmungsanalyse und
-    automatisier
-  context_en: Ermöglicht Funktionen wie Textklassifizierung, Stimmungsanalyse und
-    automatisier
+  explanation_de: Ein KI-Feld, das Computern hilft, menschliche Sprache zu verstehen, zu interpretieren
+    und zu erzeugen.
+  explanation_en: An AI field that helps computers understand, interpret, and generate human language.
+  context_de: Ermöglicht Funktionen wie Textklassifizierung, Stimmungsanalyse und automatisierte Übersetzung.
+  context_en: Enables functions like text classification, sentiment analysis, and automated translation.
   sources:
   - https://www.zendesk.de/blog/ai/generative-ai-glossary/
   updated: '2026-09-03'
@@ -216,14 +190,12 @@ terms:
   status: active
   term_de: Wissensgraph
   term_en: Knowledge Graph
-  explanation_de: Eine semantische Netzwerkstruktur, die Informationen und deren Beziehungen
-    grafisch darstellt.
-  explanation_en: Eine semantische Netzwerkstruktur, die Informationen und deren Beziehungen
-    grafisch darstellt.
-  context_de: Erlaubt es KI-Systemen, Informationen über Knoten (Entitäten) und Kanten
-    (Bezieh
-  context_en: Erlaubt es KI-Systemen, Informationen über Knoten (Entitäten) und Kanten
-    (Bezieh
+  explanation_de: Eine semantische Netzwerkstruktur, die Informationen und deren Beziehungen grafisch
+    darstellt.
+  explanation_en: A semantic network structure that graphically represents information and its relationships.
+  context_de: Erlaubt es KI-Systemen, Informationen über Knoten (Entitäten) und Kanten (Beziehungen) logisch
+    zu verknüpfen.
+  context_en: Lets AI systems logically link information via nodes (entities) and edges (relationships).
   sources:
   - https://ki-zentrum.ch/studien
   updated: '2026-09-03'
@@ -232,12 +204,10 @@ terms:
   status: active
   term_de: Transformer
   term_en: Transformer
-  explanation_de: Die moderne Architektur, die paralleles Verarbeiten von Textzusammenhaengen
-    erlaubt.
-  explanation_en: Die moderne Architektur, die paralleles Verarbeiten von Textzusammenhaengen
-    erlaubt.
+  explanation_de: Die moderne Architektur, die paralleles Verarbeiten von Textzusammenhaengen erlaubt.
+  explanation_en: The modern architecture that allows parallel processing of text context.
   context_de: Das „T“ in GPT.
-  context_en: Das „T“ in GPT.
+  context_en: The "T" in GPT.
   sources:
   - https://www.ki.nrw/ki-schluesselbegriffe/
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
@@ -247,12 +217,10 @@ terms:
   status: active
   term_de: Attention-Mechanismus
   term_en: Attention Mechanism
-  explanation_de: Erlaubt der KI, die wichtigsten Teile einer Eingabe staerker zu
-    gewichten.
-  explanation_en: Erlaubt der KI, die wichtigsten Teile einer Eingabe staerker zu
-    gewichten.
+  explanation_de: Erlaubt der KI, die wichtigsten Teile einer Eingabe staerker zu gewichten.
+  explanation_en: Lets the AI weight the most important parts of an input more heavily.
   context_de: Kerninnovation des Transformers.
-  context_en: Kerninnovation des Transformers.
+  context_en: The core innovation of the Transformer.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -261,12 +229,10 @@ terms:
   status: active
   term_de: Token
   term_en: Token
-  explanation_de: Die Basiseinheit (Wortteile oder Silben), in die Text fuer die KI
-    zerlegt wird.
-  explanation_en: Die Basiseinheit (Wortteile oder Silben), in die Text fuer die KI
-    zerlegt wird.
+  explanation_de: Die Basiseinheit (Wortteile oder Silben), in die Text fuer die KI zerlegt wird.
+  explanation_en: The basic unit (word pieces or syllables) that text is broken into for the AI.
   context_de: „Waehrung“ der KI-Verarbeitung.
-  context_en: „Waehrung“ der KI-Verarbeitung.
+  context_en: The "currency" of AI processing.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   - https://digitaleneuordnung.de/blog/ki-begriffe
@@ -277,9 +243,9 @@ terms:
   term_de: Tokenisierung
   term_en: Tokenization
   explanation_de: Der Prozess der Zerlegung von Text in einzelne Tokens.
-  explanation_en: Der Prozess der Zerlegung von Text in einzelne Tokens.
+  explanation_en: The process of splitting text into individual tokens.
   context_de: Erster Schritt der Textverarbeitung.
-  context_en: Erster Schritt der Textverarbeitung.
+  context_en: The first step of text processing.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   - https://digitaleneuordnung.de/blog/ki-begriffe
@@ -289,12 +255,10 @@ terms:
   status: active
   term_de: Embeddings
   term_en: Embeddings
-  explanation_de: Umwandlung von Woertern in Zahlenreihen (Vektoren), um Bedeutung
-    berechenbar zu machen.
-  explanation_en: Umwandlung von Woertern in Zahlenreihen (Vektoren), um Bedeutung
-    berechenbar zu machen.
+  explanation_de: Umwandlung von Woertern in Zahlenreihen (Vektoren), um Bedeutung berechenbar zu machen.
+  explanation_en: Converting words into rows of numbers (vectors) so meaning becomes computable.
   context_de: Basis fuer semantische Suche.
-  context_en: Basis fuer semantische Suche.
+  context_en: The basis for semantic search.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   - https://digitaleneuordnung.de/blog/ki-begriffe
@@ -304,12 +268,10 @@ terms:
   status: active
   term_de: RAG
   term_en: Retrieval-Augmented Generation
-  explanation_de: Die KI sucht vor der Antwort in externen Quellen (z.B. Internet),
-    um Fakten zu pruefen.
-  explanation_en: Die KI sucht vor der Antwort in externen Quellen (z.B. Internet),
-    um Fakten zu pruefen.
+  explanation_de: Die KI sucht vor der Antwort in externen Quellen (z.B. Internet), um Fakten zu pruefen.
+  explanation_en: The AI looks up external sources (e.g. the internet) before answering, to check facts.
   context_de: Methode gegen Halluzinationen.
-  context_en: Methode gegen Halluzinationen.
+  context_en: A method against hallucinations.
   sources:
   - https://www.zendesk.de/blog/ai/generative-ai-glossary/
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
@@ -320,12 +282,10 @@ terms:
   status: active
   term_de: Vektor-Datenbank
   term_en: Vector Database
-  explanation_de: Spezialisierte Datenbank, die Inhalte nach Bedeutung statt nach
-    Schlagworten findet.
-  explanation_en: Spezialisierte Datenbank, die Inhalte nach Bedeutung statt nach
-    Schlagworten findet.
+  explanation_de: Spezialisierte Datenbank, die Inhalte nach Bedeutung statt nach Schlagworten findet.
+  explanation_en: A specialized database that finds content by meaning instead of by keywords.
   context_de: Essenziell fuer RAG-Systeme.
-  context_en: Essenziell fuer RAG-Systeme.
+  context_en: Essential for RAG systems.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   - https://digitaleneuordnung.de/blog/ki-begriffe
@@ -336,9 +296,9 @@ terms:
   term_de: Halluzination
   term_en: Hallucination
   explanation_de: Die KI behauptet selbstbewusst falsche Fakten oder erfindet Quellen.
-  explanation_en: Die KI behauptet selbstbewusst falsche Fakten oder erfindet Quellen.
+  explanation_en: The AI confidently states false facts or invents sources.
   context_de: Bekanntes Problem bei LLMs.
-  context_en: Bekanntes Problem bei LLMs.
+  context_en: A well-known problem with LLMs.
   sources:
   - https://mdai.ch/blog/von-llm-bis-halluzination/
   - https://digitalzentrum-berlin.de/blog/ki-glossar
@@ -349,12 +309,10 @@ terms:
   status: active
   term_de: Kontext-Fenster
   term_en: Context Window
-  explanation_de: Das „Kurzzeitgedaechtnis“ – wie viel Text die KI gleichzeitig verarbeiten
-    kann.
-  explanation_en: Das „Kurzzeitgedaechtnis“ – wie viel Text die KI gleichzeitig verarbeiten
-    kann.
+  explanation_de: Das „Kurzzeitgedaechtnis“ – wie viel Text die KI gleichzeitig verarbeiten kann.
+  explanation_en: The "short-term memory" – how much text the AI can process at once.
   context_de: Begrenzt die Laenge von PDFs/Chats.
-  context_en: Begrenzt die Laenge von PDFs/Chats.
+  context_en: Limits the length of PDFs/chats.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   - https://www.youtube.com/watch?v=KI-Lernen
@@ -364,12 +322,10 @@ terms:
   status: active
   term_de: MoE / Sparse Models
   term_en: Mixture of Experts (MoE)
-  explanation_de: Architektur, bei der nur spezialisierte Teile eines Modells pro
-    Anfrage aktiv sind.
-  explanation_en: Architektur, bei der nur spezialisierte Teile eines Modells pro
-    Anfrage aktiv sind.
+  explanation_de: Architektur, bei der nur spezialisierte Teile eines Modells pro Anfrage aktiv sind.
+  explanation_en: An architecture in which only specialized parts of a model are active per request.
   context_de: Macht riesige Modelle effizienter.
-  context_en: Macht riesige Modelle effizienter.
+  context_en: Makes huge models more efficient.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -379,9 +335,9 @@ terms:
   term_de: Inferenz
   term_en: Inference
   explanation_de: Die eigentliche Anwendung des fertigen Modells auf eine neue Frage.
-  explanation_en: Die eigentliche Anwendung des fertigen Modells auf eine neue Frage.
+  explanation_en: The actual use of the finished model on a new question.
   context_de: Phase nach dem Training [1.10].
-  context_en: Phase nach dem Training [1.10].
+  context_en: The phase after training.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   - https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf
@@ -392,9 +348,9 @@ terms:
   term_de: Encoder
   term_en: Encoder
   explanation_de: Teil des Modells, der Input verarbeitet und Repraesentationen erstellt.
-  explanation_en: Teil des Modells, der Input verarbeitet und Repraesentationen erstellt.
+  explanation_en: The part of the model that processes input and builds representations.
   context_de: Teil der Transformer-Architektur.
-  context_en: Teil der Transformer-Architektur.
+  context_en: Part of the Transformer architecture.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -404,9 +360,9 @@ terms:
   term_de: Decoder
   term_en: Decoder
   explanation_de: Teil des Modells, der Output basierend auf Repraesentationen generiert.
-  explanation_en: Teil des Modells, der Output basierend auf Repraesentationen generiert.
+  explanation_en: The part of the model that generates output based on representations.
   context_de: GPT nutzt primuer den Decoder.
-  context_en: GPT nutzt primuer den Decoder.
+  context_en: GPT primarily uses the decoder.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -416,9 +372,9 @@ terms:
   term_de: Softmax
   term_en: Softmax
   explanation_de: Mathematische Funktion, die Ausgaben in Wahrscheinlichkeiten umwandelt.
-  explanation_en: Mathematische Funktion, die Ausgaben in Wahrscheinlichkeiten umwandelt.
+  explanation_en: A mathematical function that turns outputs into probabilities.
   context_de: Letzter Schritt vor der Token-Wahl.
-  context_en: Letzter Schritt vor der Token-Wahl.
+  context_en: The last step before choosing a token.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -427,12 +383,10 @@ terms:
   status: active
   term_de: Beam Search
   term_en: Beam Search
-  explanation_de: Algorithmus, der mehrere Textpfade parallel prueft, um das beste
-    Ergebnis zu finden.
-  explanation_en: Algorithmus, der mehrere Textpfade parallel prueft, um das beste
-    Ergebnis zu finden.
+  explanation_de: Algorithmus, der mehrere Textpfade parallel prueft, um das beste Ergebnis zu finden.
+  explanation_en: An algorithm that checks several text paths in parallel to find the best result.
   context_de: Methode zur Textgenerierung.
-  context_en: Methode zur Textgenerierung.
+  context_en: A method for text generation.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -441,12 +395,10 @@ terms:
   status: active
   term_de: Latent Space
   term_en: Latent Space
-  explanation_de: Hochdimensionaler Raum, in dem das Netz seine internen Konzepte
-    speichert.
-  explanation_en: Hochdimensionaler Raum, in dem das Netz seine internen Konzepte
-    speichert.
+  explanation_de: Hochdimensionaler Raum, in dem das Netz seine internen Konzepte speichert.
+  explanation_en: A high-dimensional space in which the network stores its internal concepts.
   context_de: Geometrie der Semantik.
-  context_en: Geometrie der Semantik.
+  context_en: The geometry of meaning.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -456,9 +408,9 @@ terms:
   term_de: Flash Attention
   term_en: Flash Attention
   explanation_de: Ein technischer Trick, der die Attention-Berechnung massiv beschleunigt.
-  explanation_en: Ein technischer Trick, der die Attention-Berechnung massiv beschleunigt.
+  explanation_en: A technical trick that massively speeds up the attention calculation.
   context_de: Ermoeglicht riesige Kontextfenster.
-  context_en: Ermoeglicht riesige Kontextfenster.
+  context_en: Enables huge context windows.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -468,9 +420,9 @@ terms:
   term_de: Pre-Training
   term_en: Pre-training
   explanation_de: 'Die „Schulzeit“: Training auf Billionen von Texten fuer Weltwissen.'
-  explanation_en: 'Die „Schulzeit“: Training auf Billionen von Texten fuer Weltwissen.'
+  explanation_en: 'The "school years": training on trillions of texts to build world knowledge.'
   context_de: Erzeugt ein Foundation Model.
-  context_en: Erzeugt ein Foundation Model.
+  context_en: Produces a foundation model.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -480,9 +432,9 @@ terms:
   term_de: Feinabstimmung
   term_en: Fine-tuning
   explanation_de: 'Die „Berufsausbildung“: Anpassung an Spezialaufgaben (z.B. Medizin).'
-  explanation_en: 'Die „Berufsausbildung“: Anpassung an Spezialaufgaben (z.B. Medizin).'
+  explanation_en: 'The "vocational training": adapting a model to specialized tasks (e.g. medicine).'
   context_de: Schritt nach dem Pre-Training.
-  context_en: Schritt nach dem Pre-Training.
+  context_en: A step after pre-training.
   sources:
   - https://mdai.ch/blog/von-llm-bis-halluzination/
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
@@ -493,9 +445,9 @@ terms:
   term_de: Ueberwachtes Lernen
   term_en: Supervised Learning
   explanation_de: Lernen mit gelabelten Beispielen (Eingabe + richtige Ausgabe).
-  explanation_en: Lernen mit gelabelten Beispielen (Eingabe + richtige Ausgabe).
+  explanation_en: Learning from labeled examples (input plus the correct output).
   context_de: Haeufigste ML-Methode.
-  context_en: Haeufigste ML-Methode.
+  context_en: The most common ML method.
   sources:
   - https://www.ki.nrw/ki-schluesselbegriffe/
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
@@ -506,9 +458,9 @@ terms:
   term_de: Unueberwachtes Lernen
   term_en: Unsupervised Learning
   explanation_de: Das System sucht eigenstaendig nach Mustern ohne Vorgaben.
-  explanation_en: Das System sucht eigenstaendig nach Mustern ohne Vorgaben.
+  explanation_en: The system searches for patterns on its own, without labels.
   context_de: Genutzt fuer Clustering.
-  context_en: Genutzt fuer Clustering.
+  context_en: Used for clustering.
   sources:
   - https://www.ki.nrw/ki-schluesselbegriffe/
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
@@ -519,9 +471,9 @@ terms:
   term_de: Bestaerkendes Lernen
   term_en: Reinforcement Learning (RL)
   explanation_de: Lernen durch Belohnung und Bestrafung (Feedback) in einer Umgebung.
-  explanation_en: Lernen durch Belohnung und Bestrafung (Feedback) in einer Umgebung.
+  explanation_en: Learning through reward and punishment (feedback) in an environment.
   context_de: Wichtig fuer Spiele/Robotik.
-  context_en: Wichtig fuer Spiele/Robotik.
+  context_en: Important for games and robotics.
   sources:
   - https://www.ki.nrw/ki-schluesselbegriffe/
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
@@ -531,14 +483,13 @@ terms:
   status: active
   term_de: Verstärkendes Lernen
   term_en: Reinforcement Learning (RL)
-  explanation_de: Ein Lernprozess, bei dem ein Agent durch Belohnungen innerhalb eines
-    Regelsystems optimale Strategie
-  explanation_en: Ein Lernprozess, bei dem ein Agent durch Belohnungen innerhalb eines
-    Regelsystems optimale Strategie
-  context_de: Wird genutzt, um KI-Systemen beizubringen, komplexe Ziele (z. B. Spiele
-    oder aut
-  context_en: Wird genutzt, um KI-Systemen beizubringen, komplexe Ziele (z. B. Spiele
-    oder aut
+  explanation_de: Ein Lernprozess, bei dem ein Agent durch Belohnungen innerhalb eines Regelsystems optimale
+    Strategien lernt.
+  explanation_en: A learning process in which an agent learns optimal strategies through rewards within
+    a rule system.
+  context_de: Wird genutzt, um KI-Systemen beizubringen, komplexe Ziele (z. B. Spiele oder autonome Navigation)
+    zu erreichen.
+  context_en: Used to teach AI systems to reach complex goals (e.g. games or autonomous navigation).
   sources: []
   updated: '2026-09-03'
 - id: ueberanpassung
@@ -546,14 +497,13 @@ terms:
   status: active
   term_de: Überanpassung
   term_en: Overfitting
-  explanation_de: Ein Zustand, in dem ein Modell die Trainingsdaten so genau lernt,
-    dass es keine neuen Muster mehr er
-  explanation_en: Ein Zustand, in dem ein Modell die Trainingsdaten so genau lernt,
-    dass es keine neuen Muster mehr er
-  context_de: Führt dazu, dass die KI bei bekannten Daten perfekt arbeitet, aber bei
-    neuen Auf
-  context_en: Führt dazu, dass die KI bei bekannten Daten perfekt arbeitet, aber bei
-    neuen Auf
+  explanation_de: Ein Zustand, in dem ein Modell die Trainingsdaten so genau lernt, dass es keine neuen
+    Muster mehr erkennt.
+  explanation_en: A state where a model learns the training data so precisely that it no longer recognizes
+    new patterns.
+  context_de: Führt dazu, dass die KI bei bekannten Daten perfekt arbeitet, aber bei neuen Aufgaben komplett
+    versagt.
+  context_en: Makes the AI perform perfectly on known data but fail completely on new tasks.
   sources:
   - https://digitalzentrum-berlin.de/blog/ki-glossar
   updated: '2026-09-03'
@@ -562,14 +512,11 @@ terms:
   status: active
   term_de: Datenerweiterung
   term_en: Data Augmentation
-  explanation_de: Ein Prozess zur Generierung neuer Trainingsdaten aus vorhandenen
-    Daten zur Leistungssteigerung.
-  explanation_en: Ein Prozess zur Generierung neuer Trainingsdaten aus vorhandenen
-    Daten zur Leistungssteigerung.
-  context_de: Hilft Modellen, robuster und genauer zu werden, indem die Vielfalt der
-    Beispiele
-  context_en: Hilft Modellen, robuster und genauer zu werden, indem die Vielfalt der
-    Beispiele
+  explanation_de: Ein Prozess zur Generierung neuer Trainingsdaten aus vorhandenen Daten zur Leistungssteigerung.
+  explanation_en: A process that generates new training data from existing data to improve performance.
+  context_de: Hilft Modellen, robuster und genauer zu werden, indem die Vielfalt der Beispiele künstlich
+    erhöht wird.
+  context_en: Helps models become more robust and accurate by artificially increasing example variety.
   sources: []
   updated: '2026-09-03'
 - id: dpo
@@ -578,9 +525,9 @@ terms:
   term_de: DPO
   term_en: Direct Preference Optimization
   explanation_de: Modernere Methode zum Alignment ohne separates Belohnungsmodell.
-  explanation_en: Modernere Methode zum Alignment ohne separates Belohnungsmodell.
+  explanation_en: A more modern alignment method that needs no separate reward model.
   context_de: Alternative zu PPO im Training.
-  context_en: Alternative zu PPO im Training.
+  context_en: An alternative to PPO in training.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -590,9 +537,9 @@ terms:
   term_de: LoRA
   term_en: Low-Rank Adaptation
   explanation_de: Effizientes Fine-tuning, bei dem nur winzige Teile geaendert werden.
-  explanation_en: Effizientes Fine-tuning, bei dem nur winzige Teile geaendert werden.
+  explanation_en: Efficient fine-tuning in which only tiny parts of the model are changed.
   context_de: Spart 99% der Rechenressourcen.
-  context_en: Spart 99% der Rechenressourcen.
+  context_en: Saves 99% of the compute resources.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   - https://digitaleneuordnung.de/blog/ki-begriffe
@@ -603,9 +550,9 @@ terms:
   term_de: QLoRA
   term_en: QLoRA
   explanation_de: Kombination aus LoRA und Quantisierung fuer sparsamstes Training.
-  explanation_en: Kombination aus LoRA und Quantisierung fuer sparsamstes Training.
+  explanation_en: A combination of LoRA and quantization for the most resource-efficient training.
   context_de: Training auf normalen PCs moeglich.
-  context_en: Training auf normalen PCs moeglich.
+  context_en: Makes training possible on normal PCs.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -615,9 +562,9 @@ terms:
   term_de: Epoch
   term_en: Epoch
   explanation_de: Ein kompletter Durchlauf durch den gesamten Trainingsdatensatz.
-  explanation_en: Ein kompletter Durchlauf durch den gesamten Trainingsdatensatz.
+  explanation_en: One complete pass through the entire training dataset.
   context_de: Parameter fuer Trainingsdauer.
-  context_en: Parameter fuer Trainingsdauer.
+  context_en: A parameter for training duration.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   - https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf
@@ -627,12 +574,10 @@ terms:
   status: active
   term_de: Overfitting
   term_en: Overfitting
-  explanation_de: Die KI lernt Daten auswendig statt Muster zu verstehen (versagt
-    bei Neuem).
-  explanation_en: Die KI lernt Daten auswendig statt Muster zu verstehen (versagt
-    bei Neuem).
+  explanation_de: Die KI lernt Daten auswendig statt Muster zu verstehen (versagt bei Neuem).
+  explanation_en: The AI memorizes the data instead of understanding patterns (fails on anything new).
   context_de: Haeufiger Trainingsfehler.
-  context_en: Haeufiger Trainingsfehler.
+  context_en: A common training error.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -641,12 +586,10 @@ terms:
   status: active
   term_de: Catastrophic Forgetting
   term_en: Catastrophic Forgetting
-  explanation_de: KI vergisst altes Wissen, wenn sie auf eine neue Aufgabe trainiert
-    wird.
-  explanation_en: KI vergisst altes Wissen, wenn sie auf eine neue Aufgabe trainiert
-    wird.
+  explanation_de: KI vergisst altes Wissen, wenn sie auf eine neue Aufgabe trainiert wird.
+  explanation_en: The AI forgets old knowledge when trained on a new task.
   context_de: Problem beim kontinuierlichen Lernen.
-  context_en: Problem beim kontinuierlichen Lernen.
+  context_en: A problem with continual learning.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -656,9 +599,9 @@ terms:
   term_de: Zero-Shot Learning
   term_en: Zero-shot Learning
   explanation_de: Die KI loest eine Aufgabe ohne vorheriges Beispiel, nur per Befehl.
-  explanation_en: Die KI loest eine Aufgabe ohne vorheriges Beispiel, nur per Befehl.
+  explanation_en: The AI solves a task with no prior example, from the instruction alone.
   context_de: Zeigt Generalisierungsfaehigkeit.
-  context_en: Zeigt Generalisierungsfaehigkeit.
+  context_en: Shows the model's ability to generalize.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   - https://digitaleneuordnung.de/blog/ki-begriffe
@@ -669,9 +612,9 @@ terms:
   term_de: Few-Shot Learning
   term_en: Few-shot Learning
   explanation_de: Die KI bekommt 2–10 Beispiele im Prompt, um ein Muster zu verstehen.
-  explanation_en: Die KI bekommt 2–10 Beispiele im Prompt, um ein Muster zu verstehen.
+  explanation_en: The AI is given 2–10 examples in the prompt to learn a pattern.
   context_de: Methode des In-Context Learning.
-  context_en: Methode des In-Context Learning.
+  context_en: A method of in-context learning.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   - https://digitaleneuordnung.de/blog/ki-begriffe
@@ -682,9 +625,9 @@ terms:
   term_de: Synthetische Daten
   term_en: Synthetic Data
   explanation_de: Kuenstlich von KIs erzeugte Daten zum Training anderer KIs.
-  explanation_en: Kuenstlich von KIs erzeugte Daten zum Training anderer KIs.
+  explanation_en: Data artificially generated by AI to train other AI systems.
   context_de: Loesung bei Datenknappheit.
-  context_en: Loesung bei Datenknappheit.
+  context_en: A solution when real data is scarce.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   - https://digitaleneuordnung.de/blog/ki-begriffe
@@ -694,12 +637,10 @@ terms:
   status: active
   term_de: Scaling Laws
   term_en: Scaling Laws
-  explanation_de: 'Regel: Mehr Daten und Rechenkraft fuehren fast immer zu besserer
-    KI.'
-  explanation_en: 'Regel: Mehr Daten und Rechenkraft fuehren fast immer zu besserer
-    KI.'
+  explanation_de: 'Regel: Mehr Daten und Rechenkraft fuehren fast immer zu besserer KI.'
+  explanation_en: The rule that more data and compute almost always lead to better AI.
   context_de: Grund fuer enorme Investitionen.
-  context_en: Grund fuer enorme Investitionen.
+  context_en: The reason for enormous investments.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -709,9 +650,9 @@ terms:
   term_de: Chinchilla-Optimum
   term_en: Chinchilla Optimality
   explanation_de: 'Erkenntnis: Das optimale Verhaeltnis ist 20 Tokens pro Parameter.'
-  explanation_en: 'Erkenntnis: Das optimale Verhaeltnis ist 20 Tokens pro Parameter.'
+  explanation_en: The finding that the optimal ratio is about 20 tokens per parameter.
   context_de: Bestimmt effiziente Modellgroesse.
-  context_en: Bestimmt effiziente Modellgroesse.
+  context_en: Determines efficient model size.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -721,9 +662,9 @@ terms:
   term_de: Eingabeaufforderung
   term_en: Prompt
   explanation_de: Die Anweisung oder Frage, die ein Mensch der KI gibt.
-  explanation_en: Die Anweisung oder Frage, die ein Mensch der KI gibt.
+  explanation_en: The instruction or question a human gives to the AI.
   context_de: Schnittstelle zum Nutzer.
-  context_en: Schnittstelle zum Nutzer.
+  context_en: The interface to the user.
   sources:
   - https://digitaleneuordnung.de/blog/ki-begriffe
   - https://www.youtube.com/watch?v=KI-Lernen
@@ -733,12 +674,10 @@ terms:
   status: active
   term_de: Prompt Engineering
   term_en: Prompt Engineering
-  explanation_de: Die Kunst, Befehle so praezise zu formulieren, dass die KI optimal
-    liefert.
-  explanation_en: Die Kunst, Befehle so praezise zu formulieren, dass die KI optimal
-    liefert.
+  explanation_de: Die Kunst, Befehle so praezise zu formulieren, dass die KI optimal liefert.
+  explanation_en: The art of phrasing instructions precisely enough that the AI delivers an optimal result.
   context_de: Wichtiger Skill fuer Anwender.
-  context_en: Wichtiger Skill fuer Anwender.
+  context_en: An important skill for users.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   - https://digitaleneuordnung.de/blog/ki-begriffe
@@ -748,12 +687,10 @@ terms:
   status: active
   term_de: System Prompt
   term_en: System Prompt
-  explanation_de: Versteckte Grundanweisung, die Rolle/Regeln der KI festlegt (z.B.
-    „Sei Lehrer“).
-  explanation_en: Versteckte Grundanweisung, die Rolle/Regeln der KI festlegt (z.B.
-    „Sei Lehrer“).
+  explanation_de: Versteckte Grundanweisung, die Rolle/Regeln der KI festlegt (z.B. „Sei Lehrer“).
+  explanation_en: A hidden base instruction that sets the AI's role and rules (e.g. "be a teacher").
   context_de: Definiert das Bot-Verhalten.
-  context_en: Definiert das Bot-Verhalten.
+  context_en: Defines the bot's behavior.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -763,9 +700,9 @@ terms:
   term_de: Chain-of-Thought
   term_en: Chain-of-Thought (CoT)
   explanation_de: Technik, die KI anzuweisen „Schritt fuer Schritt“ zu denken.
-  explanation_en: Technik, die KI anzuweisen „Schritt fuer Schritt“ zu denken.
+  explanation_en: A technique that instructs the AI to think "step by step".
   context_de: Verbessert Logik massiv.
-  context_en: Verbessert Logik massiv.
+  context_en: Massively improves logical reasoning.
   sources:
   - https://www.zendesk.de/blog/ai/generative-ai-glossary/
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
@@ -777,9 +714,9 @@ terms:
   term_de: Reasoning
   term_en: Reasoning
   explanation_de: Faehigkeit einer KI, logisch zu schlussfolgern und Probleme zu durchdenken.
-  explanation_en: Faehigkeit einer KI, logisch zu schlussfolgern und Probleme zu durchdenken.
+  explanation_en: An AI's ability to draw logical conclusions and work through problems.
   context_de: Kennzeichnet neue Modelle (o1).
-  context_en: Kennzeichnet neue Modelle (o1).
+  context_en: A hallmark of newer models (o1).
   sources:
   - https://digitaleneuordnung.de/blog/ki-begriffe
   - https://www.youtube.com/watch?v=KI-Lernen
@@ -789,12 +726,10 @@ terms:
   status: active
   term_de: KI-Agent
   term_en: AI Agent
-  explanation_de: Autonomes System, das selbststaendig Aufgaben erledigt (z.B. Reise
-    buchen).
-  explanation_en: Autonomes System, das selbststaendig Aufgaben erledigt (z.B. Reise
-    buchen).
+  explanation_de: Autonomes System, das selbststaendig Aufgaben erledigt (z.B. Reise buchen).
+  explanation_en: An autonomous system that completes tasks on its own (e.g. booking a trip).
   context_de: Weiterentwicklung von Chatbots.
-  context_en: Weiterentwicklung von Chatbots.
+  context_en: The next step beyond chatbots.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   - https://digitaleneuordnung.de/blog/ki-begriffe
@@ -805,9 +740,9 @@ terms:
   term_de: AgentOps
   term_en: AgentOps
   explanation_de: Die Bereitstellung, Ueberwachung und Verwaltung von KI-Agenten.
-  explanation_en: Die Bereitstellung, Ueberwachung und Verwaltung von KI-Agenten.
+  explanation_en: The deployment, monitoring, and management of AI agents.
   context_de: Infrastruktur fuer Agenten.
-  context_en: Infrastruktur fuer Agenten.
+  context_en: Infrastructure for agents.
   sources:
   - https://digitaleneuordnung.de/blog/ki-begriffe
   updated: '2026-09-03'
@@ -817,9 +752,9 @@ terms:
   term_de: MCP
   term_en: Model Context Protocol
   explanation_de: Offener Standard, um KI-Modelle einfach mit Datenquellen zu verbinden.
-  explanation_en: Offener Standard, um KI-Modelle einfach mit Datenquellen zu verbinden.
+  explanation_en: An open standard for connecting AI models to data sources easily.
   context_de: „USB-C Anschluss“ fuer KI-Daten.
-  context_en: „USB-C Anschluss“ fuer KI-Daten.
+  context_en: The "USB-C port" for AI data.
   sources:
   - https://digitaleneuordnung.de/blog/ki-begriffe
   - https://www.youtube.com/watch?v=KI-Lernen
@@ -830,9 +765,9 @@ terms:
   term_de: Vibecoding
   term_en: Vibecoding
   explanation_de: Apps bauen, indem man sie nur beschreibt, statt Code zu schreiben.
-  explanation_en: Apps bauen, indem man sie nur beschreibt, statt Code zu schreiben.
+  explanation_en: Building apps by describing them, rather than writing code.
   context_de: Neuer Trend in der Entwicklung.
-  context_en: Neuer Trend in der Entwicklung.
+  context_en: A new trend in software development.
   sources:
   - https://www.youtube.com/watch?v=KI-Lernen
   updated: '2026-09-03'
@@ -841,12 +776,10 @@ terms:
   status: active
   term_de: Multimodalitaet
   term_en: Multimodality
-  explanation_de: Faehigkeit, verschiedene Datentypen (Bild, Text, Audio) gleichzeitig
-    zu verarbeiten.
-  explanation_en: Faehigkeit, verschiedene Datentypen (Bild, Text, Audio) gleichzeitig
-    zu verarbeiten.
+  explanation_de: Faehigkeit, verschiedene Datentypen (Bild, Text, Audio) gleichzeitig zu verarbeiten.
+  explanation_en: The ability to process different data types (image, text, audio) at the same time.
   context_de: Eigenschaft moderner Modelle.
-  context_en: Eigenschaft moderner Modelle.
+  context_en: A property of modern models.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   - https://www.youtube.com/watch?v=KI-Lernen
@@ -857,9 +790,9 @@ terms:
   term_de: Prompt Injection
   term_en: Prompt Injection
   explanation_de: Angriff, bei dem Nutzer Sicherheitsregeln durch Tricks umgehen.
-  explanation_en: Angriff, bei dem Nutzer Sicherheitsregeln durch Tricks umgehen.
+  explanation_en: An attack in which users bypass safety rules through tricks.
   context_de: Sicherheitsrisiko bei LLMs.
-  context_en: Sicherheitsrisiko bei LLMs.
+  context_en: A security risk with LLMs.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   - https://digitaleneuordnung.de/blog/ki-begriffe
@@ -869,14 +802,12 @@ terms:
   status: active
   term_de: Mehrstufiger Dialog
   term_en: Multi-Turn Conversation
-  explanation_de: Die Fähigkeit einer KI, einen echten Dialog über mehrere Nachrichten
-    hinweg unter Wahrung des Kontex
-  explanation_en: Die Fähigkeit einer KI, einen echten Dialog über mehrere Nachrichten
-    hinweg unter Wahrung des Kontex
-  context_de: Ist die Voraussetzung für flüssige Gespräche, in denen man auf vorherige
-    Aussage
-  context_en: Ist die Voraussetzung für flüssige Gespräche, in denen man auf vorherige
-    Aussage
+  explanation_de: Die Fähigkeit einer KI, einen echten Dialog über mehrere Nachrichten hinweg unter Wahrung
+    des Kontexts zu führen.
+  explanation_en: An AI's ability to hold a real conversation across several messages while keeping context.
+  context_de: Ist die Voraussetzung für flüssige Gespräche, in denen man auf vorherige Aussagen Bezug
+    nehmen kann.
+  context_en: The prerequisite for fluid conversations that refer back to earlier statements.
   sources:
   - https://joerg-loehr.com/ki-glossar
   updated: '2026-09-03'
@@ -886,9 +817,9 @@ terms:
   term_de: Computer Vision
   term_en: Computer Vision
   explanation_de: Die Faehigkeit von Computern, Bilder/Videos zu „sehen“ und zu verstehen.
-  explanation_en: Die Faehigkeit von Computern, Bilder/Videos zu „sehen“ und zu verstehen.
+  explanation_en: A computer's ability to "see" and understand images and video.
   context_de: Genutzt fuer autonomes Fahren.
-  context_en: Genutzt fuer autonomes Fahren.
+  context_en: Used for autonomous driving.
   sources:
   - https://digitalzentrum-berlin.de/blog/ki-glossar
   - https://www.ki.nrw/ki-schluesselbegriffe/
@@ -900,9 +831,9 @@ terms:
   term_de: Objekterkennung
   term_en: Object Detection
   explanation_de: Das Identifizieren und Lokalisieren von Objekten in einem Bild.
-  explanation_en: Das Identifizieren und Lokalisieren von Objekten in einem Bild.
+  explanation_en: Identifying and locating objects within an image.
   context_de: Teilaufgabe von Computer Vision.
-  context_en: Teilaufgabe von Computer Vision.
+  context_en: A subtask of computer vision.
   sources:
   - https://our-languages.canada.ca/en/artificial-intelligence-terminology-concept-map-eng
   updated: '2026-09-03'
@@ -912,9 +843,9 @@ terms:
   term_de: Diffusionsmodelle
   term_en: Diffusion Models
   explanation_de: KI-Modelle, die Bilder durch schrittweises „Entrauschen“ erzeugen.
-  explanation_en: KI-Modelle, die Bilder durch schrittweises „Entrauschen“ erzeugen.
+  explanation_en: AI models that generate images through a step-by-step "denoising" process.
   context_de: Basis fuer Midjourney/DALL-E.
-  context_en: Basis fuer Midjourney/DALL-E.
+  context_en: The basis for Midjourney/DALL-E.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -924,9 +855,9 @@ terms:
   term_de: Humanoider Roboter
   term_en: Humanoid Robot
   explanation_de: Roboter in menschenaehnlicher Form (zwei Beine, zwei Arme).
-  explanation_en: Roboter in menschenaehnlicher Form (zwei Beine, zwei Arme).
+  explanation_en: A robot with a human-like form (two legs, two arms).
   context_de: 'Ziel: Nutzung menschl. Infrastruktur.'
-  context_en: 'Ziel: Nutzung menschl. Infrastruktur.'
+  context_en: 'Goal: to use infrastructure built for humans.'
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -936,9 +867,9 @@ terms:
   term_de: VLA-Modell
   term_en: Vision-Language-Action
   explanation_de: Modell, das sieht, Sprache versteht und direkt Bewegungen steuert.
-  explanation_en: Modell, das sieht, Sprache versteht und direkt Bewegungen steuert.
+  explanation_en: A model that sees, understands language, and directly controls movement.
   context_de: „Gehirn“ fuer Allzweck-Roboter.
-  context_en: „Gehirn“ fuer Allzweck-Roboter.
+  context_en: The "brain" for general-purpose robots.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -947,12 +878,10 @@ terms:
   status: active
   term_de: Aktuatoren
   term_en: Actuators
-  explanation_de: Die „Muskeln“ eines Roboters (Motoren), die Befehle in Bewegung
-    umsetzen.
-  explanation_en: Die „Muskeln“ eines Roboters (Motoren), die Befehle in Bewegung
-    umsetzen.
+  explanation_de: Die „Muskeln“ eines Roboters (Motoren), die Befehle in Bewegung umsetzen.
+  explanation_en: A robot's "muscles" (motors) that turn commands into motion.
   context_de: Kernkomponente der Hardware.
-  context_en: Kernkomponente der Hardware.
+  context_en: A core hardware component.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -962,9 +891,9 @@ terms:
   term_de: Propriozeption
   term_en: Proprioception
   explanation_de: Das „Koerpergefuehl“ des Roboters (Wissen, wo die Gelenke sind).
-  explanation_en: Das „Koerpergefuehl“ des Roboters (Wissen, wo die Gelenke sind).
+  explanation_en: A robot's "body sense" (knowing where its joints are).
   context_de: Basis fuer koordinierte Bewegung.
-  context_en: Basis fuer koordinierte Bewegung.
+  context_en: The basis for coordinated movement.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -974,9 +903,9 @@ terms:
   term_de: Imitation Learning
   term_en: Imitation Learning
   explanation_de: Roboter lernt durch Beobachtung und Nachahmung von Menschen.
-  explanation_en: Roboter lernt durch Beobachtung und Nachahmung von Menschen.
+  explanation_en: A robot learns by observing and imitating humans.
   context_de: Schneller als reines Ausprobieren.
-  context_en: Schneller als reines Ausprobieren.
+  context_en: Faster than pure trial and error.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -986,9 +915,9 @@ terms:
   term_de: Sim2Real
   term_en: Sim2Real
   explanation_de: Faehigkeiten aus einer Computersimulation in die echte Welt uebertragen.
-  explanation_en: Faehigkeiten aus einer Computersimulation in die echte Welt uebertragen.
+  explanation_en: Transferring skills learned in a computer simulation into the real world.
   context_de: Ermoeglicht Millionen Uebungsstunden.
-  context_en: Ermoeglicht Millionen Uebungsstunden.
+  context_en: Enables millions of practice hours.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -997,12 +926,10 @@ terms:
   status: active
   term_de: Moravec-Paradox
   term_en: Moravec's Paradox
-  explanation_de: 'Erkenntnis: Was fuer uns schwer ist (Schach), ist fuer KI leicht
-    (und umgekehrt).'
-  explanation_en: 'Erkenntnis: Was fuer uns schwer ist (Schach), ist fuer KI leicht
-    (und umgekehrt).'
+  explanation_de: 'Erkenntnis: Was fuer uns schwer ist (Schach), ist fuer KI leicht (und umgekehrt).'
+  explanation_en: The finding that what is hard for us (chess) is easy for AI, and vice versa.
   context_de: Erklaert langsame Robotik-Fortschritte.
-  context_en: Erklaert langsame Robotik-Fortschritte.
+  context_en: Explains why progress in robotics is slow.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -1011,14 +938,11 @@ terms:
   status: active
   term_de: Robotik
   term_en: Robotics
-  explanation_de: Ein Teilbereich der KI, der Maschinen entwickelt, die physisch mit
-    der realen Welt interagieren.
-  explanation_en: Ein Teilbereich der KI, der Maschinen entwickelt, die physisch mit
-    der realen Welt interagieren.
-  context_de: Kombiniert Computer Vision und maschinelles Lernen, damit Maschinen
-    selbstständi
-  context_en: Kombiniert Computer Vision und maschinelles Lernen, damit Maschinen
-    selbstständi
+  explanation_de: Ein Teilbereich der KI, der Maschinen entwickelt, die physisch mit der realen Welt interagieren.
+  explanation_en: A branch of AI that develops machines that physically interact with the real world.
+  context_de: Kombiniert Computer Vision und maschinelles Lernen, damit Maschinen selbstständig arbeiten
+    können.
+  context_en: Combines computer vision and machine learning so machines can act autonomously.
   sources:
   - https://joerg-loehr.com/ki-glossar
   updated: '2026-09-03'
@@ -1027,14 +951,11 @@ terms:
   status: active
   term_de: Physische KI
   term_en: Physical AI
-  explanation_de: Das Stadium, in dem Software-Intelligenz und Hardware-Motorik vollständig
-    miteinander verschmelzen.
-  explanation_en: Das Stadium, in dem Software-Intelligenz und Hardware-Motorik vollständig
-    miteinander verschmelzen.
-  context_de: Ermöglicht es Robotern, reale Aufgaben in der physischen Welt autonom
-    und sicher
-  context_en: Ermöglicht es Robotern, reale Aufgaben in der physischen Welt autonom
-    und sicher
+  explanation_de: Das Stadium, in dem Software-Intelligenz und Hardware-Motorik vollständig miteinander
+    verschmelzen.
+  explanation_en: The stage at which software intelligence and hardware motor skills fully merge.
+  context_de: Ermöglicht es Robotern, reale Aufgaben in der physischen Welt autonom und sicher auszuführen.
+  context_en: Lets robots perform real-world tasks autonomously and safely.
   sources:
   - https://joerg-loehr.com/ki-glossar
   updated: '2026-09-03'
@@ -1043,14 +964,12 @@ terms:
   status: active
   term_de: Kollaborative Roboter
   term_en: Cobots
-  explanation_de: KI-gesteuerte Roboter, die speziell für die direkte Zusammenarbeit
-    mit Menschen konzipiert sind.
-  explanation_en: KI-gesteuerte Roboter, die speziell für die direkte Zusammenarbeit
-    mit Menschen konzipiert sind.
-  context_de: Im Gegensatz zu isolierten Industrierobotern sind diese für die Interaktion
-    im s
-  context_en: Im Gegensatz zu isolierten Industrierobotern sind diese für die Interaktion
-    im s
+  explanation_de: KI-gesteuerte Roboter, die speziell für die direkte Zusammenarbeit mit Menschen konzipiert
+    sind.
+  explanation_en: AI-controlled robots designed specifically to work directly alongside humans.
+  context_de: Im Gegensatz zu isolierten Industrierobotern sind diese für die Interaktion im selben Arbeitsbereich
+    gedacht.
+  context_en: Unlike isolated industrial robots, these are meant to share the same workspace.
   sources: []
   updated: '2026-09-03'
 - id: gesichtserkennung
@@ -1058,12 +977,11 @@ terms:
   status: active
   term_de: Gesichtserkennung
   term_en: Facial Recognition
-  explanation_de: Eine Technologie der Computer Vision, die Gesichter in Bildern oder
-    Videos identifiziert und verifiz
-  explanation_en: Eine Technologie der Computer Vision, die Gesichter in Bildern oder
-    Videos identifiziert und verifiz
+  explanation_de: Eine Technologie der Computer Vision, die Gesichter in Bildern oder Videos identifiziert
+    und verifiziert.
+  explanation_en: A computer-vision technology that identifies and verifies faces in images or video.
   context_de: Findet Anwendung in Sicherheitssystemen, Smartphones und sozialen Medien.
-  context_en: Findet Anwendung in Sicherheitssystemen, Smartphones und sozialen Medien.
+  context_en: Used in security systems, smartphones, and social media.
   sources:
   - https://digitalzentrum-berlin.de/blog/ki-glossar
   updated: '2026-09-03'
@@ -1073,9 +991,9 @@ terms:
   term_de: EU AI Act
   term_en: EU AI Act
   explanation_de: Weltweit erstes Gesetz zur Regulierung von KI nach Risikoklassen.
-  explanation_en: Weltweit erstes Gesetz zur Regulierung von KI nach Risikoklassen.
+  explanation_en: The world's first law to regulate AI by risk class.
   context_de: Rechtsrahmen in Europa.
-  context_en: Rechtsrahmen in Europa.
+  context_en: The legal framework in Europe.
   sources:
   - https://oth-aw.de/ki-strategie
   - https://www.ki.nrw/ki-schluesselbegriffe/
@@ -1087,9 +1005,9 @@ terms:
   term_de: Kritikalitaet
   term_en: Criticality
   explanation_de: Mass fuer das Schadenspotenzial einer KI-Anwendung.
-  explanation_en: Mass fuer das Schadenspotenzial einer KI-Anwendung.
+  explanation_en: A measure of the potential harm an AI application could cause.
   context_de: Basis fuer risikoadaptierte Regulierung.
-  context_en: Basis fuer risikoadaptierte Regulierung.
+  context_en: The basis for risk-adapted regulation.
   sources:
   - https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf
   updated: '2026-09-03'
@@ -1099,9 +1017,9 @@ terms:
   term_de: Alignment
   term_en: Alignment
   explanation_de: Sicherstellen, dass KI-Ziele mit menschlichen Werten uebereinstimmen.
-  explanation_en: Sicherstellen, dass KI-Ziele mit menschlichen Werten uebereinstimmen.
+  explanation_en: Ensuring that an AI's goals match human values.
   context_de: Zentrales Sicherheitsproblem.
-  context_en: Zentrales Sicherheitsproblem.
+  context_en: A central safety problem.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -1110,12 +1028,10 @@ terms:
   status: active
   term_de: P(doom)
   term_en: P(doom)
-  explanation_de: Geschaetzte Wahrscheinlichkeit einer existenziellen Katastrophe
-    durch KI.
-  explanation_en: Geschaetzte Wahrscheinlichkeit einer existenziellen Katastrophe
-    durch KI.
+  explanation_de: Geschaetzte Wahrscheinlichkeit einer existenziellen Katastrophe durch KI.
+  explanation_en: The estimated probability of an existential catastrophe caused by AI.
   context_de: Debatte ueber KI-Risiken.
-  context_en: Debatte ueber KI-Risiken.
+  context_en: A subject of debate over AI risk.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -1124,12 +1040,10 @@ terms:
   status: active
   term_de: Constitutional AI
   term_en: Constitutional AI
-  explanation_de: KI trainiert sich selbst anhand einer „Verfassung“ (Regeln) auf
-    Sicherheit.
-  explanation_en: KI trainiert sich selbst anhand einer „Verfassung“ (Regeln) auf
-    Sicherheit.
+  explanation_de: KI trainiert sich selbst anhand einer „Verfassung“ (Regeln) auf Sicherheit.
+  explanation_en: AI trains itself for safety against a "constitution" (a set of rules).
   context_de: Ansatz von Anthropic (Claude).
-  context_en: Ansatz von Anthropic (Claude).
+  context_en: Anthropic's (Claude's) approach.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -1139,9 +1053,9 @@ terms:
   term_de: Red Teaming
   term_en: Red Teaming
   explanation_de: Gezielte Experten-Angriffe, um Sicherheitsluecken in KIs zu finden.
-  explanation_en: Gezielte Experten-Angriffe, um Sicherheitsluecken in KIs zu finden.
+  explanation_en: Targeted expert attacks aimed at finding security flaws in AI systems.
   context_de: Teil der Qualitaetssicherung.
-  context_en: Teil der Qualitaetssicherung.
+  context_en: Part of quality assurance.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -1151,9 +1065,9 @@ terms:
   term_de: Guardrails
   term_en: Guardrails
   explanation_de: Sicherheitsfilter, die verhindern, dass KI gefährliche Dinge ausgibt.
-  explanation_en: Sicherheitsfilter, die verhindern, dass KI gefährliche Dinge ausgibt.
+  explanation_en: Safety filters that prevent an AI from producing dangerous output.
   context_de: Schutzschicht fuer KI-Apps.
-  context_en: Schutzschicht fuer KI-Apps.
+  context_en: A protective layer for AI apps.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -1163,9 +1077,9 @@ terms:
   term_de: Human-in-the-Loop
   term_en: Human-in-the-Loop
   explanation_de: Ein Mensch muss KI-Ergebnisse pruefen, bevor sie genutzt werden.
-  explanation_en: Ein Mensch muss KI-Ergebnisse pruefen, bevor sie genutzt werden.
+  explanation_en: A human must review AI results before they are used.
   context_de: Sicherheitskonzept; Mensch bleibt im Loop.
-  context_en: Sicherheitskonzept; Mensch bleibt im Loop.
+  context_en: A safety concept; a human stays in the loop.
   sources:
   - https://mdai.ch/blog/von-llm-bis-halluzination/
   - https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf
@@ -1176,9 +1090,9 @@ terms:
   term_de: Bias
   term_en: Bias
   explanation_de: Systematische Fehler oder Diskriminierung durch einseitige Daten.
-  explanation_en: Systematische Fehler oder Diskriminierung durch einseitige Daten.
+  explanation_en: Systematic errors or discrimination caused by one-sided data.
   context_de: Problem der Fairness.
-  context_en: Problem der Fairness.
+  context_en: A fairness problem.
   sources:
   - https://mdai.ch/blog/von-llm-bis-halluzination/
   - https://joerg-loehr.com/ki-glossar
@@ -1189,12 +1103,10 @@ terms:
   status: active
   term_de: Erklaerbare KI
   term_en: Explainable AI (XAI)
-  explanation_de: Methoden, um die Entscheidungen „schwarzer Boxen“ verstehbar zu
-    machen.
-  explanation_en: Methoden, um die Entscheidungen „schwarzer Boxen“ verstehbar zu
-    machen.
+  explanation_de: Methoden, um die Entscheidungen „schwarzer Boxen“ verstehbar zu machen.
+  explanation_en: Methods that make the decisions of "black box" models understandable.
   context_de: Fuer Vertrauen und Nachvollziehbarkeit.
-  context_en: Fuer Vertrauen und Nachvollziehbarkeit.
+  context_en: Needed for trust and traceability.
   sources:
   - https://www.ki.nrw/ki-schluesselbegriffe/
   updated: '2026-09-03'
@@ -1204,9 +1116,9 @@ terms:
   term_de: Deepfakes
   term_en: Deepfake
   explanation_de: KI-generierte Medien, die Personen taeuschend echt imitieren.
-  explanation_en: KI-generierte Medien, die Personen taeuschend echt imitieren.
+  explanation_en: AI-generated media that convincingly imitates real people.
   context_de: Risiko fuer Desinformation.
-  context_en: Risiko fuer Desinformation.
+  context_en: A risk for disinformation.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -1216,9 +1128,9 @@ terms:
   term_de: C2PA
   term_en: C2PA
   explanation_de: Technischer Standard fuer digitale Herkunftsnachweise in Bildern.
-  explanation_en: Technischer Standard fuer digitale Herkunftsnachweise in Bildern.
+  explanation_en: A technical standard for digital provenance proof in images.
   context_de: Kampf gegen Deepfakes.
-  context_en: Kampf gegen Deepfakes.
+  context_en: A tool in the fight against deepfakes.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -1227,12 +1139,10 @@ terms:
   status: active
   term_de: Model Drift
   term_en: Model Drift
-  explanation_de: Leistungsabfall einer KI, wenn sich die Aussenwelt nach dem Training
-    aendert.
-  explanation_en: Leistungsabfall einer KI, wenn sich die Aussenwelt nach dem Training
-    aendert.
+  explanation_de: Leistungsabfall einer KI, wenn sich die Aussenwelt nach dem Training aendert.
+  explanation_en: The decline in an AI's performance as the real world changes after training.
   context_de: Problem im laufenden Betrieb.
-  context_en: Problem im laufenden Betrieb.
+  context_en: A problem during ongoing operation.
   sources:
   - https://mdai.ch/blog/von-llm-bis-halluzination/
   updated: '2026-09-03'
@@ -1241,12 +1151,11 @@ terms:
   status: active
   term_de: KI-Governance
   term_en: AI Governance
-  explanation_de: Ein verbindliches Regelwerk (Vorgaben, Freigaben, Kontrollen) für
-    den KI-Einsatz im Unternehmen.
-  explanation_en: Ein verbindliches Regelwerk (Vorgaben, Freigaben, Kontrollen) für
-    den KI-Einsatz im Unternehmen.
+  explanation_de: Ein verbindliches Regelwerk (Vorgaben, Freigaben, Kontrollen) für den KI-Einsatz im
+    Unternehmen.
+  explanation_en: A binding set of rules (mandates, approvals, controls) for AI use within a company.
   context_de: Garantiert eine rechtssichere und ethische Nutzung von KI-Modellen.
-  context_en: Garantiert eine rechtssichere und ethische Nutzung von KI-Modellen.
+  context_en: Guarantees legally sound and ethical use of AI models.
   sources: []
   updated: '2026-09-03'
 - id: ki-kompetenz
@@ -1254,12 +1163,11 @@ terms:
   status: active
   term_de: KI-Kompetenz
   term_en: AI Literacy
-  explanation_de: Die Fähigkeit von Personen, KI-Systeme, deren Risiken und Grenzen
-    zu verstehen und verantwortungsvol
-  explanation_en: Die Fähigkeit von Personen, KI-Systeme, deren Risiken und Grenzen
-    zu verstehen und verantwortungsvol
+  explanation_de: Die Fähigkeit von Personen, KI-Systeme, deren Risiken und Grenzen zu verstehen und verantwortungsvoll
+    zu nutzen.
+  explanation_en: A person's ability to understand AI systems, their risks and limits, and use them responsibly.
   context_de: Wird im EU AI Act explizit als Schulungspflicht für Organisationen gefordert.
-  context_en: Wird im EU AI Act explizit als Schulungspflicht für Organisationen gefordert.
+  context_en: Explicitly required as a training obligation for organizations under the EU AI Act.
   sources:
   - https://joerg-loehr.com/ki-glossar
   updated: '2026-09-03'
@@ -1269,9 +1177,9 @@ terms:
   term_de: Industrie 4.0
   term_en: Industry 4.0
   explanation_de: Vernetzung der Produktion durch KI und Internet der Dinge (IoT).
-  explanation_en: Vernetzung der Produktion durch KI und Internet der Dinge (IoT).
+  explanation_en: The networking of production through AI and the Internet of Things (IoT).
   context_de: Rahmen fuer industrielle KI.
-  context_en: Rahmen fuer industrielle KI.
+  context_en: The framework for industrial AI.
   sources:
   - https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf
   updated: '2026-09-03'
@@ -1281,9 +1189,9 @@ terms:
   term_de: Digitaler Zwilling
   term_en: Digital Twin
   explanation_de: Virtuelles Abbild eines Objekts fuer Echtzeit-Simulationen.
-  explanation_en: Virtuelles Abbild eines Objekts fuer Echtzeit-Simulationen.
+  explanation_en: A virtual copy of an object used for real-time simulations.
   context_de: Optimierung in der Produktion.
-  context_en: Optimierung in der Produktion.
+  context_en: Used to optimize production.
   sources:
   - https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf
   updated: '2026-09-03'
@@ -1293,9 +1201,9 @@ terms:
   term_de: SMART Standards
   term_en: SMART Standards
   explanation_de: Normen, die direkt maschinenlesbar und fuer KIs ausfuehrbar sind.
-  explanation_en: Normen, die direkt maschinenlesbar und fuer KIs ausfuehrbar sind.
+  explanation_en: Standards that are directly machine-readable and executable by AI systems.
   context_de: Zukunft der Standardisierung.
-  context_en: Zukunft der Standardisierung.
+  context_en: The future of standardization.
   sources:
   - https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf
   updated: '2026-09-03'
@@ -1305,9 +1213,9 @@ terms:
   term_de: Ontologie
   term_en: Ontology
   explanation_de: Formale Beschreibung von Begriffen und Logik eines Fachgebiets.
-  explanation_en: Formale Beschreibung von Begriffen und Logik eines Fachgebiets.
+  explanation_en: A formal description of the terms and logic of a subject area.
   context_de: Ermoeglicht Maschinensprache.
-  context_en: Ermoeglicht Maschinensprache.
+  context_en: Enables machine-readable language.
   sources:
   - https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf
   updated: '2026-09-03'
@@ -1316,12 +1224,10 @@ terms:
   status: active
   term_de: Semantisches Tripel
   term_en: Semantic Triple
-  explanation_de: Fakten in der Form Subjekt-Praedikat-Objekt (z.B. „A arbeitet bei
-    B“).
-  explanation_en: Fakten in der Form Subjekt-Praedikat-Objekt (z.B. „A arbeitet bei
-    B“).
+  explanation_de: Fakten in der Form Subjekt-Praedikat-Objekt (z.B. „A arbeitet bei B“).
+  explanation_en: A fact in the form subject-predicate-object (e.g. "A works at B").
   context_de: Basis fuer Wissensgraphen.
-  context_en: Basis fuer Wissensgraphen.
+  context_en: The basis for knowledge graphs.
   sources:
   - https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf
   updated: '2026-09-03'
@@ -1331,9 +1237,9 @@ terms:
   term_de: ACI
   term_en: Ambient Clinical Intelligence
   explanation_de: KI, die Arzt-Patient-Gespraeche automatisch dokumentiert.
-  explanation_en: KI, die Arzt-Patient-Gespraeche automatisch dokumentiert.
+  explanation_en: AI that automatically documents doctor-patient conversations.
   context_de: Anwendung in der Medizin.
-  context_en: Anwendung in der Medizin.
+  context_en: An application in medicine.
   sources:
   - https://mdai.ch/blog/von-llm-bis-halluzination/
   updated: '2026-09-03'
@@ -1343,9 +1249,9 @@ terms:
   term_de: CDSS
   term_en: Clinical Decision Support Systems
   explanation_de: Systeme, die Aerzten medizinische Empfehlungen geben.
-  explanation_en: Systeme, die Aerzten medizinische Empfehlungen geben.
+  explanation_en: Systems that give doctors medical recommendations.
   context_de: Unterstuetzungssysteme.
-  context_en: Unterstuetzungssysteme.
+  context_en: Clinical support systems.
   sources:
   - https://mdai.ch/blog/von-llm-bis-halluzination/
   updated: '2026-09-03'
@@ -1354,14 +1260,11 @@ terms:
   status: active
   term_de: Vorausschauende Wartung
   term_en: Predictive Maintenance
-  explanation_de: Einsatz von KI zur Überwachung von Anlagenzuständen, um Wartungsbedarf
-    vorherzusagen.
-  explanation_en: Einsatz von KI zur Überwachung von Anlagenzuständen, um Wartungsbedarf
-    vorherzusagen.
-  context_de: Hilft in der Industrie, Ausfallzeiten zu minimieren und die Lebensdauer
-    von Masc
-  context_en: Hilft in der Industrie, Ausfallzeiten zu minimieren und die Lebensdauer
-    von Masc
+  explanation_de: Einsatz von KI zur Überwachung von Anlagenzuständen, um Wartungsbedarf vorherzusagen.
+  explanation_en: The use of AI to monitor equipment condition and predict maintenance needs.
+  context_de: Hilft in der Industrie, Ausfallzeiten zu minimieren und die Lebensdauer von Maschinen zu
+    erhöhen.
+  context_en: Helps industry minimize downtime and extend the life of machines.
   sources: []
   updated: '2026-09-03'
 - id: robotische-prozessautomatisierung
@@ -1369,14 +1272,10 @@ terms:
   status: active
   term_de: Robotische Prozessautomatisierung
   term_en: Robotic Process Automation (RPA)
-  explanation_de: Software-Roboter, die strukturierte und sich wiederholende digitale
-    Aufgaben am PC automatisieren.
-  explanation_en: Software-Roboter, die strukturierte und sich wiederholende digitale
-    Aufgaben am PC automatisieren.
-  context_de: Entlastet Mitarbeiter von monotonen Klick-Aufgaben in der Verwaltung
-    oder im Kun
-  context_en: Entlastet Mitarbeiter von monotonen Klick-Aufgaben in der Verwaltung
-    oder im Kun
+  explanation_de: Software-Roboter, die strukturierte und sich wiederholende digitale Aufgaben am PC automatisieren.
+  explanation_en: Software robots that automate structured, repetitive digital tasks on a PC.
+  context_de: Entlastet Mitarbeiter von monotonen Klick-Aufgaben in der Verwaltung oder im Kundensupport.
+  context_en: Frees staff from monotonous clicking tasks in admin or customer support.
   sources: []
   updated: '2026-09-03'
 - id: kognitives-computing
@@ -1384,14 +1283,12 @@ terms:
   status: active
   term_de: Kognitives Computing
   term_en: Cognitive Computing
-  explanation_de: Eine Technologie, die menschliches Denken simuliert, um personalisierte
-    Empfehlungen zu geben.
-  explanation_en: Eine Technologie, die menschliches Denken simuliert, um personalisierte
-    Empfehlungen zu geben.
-  context_de: Bietet verbesserte Funktionalität und Anpassungsfähigkeit in Bereichen
-    wie dem F
-  context_en: Bietet verbesserte Funktionalität und Anpassungsfähigkeit in Bereichen
-    wie dem F
+  explanation_de: Eine Technologie, die menschliches Denken simuliert, um personalisierte Empfehlungen
+    zu geben.
+  explanation_en: A technology that simulates human thinking to deliver personalized recommendations.
+  context_de: Bietet verbesserte Funktionalität und Anpassungsfähigkeit in Bereichen wie dem Finanzwesen
+    oder HR.
+  context_en: Offers improved functionality and adaptability in areas like finance or HR.
   sources: []
   updated: '2026-09-03'
 - id: ki-stueckliste
@@ -1399,14 +1296,12 @@ terms:
   status: active
   term_de: KI-Stückliste
   term_en: AI Bill of Materials (AI BoM)
-  explanation_de: Eine strukturierte Liste, die alle KI-bezogenen Komponenten und
-    Abhängigkeiten einer Pipeline identi
-  explanation_en: Eine strukturierte Liste, die alle KI-bezogenen Komponenten und
-    Abhängigkeiten einer Pipeline identi
-  context_de: Dient der Transparenz und Sicherheit, um genau zu wissen, welche Modelle
-    und Dat
-  context_en: Dient der Transparenz und Sicherheit, um genau zu wissen, welche Modelle
-    und Dat
+  explanation_de: Eine strukturierte Liste, die alle KI-bezogenen Komponenten und Abhängigkeiten einer
+    Pipeline identifiziert.
+  explanation_en: A structured list that identifies all AI-related components and dependencies in a pipeline.
+  context_de: Dient der Transparenz und Sicherheit, um genau zu wissen, welche Modelle und Daten verwendet
+    wurden.
+  context_en: Provides transparency and security about exactly which models and data were used.
   sources: []
   updated: '2026-09-03'
 - id: parameter
@@ -1415,9 +1310,9 @@ terms:
   term_de: Parameter
   term_en: Parameter
   explanation_de: Die „Stellschrauben“ im Modell, die gelerntes Wissen speichern.
-  explanation_en: Die „Stellschrauben“ im Modell, die gelerntes Wissen speichern.
+  explanation_en: The "dials" inside a model that store what it has learned.
   context_de: Bestimmen Modellgroesse/-kraft.
-  context_en: Bestimmen Modellgroesse/-kraft.
+  context_en: Determine model size and capability.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   - https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf
@@ -1428,9 +1323,9 @@ terms:
   term_de: GPU / Grafikkarte
   term_en: Graphics Processing Unit
   explanation_de: Spezialchips, ideal fuer parallele KI-Berechnungen.
-  explanation_en: Spezialchips, ideal fuer parallele KI-Berechnungen.
+  explanation_en: Specialized chips ideal for parallel AI computation.
   context_de: Hardware-Basis des KI-Booms.
-  context_en: Hardware-Basis des KI-Booms.
+  context_en: The hardware basis of the AI boom.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -1440,9 +1335,9 @@ terms:
   term_de: Perplexity
   term_en: Perplexity
   explanation_de: Mass fuer die Vorhersageguete eines Modells (niedrig = besser).
-  explanation_en: Mass fuer die Vorhersageguete eines Modells (niedrig = besser).
+  explanation_en: A measure of how good a model's predictions are (lower is better).
   context_de: Metrik zur Modellbewertung.
-  context_en: Metrik zur Modellbewertung.
+  context_en: A metric for model evaluation.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
@@ -1452,9 +1347,9 @@ terms:
   term_de: Big Data
   term_en: Big Data
   explanation_de: Riesige Datenmengen, zu komplex fuer normale Programme.
-  explanation_en: Riesige Datenmengen, zu komplex fuer normale Programme.
+  explanation_en: Enormous volumes of data, too complex for normal programs.
   context_de: Treibstoff fuer KI-Training.
-  context_en: Treibstoff fuer KI-Training.
+  context_en: The fuel for AI training.
   sources:
   - https://www.ki.nrw/ki-schluesselbegriffe/
   - https://www.coursera.org/de-DE/articles/ai-vs-deep-learning-vs-machine-learning-beginners-guide
@@ -1464,14 +1359,12 @@ terms:
   status: active
   term_de: Kontextfenster
   term_en: Context Window
-  explanation_de: Die Menge an Informationen, die eine KI während einer Interaktion
-    gleichzeitig verarbeiten kann.
-  explanation_en: Die Menge an Informationen, die eine KI während einer Interaktion
-    gleichzeitig verarbeiten kann.
-  context_de: Bestimmt, wie lange ein Dokument sein darf, damit die KI alle Details
-    noch im "G
-  context_en: Bestimmt, wie lange ein Dokument sein darf, damit die KI alle Details
-    noch im "G
+  explanation_de: Die Menge an Informationen, die eine KI während einer Interaktion gleichzeitig verarbeiten
+    kann.
+  explanation_en: The amount of information an AI can process at once during an interaction.
+  context_de: Bestimmt, wie lange ein Dokument sein darf, damit die KI alle Details noch im "Gedächtnis"
+    behält.
+  context_en: Determines how long a document can be while the AI still keeps all details in "memory".
   sources:
   - https://www.zendesk.de/blog/ai/generative-ai-glossary/
   updated: '2026-09-03'
@@ -1480,14 +1373,11 @@ terms:
   status: active
   term_de: Skalierbarkeit
   term_en: Scalability
-  explanation_de: Die Fähigkeit eines KI-Systems, bei massiv steigenden Nutzerzahlen
-    stabil und effizient zu bleiben.
-  explanation_en: Die Fähigkeit eines KI-Systems, bei massiv steigenden Nutzerzahlen
-    stabil und effizient zu bleiben.
-  context_de: Ist entscheidend für den unternehmensweiten Rollout von KI-Lösungen
-    ohne Leistun
-  context_en: Ist entscheidend für den unternehmensweiten Rollout von KI-Lösungen
-    ohne Leistun
+  explanation_de: Die Fähigkeit eines KI-Systems, bei massiv steigenden Nutzerzahlen stabil und effizient
+    zu bleiben.
+  explanation_en: An AI system's ability to stay stable and efficient as user numbers grow massively.
+  context_de: Ist entscheidend für den unternehmensweiten Rollout von KI-Lösungen ohne Leistungsverlust.
+  context_en: Critical for a company-wide rollout of AI solutions without loss of performance.
   sources:
   - https://joerg-loehr.com/ki-glossar
   updated: '2026-09-03'
@@ -1496,13 +1386,10 @@ terms:
   status: active
   term_de: Edge-KI
   term_en: Edge AI
-  explanation_de: Eine Form der KI-Verarbeitung, die direkt auf dem lokalen Endgerät
-    (z. B. Handy) stattfindet.
-  explanation_en: Eine Form der KI-Verarbeitung, die direkt auf dem lokalen Endgerät
-    (z. B. Handy) stattfindet.
-  context_de: Reduziert Latenzzeiten und erhöht den Datenschutz, da keine Daten in
-    die Cloud g
-  context_en: Reduziert Latenzzeiten und erhöht den Datenschutz, da keine Daten in
-    die Cloud g
+  explanation_de: Eine Form der KI-Verarbeitung, die direkt auf dem lokalen Endgerät (z. B. Handy) stattfindet.
+  explanation_en: A form of AI processing that runs directly on the local device (e.g. a phone).
+  context_de: Reduziert Latenzzeiten und erhöht den Datenschutz, da keine Daten in die Cloud gesendet
+    werden müssen.
+  context_en: Reduces latency and improves privacy, since no data has to be sent to the cloud.
   sources: []
   updated: '2026-09-03'

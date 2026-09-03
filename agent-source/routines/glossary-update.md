@@ -32,6 +32,9 @@ update `glossary/terms.yaml`, und rendere die Wiki-Seiten neu.
 5. **Max. 15 Änderungen pro Lauf.** Grössere Umbauten im PR vorschlagen.
 
 6. Update `glossary/terms.yaml` mit allen Änderungen. Setze `last_rendered` auf heute.
+   **Kritisch:** `explanation_en`/`context_en` sind eigenständige Übersetzungen, niemals eine
+   Kopie von `explanation_de`/`context_de` – bei jedem neuen oder aktualisierten Eintrag beide
+   Sprachen schreiben, nicht nur Deutsch mit `_en` = `_de` als Platzhalter.
 
 7. Rendere zwei Markdown-Dateien neu (komplette Tabellen, alle 8 Kategorien):
    - `glossary/rendered/KI-Glossar.md` (Deutsch)

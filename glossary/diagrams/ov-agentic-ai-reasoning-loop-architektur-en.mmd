@@ -1,0 +1,31 @@
+graph TD
+    Goal[Goal / User Prompt] --> SP[System Prompt / Persona]
+    SP --> Loop{Reasoning Loop}
+
+    subgraph "Internal Processing"
+        CoT[Chain-of-Thought]
+        ToT[Tree of Thoughts]
+        SelfCorr[Self-Correction]
+    end
+
+    Loop --> CoT
+    CoT --> ToT
+    ToT --> SelfCorr
+    SelfCorr --> Loop
+
+    Loop -- "Action Required" --> Tools[Function Calling / JSON]
+
+    subgraph "External Ecosystem"
+        MCP[Model Context Protocol]
+        Web[Web Search / APIs]
+        RAG[RAG / Vector DB]
+    end
+
+    Tools --> MCP
+    MCP --> Web
+    MCP --> RAG
+
+    Web & RAG --> Obs[Observation / Feedback]
+    Obs --> Loop
+
+    Loop -- "Task Complete" --> Final[Final Answer / Agentic Action]

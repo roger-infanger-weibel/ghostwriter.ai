@@ -1,0 +1,11 @@
+graph TD
+    User[User] --> Prompt[Prompt]
+    Prompt --> PE[Prompt Engineering]
+
+    PE --> Tech[Techniques: Zero-Shot / Few-Shot / CoT]
+
+    Agent[AI Agent] --> Task[Task Completion]
+    Agent --> Tools[Tool Use / Function Calling]
+    Agent --> MCP[Model Context Protocol]
+
+    Reason[Reasoning Models] --> Think[Step-by-Step Thinking]

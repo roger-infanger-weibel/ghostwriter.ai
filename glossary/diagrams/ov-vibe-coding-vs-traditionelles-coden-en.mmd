@@ -1,0 +1,16 @@
+graph LR
+    subgraph "Traditional"
+    A[Planning] --> B[Design]
+    B --> C[Manual Coding]
+    C --> D[Testing]
+    end
+
+    subgraph "Vibe Coding (AI Flow)"
+    E[Describe Intent] --> F[AI Generates Code]
+    F --> G[Prompt Tuning]
+    G --> E
+    G --> H[Deployment]
+    end
+
+    style F fill:#e1f5fe,stroke:#01579b
+    style G fill:#e1f5fe,stroke:#01579b

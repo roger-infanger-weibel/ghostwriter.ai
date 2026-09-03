@@ -14,6 +14,19 @@
   passende `.mmd`-Datei in `glossary/diagrams/` (oder per `image_url` auf ein Bild, falls kein
   Mermaid-Code vorliegt).
 
+## Zweisprachigkeit (kritisch)
+
+- `explanation_en` und `context_en` müssen **eigenständige, korrekte englische Übersetzungen**
+  sein – niemals eine Kopie von `explanation_de`/`context_de`. Ein Eintrag, bei dem `_en` und
+  `_de` identisch sind, gilt als unvollständig und darf nicht als fertig gemeldet werden.
+- Gleiches gilt für Diagramme: Ein Mermaid-Diagramm mit deutschen Knoten-Labels braucht für
+  `AI-Glossary.md` eine eigene `_en`-Fassung mit übersetzten Labels (siehe "Diagramme" unten).
+  Node-IDs (die kurzen Bezeichner vor der eckigen Klammer) bleiben unverändert – nur der
+  Anzeigetext in `[...]`/`{...}`/`(...)` sowie Kanten- und Subgraph-Beschriftungen werden
+  übersetzt.
+- Label "Quellen:" (DE) wird beim Rendern zu "Sources:" (EN) – nicht Teil der YAML-Daten,
+  sondern eine Rendering-Konvention (siehe "Rendering" unten).
+
 ## Eintrag (YAML)
 
 ```yaml
@@ -76,6 +89,10 @@ Neue Kategorien nur nach Rücksprache (im PR vorschlagen, nicht anlegen).
   dem reinen Mermaid-Code (ohne ```` ```mermaid ````-Fences). Einträge mit `type: image` verweisen
   stattdessen auf `image_url` (z. B. Screenshots, die nicht als Mermaid nachgebaut werden können)
   und werden als `<img>` eingebunden.
+- Zusätzlich hat jeder `type: mermaid`-Eintrag ein `file_en`-Feld (`glossary/diagrams/<id>-en.mmd`)
+  mit derselben Grafik, aber übersetzten Labels – wird in `AI-Glossary.md` verwendet,
+  `glossary/rendered/KI-Glossar.md` nutzt weiterhin `file`. `title_en` und (bei `scope: overview`)
+  `description_en` liefern die englischen Texte für Überschrift und Beschreibung.
 - **Ergänzen:** Neue Übersichtsdiagramme dürfen hinzugefügt werden, wenn ein neuer Begriff/
   Themencluster das rechtfertigt (z. B. ein neues Protokoll wie MCP). Neue `.mmd`-Datei +
   Eintrag in `diagrams.yaml` + Einbindung in beiden gerenderten Seiten.
@@ -88,8 +105,14 @@ Neue Kategorien nur nach Rücksprache (im PR vorschlagen, nicht anlegen).
   Tabelle.
 - Tabelle KI-Glossar: Begriff (DE) | Term (EN) | Erklärung | Zusammenhang | Quelle
 - Tabelle AI-Glossary: Term (EN) | Begriff (DE) | Explanation | Context | Source
+- Quelle-Spalte: alle URLs aus `sources` als eine Zelle, nummeriert verlinkt
+  (`[1](url1), [2](url2)`) – niemals mehrere Spalten für mehrere Quellen (bricht die Tabelle).
+- Kein künstliches Kürzen von `explanation_de/en` oder `context_de/en` in der Tabelle (kein
+  angehängtes "..."); die Felder sind laut Regel oben ohnehin auf einen Satz begrenzt.
 - Kopfzeile jeder Seite: "Generiert aus glossary/terms.yaml – Stand YYYY-MM-DD. Änderungen
-  bitte per PR im Repo, nicht direkt im Wiki."
+  bitte per PR im Repo, nicht direkt im Wiki." (EN entsprechend übersetzt).
 - Am Ende jeder Seite: Abschnitt mit allen `scope: overview`-Diagrammen aus
   `glossary/diagrams.yaml`, je mit Überschrift, kurzer Beschreibung, Diagramm/Bild und
-  optionaler Quellenzeile.
+  Quellenzeile ("**Quellen:**" auf `KI-Glossar.md`, "**Sources:**" auf `AI-Glossary.md`) –
+  Titel, Beschreibung und Mermaid-Datei jeweils sprachspezifisch (`title_de`/`title_en`,
+  `description_de`/`description_en`, `file`/`file_en`).
