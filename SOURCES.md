@@ -1,9 +1,11 @@
-# Sources
+# SOURCES
 
-Kuratierte Quellenliste für den Wochenpost. Wird von Hand gepflegt.
-Der Agent liest diese Seite, ändert sie aber nicht.
+Kuratierte Quellenliste für den wöchentlichen KI-Rückblick.
+Wird von Hand gepflegt. Der Agent liest diese Seite, ändert sie nicht.
 
-Reihenfolge = Priorität. Primärquellen zuerst, Medien nur zur Einordnung.
+**Reihenfolge = Priorität.** Primärquellen zuerst.
+
+---
 
 ## Global – Anbieter (Primärquellen)
 
@@ -19,12 +21,16 @@ Reihenfolge = Priorität. Primärquellen zuerst, Medien nur zur Einordnung.
 | Google | NotebookLM Updates | https://support.google.com/notebooklm/ |
 | Google | Google AI Blog | https://blog.google/technology/ai/ |
 
-## Global – Einordnung
+---
+
+## Global – Markt & Einordnung
 
 | Quelle | URL |
 |---|---|
 | The Decoder (DE) | https://the-decoder.de |
 | Simon Willison Weblog | https://simonwillison.net |
+
+---
 
 ## Europa
 
@@ -34,20 +40,25 @@ Reihenfolge = Priorität. Primärquellen zuerst, Medien nur zur Einordnung.
 | Euractiv Tech | https://www.euractiv.com/section/tech/ |
 | Mistral AI News | https://mistral.ai/news |
 
+---
+
 ## Schweiz
 
 | Quelle | URL |
 |---|---|
-| Bund – Digitale Schweiz / KI | https://www.bakom.admin.ch |
+| Bund – Digitale Schweiz | https://www.bakom.admin.ch |
 | EDÖB (Datenschutz) | https://www.edoeb.admin.ch |
 | Swiss AI Initiative (ETH/EPFL) | https://www.swiss-ai.org |
 | inside-it.ch | https://www.inside-it.ch |
 | Netzwoche | https://www.netzwoche.ch |
 | swissinfo.ch | https://www.swissinfo.ch |
 
+---
+
 ## Pflege
 
-- Neue Quelle nur aufnehmen, wenn sie in den letzten 4 Wochen mindestens einmal einen
-  Eintrag geliefert hätte.
-- Quellen, die 8 Wochen lang nichts liefern, prüfen und ggf. streichen.
-- Vorschläge des Agenten (im PR-Text) hier manuell einpflegen.
+- Neue Quelle nur aufnehmen, wenn sie in den letzten 4 Wochen **mindestens einmal** einen Eintrag geliefert hätte.
+- Quellen, die 8 Wochen lang nichts liefern → prüfen und ggf. streichen.
+- Vorschläge des Agenten (im PR-Text) → manuell hier einpflegen.
+
+**Letzte Aktualisierung:** 2026-09-03
