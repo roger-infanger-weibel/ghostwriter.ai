@@ -1,0 +1,19 @@
+graph LR
+    subgraph "Unstructured Data"
+        Docs[Dokumente / PDFs] --> Chunk[Chunking / Overlap]
+        Chunk --> Emb[Embedding Model]
+        Emb --> VDB[Vektor-Datenbank]
+    end
+    
+    subgraph "Structured Knowledge"
+        Norms[Normen / Prosa] --> Triple[Semantische Tripel / RDF]
+        Triple --> KG[Knowledge Graphs]
+        KG --> Ont[Ontologien / OWL]
+    end
+    
+    VDB --> Retrieval[Retrieval Engine]
+    Ont --> Retrieval
+    
+    Retrieval -- "Augmentation" --> Prompt[Enhanced Prompt]
+    Prompt --> LLM[LLM / Generator]
+    LLM --> Fact[Faktentreue Antwort / Grounding]

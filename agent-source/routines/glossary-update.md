@@ -36,6 +36,12 @@ update `glossary/terms.yaml`, und rendere die Wiki-Seiten neu.
 7. Rendere zwei Markdown-Dateien neu (komplette Tabellen, alle 8 Kategorien):
    - `glossary/rendered/KI-Glossar.md` (Deutsch)
    - `glossary/rendered/AI-Glossary.md` (English)
+   - Übernimm dabei unverändert die Diagramme aus `glossary/diagrams.yaml`: das
+     `scope: category`-Diagramm direkt unter der jeweiligen Kategorie-Überschrift (vor der
+     Tabelle), alle `scope: overview`-Diagramme gesammelt im Abschnitt "Visuelle
+     Übersichtsbilder" / "Visual Overview Diagrams" am Ende der Seite. Diagramme nur anfassen,
+     wenn ein neuer Begriff ein neues Übersichtsdiagramm rechtfertigt (siehe
+     `GLOSSARY-CRITERIA.md` → Diagramme); bestehende `.mmd`-Dateien nicht umschreiben.
 
 8. Erstelle Branch `glossary/update-YYYY-MM` und öffne PR mit Titel:
    ```
