@@ -1,51 +1,48 @@
 # ghostwriter.ai
 
-Ein Claude-Agent (Cloud Routine) schreibt einmal pro Woche einen kurzen Blog-Post mit den
-wichtigsten KI-News – fokussiert auf **Claude, ChatGPT/OpenAI, Gemini, Google AI Studio und NotebookLM**.
+Automatisierte KI-News-Aggregation + Glossar-Verwaltung mit Claude Cloud Routines.
 
-Gegliedert nach **Global / Europa / Schweiz**.
-
-Zusätzlich: Eine zweite Routine aktualisiert monatlich dein zweisprachiges KI-Glossar (Deutsch + English)
-mit ~200 Begriffen aus 8 Kategorien.
+**Fokus:** Claude, ChatGPT, Gemini, Google AI Studio, NotebookLM  
+**Sprachen:** Deutsch + English  
+**Gegliedert:** Global / Europa / Schweiz  
 
 ---
 
-## Für Roger: Deine Tools & Projekte
+## Cloud Routines (2 aktive)
 
-Diese Routine beobachtet **deine vier Haupttools**:
-- **Claude** (Anthropic) – Code, Prompting, Claude Code
-- **ChatGPT / OpenAI** (GPT-4, GPT-o1, API)
-- **Gemini** (Google) – API, Studio, NotebookLM
-- **Google AI Studio** & **NotebookLM**
+| Routine | Schedule | Status | Prompt |
+|---|---|---|---|
+| **#1 KI-Wochenrückblick** | Mo 06:00 Zürich | ✅ LIVE | `agent-source/routines/weekly-post.md` |
+| **#3 Glossary-Update** | 1. d. Monats 06:00 | ✅ LIVE | `agent-source/routines/glossary-update.md` |
 
-Plus: EU AI Act, Schweizer Datenschutz, Regulierung soweit relevant.
-
-**Kontext in den Posts:** Parking-Garage-Forecasting (PLS/Parkleitsystem), dein CAS-Programm
-an der HWZ, deine Claude-Konfiguration, "vibe coding" Patterns.
+**Note:** Routine #2 (Migration) war einmalig, bereits completed → gelöscht.
 
 ---
 
 ## Ablauf
 
-### Wöchentlich (Montag 06:00 Zürich)
-1. Agent liest `SOURCES.md` (kuratierte Quellenliste)
-2. Prüft alle Quellen der letzten 7 Tage
-3. Erstellt `posts/YYYY-Www.md` + PR auf Branch `weekly/YYYY-Www`
-4. Du reviewst, feedbackst, mergst
+### 📰 Wöchentlich (Montag 06:00 Zürich)
+- Agent liest `SOURCES.md` und `CRITERIA.md`
+- Prüft Quellen der letzten 7 Tage
+- Erstellt `posts/YYYY-Www.md` (Global / Europa / Schweiz)
+- PR-Review → du mergst
 
-### Monatlich (1. des Monats 06:00 Zürich)
-1. Agent liest `glossary/terms.yaml`
-2. Sammelt neue Begriffe aus Wochenposts
-3. Updated und rendert: `KI-Glossar.md` + `AI-Glossary.md`
-4. PR → Review → Merge
+### 📚 Monatlich (1. des Monats 06:00 Zürich)
+- Agent liest `glossary/terms.yaml`
+- Sammelt neue Begriffe aus Posts
+- Updated & rendert Wiki-Seiten
+- PR-Review → du mergst
 
-### Einmalig (diese Woche)
-1. Agent migriert dein bestehendes Wiki-Glossary
-2. Parst ~200 Begriffe aus 8 Kategorien
-3. Bereinigt Duplikate, vereinheitlicht Umlaute
-4. Übersetzt alles ins Englische (Claude)
-5. Schreibt `glossary/terms.yaml` mit allen Einträgen
-6. Rendert beide Wiki-Seiten
+---
+
+## Glossary (✅ LIVE)
+
+**Status:** 110 Begriffe (8 Kategorien)  
+**Sprachen:** Deutsch + English (Single YAML source)  
+**Struktur:**
+- `glossary/terms.yaml` – Single Source of Truth
+- `glossary/rendered/KI-Glossar.md` – Deutsch
+- `glossary/rendered/AI-Glossary.md` – English
 
 ---
 

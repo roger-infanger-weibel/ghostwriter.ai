@@ -28,27 +28,17 @@ Also read SOURCES.md and agent-source/CRITERIA.md from the same repo for context
 
 ---
 
-### Cloud Routine #2: Glossary-Migration (Einmalig)
-```
-Schedule: Manual "Run Now"
-Repository: roger-infanger-weibel/ghostwriter.ai
+### Cloud Routine #2: Glossary-Migration (❌ GELÖSCHT)
+**Status:** ✅ COMPLETED – Nicht mehr nötig
 
-Instructions:
----
-Fetch your task instructions from:
-https://raw.githubusercontent.com/roger-infanger-weibel/ghostwriter.ai/main/agent-source/routines/glossary-migration.md
+This was a one-time migration task:
+- ✅ Parsed Wiki-Glossary (120 terms parsed, 110 after dedup)
+- ✅ Deduplicated (10 duplicates merged)
+- ✅ Translated to English
+- ✅ Generated terms.yaml + KI-Glossar.md + AI-Glossary.md
+- ✅ Merged to main on 2026-09-03
 
-Read and execute that content completely.
-This is a one-time migration task:
-1. Parse Wiki-Glossary (~350 terms, 8 categories)
-2. Deduplicate (10+ known duplicates)
-3. Translate to English
-4. Generate terms.yaml + KI-Glossar.md + AI-Glossary.md
-5. Create PR on branch glossary/migration-YYYY-MM-DD
----
-```
-
-**Use:** After initial setup, run "Run Now" once → migrate your entire Wiki glossary
+**Why deleted?** Migration is complete. Glossary now lives in `glossary/terms.yaml` (110 terms, 8 categories).
 
 ---
 
@@ -77,39 +67,35 @@ This is a monthly maintenance task:
 
 ---
 
-## Workflow für alle 3
+## Workflow für 2 aktive Routines
 
 ```
 ┌─────────────────────────────────────────────┐
 │   Cloud Routines (claude.ai/code/routines)  │
 │                                             │
 │  1. KI-Wochenrückblick (Mo 06:00 CH)       │
-│     ↓ reads                                 │
-│     ├─ weekly-post.md (GitHub)             │
-│     ├─ SOURCES.md (GitHub)                 │
-│     └─ CRITERIA.md (GitHub)                │
-│     ↓ creates                              │
-│     └─ posts/YYYY-Www.md → PR              │
+│     ↓ reads from GitHub                    │
+│     ├─ weekly-post.md (Instructions)       │
+│     ├─ SOURCES.md (Quellenliste)           │
+│     └─ CRITERIA.md (Filter-Regeln)         │
+│     ↓ creates PR                           │
+│     └─ posts/YYYY-Www.md                   │
 │                                             │
-│  2. Glossary-Migration (Manual Run Now)    │
-│     ↓ reads                                 │
-│     ├─ glossary-migration.md (GitHub)      │
-│     ├─ Wiki-Glossary (github.com/wiki)     │
-│     └─ 8 categories config                 │
-│     ↓ creates                              │
-│     └─ terms.yaml + 2x .md → PR            │
+│  (Routine #2 Migration: GELÖSCHT)          │
+│  (Was: einmalige Wiki→YAML Konversion)     │
+│  (Status: ✅ Completed, merged 2026-09-03)  │
 │                                             │
 │  3. Glossary-Update (1st of month 06:00)   │
-│     ↓ reads                                 │
-│     ├─ glossary-update.md (GitHub)         │
-│     ├─ glossary/terms.yaml (GitHub)        │
-│     └─ posts/ (GitHub)                     │
-│     ↓ updates                              │
-│     └─ terms.yaml + 2x .md → PR            │
+│     ↓ reads from GitHub                    │
+│     ├─ glossary-update.md (Instructions)   │
+│     ├─ glossary/terms.yaml (Current)       │
+│     └─ posts/ (New terms)                  │
+│     ↓ updates & creates PR                 │
+│     └─ terms.yaml + KI-Glossar + AI-Glossary
 │                                             │
 └─────────────────────────────────────────────┘
-        ↓ all PRs
-        └─ You review & merge
+        ↓ all PRs to review
+        └─ You merge
 ```
 
 ---

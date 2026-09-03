@@ -1,4 +1,12 @@
-# Routine-Prompt: Glossary-Migration (Rogers Setup – Einmalig)
+# Routine-Prompt: Glossary-Migration (❌ ARCHIVED – completed 2026-09-03)
+
+**Status:** ✅ COMPLETED – Diese Routine wird nicht mehr benötigt  
+**Warum?** Glossar-Migration ist abgeschlossen. 110 Begriffe sind live in `glossary/terms.yaml`.  
+**Siehe stattdessen:** `glossary-update.md` für monatliche Maintenance.
+
+---
+
+# ARCHIVIERT – Ursprünglicher Prompt unten:
 
 **Cloud Routine:** `Glossary-Migration (Einmalig)`  
 **Zeitpunkt:** Nach Setup, einmalig  
