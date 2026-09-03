@@ -18,35 +18,15 @@ Fokus: Claude, ChatGPT, Gemini, Google AI Studio, NotebookLM. Dazu Regulierung &
 ### Phase 1: Quellen lesen & prüfen (7 Tage zurück)
 
 1. Lese `agent-source/CRITERIA.md` im Repo – das ist dein Regelwerk.
-2. Lese `SOURCES.md` im Repo – kuratierte Quellenliste.
-3. Prüfe **jede Quelle** auf Inhalte der **letzten 7 Tage**:
-
-   **Anthropic** (Claude, Claude Code, Routines):
-   - https://www.anthropic.com/news
-   - https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md
-   - https://docs.claude.com/en/release-notes/overview
-
-   **OpenAI** (ChatGPT, GPT-4, API):
-   - https://openai.com/news
-   - https://help.openai.com/en/articles/6825453-chatgpt-release-notes
-
-   **Google** (Gemini, NotebookLM, AI Studio):
-   - https://ai.google.dev/gemini-api/docs/changelog
-   - https://gemini.google/release-notes/
-   - https://support.google.com/notebooklm/
-   - https://blog.google/technology/ai/
-
-   **EU AI Act & Schweiz**:
-   - https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
-   - https://www.edoeb.admin.ch (EDÖB)
-   - https://www.swiss-ai.org (ETH/EPFL)
-   - https://www.swissai.ch/blog
-
+2. Lese `SOURCES.md` im Repo – **Single Source of Truth für alle Quellen** (Anthropic, OpenAI, Google, EU, Schweiz).
+3. Prüfe **jede Quelle aus SOURCES.md** auf Inhalte der **letzten 7 Tage**.
 4. Sammle **Kandidaten** mit:
    - Titel (Was ist passiert?)
    - Datum (Wann?)
    - URL (Link zur Primärquelle)
    - Ein-Satz-Summary (Auswirkung?)
+
+**Hinweis:** Falls neue Quellen hinzufügen nötig sind → `SOURCES.md` editieren (nicht diesen Prompt).
 
 ---
 
