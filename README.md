@@ -12,20 +12,20 @@ Automatisierte KI-News-Aggregation + Glossar-Verwaltung mit Claude Cloud Routine
 
 | Routine | Schedule | Status | Prompt | Delivery |
 |---|---|---|---|---|
-| **#1 KI-Wochenrückblick** | Mo 06:00 Zürich | ✅ LIVE | `agent-source/routines/weekly-post.md` | https://github.com/roger-infanger-weibel/ghostwriter.ai/tree/main/posts |
-| **#3 Glossary-Update** | 1. d. Monats 06:00 | ✅ LIVE | `agent-source/routines/glossary-update.md` | https://github.com/roger-infanger-weibel/ghostwriter.ai/tree/main/glossary/rendered |
+| ** KI-Wochenrückblick** | Mo 06:00 Zürich | ✅ LIVE | `agent-source/routines/weekly-post.md` | https://github.com/roger-infanger-weibel/ghostwriter.ai/tree/main/posts |
+| ** Glossary-Update** | 1. d. Monats 06:00 | ✅ LIVE | `agent-source/routines/glossary-update.md` | https://github.com/roger-infanger-weibel/ghostwriter.ai/tree/main/glossary/rendered |
 
 ---
 
 ## Ablauf
 
-### 📰 Wöchentlich (Montag 06:00 Zürich)
+### 📰 Wöchentlich KI-Wochenrückblick (Montag 06:00 Zürich)
 - Agent liest `SOURCES.md` und `CRITERIA.md`
 - Prüft Quellen der letzten 7 Tage
 - Erstellt `posts/YYYY-Www.md` (Global / Europa / Schweiz)
 - PR-Review → du mergst
 
-### 📚 Monatlich (1. des Monats 06:00 Zürich)
+### 📚 Monatlich Glossary-Update (1. des Monats 06:00 Zürich)
 - Agent liest `glossary/terms.yaml`
 - Sammelt neue Begriffe aus Posts
 - Updated & rendert Wiki-Seiten
