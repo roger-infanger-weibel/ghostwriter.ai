@@ -1,0 +1,12 @@
+graph LR
+    subgraph "Fine-tuning (Gehirn-OP)"
+    A[Trainingsdaten] --> B(Modell-Update)
+    B --> C{Wissen fest verankert}
+    end
+
+    subgraph "RAG (Spickzettel)"
+    D[Nutzerfrage] --> E{Retrieval}
+    E -->|suche in| F[(Wissensdatenbank)]
+    F --> G[Kontext an LLM]
+    G --> H{Antwort auf Faktenbasis}
+    end

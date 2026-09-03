@@ -1,0 +1,24 @@
+graph TD
+    Data[Big Data / Unlabeled Corpus] --> Pre[Pre-Training / Self-Supervised]
+    Pre --> FM[Foundation Model / Base Model]
+    
+    FM --> SFT[Supervised Fine-Tuning]
+    
+    subgraph "Alignment / Value Tuning"
+        RLHF[RLHF / Reward Model / PPO]
+        DPO[Direct Preference Optimization]
+        CAI[Constitutional AI / Rules]
+    end
+    
+    SFT --> RLHF
+    SFT --> DPO
+    SFT --> CAI
+    
+    subgraph "Post-Processing & Efficiency"
+        LoRA[LoRA / QLoRA Adapter]
+        Quant[Quantisierung / 4-Bit]
+    end
+    
+    RLHF & DPO & CAI --> LoRA
+    LoRA --> Quant
+    Quant --> Deploy[Production Inferenz / Agentic AI]

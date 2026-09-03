@@ -1,0 +1,180 @@
+schema_version: 1
+last_restored: '2026-09-03'
+note: 'Diagramme aus dem urspruenglichen Wiki (KI-Glossary, erzeugt mit NotebookLM am 05.08.2026) restauriert,
+  da glossary/diagrams/ nach der YAML-Migration leer war. Quelle: GitHub-Wiki-Historie (ghostwriter.ai.wiki,
+  Commit ab41093). Jedes Mermaid-Diagramm liegt zusaetzlich als eigenstaendige Datei unter glossary/diagrams/<id>.mmd
+  und wird in glossary/rendered/KI-Glossar.md und AI-Glossary.md an der passenden Stelle eingebunden.'
+diagrams:
+- id: 1-grundlagen
+  scope: category
+  type: mermaid
+  title_de: Grundlagen & Kernkonzepte
+  category_order: 1
+  category_id: 1-grundlagen
+  file: glossary/diagrams/1-grundlagen.mmd
+  quellen: '[Moterra](https://moterra.com/ai-map-simplified-understanding-ai-ml-dl-and-genai/), [DIN](https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf),
+    [Coursera](https://www.coursera.org/de-DE/articles/ai-vs-deep-learning-vs-machine-learning-beginners-guide),
+    [webconsulting](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025)'
+- id: 2-technik
+  scope: category
+  type: mermaid
+  title_de: Technik, Architektur & Sprachverarbeitung (NLP)
+  category_order: 2
+  category_id: 2-technik
+  file: glossary/diagrams/2-technik.mmd
+- id: 3-training
+  scope: category
+  type: mermaid
+  title_de: Training, Anpassung & Daten
+  category_order: 3
+  category_id: 3-training
+  file: glossary/diagrams/3-training.mmd
+  quellen: '[webconsulting](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [SwissMed
+    AI](https://mdai.ch/blog/von-llm-bis-halluzination/), [DIN](https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf)'
+- id: 4-prompting-agenten
+  scope: category
+  type: mermaid
+  title_de: Prompting & Interaktion (Agenten & Protokolle)
+  category_order: 4
+  category_id: 4-prompting-agenten
+  file: glossary/diagrams/4-prompting-agenten.mmd
+  quellen: '[Digital Neuordnung](https://digitaleneuordnung.de/blog/ki-begriffe), [Felicia Simon](https://www.youtube.com/watch?v=KI-Lernen),
+    [webconsulting](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025)'
+- id: 5-vision-robotik
+  scope: category
+  type: mermaid
+  title_de: Computer Vision & Robotik
+  category_order: 5
+  category_id: 5-vision-robotik
+  file: glossary/diagrams/5-vision-robotik.mmd
+  quellen: '[webconsulting](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [Digital
+    Neuordnung](https://digitaleneuordnung.de/blog/ki-begriffe), [Canada.ca](https://our-languages.canada.ca/en/artificial-intelligence-terminology-concept-map-eng)'
+- id: 6-sicherheit-recht
+  scope: category
+  type: mermaid
+  title_de: Sicherheit, Ethik & Recht
+  category_order: 6
+  category_id: 6-sicherheit-recht
+  file: glossary/diagrams/6-sicherheit-recht.mmd
+  quellen: '[DIN](https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf),
+    [webconsulting](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [SwissMed
+    AI](https://mdai.ch/blog/von-llm-bis-halluzination/), [KI.NRW](https://www.ki.nrw/ki-schluesselbegriffe/)'
+- id: 7-industrie-medizin
+  scope: category
+  type: mermaid
+  title_de: Industrie, Medizin & Spezifikationen
+  category_order: 7
+  category_id: 7-industrie-medizin
+  file: glossary/diagrams/7-industrie-medizin.mmd
+  quellen: '[DIN](https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf),
+    [SwissMed AI](https://mdai.ch/blog/von-llm-bis-halluzination/)'
+- id: 8-hardware-kennzahlen
+  scope: category
+  type: mermaid
+  title_de: Hardware & Kennzahlen
+  category_order: 8
+  category_id: 8-hardware-kennzahlen
+  file: glossary/diagrams/8-hardware-kennzahlen.mmd
+  quellen: '[webconsulting](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [DIN](https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf)'
+- id: ov-die-technische-pipeline-vom-token-zur-inferenz
+  scope: overview
+  type: mermaid
+  title_de: Die technische Pipeline (Vom Token zur Inferenz)
+  description_de: Dieses Diagramm visualisiert den "Forward Pass" innerhalb eines Transformers unter Beruecksichtigung
+    von Optimierungen wie **Flash Attention** und **MoE**.
+  file: glossary/diagrams/ov-die-technische-pipeline-vom-token-zur-inferenz.mmd
+  quellen: '[webconsulting](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [dno](https://digitaleneuordnung.de/blog/ki-begriffe)
+    [2.2, 2.18, 2.20, 4.9, 4.10]'
+- id: ov-der-modell-lebenszyklus-training-alignment-optimierung
+  scope: overview
+  type: mermaid
+  title_de: Der Modell-Lebenszyklus (Training, Alignment & Optimierung)
+  description_de: Visualisierung der Evolution eines Modells von den Rohdaten bis zum spezialisierten,
+    ausgerichteten (aligned) Assistenten unter Einsatz von **LoRA** und **DPO**.
+  file: glossary/diagrams/ov-der-modell-lebenszyklus-training-alignment-optimierung.mmd
+  quellen: '[webconsulting](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [Coursera](https://www.coursera.org/de-DE/articles/ai-vs-deep-learning-vs-machine-learning-beginners-guide)
+    [1.8, 3.3, 3.5, 3.6, 6.5]'
+- id: ov-risiko-compliance-framework-eu-ai-act-nist
+  scope: overview
+  type: mermaid
+  title_de: Risiko- & Compliance-Framework (EU AI Act & NIST)
+  description_de: Ein hierarchisches Modell zur Einordnung von Systemen nach **Kritikalitaet** und notwendigen
+    Schutzschichten (**Guardrails**).
+  file: glossary/diagrams/ov-risiko-compliance-framework-eu-ai-act-nist.mmd
+  quellen: '[DIN](https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf),
+    [webconsulting](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [SwissMed
+    AI](https://mdai.ch/blog/von-llm-bis-halluzination/) [6.1, 4.13, 6.6, 6.9, 619]'
+- id: ov-eu-ai-act-die-vier-risikoklassen
+  scope: overview
+  type: mermaid
+  title_de: 'EU AI Act: Die vier Risikoklassen'
+  description_de: Dieses Diagramm visualisiert die regulatorischen Stufen des EU AI Act.
+  file: glossary/diagrams/ov-eu-ai-act-die-vier-risikoklassen.mmd
+- id: ov-funktionsweise-proaktiver-ki-agenten
+  scope: overview
+  type: image
+  title_de: Funktionsweise proaktiver KI-Agenten
+  description_de: 'Diese Infografik verdeutlicht den Sprung vom reaktiven Chatbot zum proaktiven Agenten.
+    Sie stellt den sogenannten Agent Loop dar: Ein Mensch gibt ein Ziel vor, woraufhin der Agent eigenständig
+    plant, externe Werkzeuge (wie APIs oder Web-Suche) nutzt und seine Handlungen in einer Schleife aus
+    Beobachten, Denken und Handeln kontinuierlich bewertet, bis das Ziel erreicht ist'
+  image_url: https://github.com/user-attachments/assets/ab0a91e6-e987-402f-9ddc-af1518ed29bc
+- id: ov-agentic-ai-reasoning-loop-architektur
+  scope: overview
+  type: mermaid
+  title_de: Agentic AI & Reasoning (Loop-Architektur)
+  description_de: Dieses Diagramm zeigt, wie **Reasoning-Modelle** (wie o1) externe Protokolle (**MCP**)
+    und Werkzeuge (**Function Calling**) nutzen, um autonom zu handeln.
+  file: glossary/diagrams/ov-agentic-ai-reasoning-loop-architektur.mmd
+  quellen: '[dno](https://digitaleneuordnung.de/blog/ki-begriffe), [Felicia Simon](https://www.youtube.com/watch?v=KI-Lernen)
+    [3.13, 3.51, 4.6, 4.7, 613]'
+- id: ov-advanced-rag-wissensmodellierung
+  scope: overview
+  type: mermaid
+  title_de: Advanced RAG & Wissensmodellierung
+  description_de: Die Verbindung von unstrukturierten Daten (Chunks) mit strukturierten Normen (**SMART
+    Standards**) und **Knowledge Graphs**.
+  file: glossary/diagrams/ov-advanced-rag-wissensmodellierung.mmd
+  quellen: '[DIN](https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf),
+    [webconsulting](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) [4.1, 4.3,
+    4.4, 4.5, 308, 324]'
+- id: ov-rag-das-open-book-prinzip
+  scope: overview
+  type: image
+  title_de: 'RAG: Das "Open-Book"-Prinzip'
+  description_de: Die Grafik zeigt den dreistufigen Prozess, bei dem eine KI nicht nur aus ihrem Gedächtnis
+    antwortet ("Closed-Book"), sondern wie ein Detektiv in einer externen Wissensbasis (z. B. Vektordatenbank)
+    nachschlägt ("Open-Book")
+  image_url: https://github.com/user-attachments/assets/25099eaf-39f1-4d1b-a984-32a69ecaa784
+- id: ov-vergleich-fine-tuning-vs-rag
+  scope: overview
+  type: mermaid
+  title_de: 'Vergleich: Fine-tuning vs. RAG'
+  description_de: Dieses Diagramm zeigt den Unterschied zwischen dem Ändern des "Gehirns" (Gewichte) und
+    dem Nutzen eines "Spickzettels" (Kontext).
+  file: glossary/diagrams/ov-vergleich-fine-tuning-vs-rag.mmd
+- id: ov-ai-bill-of-materials-ai-bom
+  scope: overview
+  type: mermaid
+  title_de: AI Bill of Materials (AI BoM)
+  description_de: Visualisierung der KI-Bestandteile für Transparenz und Governance.
+  file: glossary/diagrams/ov-ai-bill-of-materials-ai-bom.mmd
+- id: ov-chain-of-thought-gedankenkette
+  scope: overview
+  type: mermaid
+  title_de: Chain of Thought (Gedankenkette)
+  description_de: Stellt den schrittweisen Denkprozess dar, der die Genauigkeit bei komplexen Aufgaben
+    erhöht.
+  file: glossary/diagrams/ov-chain-of-thought-gedankenkette.mmd
+- id: ov-die-wissenspyramide-dikw
+  scope: overview
+  type: mermaid
+  title_de: Die Wissenspyramide (DIKW)
+  description_de: Visualisiert den Weg von Rohdaten zu strategischen KI-Handlungen.
+  file: glossary/diagrams/ov-die-wissenspyramide-dikw.mmd
+- id: ov-vibe-coding-vs-traditionelles-coden
+  scope: overview
+  type: mermaid
+  title_de: Vibe Coding vs. Traditionelles Coden
+  description_de: Ein Vergleich des iterativen, KI-gestützten Flows gegenüber der klassischen Softwareentwicklung.
+  file: glossary/diagrams/ov-vibe-coding-vs-traditionelles-coden.mmd

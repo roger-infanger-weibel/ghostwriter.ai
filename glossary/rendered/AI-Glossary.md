@@ -5,6 +5,22 @@ Changes please via PR in the repo, not directly in the Wiki.
 
 ## 1. Fundamentals & Core Concepts
 
+```mermaid
+graph TD
+    AI[Kuenstliche Intelligenz] --> ML[Maschinelles Lernen]
+    AI --> SKI[Symbolische KI / Regelbasiert]
+    ML --> DL[Tiefes Lernen / Deep Learning]
+    DL --> GenAI[Generative KI]
+    
+    AI -- Unterteilt in --> WeakAI[Schwache KI / ANI]
+    AI -- Ziel --> StrongAI[Starke KI / AGI]
+    StrongAI --> ASI[Superintelligenz]
+    ASI --> Singularity[Singularitaet]
+    
+    WeakAI --- Turing[Turing-Test]
+```
+**Quellen:** [Moterra](https://moterra.com/ai-map-simplified-understanding-ai-ml-dl-and-genai/), [DIN](https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf), [Coursera](https://www.coursera.org/de-DE/articles/ai-vs-deep-learning-vs-machine-learning-beginners-guide), [webconsulting](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025)
+
 | Term (EN) | Begriff (DE) | Explanation | Context | Source |
 |---|---|---|---|---|
 | Artificial Intelligence (AI) | Kuenstliche Intelligenz | Computersysteme, die menschliche Faehigkeiten wie Sehen, Spr... | Der umfassende Oberbegriff.... | [Link](https://moterra.ai/blog/ai-map-simplified-understanding-ai-ml-dl-and-genai) | [Link](https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf) |
@@ -20,6 +36,23 @@ Changes please via PR in the repo, not directly in the Wiki.
 | Artificial General Intelligence (AGI) | Künstliche allgemeine Intelligenz | Eine theoretische KI, die jede intellektuelle Aufgabe eines ... | Gilt als "heiliger Gral" der KI-Forschun... | [Link](https://www.zendesk.de/blog/ai/generative-ai-glossary/) |
 
 ## 2. Technology, Architecture & NLP
+
+```mermaid
+graph LR
+    NLP[Sprachverarbeitung] --> LLM[Large Language Models]
+    LLM --> Trans[Transformer-Architektur]
+    Trans --> Att[Attention-Mechanismus]
+    
+    Data[Text-Input] --> Tok[Tokenisierung]
+    Tok --> Emb[Embeddings / Vektoren]
+    Emb --> VDB[Vektor-Datenbank]
+    
+    VDB --> RAG[RAG / Retrieval-Augmented Generation]
+    RAG -- Verhindert --> Hallu[Halluzinationen]
+    
+    Trans --> MoE[MoE / Mixture of Experts]
+    MoE -- Erhoeht --> Eff[Effizienz]
+```
 
 | Term (EN) | Begriff (DE) | Explanation | Context | Source |
 |---|---|---|---|---|
@@ -47,6 +80,23 @@ Changes please via PR in the repo, not directly in the Wiki.
 
 ## 3. Training, Fine-Tuning & Data
 
+```mermaid
+graph TD
+    Data[Big Data / Trainingsdaten] --> Pre[Pre-Training]
+    Pre --> FM[Foundation Model / Basismodell]
+    
+    FM --> Fine[Fine-Tuning / Feinabstimmung]
+    Fine --> SFT[Supervised Fine-Tuning]
+    Fine --> LoRA[LoRA / QLoRA]
+    
+    FM --> Align[Alignment / RLHF & DPO]
+    Align --> Asst[KI-Assistent]
+    
+    Train[Training] --> Over[Vermeidung von Overfitting]
+    Train --> Epoch[Messung in Epochen]
+```
+**Quellen:** [webconsulting](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [SwissMed AI](https://mdai.ch/blog/von-llm-bis-halluzination/), [DIN](https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf)
+
 | Term (EN) | Begriff (DE) | Explanation | Context | Source |
 |---|---|---|---|---|
 | Pre-training | Pre-Training | Die „Schulzeit“: Training auf Billionen von Texten fuer Welt... | Erzeugt ein Foundation Model.... | [Link](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
@@ -71,6 +121,21 @@ Changes please via PR in the repo, not directly in the Wiki.
 
 ## 4. Prompting & Agents
 
+```mermaid
+graph TD
+    User[Nutzer] --> Prompt[Eingabeaufforderung / Prompt]
+    Prompt --> PE[Prompt Engineering]
+    
+    PE --> Tech[Techniken: Zero-Shot / Few-Shot / CoT]
+    
+    Agent[AI Agent / KI-Agent] --> Task[Aufgabenerledigung]
+    Agent --> Tools[Tool Use / Function Calling]
+    Agent --> MCP[Model Context Protocol]
+    
+    Reason[Reasoning Modelle] --> Think[Schrittweises Denken]
+```
+**Quellen:** [Digital Neuordnung](https://digitaleneuordnung.de/blog/ki-begriffe), [Felicia Simon](https://www.youtube.com/watch?v=KI-Lernen), [webconsulting](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025)
+
 | Term (EN) | Begriff (DE) | Explanation | Context | Source |
 |---|---|---|---|---|
 | Prompt | Eingabeaufforderung | Die Anweisung oder Frage, die ein Mensch der KI gibt.... | Schnittstelle zum Nutzer.... | [Link](https://digitaleneuordnung.de/blog/ki-begriffe) | [Link](https://www.youtube.com/watch?v=KI-Lernen) |
@@ -87,6 +152,22 @@ Changes please via PR in the repo, not directly in the Wiki.
 | Multi-Turn Conversation | Mehrstufiger Dialog | Die Fähigkeit einer KI, einen echten Dialog über mehrere Nac... | Ist die Voraussetzung für flüssige Gespr... | [Link](https://joerg-loehr.com/ki-glossar) |
 
 ## 5. Computer Vision & Robotics
+
+```mermaid
+graph LR
+    CV[Computer Vision] --> Obj[Objekterkennung]
+    CV --> Diff[Diffusionsmodelle / Bildgenerierung]
+    
+    Robot[Robotik] --> Hum[Humanoide Roboter]
+    Hum --> VLA[VLA-Modell / Vision-Language-Action]
+    
+    Lernen[Lernen] --> Imit[Imitation Learning]
+    Lernen --> S2R[Sim2Real]
+    
+    Mech[Mechanik] --> Akt[Aktuatoren / Muskeln]
+    Mech --> Prop[Propriozeption / Koerpergefuehl]
+```
+**Quellen:** [webconsulting](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [Digital Neuordnung](https://digitaleneuordnung.de/blog/ki-begriffe), [Canada.ca](https://our-languages.canada.ca/en/artificial-intelligence-terminology-concept-map-eng)
 
 | Term (EN) | Begriff (DE) | Explanation | Context | Source |
 |---|---|---|---|---|
@@ -106,6 +187,23 @@ Changes please via PR in the repo, not directly in the Wiki.
 | Facial Recognition | Gesichtserkennung | Eine Technologie der Computer Vision, die Gesichter in Bilde... | Findet Anwendung in Sicherheitssystemen,... | [Link](https://digitalzentrum-berlin.de/blog/ki-glossar) |
 
 ## 6. Security, Ethics & Law
+
+```mermaid
+graph TD
+    Law[EU AI Act] --> Risk[Risikoklassen / Kritikalitaet]
+    
+    Safety[KI-Sicherheit] --> Align[Alignment / Werte-Anpassung]
+    Safety --> Guard[Guardrails / Schutzschichten]
+    Safety --> Red[Red Teaming / Stresstests]
+    Safety --> HitL[Human-in-the-Loop]
+    
+    Ethics[Ethik] --> Trans[Transparenz & Erklaerbare KI]
+    Ethics --> Bias[Vermeidung von Bias]
+    
+    Media[Medien] --> C2PA[Herkunftsnachweise]
+    Media --> DF[Abwehr von Deepfakes]
+```
+**Quellen:** [DIN](https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf), [webconsulting](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [SwissMed AI](https://mdai.ch/blog/von-llm-bis-halluzination/), [KI.NRW](https://www.ki.nrw/ki-schluesselbegriffe/)
 
 | Term (EN) | Begriff (DE) | Explanation | Context | Source |
 |---|---|---|---|---|
@@ -127,6 +225,20 @@ Changes please via PR in the repo, not directly in the Wiki.
 
 ## 7. Industry & Medicine
 
+```mermaid
+graph TD
+    I40[Industrie 4.0] --> DZ[Digitaler Zwilling]
+    
+    Norm[SMART Standards] --> Machine[Maschinenlesbarkeit]
+    
+    Ont[Ontologien] --> KG[Knowledge Graphs]
+    KG --> Triple[Semantische Tripel]
+    
+    Med[KI in der Medizin] --> ACI[Ambient Clinical Intelligence]
+    Med --> CDSS[Entscheidungshilfe]
+```
+**Quellen:** [DIN](https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf), [SwissMed AI](https://mdai.ch/blog/von-llm-bis-halluzination/)
+
 | Term (EN) | Begriff (DE) | Explanation | Context | Source |
 |---|---|---|---|---|
 | Industry 4.0 | Industrie 4.0 | Vernetzung der Produktion durch KI und Internet der Dinge (I... | Rahmen fuer industrielle KI.... | [Link](https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf) |
@@ -143,6 +255,21 @@ Changes please via PR in the repo, not directly in the Wiki.
 
 ## 8. Hardware & Metrics
 
+```mermaid
+graph LR
+    HW[Hardware] --> GPU[Grafikkarten / GPUs]
+    HW --> Compute[Rechenleistung]
+    
+    Model[Modell-Groesse] --> Param[Parameter]
+    Model --> Scaling[Scaling Laws]
+    
+    Opt[Optimierung] --> Chin[Chinchilla-Optimum]
+    
+    Eval[Bewertung] --> Perp[Perplexity / Vorhersageguete]
+    Eval --> Soft[Softmax / Wahrscheinlichkeiten]
+```
+**Quellen:** [webconsulting](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [DIN](https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf)
+
 | Term (EN) | Begriff (DE) | Explanation | Context | Source |
 |---|---|---|---|---|
 | Parameter | Parameter | Die „Stellschrauben“ im Modell, die gelerntes Wissen speiche... | Bestimmen Modellgroesse/-kraft.... | [Link](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) | [Link](https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf) |
@@ -153,3 +280,287 @@ Changes please via PR in the repo, not directly in the Wiki.
 | Scalability | Skalierbarkeit | Die Fähigkeit eines KI-Systems, bei massiv steigenden Nutzer... | Ist entscheidend für den unternehmenswei... | [Link](https://joerg-loehr.com/ki-glossar) |
 | Edge AI | Edge-KI | Eine Form der KI-Verarbeitung, die direkt auf dem lokalen En... | Reduziert Latenzzeiten und erhöht den Da... |  |
 
+## Visual Overview Diagrams
+
+These diagrams show the technical data flows, architectures and frameworks behind the terms above (carried over from the original wiki glossary, generated with NotebookLM on 2026-08-05; diagram labels remain German, matching the original source).
+
+### Die technische Pipeline (Vom Token zur Inferenz)
+Dieses Diagramm visualisiert den "Forward Pass" innerhalb eines Transformers unter Beruecksichtigung von Optimierungen wie **Flash Attention** und **MoE**.
+
+```mermaid
+graph LR
+    Input[Input Text] --> Tok[Tokenisierung / BPE]
+    Tok --> Emb[Embeddings / Latent Space]
+    Emb --> PE[Positional Encoding]
+    
+    subgraph "Transformer Block (Stacked L-times)"
+        subgraph "Attention Layer"
+            Att[Multi-Head Attention]
+            FA[Flash Attention / O-N Speedup]
+            Att --- FA
+        end
+        
+        subgraph "Processing Layer"
+            MoE[Mixture of Experts / Routing]
+            Expert1[Expert 1]
+            Expert2[Expert 2]
+            MoE --> Expert1
+            MoE --> Expert2
+        end
+        
+        Att --> MoE
+    end
+    
+    PE --> Att
+    Expert1 --> Norm[Layer Norm / Softmax]
+    Expert2 --> Norm
+    
+    Norm --> Logits[Logits / Wahrscheinlichkeiten]
+    Logits --> NTP[Next Token Prediction]
+    NTP --> Output[Inferenz Ergebnis]
+```
+**Quellen:** [webconsulting](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [dno](https://digitaleneuordnung.de/blog/ki-begriffe) [2.2, 2.18, 2.20, 4.9, 4.10]
+
+### Der Modell-Lebenszyklus (Training, Alignment & Optimierung)
+Visualisierung der Evolution eines Modells von den Rohdaten bis zum spezialisierten, ausgerichteten (aligned) Assistenten unter Einsatz von **LoRA** und **DPO**.
+
+```mermaid
+graph TD
+    Data[Big Data / Unlabeled Corpus] --> Pre[Pre-Training / Self-Supervised]
+    Pre --> FM[Foundation Model / Base Model]
+    
+    FM --> SFT[Supervised Fine-Tuning]
+    
+    subgraph "Alignment / Value Tuning"
+        RLHF[RLHF / Reward Model / PPO]
+        DPO[Direct Preference Optimization]
+        CAI[Constitutional AI / Rules]
+    end
+    
+    SFT --> RLHF
+    SFT --> DPO
+    SFT --> CAI
+    
+    subgraph "Post-Processing & Efficiency"
+        LoRA[LoRA / QLoRA Adapter]
+        Quant[Quantisierung / 4-Bit]
+    end
+    
+    RLHF & DPO & CAI --> LoRA
+    LoRA --> Quant
+    Quant --> Deploy[Production Inferenz / Agentic AI]
+```
+**Quellen:** [webconsulting](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [Coursera](https://www.coursera.org/de-DE/articles/ai-vs-deep-learning-vs-machine-learning-beginners-guide) [1.8, 3.3, 3.5, 3.6, 6.5]
+
+### Risiko- & Compliance-Framework (EU AI Act & NIST)
+Ein hierarchisches Modell zur Einordnung von Systemen nach **Kritikalitaet** und notwendigen Schutzschichten (**Guardrails**).
+
+```mermaid
+graph TD
+    subgraph "EU AI Act Risikoklassen"
+        Unacceptable[Unvertretbar / Verboten]
+        High[Hoch / Zertifizierungspflicht]
+        Limited[Begrenzt / Transparenzpflicht]
+        Minimal[Gering / Keine Auflagen]
+    end
+    
+    subgraph "Sicherheits-Stack (Pro)"
+        InGuard[Input Guardrails / Prompt Injection Defense]
+        Red[Red Teaming / Vulnerability Probing]
+        HitL[Human-in-the-Loop / Validierung]
+        OutGuard[Output Guardrails / PII-Filter]
+    end
+    
+    User[User] --> InGuard
+    InGuard --> LLM[Modell / Inferenz]
+    LLM --> Red
+    Red --> HitL
+    HitL --> OutGuard
+    OutGuard --> SafeOutput[Sicheres Ergebnis]
+    
+    High --- HitL
+    Limited --- OutGuard
+```
+**Quellen:** [DIN](https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf), [webconsulting](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [SwissMed AI](https://mdai.ch/blog/von-llm-bis-halluzination/) [6.1, 4.13, 6.6, 6.9, 619]
+
+### EU AI Act: Die vier Risikoklassen
+Dieses Diagramm visualisiert die regulatorischen Stufen des EU AI Act.
+
+```mermaid
+graph TD
+    A[<b>Inakzeptables Risiko</b><br/>VERBOTEN] -->|z.B. Social Scoring| B(Hohe Hürden)
+    style A fill:#ff4d4d,stroke:#333,stroke-width:2px
+    
+    C[<b>Hohes Risiko</b><br/>STRENGE AUFLAGEN] -->|z.B. HR-Scoring, Infrastruktur| D(Konformitätsprüfung)
+    style C fill:#ffa500,stroke:#333,stroke-width:2px
+    
+    E[<b>Begrenztes Risiko</b><br/>TRANSPARENZ] -->|z.B. Chatbots, Deepfakes| F(Kennzeichnungspflicht)
+    style E fill:#ffff00,stroke:#333,stroke-width:2px
+    
+    G[<b>Minimales Risiko</b><br/>FREIWILLIG] -->|z.B. Spam-Filter, Spiele| H(Keine Auflagen)
+    style G fill:#90ee90,stroke:#333,stroke-width:2px
+```
+
+### Funktionsweise proaktiver KI-Agenten
+Diese Infografik verdeutlicht den Sprung vom reaktiven Chatbot zum proaktiven Agenten. Sie stellt den sogenannten Agent Loop dar: Ein Mensch gibt ein Ziel vor, woraufhin der Agent eigenständig plant, externe Werkzeuge (wie APIs oder Web-Suche) nutzt und seine Handlungen in einer Schleife aus Beobachten, Denken und Handeln kontinuierlich bewertet, bis das Ziel erreicht ist
+
+<img alt="Funktionsweise proaktiver KI-Agenten" src="https://github.com/user-attachments/assets/ab0a91e6-e987-402f-9ddc-af1518ed29bc" />
+
+### Agentic AI & Reasoning (Loop-Architektur)
+Dieses Diagramm zeigt, wie **Reasoning-Modelle** (wie o1) externe Protokolle (**MCP**) und Werkzeuge (**Function Calling**) nutzen, um autonom zu handeln.
+
+```mermaid
+graph TD
+    Goal[Zielsetzung / User Prompt] --> SP[System Prompt / Persona]
+    SP --> Loop{Reasoning Loop}
+    
+    subgraph "Internal Processing"
+        CoT[Chain-of-Thought]
+        ToT[Tree of Thoughts]
+        SelfCorr[Selbst-Korrektur]
+    end
+    
+    Loop --> CoT
+    CoT --> ToT
+    ToT --> SelfCorr
+    SelfCorr --> Loop
+    
+    Loop -- "Action Required" --> Tools[Function Calling / JSON]
+    
+    subgraph "External Ecosystem"
+        MCP[Model Context Protocol]
+        Web[Web Search / APIs]
+        RAG[RAG / Vektor-DB]
+    end
+    
+    Tools --> MCP
+    MCP --> Web
+    MCP --> RAG
+    
+    Web & RAG --> Obs[Observation / Feedback]
+    Obs --> Loop
+    
+    Loop -- "Task Complete" --> Final[Final Answer / Agentic Action]
+```
+**Quellen:** [dno](https://digitaleneuordnung.de/blog/ki-begriffe), [Felicia Simon](https://www.youtube.com/watch?v=KI-Lernen) [3.13, 3.51, 4.6, 4.7, 613]
+
+### Advanced RAG & Wissensmodellierung
+Die Verbindung von unstrukturierten Daten (Chunks) mit strukturierten Normen (**SMART Standards**) und **Knowledge Graphs**.
+
+```mermaid
+graph LR
+    subgraph "Unstructured Data"
+        Docs[Dokumente / PDFs] --> Chunk[Chunking / Overlap]
+        Chunk --> Emb[Embedding Model]
+        Emb --> VDB[Vektor-Datenbank]
+    end
+    
+    subgraph "Structured Knowledge"
+        Norms[Normen / Prosa] --> Triple[Semantische Tripel / RDF]
+        Triple --> KG[Knowledge Graphs]
+        KG --> Ont[Ontologien / OWL]
+    end
+    
+    VDB --> Retrieval[Retrieval Engine]
+    Ont --> Retrieval
+    
+    Retrieval -- "Augmentation" --> Prompt[Enhanced Prompt]
+    Prompt --> LLM[LLM / Generator]
+    LLM --> Fact[Faktentreue Antwort / Grounding]
+```
+**Quellen:** [DIN](https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf), [webconsulting](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) [4.1, 4.3, 4.4, 4.5, 308, 324]
+
+### RAG: Das "Open-Book"-Prinzip
+Die Grafik zeigt den dreistufigen Prozess, bei dem eine KI nicht nur aus ihrem Gedächtnis antwortet ("Closed-Book"), sondern wie ein Detektiv in einer externen Wissensbasis (z. B. Vektordatenbank) nachschlägt ("Open-Book")
+
+<img alt="RAG: Das "Open-Book"-Prinzip" src="https://github.com/user-attachments/assets/25099eaf-39f1-4d1b-a984-32a69ecaa784" />
+
+### Vergleich: Fine-tuning vs. RAG
+Dieses Diagramm zeigt den Unterschied zwischen dem Ändern des "Gehirns" (Gewichte) und dem Nutzen eines "Spickzettels" (Kontext).
+
+```mermaid
+graph LR
+    subgraph "Fine-tuning (Gehirn-OP)"
+    A[Trainingsdaten] --> B(Modell-Update)
+    B --> C{Wissen fest verankert}
+    end
+
+    subgraph "RAG (Spickzettel)"
+    D[Nutzerfrage] --> E{Retrieval}
+    E -->|suche in| F[(Wissensdatenbank)]
+    F --> G[Kontext an LLM]
+    G --> H{Antwort auf Faktenbasis}
+    end
+```
+
+### AI Bill of Materials (AI BoM)
+Visualisierung der KI-Bestandteile für Transparenz und Governance.
+
+```mermaid
+mindmap
+  root((<b>AI BoM</b>))
+    Basis-Modell
+      Llama 3
+      GPT-4
+    Trainingsdaten
+      Unternehmens-Wiki
+      Kunden-Historie
+    Frameworks
+      LangChain
+      PyTorch
+    Sicherheit
+      Red Teaming
+      Guardrails
+```
+
+### Chain of Thought (Gedankenkette)
+Stellt den schrittweisen Denkprozess dar, der die Genauigkeit bei komplexen Aufgaben erhöht.
+
+```mermaid
+flowchart LR
+    Q[Komplexe Aufgabe] --> S1[Schritt 1: Analyse]
+    S1 --> S2[Schritt 2: Logische Kette]
+    S2 --> S3[Schritt 3: Zwischenfazit]
+    S3 --> A[Präzise Antwort]
+    
+    style S1 fill:#f9f,stroke:#333
+    style S2 fill:#f9f,stroke:#333
+    style S3 fill:#f9f,stroke:#333
+```
+
+### Die Wissenspyramide (DIKW)
+Visualisiert den Weg von Rohdaten zu strategischen KI-Handlungen.
+
+```mermaid
+graph TD
+    W[<b>Handeln / Weisheit</b><br/>KI optimiert Prozesse] --- K[<b>Wissen</b><br/>Vernetzung im Wissensgraph]
+    K --- I[<b>Information</b><br/>Strukturierte Daten]
+    I --- D[<b>Daten</b><br/>Rohfakten / Zahlen]
+    
+    style W fill:#4CAF50,color:white
+    style K fill:#8BC34A
+    style I fill:#CDDC39
+    style D fill:#F4FF81
+```
+
+### Vibe Coding vs. Traditionelles Coden
+Ein Vergleich des iterativen, KI-gestützten Flows gegenüber der klassischen Softwareentwicklung.
+
+```mermaid
+graph LR
+    subgraph "Traditionell"
+    A[Planung] --> B[Design]
+    B --> C[Manuelles Coding]
+    C --> D[Testen]
+    end
+
+    subgraph "Vibe Coding (KI-Flow)"
+    E[Absicht beschreiben] --> F[KI generiert Code]
+    F --> G[Prompt-Tuning]
+    G --> E
+    G --> H[Deployment]
+    end
+    
+    style F fill:#e1f5fe,stroke:#01579b
+    style G fill:#e1f5fe,stroke:#01579b
+```

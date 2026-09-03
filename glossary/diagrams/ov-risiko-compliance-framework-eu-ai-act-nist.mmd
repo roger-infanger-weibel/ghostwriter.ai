@@ -1,0 +1,24 @@
+graph TD
+    subgraph "EU AI Act Risikoklassen"
+        Unacceptable[Unvertretbar / Verboten]
+        High[Hoch / Zertifizierungspflicht]
+        Limited[Begrenzt / Transparenzpflicht]
+        Minimal[Gering / Keine Auflagen]
+    end
+    
+    subgraph "Sicherheits-Stack (Pro)"
+        InGuard[Input Guardrails / Prompt Injection Defense]
+        Red[Red Teaming / Vulnerability Probing]
+        HitL[Human-in-the-Loop / Validierung]
+        OutGuard[Output Guardrails / PII-Filter]
+    end
+    
+    User[User] --> InGuard
+    InGuard --> LLM[Modell / Inferenz]
+    LLM --> Red
+    Red --> HitL
+    HitL --> OutGuard
+    OutGuard --> SafeOutput[Sicheres Ergebnis]
+    
+    High --- HitL
+    Limited --- OutGuard

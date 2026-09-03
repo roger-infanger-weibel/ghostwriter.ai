@@ -1,0 +1,16 @@
+graph LR
+    subgraph "Traditionell"
+    A[Planung] --> B[Design]
+    B --> C[Manuelles Coding]
+    C --> D[Testen]
+    end
+
+    subgraph "Vibe Coding (KI-Flow)"
+    E[Absicht beschreiben] --> F[KI generiert Code]
+    F --> G[Prompt-Tuning]
+    G --> E
+    G --> H[Deployment]
+    end
+    
+    style F fill:#e1f5fe,stroke:#01579b
+    style G fill:#e1f5fe,stroke:#01579b
