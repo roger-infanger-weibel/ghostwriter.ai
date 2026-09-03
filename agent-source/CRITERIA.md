@@ -1,6 +1,7 @@
 # CRITERIA – Was in den Wochenpost gehört
 
 Deine Top-News aus Claude, ChatGPT, Gemini, Google AI Studio, NotebookLM, EU AI Act, Schweizer Datenschutz.
+Alle relevanten Quellen sind im SOURCES.md
 
 ---
 
@@ -10,33 +11,14 @@ Nur **Top-News**, nicht Hype. Ein Post mit 3–4 starken Einträgen ist besser a
 
 ---
 
-## Relevant (rein)
-
-### Eure vier Haupttools
-- **Claude (Anthropic):** Neue Modelle (Claude 3.5, Opus, Sonnet), Feature-Releases (Code, Routines, Cowork), API-Changes, Preise, Limits
-- **ChatGPT / OpenAI:** GPT-4o, GPT-o1, API-Updates, Preise, Verfügbarkeit, Plugins, Memory
-- **Gemini / Google:** Neue Gemini-Modelle, API-Updates, Google AI Studio, NotebookLM (neu?), Verfügbarkeit, Integration
-- **Google AI Studio:** Neue Features, Release Notes, Integration mit anderen Tools
-
-### Sicherheit & Regulierung
-- **Sicherheitsrelevant:** Prompt Injection Patches, Agenten-Safety, Datenabfluss, Jailbreak-Reports
-- **EU AI Act:** Umsetzungsschritte, Änderungen, neue Anforderungen
-- **Schweiz:** EDÖB-Entscheide, Datenschutz-Urteile, HWZ/ETH/EPFL KI-Initiativen, Schweizer PLS-Systeme (Zurich PLS AG, Signal AG, LTS AG)
-
-### Deine Spezial-Themen
-- **Parking-Forecasting (PLS):** Neue Sensoren, Datenquellen, ML-Ansätze für Parkleitsysteme, länderspezifische Systeme
-- **Vibe Coding & Risk Scaling:** Best Practices, Fehler, Lessons Learned im Web-Dev mit KI
-- **CAS-Kontext:** Innovation-Management, Design Thinking in KI-Projekten
-
----
-
 ## NICHT relevant (raus)
 
-- Funding-Runden, Bewertungen, Personalwechsel (ausser CEO bei OpenAI/Anthropic/Google)
+- Funding-Runden, Bewertungen, Personalwechsel (ausser CEO)
 - "X ist das Ende von Y" – reine Meinung ohne Fakten
 - Benchmark-Rankings ohne konkrete Relevanz für deine Arbeit
 - Ankündigungen ohne Verfügbarkeit oder Datum ("coming soon")
 - Dinge ohne Primärquelle oder Link
+- normale Release Updates ohne major changes
 
 ---
 
@@ -62,7 +44,6 @@ Ein Thema erscheint in **genau einer** Region (engste gewinnt):
 - Schweizer Hochschulen (ETH, EPFL, HWZ, etc.)
 - Schweizer Unternehmen & Initiativen
 - Schweizer Verfügbarkeit / Einschränkungen der Tools
-- Parking-Systeme (Zurich PLS AG, Signal AG, LTS AG, Digitalparking)
 
 ---
 
