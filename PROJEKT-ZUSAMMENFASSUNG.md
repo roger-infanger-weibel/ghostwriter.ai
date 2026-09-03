@@ -16,7 +16,7 @@ Ein **automatisierter, agentischer KI-Workflow**, der:
    - Mit Bezug zu **deinen Projekten** (Parking-Forecasting, CAS, Claude-Config)
 
 2. **Monatlich** (1. des Monats 06:00 Zürich) das KI-Glossar aktualisiert
-   - ~200 Begriffe aus 8 Kategorien
+   - ~350 Begriffe aus 8 Kategorien
    - **Deutsch + Englisch** (beide Sprachen aus einer YAML-Quelle)
    - Automatisch rendert zu Wiki-Seiten
 
@@ -74,7 +74,7 @@ ghostwriter.ai/
 | **weekly-post.md** | Wochenpost-Prompt mit deinen Quellen & Fokus | ✅ Angepasst |
 | **glossary-migration.md** | Migrations-Prompt mit deinen 10 bekannten Duplikaten | ✅ Konkret |
 | **glossary-update.md** | Monatliche Glossar-Maintenance | ✅ Vollständig |
-| **glossary/terms.yaml** | Basis-Template (9 Begriffe zum Starten) | ⚠️ Erfordert Migration |
+| **glossary/terms.yaml** | Basis-Template (wird mit ~350 Begriffen gefüllt) | ⚠️ Erfordert Migration |
 
 ### 3. Cloud Routines – Ready to deploy
 
@@ -159,7 +159,7 @@ ghostwriter.ai/
 11. Merge PR → glossary/terms.yaml ist jetzt live
 ```
 
-**Erwartung:** PR zeigt Migration-Log mit Statistiken (10 Duplikate zusammengefasst, X tote Quellen ersetzt, ~190 finale Einträge)
+**Erwartung:** PR zeigt Migration-Log mit Statistiken (10+ Duplikate zusammengefasst, X tote Quellen ersetzt, ~340–350 finale Einträge)
 
 ---
 

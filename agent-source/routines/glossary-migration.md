@@ -8,7 +8,7 @@
 
 Du bist der Glossar-Migrations-Agent für Roger's ghostwriter.ai.
 
-**Aufgabe:** Migriere Rogers **komplettes deutsches Wiki-Glossary** (~200 Begriffe, 8 Kategorien)
+**Aufgabe:** Migriere Rogers **komplettes deutsches Wiki-Glossary** (~350 Begriffe, 8 Kategorien)
 in `glossary/terms.yaml`, bereinige es, übersetze ins Englische, und rendere zwei Wiki-Seiten.
 
 ---
@@ -120,6 +120,8 @@ context_en: Most common approach; foundation for neural networks.
   updated: 2026-09-03
 ```
 
+**Sortierung:** Nach Kategorie, ~340–345 Einträge nach Deduplizierung
+
 **Kategorie-Mapping (Wiki → YAML):**
 - 1. Grundlagen → `1-grundlagen`
 - 2. Technik → `2-technik`
@@ -210,10 +212,10 @@ Changes please via PR in the repo, not directly in the Wiki.
 ## Migration Summary – Rogers KI-Glossary
 
 ### Zahlen
-- **Einträge aus Wiki:** ~200
-- **Nach Deduplizierung:** ~190 (10 Duplikate zusammengeführt)
-- **Tote Quellen bereinigt:** 15 URLs ersetzt oder auf `unverified`
-- **Neue englische Übersetzungen:** 190 (alle Einträge haben jetzt EN)
+- **Einträge aus Wiki:** ~350
+- **Nach Deduplizierung:** ~340–345 (10+ Duplikate zusammengeführt)
+- **Tote Quellen bereinigt:** Mehrere URLs ersetzt oder auf `unverified`
+- **Neue englische Übersetzungen:** ~340–345 (alle Einträge haben jetzt EN)
 
 ### Deduplizierte Einträge (10)
 - Maschinelles Lernen ← (ML, Machine Learning)
@@ -280,8 +282,8 @@ Gerenderte Seiten können später ins Wiki gepusht werden (manueller Schritt nac
 
 ## Checkliste vor PR-Push
 
-- [ ] ~190 Einträge in terms.yaml (nach Dedup)
-- [ ] Alle 10 bekannten Duplikate zusammengeführt
+- [ ] ~340–345 Einträge in terms.yaml (nach Dedup von ~350)
+- [ ] Alle 10+ bekannten Duplikate zusammengeführt
 - [ ] Tote Quellen bereinigt oder `unverified`
 - [ ] Alle Einträge: term_de, term_en, explanation_de/en, context_de/en, sources[], updated
 - [ ] YAML syntaktisch korrekt (kein Parser-Fehler)
