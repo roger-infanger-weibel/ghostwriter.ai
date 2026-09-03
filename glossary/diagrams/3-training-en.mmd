@@ -1,0 +1,13 @@
+graph TD
+    Data[Big Data / Training Data] --> Pre[Pre-Training]
+    Pre --> FM[Foundation Model]
+
+    FM --> Fine[Fine-Tuning]
+    Fine --> SFT[Supervised Fine-Tuning]
+    Fine --> LoRA[LoRA / QLoRA]
+
+    FM --> Align[Alignment / RLHF & DPO]
+    Align --> Asst[AI Assistant]
+
+    Train[Training] --> Over[Avoiding Overfitting]
+    Train --> Epoch[Measured in Epochs]

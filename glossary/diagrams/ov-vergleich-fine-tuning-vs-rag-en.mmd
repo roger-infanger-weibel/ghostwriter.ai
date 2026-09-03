@@ -1,0 +1,12 @@
+graph LR
+    subgraph "Fine-tuning (Brain Surgery)"
+    A[Training Data] --> B(Model Update)
+    B --> C{Knowledge Permanently Embedded}
+    end
+
+    subgraph "RAG (Cheat Sheet)"
+    D[User Question] --> E{Retrieval}
+    E -->|search in| F[(Knowledge Base)]
+    F --> G[Context to LLM]
+    G --> H{Fact-Based Answer}
+    end

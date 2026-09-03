@@ -1,0 +1,14 @@
+graph LR
+    NLP[Natural Language Processing] --> LLM[Large Language Models]
+    LLM --> Trans[Transformer Architecture]
+    Trans --> Att[Attention Mechanism]
+
+    Data[Text Input] --> Tok[Tokenization]
+    Tok --> Emb[Embeddings / Vectors]
+    Emb --> VDB[Vector Database]
+
+    VDB --> RAG[RAG / Retrieval-Augmented Generation]
+    RAG -- Prevents --> Hallu[Hallucinations]
+
+    Trans --> MoE[MoE / Mixture of Experts]
+    MoE -- Increases --> Eff[Efficiency]
