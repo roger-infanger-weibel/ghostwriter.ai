@@ -40,6 +40,7 @@ Fokus: Claude, ChatGPT, Gemini, Google AI Studio, NotebookLM. Dazu Regulierung &
    - https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
    - https://www.edoeb.admin.ch (EDÖB)
    - https://www.swiss-ai.org (ETH/EPFL)
+   - https://www.swissai.ch/blog
 
 4. Sammle **Kandidaten** mit:
    - Titel (Was ist passiert?)
