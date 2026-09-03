@@ -1,0 +1,148 @@
+# glossary/terms.yaml
+# Single Source of Truth für KI-Glossar (Deutsch + Englisch)
+# Wird von der monatlichen Glossary-Routine gepflegt und gerendert
+
+schema_version: 1
+last_rendered: 2026-09-03
+last_migrated: 2026-09-03
+
+# Hinweise:
+# - id: Eindeutige Kennung (lowercase, keine Leerzeichen)
+# - category: 1-grundlagen, 2-technik, 3-training, 4-prompting-agenten, 5-vision-robotik, 6-sicherheit-recht, 7-industrie-medizin, 8-hardware-kennzahlen
+# - status: "active" oder "deprecated"
+# - updated: ISO-Datum (YYYY-MM-DD)
+# - explanation/context: je ein Satz, max. 25 Wörter
+# - sources: mindestens eine URL (Primärquelle)
+
+terms:
+  - id: llm
+    category: 2-technik
+    status: active
+    term_de: Großes Sprachmodell
+    term_en: Large Language Model (LLM)
+    explanation_de: Ein riesiges neuronales Netz, das darauf trainiert wurde, Sprache zu verstehen und zu erzeugen.
+    explanation_en: A massive neural network trained to understand and generate language.
+    context_de: Basis für ChatGPT, Claude, Gemini und andere Assistenten.
+    context_en: Basis for ChatGPT, Claude, Gemini, and other assistants.
+    sources:
+      - https://webconsulting.at/blog/ki-kompendium-business-bildung-2025
+    updated: 2026-09-03
+
+  - id: rag
+    category: 2-technik
+    status: active
+    term_de: Retrieval-Augmented Generation (RAG)
+    term_en: Retrieval-Augmented Generation (RAG)
+    explanation_de: Die KI sucht vor der Antwort in externen Quellen und stützt ihre Antwort darauf.
+    explanation_en: The model retrieves from external sources before answering and grounds its reply on them.
+    context_de: Reduziert Halluzinationen; Basis vieler Unternehmens-Chatbots.
+    context_en: Reduces hallucinations; basis of most enterprise chatbots.
+    sources:
+      - https://webconsulting.at/blog/ki-kompendium-business-bildung-2025
+    updated: 2026-09-03
+
+  - id: prompt-engineering
+    category: 4-prompting-agenten
+    status: active
+    term_de: Prompt Engineering
+    term_en: Prompt Engineering
+    explanation_de: Die Kunst, Befehle so präzise zu formulieren, dass die KI optimal liefert.
+    explanation_en: The skill of formulating instructions so precisely that the AI produces optimal results.
+    context_de: Wichtiger Skill für alle, die mit LLMs arbeiten.
+    context_en: Essential skill for anyone working with LLMs.
+    sources:
+      - https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview
+    updated: 2026-09-03
+
+  - id: chain-of-thought
+    category: 4-prompting-agenten
+    status: active
+    term_de: Chain-of-Thought (CoT)
+    term_en: Chain-of-Thought (CoT)
+    explanation_de: Technik, die KI anzuweisen, Schritt für Schritt zu denken und zu argumentieren.
+    explanation_en: Technique instructing the AI to think and reason step by step.
+    context_de: Verbessert Logik und Genauigkeit bei komplexen Aufgaben massiv.
+    context_en: Greatly improves logic and accuracy on complex tasks.
+    sources:
+      - https://webconsulting.at/blog/ki-kompendium-business-bildung-2025
+    updated: 2026-09-03
+
+  - id: halluzination
+    category: 2-technik
+    status: active
+    term_de: Halluzination
+    term_en: Hallucination
+    explanation_de: Die KI behauptet selbstbewusst falsche Fakten oder erfindet Quellen.
+    explanation_en: The model confidently states false facts or invents sources.
+    context_de: Bekanntes Problem bei LLMs, besonders ohne RAG oder Human-in-the-Loop.
+    context_en: Known problem in LLMs, especially without RAG or human review.
+    sources:
+      - https://webconsulting.at/blog/ki-kompendium-business-bildung-2025
+    updated: 2026-09-03
+
+  - id: alignment
+    category: 6-sicherheit-recht
+    status: active
+    term_de: Alignment
+    term_en: Alignment
+    explanation_de: Sicherstellen, dass KI-Ziele mit menschlichen Werten übereinstimmen.
+    explanation_en: Ensuring AI goals align with human values and intentions.
+    context_de: Zentrales Sicherheitsproblem bei der KI-Entwicklung.
+    context_en: Central safety challenge in AI development.
+    sources:
+      - https://www.anthropic.com/news
+    updated: 2026-09-03
+
+  - id: eu-ai-act
+    category: 6-sicherheit-recht
+    status: active
+    term_de: EU AI Act
+    term_en: EU AI Act
+    explanation_de: Weltweit erstes Gesetz zur Regulierung von KI nach Risikoklassen.
+    explanation_en: World's first law regulating AI by risk classification.
+    context_de: Rechtsrahmen in Europa seit 2024; klassifiziert Risiken und schreibt Massnahmen vor.
+    context_en: EU's regulatory framework since 2024; classifies risks and mandates measures.
+    sources:
+      - https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+    updated: 2026-09-03
+
+  - id: agent
+    category: 4-prompting-agenten
+    status: active
+    term_de: KI-Agent
+    term_en: AI Agent
+    explanation_de: Autonomes System, das selbstständig Aufgaben erledigt, Werkzeuge nutzt und plant.
+    explanation_en: Autonomous system that independently completes tasks, uses tools, and plans.
+    context_de: Weiterentwicklung von Chatbots; führt eigenständig Handlungen aus.
+    context_en: Evolution beyond chatbots; autonomously takes actions.
+    sources:
+      - https://www.anthropic.com/news
+    updated: 2026-09-03
+
+  - id: mcp
+    category: 4-prompting-agenten
+    status: active
+    term_de: Model Context Protocol (MCP)
+    term_en: Model Context Protocol (MCP)
+    explanation_de: Offener Standard, um KI-Modelle einfach mit Datenquellen und Tools zu verbinden.
+    explanation_en: Open standard to easily connect AI models with data sources and tools.
+    context_de: "USB-C Anschluss" für KI-Integrations; ermöglicht nahtlose Datenanbindung.
+    context_en: Like "USB-C for AI" – enables seamless data and tool integration.
+    sources:
+      - https://modelcontextprotocol.io/
+    updated: 2026-09-03
+
+# Leere Vorlage für neue Einträge (kopieren & ausfüllen):
+#
+#  - id: new-term
+#    category: X-kategorie
+#    status: active
+#    term_de: Deutscher Begriff
+#    term_en: English Term
+#    explanation_de: Ein Satz, max. 25 Wörter.
+#    explanation_en: One sentence, max. 25 words.
+#    context_de: Ein Satz, warum relevant.
+#    context_en: One sentence, why it matters.
+#    sources:
+#      - https://primärquelle.url
+#    updated: YYYY-MM-DD
