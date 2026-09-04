@@ -1,5 +1,5 @@
 schema_version: 1
-last_rendered: '2026-09-03'
+last_rendered: '2026-09-04'
 last_migrated: '2026-09-03'
 terms:
 - id: kuenstliche-intelligenz
@@ -39,8 +39,8 @@ terms:
   context_en: A subset of ML.
   sources:
   - https://www.coursera.org/de-DE/articles/ai-vs-deep-learning-vs-machine-learning-beginners-guide
-  - https://www.youtube.com/watch?v=KI-Lernen
-  updated: '2026-09-03'
+  - https://www.ibm.com/topics/deep-learning
+  updated: '2026-09-04'
 - id: generative-ki
   category: 1-grundlagen-and-kernkonzepte
   status: active
@@ -275,8 +275,8 @@ terms:
   sources:
   - https://www.zendesk.de/blog/ai/generative-ai-glossary/
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
-  - https://www.youtube.com/watch?v=KI-Lernen
-  updated: '2026-09-03'
+  - https://arxiv.org/abs/2005.11401
+  updated: '2026-09-04'
 - id: vektor-datenbank
   category: 2-technik,-architektur-and-sprachverarbeitung-nlp
   status: active
@@ -315,8 +315,8 @@ terms:
   context_en: Limits the length of PDFs/chats.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
-  - https://www.youtube.com/watch?v=KI-Lernen
-  updated: '2026-09-03'
+  - https://www.zendesk.de/blog/ai/generative-ai-glossary/
+  updated: '2026-09-04'
 - id: moe-/-sparse-models
   category: 2-technik,-architektur-and-sprachverarbeitung-nlp
   status: active
@@ -414,6 +414,20 @@ terms:
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
+- id: prompt-caching
+  category: 2-technik,-architektur-and-sprachverarbeitung-nlp
+  status: active
+  term_de: Prompt Caching
+  term_en: Prompt Caching
+  explanation_de: Technik, die wiederholt genutzte Prompt-Abschnitte zwischenspeichert, um Kosten und
+    Latenz bei Folgeanfragen zu senken.
+  explanation_en: A technique that caches repeatedly used prompt segments to cut cost and latency on follow-up
+    requests.
+  context_de: Wichtig fuer agentische Workflows mit langen, wiederkehrenden Kontexten.
+  context_en: Important for agentic workflows with long, recurring contexts.
+  sources:
+  - https://platform.claude.com/docs/en/build-with-claude/prompt-caching
+  updated: '2026-09-04'
 - id: pre-training
   category: 3-training,-anpassung-and-daten
   status: active
@@ -468,30 +482,18 @@ terms:
 - id: bestaerkendes-lernen
   category: 3-training,-anpassung-and-daten
   status: active
-  term_de: Bestaerkendes Lernen
-  term_en: Reinforcement Learning (RL)
-  explanation_de: Lernen durch Belohnung und Bestrafung (Feedback) in einer Umgebung.
-  explanation_en: Learning through reward and punishment (feedback) in an environment.
-  context_de: Wichtig fuer Spiele/Robotik.
-  context_en: Important for games and robotics.
-  sources:
-  - https://www.ki.nrw/ki-schluesselbegriffe/
-  - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
-  updated: '2026-09-03'
-- id: verstaerkendes-lernen
-  category: 3-training,-anpassung-and-daten
-  status: active
-  term_de: Verstärkendes Lernen
+  term_de: Bestärkendes Lernen
   term_en: Reinforcement Learning (RL)
   explanation_de: Ein Lernprozess, bei dem ein Agent durch Belohnungen innerhalb eines Regelsystems optimale
     Strategien lernt.
   explanation_en: A learning process in which an agent learns optimal strategies through rewards within
     a rule system.
-  context_de: Wird genutzt, um KI-Systemen beizubringen, komplexe Ziele (z. B. Spiele oder autonome Navigation)
-    zu erreichen.
-  context_en: Used to teach AI systems to reach complex goals (e.g. games or autonomous navigation).
-  sources: []
-  updated: '2026-09-03'
+  context_de: Wichtig fuer Spiele und Robotik, etwa um komplexe Ziele wie autonome Navigation zu erreichen.
+  context_en: Important for games and robotics, for example to reach complex goals like autonomous navigation.
+  sources:
+  - https://www.ki.nrw/ki-schluesselbegriffe/
+  - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
+  updated: '2026-09-04'
 - id: ueberanpassung
   category: 3-training,-anpassung-and-daten
   status: active
@@ -506,7 +508,8 @@ terms:
   context_en: Makes the AI perform perfectly on known data but fail completely on new tasks.
   sources:
   - https://digitalzentrum-berlin.de/blog/ki-glossar
-  updated: '2026-09-03'
+  - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
+  updated: '2026-09-04'
 - id: datenerweiterung
   category: 3-training,-anpassung-and-daten
   status: active
@@ -568,18 +571,6 @@ terms:
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   - https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf
-  updated: '2026-09-03'
-- id: overfitting
-  category: 3-training,-anpassung-and-daten
-  status: active
-  term_de: Overfitting
-  term_en: Overfitting
-  explanation_de: Die KI lernt Daten auswendig statt Muster zu verstehen (versagt bei Neuem).
-  explanation_en: The AI memorizes the data instead of understanding patterns (fails on anything new).
-  context_de: Haeufiger Trainingsfehler.
-  context_en: A common training error.
-  sources:
-  - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
 - id: catastrophic-forgetting
   category: 3-training,-anpassung-and-daten
@@ -667,8 +658,8 @@ terms:
   context_en: The interface to the user.
   sources:
   - https://digitaleneuordnung.de/blog/ki-begriffe
-  - https://www.youtube.com/watch?v=KI-Lernen
-  updated: '2026-09-03'
+  - https://www.ibm.com/topics/prompt-engineering
+  updated: '2026-09-04'
 - id: prompt-engineering
   category: 4-prompting-and-interaktion-agenten-and-protokolle
   status: active
@@ -719,8 +710,8 @@ terms:
   context_en: A hallmark of newer models (o1).
   sources:
   - https://digitaleneuordnung.de/blog/ki-begriffe
-  - https://www.youtube.com/watch?v=KI-Lernen
-  updated: '2026-09-03'
+  - https://platform.claude.com/docs/en/build-with-claude/thinking
+  updated: '2026-09-04'
 - id: ki-agent
   category: 4-prompting-and-interaktion-agenten-and-protokolle
   status: active
@@ -757,8 +748,36 @@ terms:
   context_en: The "USB-C port" for AI data.
   sources:
   - https://digitaleneuordnung.de/blog/ki-begriffe
-  - https://www.youtube.com/watch?v=KI-Lernen
-  updated: '2026-09-03'
+  - https://modelcontextprotocol.io/introduction
+  updated: '2026-09-04'
+- id: function-calling
+  category: 4-prompting-and-interaktion-agenten-and-protokolle
+  status: active
+  term_de: Function Calling
+  term_en: Function Calling
+  explanation_de: Faehigkeit einer KI, strukturierte Funktionsaufrufe mit festgelegten Parametern statt
+    reinem Text auszugeben.
+  explanation_en: An AI's ability to output structured function calls with defined parameters instead
+    of plain text.
+  context_de: Grundlage dafuer, dass Agenten externe Werkzeuge und APIs zuverlaessig nutzen koennen.
+  context_en: The basis for agents reliably using external tools and APIs.
+  sources:
+  - https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview
+  updated: '2026-09-04'
+- id: model-hardware-standard
+  category: 4-prompting-and-interaktion-agenten-and-protokolle
+  status: active
+  term_de: Model Hardware Standard (MHS)
+  term_en: Model Hardware Standard (MHS)
+  explanation_de: Offene Spezifikation, mit der KI-Agenten Laborgeraete, Roboterarme und Fertigungshardware
+    direkt ansteuern koennen.
+  explanation_en: An open specification that lets AI agents directly control lab equipment, robotic arms,
+    and manufacturing hardware.
+  context_de: Erweitert Agenten-Protokolle wie MCP von reiner Software auf physische Systeme.
+  context_en: Extends agent protocols like MCP from pure software to physical systems.
+  sources:
+  - https://www.anthropic.com/news/model-hardware-standard-research-preview
+  updated: '2026-09-04'
 - id: vibecoding
   category: 4-prompting-and-interaktion-agenten-and-protokolle
   status: active
@@ -766,11 +785,11 @@ terms:
   term_en: Vibecoding
   explanation_de: Apps bauen, indem man sie nur beschreibt, statt Code zu schreiben.
   explanation_en: Building apps by describing them, rather than writing code.
-  context_de: Neuer Trend in der Entwicklung.
-  context_en: A new trend in software development.
+  context_de: Von Andrej Karpathy gepraegter Begriff fuer einen neuen Trend in der Softwareentwicklung.
+  context_en: A term coined by Andrej Karpathy for a new trend in software development.
   sources:
-  - https://www.youtube.com/watch?v=KI-Lernen
-  updated: '2026-09-03'
+  - https://en.wikipedia.org/wiki/Vibe_coding
+  updated: '2026-09-04'
 - id: multimodalitaet
   category: 4-prompting-and-interaktion-agenten-and-protokolle
   status: active
@@ -782,8 +801,8 @@ terms:
   context_en: A property of modern models.
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
-  - https://www.youtube.com/watch?v=KI-Lernen
-  updated: '2026-09-03'
+  - https://www.ibm.com/topics/multimodal-ai
+  updated: '2026-09-04'
 - id: prompt-injection
   category: 4-prompting-and-interaktion-agenten-and-protokolle
   status: active
@@ -1134,6 +1153,20 @@ terms:
   sources:
   - https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025
   updated: '2026-09-03'
+- id: ki-wasserzeichen
+  category: 6-sicherheit,-ethik-and-recht
+  status: active
+  term_de: KI-Wasserzeichen
+  term_en: AI Watermarking
+  explanation_de: Ein unsichtbares, maschinenlesbares Signal in KI-generierten Inhalten, das deren Herkunft
+    nachweist.
+  explanation_en: An invisible, machine-readable signal embedded in AI-generated content that proves its
+    origin.
+  context_de: Durch Artikel 50 des EU AI Act fuer KI-Anbieter in Europa vorgeschrieben.
+  context_en: Required for AI providers in Europe under Article 50 of the EU AI Act.
+  sources:
+  - https://www.anthropic.com/news/claude-text-watermark
+  updated: '2026-09-04'
 - id: model-drift
   category: 6-sicherheit,-ethik-and-recht
   status: active
@@ -1353,20 +1386,6 @@ terms:
   sources:
   - https://www.ki.nrw/ki-schluesselbegriffe/
   - https://www.coursera.org/de-DE/articles/ai-vs-deep-learning-vs-machine-learning-beginners-guide
-  updated: '2026-09-03'
-- id: kontextfenster
-  category: 8-hardware-and-kennzahlen
-  status: active
-  term_de: Kontextfenster
-  term_en: Context Window
-  explanation_de: Die Menge an Informationen, die eine KI während einer Interaktion gleichzeitig verarbeiten
-    kann.
-  explanation_en: The amount of information an AI can process at once during an interaction.
-  context_de: Bestimmt, wie lange ein Dokument sein darf, damit die KI alle Details noch im "Gedächtnis"
-    behält.
-  context_en: Determines how long a document can be while the AI still keeps all details in "memory".
-  sources:
-  - https://www.zendesk.de/blog/ai/generative-ai-glossary/
   updated: '2026-09-03'
 - id: skalierbarkeit
   category: 8-hardware-and-kennzahlen
