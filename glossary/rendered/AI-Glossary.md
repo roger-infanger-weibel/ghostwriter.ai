@@ -1,6 +1,6 @@
 # AI Glossary
 
-Generated from glossary/terms.yaml – as of 2026-09-03.  
+Generated from glossary/terms.yaml – as of 2026-09-04.  
 Changes please via PR in the repo, not directly in the Wiki.
 
 ## 1. Fundamentals & Core Concepts
@@ -25,7 +25,7 @@ graph TD
 |---|---|---|---|---|
 | Artificial Intelligence (AI) | Kuenstliche Intelligenz | Computer systems that mimic human abilities such as seeing, speaking, or making decisions. | The umbrella term for the whole field. | [1](https://moterra.ai/blog/ai-map-simplified-understanding-ai-ml-dl-and-genai), [2](https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf) |
 | Machine Learning (ML) | Maschinelles Lernen | Systems learn automatically from patterns in data instead of being explicitly programmed. | A subset of AI. | [1](https://www.ki.nrw/ki-schluesselbegriffe/), [2](https://www.coursera.org/de-DE/articles/ai-vs-deep-learning-vs-machine-learning-beginners-guide) |
-| Deep Learning (DL) | Tiefes Lernen | ML using artificial neural networks with many layers ("deep"). | A subset of ML. | [1](https://www.coursera.org/de-DE/articles/ai-vs-deep-learning-vs-machine-learning-beginners-guide), [2](https://www.youtube.com/watch?v=KI-Lernen) |
+| Deep Learning (DL) | Tiefes Lernen | ML using artificial neural networks with many layers ("deep"). | A subset of ML. | [1](https://www.coursera.org/de-DE/articles/ai-vs-deep-learning-vs-machine-learning-beginners-guide), [2](https://www.ibm.com/topics/deep-learning) |
 | Generative AI (GenAI) | Generative KI | A form of AI that creates new content (text, images, music, code). | A branch of AI. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [2](https://digitaleneuordnung.de/blog/ki-begriffe) |
 | General AI (AGI) | Starke KI | A theoretical AI that could solve any cognitive task as well as a human. | A long-term research goal. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [2](https://our-languages.canada.ca/en/artificial-intelligence-terminology-concept-map-eng) |
 | Narrow AI (ANI) | Schwache KI | AI optimized for one very specific task (e.g. chess). | Almost all of today's systems. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [2](https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf) |
@@ -65,10 +65,10 @@ graph LR
 | Token | Token | The basic unit (word pieces or syllables) that text is broken into for the AI. | The "currency" of AI processing. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [2](https://digitaleneuordnung.de/blog/ki-begriffe) |
 | Tokenization | Tokenisierung | The process of splitting text into individual tokens. | The first step of text processing. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [2](https://digitaleneuordnung.de/blog/ki-begriffe) |
 | Embeddings | Embeddings | Converting words into rows of numbers (vectors) so meaning becomes computable. | The basis for semantic search. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [2](https://digitaleneuordnung.de/blog/ki-begriffe) |
-| Retrieval-Augmented Generation | RAG | The AI looks up external sources (e.g. the internet) before answering, to check facts. | A method against hallucinations. | [1](https://www.zendesk.de/blog/ai/generative-ai-glossary/), [2](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [3](https://www.youtube.com/watch?v=KI-Lernen) |
+| Retrieval-Augmented Generation | RAG | The AI looks up external sources (e.g. the internet) before answering, to check facts. | A method against hallucinations. | [1](https://www.zendesk.de/blog/ai/generative-ai-glossary/), [2](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [3](https://arxiv.org/abs/2005.11401) |
 | Vector Database | Vektor-Datenbank | A specialized database that finds content by meaning instead of by keywords. | Essential for RAG systems. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [2](https://digitaleneuordnung.de/blog/ki-begriffe) |
 | Hallucination | Halluzination | The AI confidently states false facts or invents sources. | A well-known problem with LLMs. | [1](https://mdai.ch/blog/von-llm-bis-halluzination/), [2](https://digitalzentrum-berlin.de/blog/ki-glossar), [3](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
-| Context Window | Kontext-Fenster | The "short-term memory" – how much text the AI can process at once. | Limits the length of PDFs/chats. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [2](https://www.youtube.com/watch?v=KI-Lernen) |
+| Context Window | Kontext-Fenster | The "short-term memory" – how much text the AI can process at once. | Limits the length of PDFs/chats. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [2](https://www.zendesk.de/blog/ai/generative-ai-glossary/) |
 | Mixture of Experts (MoE) | MoE / Sparse Models | An architecture in which only specialized parts of a model are active per request. | Makes huge models more efficient. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
 | Inference | Inferenz | The actual use of the finished model on a new question. | The phase after training. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [2](https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf) |
 | Encoder | Encoder | The part of the model that processes input and builds representations. | Part of the Transformer architecture. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
@@ -77,6 +77,7 @@ graph LR
 | Beam Search | Beam Search | An algorithm that checks several text paths in parallel to find the best result. | A method for text generation. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
 | Latent Space | Latent Space | A high-dimensional space in which the network stores its internal concepts. | The geometry of meaning. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
 | Flash Attention | Flash Attention | A technical trick that massively speeds up the attention calculation. | Enables huge context windows. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
+| Prompt Caching | Prompt Caching | A technique that caches repeatedly used prompt segments to cut cost and latency on follow-up requests. | Important for agentic workflows with long, recurring contexts. | [1](https://platform.claude.com/docs/en/build-with-claude/prompt-caching) |
 
 ## 3. Training, Fine-Tuning & Data
 
@@ -103,15 +104,13 @@ graph TD
 | Fine-tuning | Feinabstimmung | The "vocational training": adapting a model to specialized tasks (e.g. medicine). | A step after pre-training. | [1](https://mdai.ch/blog/von-llm-bis-halluzination/), [2](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
 | Supervised Learning | Ueberwachtes Lernen | Learning from labeled examples (input plus the correct output). | The most common ML method. | [1](https://www.ki.nrw/ki-schluesselbegriffe/), [2](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
 | Unsupervised Learning | Unueberwachtes Lernen | The system searches for patterns on its own, without labels. | Used for clustering. | [1](https://www.ki.nrw/ki-schluesselbegriffe/), [2](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
-| Reinforcement Learning (RL) | Bestaerkendes Lernen | Learning through reward and punishment (feedback) in an environment. | Important for games and robotics. | [1](https://www.ki.nrw/ki-schluesselbegriffe/), [2](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
-| Reinforcement Learning (RL) | Verstärkendes Lernen | A learning process in which an agent learns optimal strategies through rewards within a rule system. | Used to teach AI systems to reach complex goals (e.g. games or autonomous navigation). | – |
-| Overfitting | Überanpassung | A state where a model learns the training data so precisely that it no longer recognizes new patterns. | Makes the AI perform perfectly on known data but fail completely on new tasks. | [1](https://digitalzentrum-berlin.de/blog/ki-glossar) |
+| Reinforcement Learning (RL) | Bestärkendes Lernen | A learning process in which an agent learns optimal strategies through rewards within a rule system. | Important for games and robotics, for example to reach complex goals like autonomous navigation. | [1](https://www.ki.nrw/ki-schluesselbegriffe/), [2](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
+| Overfitting | Überanpassung | A state where a model learns the training data so precisely that it no longer recognizes new patterns. | Makes the AI perform perfectly on known data but fail completely on new tasks. | [1](https://digitalzentrum-berlin.de/blog/ki-glossar), [2](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
 | Data Augmentation | Datenerweiterung | A process that generates new training data from existing data to improve performance. | Helps models become more robust and accurate by artificially increasing example variety. | – |
 | Direct Preference Optimization | DPO | A more modern alignment method that needs no separate reward model. | An alternative to PPO in training. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
 | Low-Rank Adaptation | LoRA | Efficient fine-tuning in which only tiny parts of the model are changed. | Saves 99% of the compute resources. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [2](https://digitaleneuordnung.de/blog/ki-begriffe) |
 | QLoRA | QLoRA | A combination of LoRA and quantization for the most resource-efficient training. | Makes training possible on normal PCs. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
 | Epoch | Epoch | One complete pass through the entire training dataset. | A parameter for training duration. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [2](https://www.din.de/resource/blob/772610/e96445ca1cbb372071981604ca9f07a2/normungsroadmap-ki-data.pdf) |
-| Overfitting | Overfitting | The AI memorizes the data instead of understanding patterns (fails on anything new). | A common training error. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
 | Catastrophic Forgetting | Catastrophic Forgetting | The AI forgets old knowledge when trained on a new task. | A problem with continual learning. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
 | Zero-shot Learning | Zero-Shot Learning | The AI solves a task with no prior example, from the instruction alone. | Shows the model's ability to generalize. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [2](https://digitaleneuordnung.de/blog/ki-begriffe) |
 | Few-shot Learning | Few-Shot Learning | The AI is given 2–10 examples in the prompt to learn a pattern. | A method of in-context learning. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [2](https://digitaleneuordnung.de/blog/ki-begriffe) |
@@ -134,20 +133,22 @@ graph TD
 
     Reason[Reasoning Models] --> Think[Step-by-Step Thinking]
 ```
-**Sources:** [Digital Neuordnung](https://digitaleneuordnung.de/blog/ki-begriffe), [Felicia Simon](https://www.youtube.com/watch?v=KI-Lernen), [webconsulting](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025)
+**Sources:** [Digital Neuordnung](https://digitaleneuordnung.de/blog/ki-begriffe), [webconsulting](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025)
 
 | Term (EN) | Begriff (DE) | Explanation | Context | Source |
 |---|---|---|---|---|
-| Prompt | Eingabeaufforderung | The instruction or question a human gives to the AI. | The interface to the user. | [1](https://digitaleneuordnung.de/blog/ki-begriffe), [2](https://www.youtube.com/watch?v=KI-Lernen) |
+| Prompt | Eingabeaufforderung | The instruction or question a human gives to the AI. | The interface to the user. | [1](https://digitaleneuordnung.de/blog/ki-begriffe), [2](https://www.ibm.com/topics/prompt-engineering) |
 | Prompt Engineering | Prompt Engineering | The art of phrasing instructions precisely enough that the AI delivers an optimal result. | An important skill for users. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [2](https://digitaleneuordnung.de/blog/ki-begriffe) |
 | System Prompt | System Prompt | A hidden base instruction that sets the AI's role and rules (e.g. "be a teacher"). | Defines the bot's behavior. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
 | Chain-of-Thought (CoT) | Chain-of-Thought | A technique that instructs the AI to think "step by step". | Massively improves logical reasoning. | [1](https://www.zendesk.de/blog/ai/generative-ai-glossary/), [2](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [3](https://digitaleneuordnung.de/blog/ki-begriffe) |
-| Reasoning | Reasoning | An AI's ability to draw logical conclusions and work through problems. | A hallmark of newer models (o1). | [1](https://digitaleneuordnung.de/blog/ki-begriffe), [2](https://www.youtube.com/watch?v=KI-Lernen) |
+| Reasoning | Reasoning | An AI's ability to draw logical conclusions and work through problems. | A hallmark of newer models (o1). | [1](https://digitaleneuordnung.de/blog/ki-begriffe), [2](https://platform.claude.com/docs/en/build-with-claude/thinking) |
 | AI Agent | KI-Agent | An autonomous system that completes tasks on its own (e.g. booking a trip). | The next step beyond chatbots. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [2](https://digitaleneuordnung.de/blog/ki-begriffe) |
 | AgentOps | AgentOps | The deployment, monitoring, and management of AI agents. | Infrastructure for agents. | [1](https://digitaleneuordnung.de/blog/ki-begriffe) |
-| Model Context Protocol | MCP | An open standard for connecting AI models to data sources easily. | The "USB-C port" for AI data. | [1](https://digitaleneuordnung.de/blog/ki-begriffe), [2](https://www.youtube.com/watch?v=KI-Lernen) |
-| Vibecoding | Vibecoding | Building apps by describing them, rather than writing code. | A new trend in software development. | [1](https://www.youtube.com/watch?v=KI-Lernen) |
-| Multimodality | Multimodalitaet | The ability to process different data types (image, text, audio) at the same time. | A property of modern models. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [2](https://www.youtube.com/watch?v=KI-Lernen) |
+| Model Context Protocol | MCP | An open standard for connecting AI models to data sources easily. | The "USB-C port" for AI data. | [1](https://digitaleneuordnung.de/blog/ki-begriffe), [2](https://modelcontextprotocol.io/introduction) |
+| Function Calling | Function Calling | An AI's ability to output structured function calls with defined parameters instead of plain text. | The basis for agents reliably using external tools and APIs. | [1](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview) |
+| Model Hardware Standard (MHS) | Model Hardware Standard (MHS) | An open specification that lets AI agents directly control lab equipment, robotic arms, and manufacturing hardware. | Extends agent protocols like MCP from pure software to physical systems. | [1](https://www.anthropic.com/news/model-hardware-standard-research-preview) |
+| Vibecoding | Vibecoding | Building apps by describing them, rather than writing code. | A term coined by Andrej Karpathy for a new trend in software development. | [1](https://en.wikipedia.org/wiki/Vibe_coding) |
+| Multimodality | Multimodalitaet | The ability to process different data types (image, text, audio) at the same time. | A property of modern models. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [2](https://www.ibm.com/topics/multimodal-ai) |
 | Prompt Injection | Prompt Injection | An attack in which users bypass safety rules through tricks. | A security risk with LLMs. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025), [2](https://digitaleneuordnung.de/blog/ki-begriffe) |
 | Multi-Turn Conversation | Mehrstufiger Dialog | An AI's ability to hold a real conversation across several messages while keeping context. | The prerequisite for fluid conversations that refer back to earlier statements. | [1](https://joerg-loehr.com/ki-glossar) |
 
@@ -219,6 +220,7 @@ graph TD
 | Explainable AI (XAI) | Erklaerbare KI | Methods that make the decisions of "black box" models understandable. | Needed for trust and traceability. | [1](https://www.ki.nrw/ki-schluesselbegriffe/) |
 | Deepfake | Deepfakes | AI-generated media that convincingly imitates real people. | A risk for disinformation. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
 | C2PA | C2PA | A technical standard for digital provenance proof in images. | A tool in the fight against deepfakes. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
+| AI Watermarking | KI-Wasserzeichen | An invisible, machine-readable signal embedded in AI-generated content that proves its origin. | Required for AI providers in Europe under Article 50 of the EU AI Act. | [1](https://www.anthropic.com/news/claude-text-watermark) |
 | Model Drift | Model Drift | The decline in an AI's performance as the real world changes after training. | A problem during ongoing operation. | [1](https://mdai.ch/blog/von-llm-bis-halluzination/) |
 | AI Governance | KI-Governance | A binding set of rules (mandates, approvals, controls) for AI use within a company. | Guarantees legally sound and ethical use of AI models. | – |
 | AI Literacy | KI-Kompetenz | A person's ability to understand AI systems, their risks and limits, and use them responsibly. | Explicitly required as a training obligation for organizations under the EU AI Act. | [1](https://joerg-loehr.com/ki-glossar) |
@@ -276,7 +278,6 @@ graph LR
 | Graphics Processing Unit | GPU / Grafikkarte | Specialized chips ideal for parallel AI computation. | The hardware basis of the AI boom. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
 | Perplexity | Perplexity | A measure of how good a model's predictions are (lower is better). | A metric for model evaluation. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
 | Big Data | Big Data | Enormous volumes of data, too complex for normal programs. | The fuel for AI training. | [1](https://www.ki.nrw/ki-schluesselbegriffe/), [2](https://www.coursera.org/de-DE/articles/ai-vs-deep-learning-vs-machine-learning-beginners-guide) |
-| Context Window | Kontextfenster | The amount of information an AI can process at once during an interaction. | Determines how long a document can be while the AI still keeps all details in "memory". | [1](https://www.zendesk.de/blog/ai/generative-ai-glossary/) |
 | Scalability | Skalierbarkeit | An AI system's ability to stay stable and efficient as user numbers grow massively. | Critical for a company-wide rollout of AI solutions without loss of performance. | [1](https://joerg-loehr.com/ki-glossar) |
 | Edge AI | Edge-KI | A form of AI processing that runs directly on the local device (e.g. a phone). | Reduces latency and improves privacy, since no data has to be sent to the cloud. | – |
 
@@ -442,7 +443,7 @@ graph TD
 
     Loop -- "Task Complete" --> Final[Final Answer / Agentic Action]
 ```
-**Sources:** [dno](https://digitaleneuordnung.de/blog/ki-begriffe), [Felicia Simon](https://www.youtube.com/watch?v=KI-Lernen) [3.13, 3.51, 4.6, 4.7, 613]
+**Sources:** [dno](https://digitaleneuordnung.de/blog/ki-begriffe) [3.13, 3.51, 4.6, 4.7, 613]
 
 ### Advanced RAG & Knowledge Modeling
 The connection between unstructured data (chunks) and structured standards (**SMART Standards**) and **knowledge graphs**.

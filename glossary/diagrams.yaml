@@ -47,8 +47,7 @@ diagrams:
   category_order: 4
   category_id: 4-prompting-agenten
   file: glossary/diagrams/4-prompting-agenten.mmd
-  quellen: '[Digital Neuordnung](https://digitaleneuordnung.de/blog/ki-begriffe), [Felicia Simon](https://www.youtube.com/watch?v=KI-Lernen),
-    [webconsulting](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025)'
+  quellen: '[Digital Neuordnung](https://digitaleneuordnung.de/blog/ki-begriffe), [webconsulting](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025)'
   title_en: Prompting & Interaction (Agents & Protocols)
   file_en: glossary/diagrams/4-prompting-agenten-en.mmd
 - id: 5-vision-robotik
@@ -165,8 +164,7 @@ diagrams:
   description_de: Dieses Diagramm zeigt, wie **Reasoning-Modelle** (wie o1) externe Protokolle (**MCP**)
     und Werkzeuge (**Function Calling**) nutzen, um autonom zu handeln.
   file: glossary/diagrams/ov-agentic-ai-reasoning-loop-architektur.mmd
-  quellen: '[dno](https://digitaleneuordnung.de/blog/ki-begriffe), [Felicia Simon](https://www.youtube.com/watch?v=KI-Lernen)
-    [3.13, 3.51, 4.6, 4.7, 613]'
+  quellen: '[dno](https://digitaleneuordnung.de/blog/ki-begriffe) [3.13, 3.51, 4.6, 4.7, 613]'
   title_en: Agentic AI & Reasoning (Loop Architecture)
   description_en: This diagram shows how **reasoning models** (such as o1) use external protocols (**MCP**)
     and tools (**function calling**) to act autonomously.
