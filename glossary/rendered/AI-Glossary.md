@@ -1,6 +1,6 @@
 # AI Glossary
 
-Generated from glossary/terms.yaml – as of 2026-09-04.  
+Generated from glossary/terms.yaml – as of 2026-10-01.  
 Changes please via PR in the repo, not directly in the Wiki.
 
 ## 1. Fundamentals & Core Concepts
@@ -78,6 +78,10 @@ graph LR
 | Latent Space | Latent Space | A high-dimensional space in which the network stores its internal concepts. | The geometry of meaning. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
 | Flash Attention | Flash Attention | A technical trick that massively speeds up the attention calculation. | Enables huge context windows. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
 | Prompt Caching | Prompt Caching | A technique that caches repeatedly used prompt segments to cut cost and latency on follow-up requests. | Important for agentic workflows with long, recurring contexts. | [1](https://platform.claude.com/docs/en/build-with-claude/prompt-caching) |
+| Context Compaction | Kontext-Komprimierung | Long conversations are condensed into a summary so they fit into the context window, while recent turns are kept verbatim. | Enables long agent sessions without exceeding the context window. | [1](https://platform.claude.com/docs/en/release-notes/overview) |
+| Full-Duplex Speech Model | Full-Duplex-Sprachmodell | A speech model that can listen and speak at the same time, so it can be interrupted like in a real conversation. | Makes voice assistants feel more natural because they no longer have to wait for turn-taking pauses. | [1](https://openai.com/index/introducing-gpt-live-1-in-the-api/) |
+| Text-to-Speech (TTS) | Sprachsynthese (Text-to-Speech) | A method that turns written text into spoken language, today mostly using neural models. | The basis for voice assistants, read-aloud features, and voice agents. | [1](https://ai.google.dev/gemini-api/docs/changelog) |
+| Open-Weight Model | Offenes Sprachmodell (Open-Weight) | A language model whose trained parameters are publicly downloadable, so it can be self-hosted or adapted. | Enables data sovereignty and customization, for example with the Swiss model Apertus. | [1](https://www.swissinfo.ch/eng/swiss-ai/one-year-on-has-swiss-ai-model-apertus-lived-up-to-the-hype/91984276) |
 
 ## 3. Training, Fine-Tuning & Data
 

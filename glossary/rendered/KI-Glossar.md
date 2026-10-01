@@ -1,6 +1,6 @@
 # KI-Glossar
 
-Generiert aus glossary/terms.yaml – Stand 2026-09-04.  
+Generiert aus glossary/terms.yaml – Stand 2026-10-01.  
 Änderungen bitte per PR im Repo, nicht direkt im Wiki.
 
 ## 1. Grundlagen & Kernkonzepte
@@ -78,6 +78,10 @@ graph LR
 | Latent Space | Latent Space | Hochdimensionaler Raum, in dem das Netz seine internen Konzepte speichert. | Geometrie der Semantik. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
 | Flash Attention | Flash Attention | Ein technischer Trick, der die Attention-Berechnung massiv beschleunigt. | Ermoeglicht riesige Kontextfenster. | [1](https://www.webconsulting.at/blog/ki-kompendium-business-bildung-2025) |
 | Prompt Caching | Prompt Caching | Technik, die wiederholt genutzte Prompt-Abschnitte zwischenspeichert, um Kosten und Latenz bei Folgeanfragen zu senken. | Wichtig fuer agentische Workflows mit langen, wiederkehrenden Kontexten. | [1](https://platform.claude.com/docs/en/build-with-claude/prompt-caching) |
+| Kontext-Komprimierung | Context Compaction | Lange Unterhaltungen werden zu einer Zusammenfassung verdichtet, damit sie in das Kontext-Fenster passen; neuere Beiträge bleiben wörtlich erhalten. | Erlaubt lange Agenten-Sitzungen, ohne das Kontext-Fenster zu sprengen. | [1](https://platform.claude.com/docs/en/release-notes/overview) |
+| Full-Duplex-Sprachmodell | Full-Duplex Speech Model | Ein Sprachmodell, das gleichzeitig zuhören und sprechen kann und sich so wie in einem echten Gespräch unterbrechen lässt. | Macht Sprachassistenten natürlicher, weil Sprechpausen und Unterbrechungen nicht mehr abwechselnd abgewartet werden müssen. | [1](https://openai.com/index/introducing-gpt-live-1-in-the-api/) |
+| Sprachsynthese (Text-to-Speech) | Text-to-Speech (TTS) | Ein Verfahren, das geschriebenen Text in gesprochene Sprache umwandelt, heute meist mit neuronalen Modellen. | Grundlage für Sprachassistenten, Vorlesefunktionen und Voice-Agenten. | [1](https://ai.google.dev/gemini-api/docs/changelog) |
+| Offenes Sprachmodell (Open-Weight) | Open-Weight Model | Ein Sprachmodell, dessen trainierte Parameter öffentlich herunterladbar sind und das sich selbst betreiben oder anpassen lässt. | Ermöglicht Datenhoheit und Anpassung, etwa beim Schweizer Modell Apertus. | [1](https://www.swissinfo.ch/eng/swiss-ai/one-year-on-has-swiss-ai-model-apertus-lived-up-to-the-hype/91984276) |
 
 ## 3. Training, Anpassung & Daten
 
