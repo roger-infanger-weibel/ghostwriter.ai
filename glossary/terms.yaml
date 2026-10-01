@@ -1,5 +1,5 @@
 schema_version: 1
-last_rendered: '2026-09-04'
+last_rendered: '2026-10-01'
 last_migrated: '2026-09-03'
 terms:
 - id: kuenstliche-intelligenz
@@ -428,6 +428,54 @@ terms:
   sources:
   - https://platform.claude.com/docs/en/build-with-claude/prompt-caching
   updated: '2026-09-04'
+- id: kontext-komprimierung
+  category: 2-technik,-architektur-and-sprachverarbeitung-nlp
+  status: active
+  term_de: Kontext-Komprimierung
+  term_en: Context Compaction
+  explanation_de: Lange Unterhaltungen werden zu einer Zusammenfassung verdichtet, damit sie in das Kontext-Fenster passen; neuere Beiträge bleiben wörtlich erhalten.
+  explanation_en: Long conversations are condensed into a summary so they fit into the context window, while recent turns are kept verbatim.
+  context_de: Erlaubt lange Agenten-Sitzungen, ohne das Kontext-Fenster zu sprengen.
+  context_en: Enables long agent sessions without exceeding the context window.
+  sources:
+  - https://platform.claude.com/docs/en/release-notes/overview
+  updated: '2026-10-01'
+- id: full-duplex-sprachmodell
+  category: 2-technik,-architektur-and-sprachverarbeitung-nlp
+  status: active
+  term_de: Full-Duplex-Sprachmodell
+  term_en: Full-Duplex Speech Model
+  explanation_de: Ein Sprachmodell, das gleichzeitig zuhören und sprechen kann und sich so wie in einem echten Gespräch unterbrechen lässt.
+  explanation_en: A speech model that can listen and speak at the same time, so it can be interrupted like in a real conversation.
+  context_de: Macht Sprachassistenten natürlicher, weil Sprechpausen und Unterbrechungen nicht mehr abwechselnd abgewartet werden müssen.
+  context_en: Makes voice assistants feel more natural because they no longer have to wait for turn-taking pauses.
+  sources:
+  - https://openai.com/index/introducing-gpt-live-1-in-the-api/
+  updated: '2026-10-01'
+- id: sprachsynthese
+  category: 2-technik,-architektur-and-sprachverarbeitung-nlp
+  status: active
+  term_de: Sprachsynthese (Text-to-Speech)
+  term_en: Text-to-Speech (TTS)
+  explanation_de: Ein Verfahren, das geschriebenen Text in gesprochene Sprache umwandelt, heute meist mit neuronalen Modellen.
+  explanation_en: A method that turns written text into spoken language, today mostly using neural models.
+  context_de: Grundlage für Sprachassistenten, Vorlesefunktionen und Voice-Agenten.
+  context_en: The basis for voice assistants, read-aloud features, and voice agents.
+  sources:
+  - https://ai.google.dev/gemini-api/docs/changelog
+  updated: '2026-10-01'
+- id: offenes-sprachmodell
+  category: 2-technik,-architektur-and-sprachverarbeitung-nlp
+  status: active
+  term_de: Offenes Sprachmodell (Open-Weight)
+  term_en: Open-Weight Model
+  explanation_de: Ein Sprachmodell, dessen trainierte Parameter öffentlich herunterladbar sind und das sich selbst betreiben oder anpassen lässt.
+  explanation_en: A language model whose trained parameters are publicly downloadable, so it can be self-hosted or adapted.
+  context_de: Ermöglicht Datenhoheit und Anpassung, etwa beim Schweizer Modell Apertus.
+  context_en: Enables data sovereignty and customization, for example with the Swiss model Apertus.
+  sources:
+  - https://www.swissinfo.ch/eng/swiss-ai/one-year-on-has-swiss-ai-model-apertus-lived-up-to-the-hype/91984276
+  updated: '2026-10-01'
 - id: pre-training
   category: 3-training,-anpassung-and-daten
   status: active
