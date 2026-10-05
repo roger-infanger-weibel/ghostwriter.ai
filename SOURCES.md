@@ -14,6 +14,7 @@ Hier ist die erweiterte Tabelle mit weiteren Top-AI-Quellen, Plattformen und Dev
 | Anbieter | Quelle | URL |
 | --- | --- | --- |
 | OpenAI | News | [https://openai.com/news](https://openai.com/news) |
+| OpenAI | News (RSS, bevorzugt: HTML-Seite liefert 403) | [https://openai.com/news/rss.xml](https://openai.com/news/rss.xml) |
 | OpenAI | ChatGPT Release Notes | [https://help.openai.com/en/articles/6825453-chatgpt-release-notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) |
 | Anthropic | News | [https://www.anthropic.com/news](https://www.anthropic.com/news) |
 | Anthropic | Claude Code Changelog | [https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md) |
@@ -84,4 +85,4 @@ Hier sind die größten KI-Community-Plattformen im gewünschten Tabellenformat:
 - Quellen, die 8 Wochen lang nichts liefern → prüfen und ggf. streichen.
 - Vorschläge des Agenten (im PR-Text) → manuell hier einpflegen.
 
-**Letzte Aktualisierung:** 2026-09-03
+**Letzte Aktualisierung:** 2026-10-05
