@@ -1,6 +1,6 @@
 # KI-Glossar
 
-Generiert aus glossary/terms.yaml – Stand 2026-10-01.  
+Generiert aus glossary/terms.yaml – Stand 2026-11-01.  
 Änderungen bitte per PR im Repo, nicht direkt im Wiki.
 
 ## 1. Grundlagen & Kernkonzepte
@@ -82,6 +82,7 @@ graph LR
 | Full-Duplex-Sprachmodell | Full-Duplex Speech Model | Ein Sprachmodell, das gleichzeitig zuhören und sprechen kann und sich so wie in einem echten Gespräch unterbrechen lässt. | Macht Sprachassistenten natürlicher, weil Sprechpausen und Unterbrechungen nicht mehr abwechselnd abgewartet werden müssen. | [1](https://openai.com/index/introducing-gpt-live-1-in-the-api/) |
 | Sprachsynthese (Text-to-Speech) | Text-to-Speech (TTS) | Ein Verfahren, das geschriebenen Text in gesprochene Sprache umwandelt, heute meist mit neuronalen Modellen. | Grundlage für Sprachassistenten, Vorlesefunktionen und Voice-Agenten. | [1](https://ai.google.dev/gemini-api/docs/changelog) |
 | Offenes Sprachmodell (Open-Weight) | Open-Weight Model | Ein Sprachmodell, dessen trainierte Parameter öffentlich herunterladbar sind und das sich selbst betreiben oder anpassen lässt. | Ermöglicht Datenhoheit und Anpassung, etwa beim Schweizer Modell Apertus. | [1](https://www.swissinfo.ch/eng/swiss-ai/one-year-on-has-swiss-ai-model-apertus-lived-up-to-the-hype/91984276) |
+| Zeitreihen-Basismodell | Time Series Foundation Model | Ein vortrainiertes Modell, das Prognosen für zeitabhängige Messreihen erstellt, ohne dass es für jede Datenreihe neu trainiert werden muss. | Erlaubt Vorhersagen etwa zu Auslastung oder Nachfrage mit kleinem Aufwand und dient als Vergleichsbasis für eigene Prognosemodelle. | [1](https://mistral.ai/news/timestral) |
 
 ## 3. Training, Anpassung & Daten
 
