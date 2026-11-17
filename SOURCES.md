@@ -15,13 +15,14 @@ Hier ist die erweiterte Tabelle mit weiteren Top-AI-Quellen, Plattformen und Dev
 | --- | --- | --- |
 | OpenAI | News | [https://openai.com/news](https://openai.com/news) |
 | OpenAI | News (RSS, bevorzugt: HTML-Seite liefert 403) | [https://openai.com/news/rss.xml](https://openai.com/news/rss.xml) |
-| OpenAI | ChatGPT Release Notes | [https://help.openai.com/en/articles/6825453-chatgpt-release-notes](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) |
+| OpenAI | ChatGPT Release Notes | [https://learn.chatgpt.com/docs/whats-new](https://learn.chatgpt.com/docs/whats-new) |
 | Anthropic | News | [https://www.anthropic.com/news](https://www.anthropic.com/news) |
-| Anthropic | Claude Code Changelog | [https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md) |
+| Anthropic | Claude Code Changelog | [platform.claude.com/docs/en/release-notes/overview](platform.claude.com/docs/en/release-notes/overview) |
 | Anthropic | API Release Notes | [https://docs.claude.com/en/release-notes/overview](https://docs.claude.com/en/release-notes/overview) |
-| Google | Gemini API Changelog | [https://ai.google.dev/gemini-api/docs/changelog](https://ai.google.dev/gemini-api/docs/changelog) |
+| Google | Gemini API Changelog | [https://aistudio.google.com/docs/changelog](https://aistudio.google.com/docs/changelog) |
 | Google | Gemini App Updates | [https://gemini.google/release-notes/](https://gemini.google/release-notes/) |
 | Google | NotebookLM Updates | [https://support.google.com/notebooklm/](https://support.google.com/notebooklm/) |
+
 | Google | Google AI Blog | [https://blog.google/technology/ai/](https://blog.google/technology/ai/) |
 | Meta | Meta AI / Llama Blog | [https://ai.meta.com/blog/](https://www.google.com/search?q=https://ai.meta.com/blog/) |
 | Meta | Llama GitHub / Releases | [https://github.com/meta-llama/llama-models/releases](https://www.google.com/search?q=https://github.com/meta-llama/llama-models/releases) |
