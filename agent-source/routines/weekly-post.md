@@ -132,16 +132,20 @@ Marc: ...
 ```
 
 **Regeln:**
-- Nur die Sprecher `Lena` und `Marc`, jede Zeile beginnt mit `Lena:` oder `Marc:`. Optional ein Stil in eckigen Klammern: `Marc [überrascht]: ...`
-- **Inhalt nur aus dem Post.** Keine zusätzlichen Fakten, Zahlen oder Wertungen.
-- Reihenfolge wie im Post: Intro → Global → Europa → Schweiz → kurze Zusammenfassung → Verabschiedung.
-- Intro enthält den Hinweis: Podcast entsteht mit KI (Skript: Claude, Stimmen: Gemini), Quellen in den Shownotes.
-- **Abschnitt «Für mich relevant» weglassen** (Podcast ist öffentlich, keine persönlichen Projekte).
-- «Nicht erreichbare Quellen» nicht vorlesen.
-- **Fürs Ohr schreiben:** Zahlen, Versionen und Preise ausschreiben («Fable fünf Punkt zwei», «acht Dollar pro Million Input-Tokens», «zweitausendsechsundzwanzig»). Keine URLs, keine Markdown-Formatierung, keine Klammern, keine Code-Bezeichner wie `claude-fable-5-2`.
-- Kurze Sätze (max. ~20 Wörter), abwechselnde Wortmeldungen, natürliche Überleitungen, aber kein Smalltalk und keine Superlative.
-- Schweizer Hochdeutsch (ss statt ß). Abschluss: «Tschüss zäme».
-- Länge: 800–1'300 Wörter (ca. 6–9 Minuten). Ruhige Woche → kürzer.
+- **Quelle:** Nur die Abschnitte `## Global`, `## Europa` und `## Schweiz` des Posts. Alles ab «Für mich relevant» (inkl. «Nicht erreichbare Quellen») kommt **nicht** in den Podcast.
+- **Nur Highlights, keine Details:** Pro Meldung das Wichtigste in 1–2 Sätzen – was ist passiert, warum relevant. Keine Preistabellen, Breaking-Change-Listen, Token-Zahlen oder Nebenaspekte. Höchstens eine Kennzahl pro Meldung, wenn sie die Nachricht ausmacht.
+- **Gesamtlänge ca. 3 Minuten (≈ 400–450 Wörter):**
+  - Intro: 1–2 Sätze (≈ 30 Wörter), inkl. Hinweis «entsteht mit KI, Quellen in den Shownotes»
+  - Global: **max. 1 Minute (≈ 130 Wörter)**
+  - Europa: **max. 1 Minute (≈ 130 Wörter)**; ruhige Woche → ein Satz genügt
+  - Schweiz: **max. 1 Minute (≈ 130 Wörter)**
+  - Abschluss: 1 Satz + «Tschüss zäme» (≈ 20 Wörter), keine Zusammenfassung
+- Zu viele Meldungen für eine Minute? Nur die wichtigsten nehmen, Rest weglassen.
+- Reihenfolge fix: Intro → Global → Europa → Schweiz → Abschluss.
+- Sprecher `Lena` und `Marc`, jede Zeile beginnt mit `Lena:` oder `Marc:`. Optional Stil in eckigen Klammern: `Marc [überrascht]: ...`. Kurze, abwechselnde Wortmeldungen, kein Smalltalk.
+- **Inhalt nur aus dem Post.** Keine zusätzlichen Fakten, Zahlen oder Wertungen, keine Superlative.
+- **Fürs Ohr schreiben:** Zahlen und Versionen ausschreiben («Fable fünf Punkt zwei», «fünfundfünfzig Millionen Franken»). Keine URLs, kein Markdown, keine Klammern, keine Code-Bezeichner.
+- Schweizer Hochdeutsch (ss statt ß).
 
 ---
 
