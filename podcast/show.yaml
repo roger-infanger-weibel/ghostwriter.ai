@@ -1,5 +1,5 @@
 # Podcast-Konfiguration – Single Source of Truth für Feed und Stimmen.
-# Änderungen hier wirken beim nächsten Workflow-Lauf auf den ganzen Feed.
+# Nach Änderungen: python podcast/tools/build_feed.py (oder beim nächsten Routine-Lauf).
 
 title: "Rogers 3-Minuten-KI-Radar"
 subtitle: "Die wichtigsten KI-News der Woche – Global, Europa, Schweiz"
@@ -13,7 +13,7 @@ language: "de-ch"
 category: "Technology"
 explicit: false
 
-# Öffentliche Adresse (GitHub Pages, Quelle: GitHub Actions)
+# Öffentliche Adresse (GitHub Pages, main /docs)
 base_url: "https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast"
 cover_file: "cover.png"
 website: "https://github.com/roger-infanger-weibel/ghostwriter.ai"

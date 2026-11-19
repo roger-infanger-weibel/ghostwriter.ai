@@ -71,3 +71,15 @@ def build_feed(cfg: dict, episodes: list[dict], site: Path) -> Path:
     out = site / "feed.xml"
     out.write_text(xml, encoding="utf-8")
     return out
+
+
+if __name__ == "__main__":
+    # Nur Feed neu schreiben (z. B. nach Änderung von show.yaml), ohne Audio/API:
+    #   python podcast/tools/build_feed.py
+    import json
+    import yaml
+    root = Path(__file__).resolve().parents[2]
+    cfg = yaml.safe_load((root / "podcast" / "show.yaml").read_text(encoding="utf-8"))
+    eps = json.loads((root / "podcast" / "episodes.json").read_text(encoding="utf-8"))
+    out = build_feed(cfg, eps, root / "docs" / "podcast")
+    print(f"{out.relative_to(root)}: «{cfg['title']}», {len(eps)} Episoden")
