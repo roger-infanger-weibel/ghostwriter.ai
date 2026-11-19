@@ -25,7 +25,7 @@ Automatisierte KI-News-Aggregation + Glossar-Verwaltung mit Claude Cloud Routine
 - Agent liest `SOURCES.md` und `CRITERIA.md`
 - Prüft Quellen der letzten 7 Tage
 - Erstellt `posts/YYYY-Www.md` (Global / Europa / Schweiz)
-- PR-Review → du mergst
+- Commit direkt auf `main` (kein PR), inkl. Podcast-Folge
 
 ### 📚 Monatlich Glossary-Update (1. des Monats 06:00 Zürich)
 - Agent liest `glossary/terms.yaml`

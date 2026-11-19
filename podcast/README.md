@@ -11,8 +11,7 @@ Mo 06:00  Cloud Routine «KI-Wochenrückblick»
           → posts/YYYY-Www.md
           → podcast/scripts/YYYY-Www.md          (Dialog-Skript)
           → podcast/tools/build_episode.py       (Gemini TTS, Key via Agent-Proxy)
-          → docs/podcast/episodes/YYYY-Www.mp3 + feed.xml   → alles in einem PR
-Roger     hört rein, reviewt und mergt
+          → docs/podcast/episodes/YYYY-Www.mp3 + feed.xml   → ein Commit direkt auf main
 GitHub    Pages veröffentlicht docs/ (Deploy from branch main /docs)
 Podcast-App  holt neue Episoden selbständig über den RSS-Feed
 ```
@@ -32,7 +31,7 @@ Feed: https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml
    (dort ist er für jede Session lesbar).
 3. **GitHub Pages:** Repo → Settings → Pages → Source: **Deploy from a branch** → `main` / `/docs`.
 4. **Erste Episode:** In einer Cloud-Session mit diesem Environment ausführen:
-   `python podcast/tools/build_episode.py --week 2026-W46`, Ergebnis als PR, mergen.
+   `python podcast/tools/build_episode.py --week 2026-W46`, Ergebnis committen und pushen.
 5. **Abonnieren:** Feed-URL in einer Podcast-App einfügen, die eigene Feeds annimmt:
    Apple Podcasts (Mediathek → «…» → «Sendung per URL folgen»), Pocket Casts, Overcast,
    AntennaPod, Podcast Addict. Die Spotify-App nimmt keine RSS-Adressen an.
