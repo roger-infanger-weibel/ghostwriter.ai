@@ -25,7 +25,7 @@ import sys
 import tempfile
 import time
 import wave
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from email.utils import format_datetime
 from pathlib import Path
 
@@ -183,6 +183,40 @@ def synthesize(chunk: list[dict], cfg: dict, api_key: str | None) -> bytes:
     raise RuntimeError("Gemini TTS: zu viele Fehlversuche (Rate-Limit?)")
 
 
+# ---------------------------------------------------------------- Datum
+
+MONATE = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August",
+          "September", "Oktober", "November", "Dezember"]
+KW_PREFIX_RE = re.compile(r"^\s*KW\s*\d+\s*/\s*\d{4}\s*[:·–-]\s*")
+
+
+def week_range(week: str) -> tuple[date, date]:
+    y, w = int(week[:4]), int(week[6:])
+    return date.fromisocalendar(y, w, 1), date.fromisocalendar(y, w, 7)
+
+
+def zeitraum(week: str) -> str:
+    """z. B. «9.–15. November 2026» oder «31. August – 6. September 2026»."""
+    a, b = week_range(week)
+    if a.year != b.year:
+        return f"{a.day}. {MONATE[a.month - 1]} {a.year} – {b.day}. {MONATE[b.month - 1]} {b.year}"
+    if a.month != b.month:
+        return f"{a.day}. {MONATE[a.month - 1]} – {b.day}. {MONATE[b.month - 1]} {b.year}"
+    return f"{a.day}.–{b.day}. {MONATE[b.month - 1]} {b.year}"
+
+
+def episode_title(week: str, title: str) -> str:
+    """«KW 46 · 9.–15. November 2026: <Themen>» – Datum steht so in jeder Podcast-App."""
+    topics = KW_PREFIX_RE.sub("", title).strip()
+    return f"KW {int(week[6:])} · {zeitraum(week)}: {topics}"
+
+
+def pub_date(week: str) -> str:
+    """Erscheinungsdatum = Sonntag der Woche, 18:00 Zürich (17:00 UTC)."""
+    _, sunday = week_range(week)
+    return format_datetime(datetime(sunday.year, sunday.month, sunday.day, 17, 0, tzinfo=timezone.utc))
+
+
 # ---------------------------------------------------------------- Episode
 
 def encode_mp3(pcm: bytes, out: Path, meta: dict, cfg: dict) -> None:
@@ -197,7 +231,7 @@ def encode_mp3(pcm: bytes, out: Path, meta: dict, cfg: dict) -> None:
             "ffmpeg", "-y", "-loglevel", "error", "-i", str(wav_path),
             "-ac", "1", "-codec:a", "libmp3lame", "-b:a", cfg["audio"]["bitrate"],
             "-id3v2_version", "3",
-            "-metadata", f"title={meta['title']}",
+            "-metadata", f"title={meta['episode_title']}",
             "-metadata", f"artist={cfg['author']}",
             "-metadata", f"album={cfg['title']}",
             str(out),
@@ -220,6 +254,7 @@ def build(week: str, cfg: dict, api_key: str | None, dry_run: bool) -> dict | No
     meta, turns = parse_script(path, names)
     chunks = chunk_turns(turns, int(cfg["tts"]["max_chars_per_request"]))
     chars = sum(len(t["text"]) for t in turns)
+    print(f"{episode_title(week, meta['title'])} | {pub_date(week)}")
     print(f"{week}: {len(turns)} Wortmeldungen, {chars} Zeichen, {len(chunks)} API-Aufrufe")
     if dry_run:
         return None
@@ -235,17 +270,17 @@ def build(week: str, cfg: dict, api_key: str | None, dry_run: bool) -> dict | No
 
     EPISODE_DIR.mkdir(parents=True, exist_ok=True)
     mp3 = EPISODE_DIR / f"{week}.mp3"
+    meta["episode_title"] = episode_title(week, meta["title"])
     encode_mp3(pcm, mp3, meta, cfg)
-    now = datetime.now(timezone.utc).replace(microsecond=0)
     return {
         "id": week,
-        "title": meta["title"],
-        "description": str(meta["description"]).strip(),
+        "title": meta["episode_title"],
+        "description": f"Zeitraum: {zeitraum(week)}. " + str(meta["description"]).strip(),
         "post": f"posts/{week}.md",
         "file": f"episodes/{week}.mp3",
         "bytes": mp3.stat().st_size,
         "duration_seconds": round(len(pcm) / 2 / SAMPLE_RATE),
-        "pub_date": format_datetime(now),
+        "pub_date": pub_date(week),
     }
 
 

@@ -122,7 +122,7 @@ Dateiname: `podcast/scripts/YYYY-Www.md` (gleiche Woche wie der Post)
 
 ```markdown
 ---
-title: "KW 46/2026: <2–3 Hauptthemen, max. 90 Zeichen>"
+title: "<2–3 Hauptthemen, max. 80 Zeichen>"   # KW und Datum setzt build_episode.py automatisch davor
 description: >-
   <2–3 Sätze Zusammenfassung für die Podcast-App, ohne Links>
 ---
