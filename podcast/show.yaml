@@ -1,7 +1,7 @@
 # Podcast-Konfiguration – Single Source of Truth für Feed und Stimmen.
 # Änderungen hier wirken beim nächsten Workflow-Lauf auf den ganzen Feed.
 
-title: "KI-Wochenrückblick"
+title: "Rogers 3-Minuten-KI-Radar"
 subtitle: "Die wichtigsten KI-News der Woche – Global, Europa, Schweiz"
 description: >-
   Jede Woche ein kompakter Rückblick auf die wichtigsten Neuigkeiten zu Claude,
