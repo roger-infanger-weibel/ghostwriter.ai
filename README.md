@@ -15,6 +15,8 @@ Automatisierte KI-News-Aggregation + Glossar-Verwaltung mit Claude Cloud Routine
 | ** KI-Wochenrückblick** | Mo 06:00 Zürich | ✅ LIVE | `agent-source/routines/weekly-post.md` | https://github.com/roger-infanger-weibel/ghostwriter.ai/tree/main/posts |
 | ** Glossary-Update** | 1. d. Monats 06:00 | ✅ LIVE | `agent-source/routines/glossary-update.md` | https://github.com/roger-infanger-weibel/ghostwriter.ai/tree/main/glossary/rendered |
 
+**Podcast:** Die Routine macht aus jedem Wochenrückblick eine Podcast-Folge (Gemini TTS, Key als Network Secret in der Claude-Cloud); sie erscheint als RSS-Feed auf GitHub Pages → [`podcast/README.md`](podcast/README.md)
+
 ---
 
 ## Ablauf

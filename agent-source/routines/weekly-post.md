@@ -113,6 +113,52 @@ CAS-Projekt "Innovation Management" – hier sind Transparenz-Anforderungen jetz
 
 ---
 
+### Phase 4b: Podcast-Skript schreiben
+
+Aus dem fertigen Post entsteht ein Dialog-Skript für den Podcast, danach erzeugst
+du in Phase 4c das Audio. Details: `podcast/README.md`.
+
+Dateiname: `podcast/scripts/YYYY-Www.md` (gleiche Woche wie der Post)
+
+```markdown
+---
+title: "KW 46/2026: <2–3 Hauptthemen, max. 90 Zeichen>"
+description: >-
+  <2–3 Sätze Zusammenfassung für die Podcast-App, ohne Links>
+---
+
+Lena: Grüezi und willkommen zum KI-Wochenrückblick. ...
+Marc: ...
+```
+
+**Regeln:**
+- Nur die Sprecher `Lena` und `Marc`, jede Zeile beginnt mit `Lena:` oder `Marc:`. Optional ein Stil in eckigen Klammern: `Marc [überrascht]: ...`
+- **Inhalt nur aus dem Post.** Keine zusätzlichen Fakten, Zahlen oder Wertungen.
+- Reihenfolge wie im Post: Intro → Global → Europa → Schweiz → kurze Zusammenfassung → Verabschiedung.
+- Intro enthält den Hinweis: Podcast entsteht mit KI (Skript: Claude, Stimmen: Gemini), Quellen in den Shownotes.
+- **Abschnitt «Für mich relevant» weglassen** (Podcast ist öffentlich, keine persönlichen Projekte).
+- «Nicht erreichbare Quellen» nicht vorlesen.
+- **Fürs Ohr schreiben:** Zahlen, Versionen und Preise ausschreiben («Fable fünf Punkt zwei», «acht Dollar pro Million Input-Tokens», «zweitausendsechsundzwanzig»). Keine URLs, keine Markdown-Formatierung, keine Klammern, keine Code-Bezeichner wie `claude-fable-5-2`.
+- Kurze Sätze (max. ~20 Wörter), abwechselnde Wortmeldungen, natürliche Überleitungen, aber kein Smalltalk und keine Superlative.
+- Schweizer Hochdeutsch (ss statt ß). Abschluss: «Tschüss zäme».
+- Länge: 800–1'300 Wörter (ca. 6–9 Minuten). Ruhige Woche → kürzer.
+
+---
+
+### Phase 4c: Podcast-Audio erzeugen
+
+```bash
+pip install -q requests pyyaml   # falls nötig
+python podcast/tools/build_episode.py --dry-run --week YYYY-Www   # Skript prüfen
+python podcast/tools/build_episode.py --week YYYY-Www
+```
+
+- Der Gemini-Key ist als **Network Secret** im Cloud-Environment hinterlegt; der Proxy setzt ihn selbst. **Nicht** nach einem Key suchen, keinen Key in Dateien oder Umgebungsvariablen schreiben.
+- Ergebnis: `docs/podcast/episodes/YYYY-Www.mp3`, aktualisierte `podcast/episodes.json` und `docs/podcast/feed.xml` → alles in denselben PR.
+- Schlägt die Audio-Erzeugung fehl (z. B. HTTP 401/403/429): Post und Skript trotzdem als PR einreichen, Fehlermeldung im PR-Text unter «Podcast» notieren. Nicht mehrfach neu versuchen (Gratis-Kontingent).
+
+---
+
 ### Phase 5: PR erstellen
 
 1. Branch: `weekly/YYYY-Www` (z. B. `weekly/2026-W37`)
@@ -149,8 +195,8 @@ CAS-Projekt "Innovation Management" – hier sind Transparenz-Anforderungen jetz
 - Falls auffällig → im PR-Text melden
 
 ### Dateien & Scope
-- **Ändere nur:** `posts/YYYY-Www.md` (neuer Eintrag)
-- **Nicht ändern:** SOURCES.md, agent-source/, README
+- **Ändere nur:** `posts/YYYY-Www.md`, `podcast/scripts/YYYY-Www.md` sowie die von `build_episode.py` erzeugten Dateien (`docs/podcast/episodes/YYYY-Www.mp3`, `docs/podcast/feed.xml`, `podcast/episodes.json`)
+- **Nicht ändern:** SOURCES.md, agent-source/, README, `podcast/show.yaml`, `podcast/tools/`, ältere Episoden
 - **Branch-Naming:** `weekly/YYYY-Www` (ISO-Woche)
 - **Kein Direkt-Push** auf `main`
 
@@ -173,6 +219,9 @@ CAS-Projekt "Innovation Management" – hier sind Transparenz-Anforderungen jetz
 - [ ] Sektion "Nicht erreichbare Quellen": Liste oder "keine"
 - [ ] Umfang: Global ≤ 5, Europa ≤ 3, Schweiz ≤ 3
 - [ ] Keine Spekulationen, nur Fakten mit Links
+- [ ] Podcast-Skript `podcast/scripts/YYYY-Www.md` mit Frontmatter (`title`, `description`)
+- [ ] Jede Skriptzeile beginnt mit `Lena:` oder `Marc:`, Zahlen ausgeschrieben, keine URLs
+- [ ] MP3, `episodes.json` und `feed.xml` im PR – oder Fehlergrund im PR-Text
 
 ---
 

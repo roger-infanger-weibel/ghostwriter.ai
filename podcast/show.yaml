@@ -1,0 +1,38 @@
+# Podcast-Konfiguration – Single Source of Truth für Feed und Stimmen.
+# Änderungen hier wirken beim nächsten Workflow-Lauf auf den ganzen Feed.
+
+title: "KI-Wochenrückblick"
+subtitle: "Die wichtigsten KI-News der Woche – Global, Europa, Schweiz"
+description: >-
+  Jede Woche ein kompakter Rückblick auf die wichtigsten Neuigkeiten zu Claude,
+  ChatGPT, Gemini und NotebookLM sowie zu KI-Regulierung in Europa und der Schweiz.
+  Recherche und Skript entstehen mit Claude, die Stimmen mit Gemini TTS.
+  Alle Quellen stehen in den Shownotes.
+author: "Roger Infanger"
+language: "de-ch"
+category: "Technology"
+explicit: false
+
+# Öffentliche Adresse (GitHub Pages, Quelle: GitHub Actions)
+base_url: "https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast"
+cover_file: "cover.png"
+website: "https://github.com/roger-infanger-weibel/ghostwriter.ai"
+
+tts:
+  # Modell-IDs: https://ai.google.dev/gemini-api/docs/speech-generation
+  model: "gemini-3.8-flash-tts"
+  # Max. Zeichen pro API-Aufruf; längere Skripte werden in Teile zerlegt.
+  max_chars_per_request: 2000
+  # Pause zwischen Aufrufen (Gratis-Kontingent hat tiefe Limits pro Minute)
+  pause_seconds: 20
+  # Genau zwei Sprecher (Limit der API pro Aufruf). Namen müssen im Skript so vorkommen.
+  speakers:
+    - name: "Lena"
+      voice: "Kore"
+      style: "sachlich, freundlich, ruhiges Tempo, Schweizer Hochdeutsch"
+    - name: "Marc"
+      voice: "Puck"
+      style: "neugierig, locker, ruhiges Tempo, Schweizer Hochdeutsch"
+
+audio:
+  bitrate: "64k"

@@ -1,0 +1,67 @@
+# Podcast: KI-Wochenrückblick
+
+Der Wochenrückblick wird automatisch zu einem deutschsprachigen Podcast mit zwei Stimmen
+(Lena und Marc) und als RSS-Feed auf GitHub Pages veröffentlicht – ohne Spotify, ohne Hoster. Der Gemini-Key liegt **nicht** in GitHub,
+sondern als Network Secret im Claude-Cloud-Environment.
+
+## Ablauf
+
+```
+Mo 06:00  Cloud Routine «KI-Wochenrückblick»
+          → posts/YYYY-Www.md
+          → podcast/scripts/YYYY-Www.md          (Dialog-Skript)
+          → podcast/tools/build_episode.py       (Gemini TTS, Key via Agent-Proxy)
+          → docs/podcast/episodes/YYYY-Www.mp3 + feed.xml   → alles in einem PR
+Roger     hört rein, reviewt und mergt
+GitHub    Pages veröffentlicht docs/ (Deploy from branch main /docs)
+Podcast-App  holt neue Episoden selbständig über den RSS-Feed
+```
+
+Feed: https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml
+
+## Einmalige Einrichtung
+
+1. **Gemini API Key** (gratis, ohne Kreditkarte): Google AI Studio → «Get API key» → Key erstellen.
+2. **Network Secret in der Claude-Cloud:** claude.ai/code → Environment der Routine bearbeiten →
+   **Network secrets** → **Add secret**
+   - Name: `Gemini API`
+   - Allowed websites: `generativelanguage.googleapis.com`
+   - Custom header: Name `x-goog-api-key`, Prefix leer, Value = der Key
+   Der Proxy hängt den Key ausserhalb der Session an; Claude sieht ihn nie, und er landet weder im
+   Repo noch in Umgebungsvariablen. Den Key **nicht** unter «Environment variables» eintragen
+   (dort ist er für jede Session lesbar).
+3. **GitHub Pages:** Repo → Settings → Pages → Source: **Deploy from a branch** → `main` / `/docs`.
+4. **Erste Episode:** In einer Cloud-Session mit diesem Environment ausführen:
+   `python podcast/tools/build_episode.py --week 2026-W46`, Ergebnis als PR, mergen.
+5. **Abonnieren:** Feed-URL in einer Podcast-App einfügen, die eigene Feeds annimmt:
+   Apple Podcasts (Mediathek → «…» → «Sendung per URL folgen»), Pocket Casts, Overcast,
+   AntennaPod, Podcast Addict. Die Spotify-App nimmt keine RSS-Adressen an.
+
+Später doch in Verzeichnisse (Spotify, Apple)? Dann `owner_email` in `show.yaml` ergänzen
+(wird für die Bestätigung gebraucht und ist im Feed öffentlich) und den Feed dort einreichen.
+
+## Dateien
+
+| Datei | Zweck |
+|---|---|
+| `podcast/show.yaml` | Titel, Beschreibung, Stimmen, TTS-Modell |
+| `podcast/scripts/YYYY-Www.md` | Dialog-Skript pro Woche (schreibt die Routine) |
+| `podcast/episodes.json` | Episodenliste (schreibt `build_episode.py`) |
+| `podcast/tools/` | Build-Skripte (TTS, MP3, Feed) |
+| `docs/podcast/` | Öffentliche Dateien: Feed, Cover, MP3s |
+
+## Bedienung
+
+- **Episode neu erzeugen** (z. B. nach Skriptkorrektur): in einer Cloud-Session
+  `python podcast/tools/build_episode.py --week 2026-W46 --force`
+- **Lokal:** mit `GEMINI_API_KEY` als Umgebungsvariable gleich aufrufen.
+- **Skript prüfen ohne API:** `python podcast/tools/build_episode.py --dry-run`
+- **Stimmen ändern:** `tts.speakers[].voice` in `show.yaml` (30 vordefinierte Stimmen, z. B. Kore,
+  Puck, Charon, Aoede, Leda, Orus).
+
+## Grenzen
+
+- Gratis-Kontingent der Gemini API: Limits ändert Google laufend, aktueller Stand in AI Studio.
+  Bei HTTP 429 wartet das Skript und versucht es erneut. Inhalte im Gratis-Kontingent darf Google
+  zur Produktverbesserung nutzen.
+- MP3s liegen im Repo (ca. 3–4 MB pro Folge, rund 200 MB pro Jahr).

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>KI-Wochenrückblick</title>
+    <link>https://github.com/roger-infanger-weibel/ghostwriter.ai</link>
+    <atom:link href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Jede Woche ein kompakter Rückblick auf die wichtigsten Neuigkeiten zu Claude, ChatGPT, Gemini und NotebookLM sowie zu KI-Regulierung in Europa und der Schweiz. Recherche und Skript entstehen mit Claude, die Stimmen mit Gemini TTS. Alle Quellen stehen in den Shownotes.</description>
+    <language>de-ch</language>
+    <lastBuildDate>Thu, 19 Nov 2026 06:08:45 +0000</lastBuildDate>
+    <itunes:subtitle>Die wichtigsten KI-News der Woche – Global, Europa, Schweiz</itunes:subtitle>
+    <itunes:summary>Jede Woche ein kompakter Rückblick auf die wichtigsten Neuigkeiten zu Claude, ChatGPT, Gemini und NotebookLM sowie zu KI-Regulierung in Europa und der Schweiz. Recherche und Skript entstehen mit Claude, die Stimmen mit Gemini TTS. Alle Quellen stehen in den Shownotes.</itunes:summary>
+    <itunes:author>Roger Infanger</itunes:author>
+    <itunes:image href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/cover.png"/>
+    <image>
+      <url>https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/cover.png</url>
+      <title>KI-Wochenrückblick</title>
+      <link>https://github.com/roger-infanger-weibel/ghostwriter.ai</link>
+    </image>
+    <itunes:category text="Technology"/>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+
+  </channel>
+</rss>
