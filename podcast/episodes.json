@@ -1,5 +1,115 @@
 [
   {
+    "id": "2026-W35",
+    "title": "KW 35 · 24.–30. August 2026: Claude steuert Hardware, o3 verlässt ChatGPT, Aufruf zur Cyberabwehr",
+    "description": "Zeitraum: 24.–30. August 2026. Die Highlights der Woche: Anthropics Model Hardware Standard, das Ende von o3 in ChatGPT, «Ask Gemini» in Google Chat und ein gemeinsamer Aufruf von über hundert Firmen zur Cyberabwehr.",
+    "post": "posts/2026-W35.md",
+    "file": "episodes/2026-W35.mp3",
+    "bytes": 534674,
+    "duration_seconds": 67,
+    "pub_date": "Sun, 30 Aug 2026 17:00:00 +0000"
+  },
+  {
+    "id": "2026-W36",
+    "title": "KW 36 · 31. August – 6. September 2026: GPT-6 Astra, Claude Fable 5.1 und ein Jahr Apertus",
+    "description": "Zeitraum: 31. August – 6. September 2026. Die Highlights der Woche: neue Flaggschiffe von OpenAI und Anthropic, Gemini 3.8 Flash, Claudes Wasserzeichen für den EU AI Act sowie Apertus und die Swiss AI Weeks.",
+    "post": "posts/2026-W36.md",
+    "file": "episodes/2026-W36.mp3",
+    "bytes": 649860,
+    "duration_seconds": 81,
+    "pub_date": "Sun, 06 Sep 2026 17:00:00 +0000"
+  },
+  {
+    "id": "2026-W37",
+    "title": "KW 37 · 7.–13. September 2026: OpenAI Agents API, Gemini für Windows und Robotik in der Schweiz",
+    "description": "Zeitraum: 7.–13. September 2026. Die Highlights der Woche: OpenAIs Agents API und GPT-Live-1, Anthropics Threat Report, die Gemini-Desktop-App für Windows sowie Robotik-Initiativen in der Schweiz.",
+    "post": "posts/2026-W37.md",
+    "file": "episodes/2026-W37.mp3",
+    "bytes": 533518,
+    "duration_seconds": 67,
+    "pub_date": "Sun, 13 Sep 2026 17:00:00 +0000"
+  },
+  {
+    "id": "2026-W38",
+    "title": "KW 38 · 14.–20. September 2026: Cowork wird Claude, KI-Hacks im Test und Apertus in Lumo",
+    "description": "Zeitraum: 14.–20. September 2026. Die Highlights der Woche: Claude Cowork und Chat werden ein Produkt, zwei Sicherheitsvorfälle mit KI-Agenten, Gemini 3.8 Live sowie Datenschutz-Leitfaden und Apertus in der Schweiz.",
+    "post": "posts/2026-W38.md",
+    "file": "episodes/2026-W38.mp3",
+    "bytes": 582656,
+    "duration_seconds": 73,
+    "pub_date": "Sun, 20 Sep 2026 17:00:00 +0000"
+  },
+  {
+    "id": "2026-W39",
+    "title": "KW 39 · 21.–27. September 2026: Claude Opus 5.5, GPT-6 Sol und Luna, KI in der Genfer Verwaltung",
+    "description": "Zeitraum: 21.–27. September 2026. Die Highlights der Woche: Claude Opus 5.5, günstigere GPT-6-Modelle, neue Gemini-Stimmen, ein OpenAI-Agent auf einem australischen Regierungsportal und Genfer KI-Empfehlungen.",
+    "post": "posts/2026-W39.md",
+    "file": "episodes/2026-W39.mp3",
+    "bytes": 547152,
+    "duration_seconds": 68,
+    "pub_date": "Sun, 27 Sep 2026 17:00:00 +0000"
+  },
+  {
+    "id": "2026-W40",
+    "title": "KW 40 · 28. September – 4. Oktober 2026: Claude Sonnet 5.5, OpenAI DevDay und Mistral in München",
+    "description": "Zeitraum: 28. September – 4. Oktober 2026. Die Highlights der Woche: Claude Sonnet 5.5, das Abschaltdatum von Sonnet 4.5, OpenAIs DevDay und ein neuer Mistral-Standort in München.",
+    "post": "posts/2026-W40.md",
+    "file": "episodes/2026-W40.mp3",
+    "bytes": 383760,
+    "duration_seconds": 48,
+    "pub_date": "Sun, 04 Oct 2026 17:00:00 +0000"
+  },
+  {
+    "id": "2026-W41",
+    "title": "KW 41 · 5.–11. Oktober 2026: Claude Haiku 5.5, GPT-6 für alle und neue Usage Policy",
+    "description": "Zeitraum: 5.–11. Oktober 2026. Die Highlights der Woche: Claude Haiku 5.5, GPT-6 für alle ChatGPT-Nutzer, Anthropics neue Nutzungsregeln, Aufräumen bei Gemini und OpenAIs Wasserzeichen für die EU.",
+    "post": "posts/2026-W41.md",
+    "file": "episodes/2026-W41.mp3",
+    "bytes": 474934,
+    "duration_seconds": 59,
+    "pub_date": "Sun, 11 Oct 2026 17:00:00 +0000"
+  },
+  {
+    "id": "2026-W42",
+    "title": "KW 42 · 12.–18. Oktober 2026: Gemini 4 Argon und Mistral Timestral",
+    "description": "Zeitraum: 12.–18. Oktober 2026. Die Highlights der Woche: Googles neues Frontier-Modell Gemini 4 Argon und Mistrals Zeitreihen-Modelle Timestral.",
+    "post": "posts/2026-W42.md",
+    "file": "episodes/2026-W42.mp3",
+    "bytes": 390612,
+    "duration_seconds": 49,
+    "pub_date": "Sun, 18 Oct 2026 17:00:00 +0000"
+  },
+  {
+    "id": "2026-W43",
+    "title": "KW 43 · 19.–25. Oktober 2026: Neue Claude-SDKs, Claude über Google Cloud und Voxtral 3",
+    "description": "Zeitraum: 19.–25. Oktober 2026. Die Highlights der Woche: neue API-Version und SDKs von Anthropic, Claude über Google Cloud, Agent Skills an die Agentic AI Foundation und Mistrals Sprach-Agenten Voxtral 3.",
+    "post": "posts/2026-W43.md",
+    "file": "episodes/2026-W43.mp3",
+    "bytes": 455932,
+    "duration_seconds": 57,
+    "pub_date": "Sun, 25 Oct 2026 17:00:00 +0000"
+  },
+  {
+    "id": "2026-W44",
+    "title": "KW 44 · 26. Oktober – 1. November 2026: Gemini Computer Use, Le Chonk und KI-Regulierung des Bundesrats",
+    "description": "Zeitraum: 26. Oktober – 1. November 2026. Die Highlights der Woche: Computer Use in der Gemini API, neue Speicher-Voreinstellung bei Google, Mistrals offenes Modell «Le Chonk» und der Bundesrat zur KI-Regulierung.",
+    "post": "posts/2026-W44.md",
+    "file": "episodes/2026-W44.mp3",
+    "bytes": 488606,
+    "duration_seconds": 61,
+    "pub_date": "Sun, 01 Nov 2026 17:00:00 +0000"
+  },
+  {
+    "id": "2026-W45",
+    "title": "KW 45 · 2.–8. November 2026: GPT-6 Cyber, Images 2.6 und Message Threads bei Claude",
+    "description": "Zeitraum: 2.–8. November 2026. Die Highlights der Woche: OpenAIs Sicherheitsmodell GPT-6 Cyber, Images 2.6 sowie Message Threads und IP-Allowlists in der Claude API.",
+    "post": "posts/2026-W45.md",
+    "file": "episodes/2026-W45.mp3",
+    "bytes": 407734,
+    "duration_seconds": 51,
+    "pub_date": "Sun, 08 Nov 2026 17:00:00 +0000"
+  },
+  {
     "id": "2026-W46",
     "title": "KW 46 · 9.–15. November 2026: Claude Fable 5.2, Gemini 4 Hydrogen und KI in Zug und Uri",
     "description": "Zeitraum: 9.–15. November 2026. Die Highlights der Woche in drei Minuten: neue Modelle von Anthropic und Google, ein ruhiges Europa und zwei Schweizer Kantone, die in KI investieren.",
