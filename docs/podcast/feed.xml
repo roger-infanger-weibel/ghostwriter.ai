@@ -9,10 +9,10 @@
     <atom:link href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Jede Woche ein kompakter Rückblick auf die wichtigsten Neuigkeiten zu Claude, ChatGPT, Gemini und NotebookLM sowie zu KI-Regulierung in Europa und der Schweiz. Recherche und Skript entstehen mit Claude, die Stimmen mit Gemini TTS. Alle Quellen stehen in den Shownotes.</description>
     <language>de-ch</language>
-    <lastBuildDate>Thu, 19 Nov 2026 06:08:45 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 07:06:06 +0000</lastBuildDate>
     <itunes:subtitle>Die wichtigsten KI-News der Woche – Global, Europa, Schweiz</itunes:subtitle>
     <itunes:summary>Jede Woche ein kompakter Rückblick auf die wichtigsten Neuigkeiten zu Claude, ChatGPT, Gemini und NotebookLM sowie zu KI-Regulierung in Europa und der Schweiz. Recherche und Skript entstehen mit Claude, die Stimmen mit Gemini TTS. Alle Quellen stehen in den Shownotes.</itunes:summary>
-    <itunes:author>Roger Infanger</itunes:author>
+    <itunes:author>Roger Infanger Weibel</itunes:author>
     <itunes:image href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/cover.png"/>
     <image>
       <url>https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/cover.png</url>
@@ -22,6 +22,18 @@
     <itunes:category text="Technology"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <item>
+      <title>KW 46 · 9.–15. November 2026: Claude Fable 5.2, Gemini 4 Hydrogen und KI in Zug und Uri</title>
+      <description>Zeitraum: 9.–15. November 2026. Die Highlights der Woche in drei Minuten: neue Modelle von Anthropic und Google, ein ruhiges Europa und zwei Schweizer Kantone, die in KI investieren.
 
+Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W46.md</description>
+      <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W46.md</link>
+      <guid isPermaLink="false">ghostwriter-ai-2026-W46</guid>
+      <pubDate>Sun, 15 Nov 2026 17:00:00 +0000</pubDate>
+      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W46.mp3" length="732414" type="audio/mpeg"/>
+      <itunes:duration>00:01:31</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
   </channel>
 </rss>
