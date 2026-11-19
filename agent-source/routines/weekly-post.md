@@ -127,7 +127,7 @@ description: >-
   <2–3 Sätze Zusammenfassung für die Podcast-App, ohne Links>
 ---
 
-Lena: Grüezi und willkommen zum KI-Wochenrückblick. ...
+Lena: Grüezi und willkommen beim 3-Minuten-KI-Radar, Kalenderwoche ...
 Marc: ...
 ```
 
@@ -135,7 +135,7 @@ Marc: ...
 - **Quelle:** Nur die Abschnitte `## Global`, `## Europa` und `## Schweiz` des Posts. Alles ab «Für mich relevant» (inkl. «Nicht erreichbare Quellen») kommt **nicht** in den Podcast.
 - **Nur Highlights, keine Details:** Pro Meldung das Wichtigste in 1–2 Sätzen – was ist passiert, warum relevant. Keine Preistabellen, Breaking-Change-Listen, Token-Zahlen oder Nebenaspekte. Höchstens eine Kennzahl pro Meldung, wenn sie die Nachricht ausmacht.
 - **Gesamtlänge ca. 3 Minuten (≈ 400–450 Wörter):**
-  - Intro: 1–2 Sätze (≈ 30 Wörter), inkl. Hinweis «entsteht mit KI, Quellen in den Shownotes»
+  - Intro: 1–2 Sätze (≈ 30 Wörter): «Grüezi und willkommen beim 3-Minuten-KI-Radar, Kalenderwoche …», inkl. Hinweis «entsteht mit KI, Quellen in den Shownotes». Der Sendungsname steht in `podcast/show.yaml` (`title`)
   - Global: **max. 1 Minute (≈ 130 Wörter)**
   - Europa: **max. 1 Minute (≈ 130 Wörter)**; ruhige Woche → ein Satz genügt
   - Schweiz: **max. 1 Minute (≈ 130 Wörter)**
