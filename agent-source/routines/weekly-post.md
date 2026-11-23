@@ -99,16 +99,13 @@ Claude 3.6 mit stärkerem Reasoning könnte ich direkt für die Parking-Forecast
 nutzen (Multi-Step-Entscheidungsbäume). Die EDÖB-Guidance zu LLM-Einsatz ist relevant für mein
 CAS-Projekt "Innovation Management" – hier sind Transparenz-Anforderungen jetzt Compliance-Anforderung.
 
-## Nicht erreichbare Quellen
-
-- NotebookLM Release Notes: 403 Forbidden
 ```
 
 **Tipps:**
 - Jeder Eintrag: **Titel** + 2–3 Sätze + **Link**
 - Keine Spekulationen ("könnte sein", "wird wohl")
 - Zahlen & Versionen **wörtlich** wie in der Quelle
-- "Für mich relevant": Bezug zu Parking-Forecasting, CAS, Claude-Config
+- "Für mich relevant": Bezug zu Parking-Forecasting und Claude-Config
 - "Nicht erreichbare": Liste oder "keine"
 
 ---
