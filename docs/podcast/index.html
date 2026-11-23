@@ -81,6 +81,13 @@ a{color:var(--accent)}
 .ep .m{font-size:13px;color:var(--muted)}
 .ep .sn{font-size:13px}
 .pmsg{font-size:14px;color:var(--muted);margin:8px 0 0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+h2,.player{scroll-margin-top:16px}
+.toc{margin-top:22px;display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:14px}
+.toc span{color:var(--muted);font-weight:600;margin-right:2px}
+.toc a{color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--card);padding:5px 12px;border-radius:999px}
+.toc a:hover,.toc a:focus-visible{border-color:var(--accent);color:var(--accent)}
 footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
 </style>
 </head>
@@ -89,6 +96,15 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
   <div class="kicker"><span class="radar" aria-hidden="true"></span>Podcast · jeden Montag</div>
   <h1>Rogers 3-Minuten-KI-Radar</h1>
   <p class="lead">Die wichtigsten KI-News der Woche – Global, Europa, Schweiz – in rund drei Minuten. Kostenlos, ohne Konto, ohne Spotify: Du abonnierst den Podcast direkt über seinen RSS-Feed.</p>
+
+  <nav class="toc" aria-label="Inhalt">
+    <span>Auf dieser Seite:</span>
+    <a href="#reinhoeren">Reinhören</a>
+    <a href="#abonnieren">Abonnieren</a>
+    <a href="#ablauf">So funktioniert’s</a>
+    <a href="#fragen">Fragen</a>
+    <a href="#feedback">Feedback</a>
+  </nav>
 
   <div class="feed">
     <label for="feedurl">Feed-Adresse – kopieren und in deiner Podcast-App einfügen</label>
@@ -99,7 +115,7 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
     <p class="note" id="copynote">Kopieren klappt nicht? Adresse antippen und gedrückt halten, um sie zu markieren.</p>
   </div>
 
-  <section class="player" aria-labelledby="hoeren">
+  <section class="player" id="reinhoeren" aria-labelledby="hoeren">
     <div class="now" id="hoeren">Direkt hier reinhören</div>
     <div class="nowtitle" id="nowtitle">Folgen werden geladen …</div>
     <audio id="audio" controls preload="none"></audio>
@@ -113,7 +129,7 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
     <p class="pmsg" id="pmsg" hidden></p>
   </section>
 
-  <h2>Abonnieren</h2>
+  <h2 id="abonnieren">Abonnieren</h2>
   <p>Wähle dein Gerät. Das Prinzip ist überall gleich: Such in deiner App die Funktion «Podcast per URL hinzufügen» und füge die Feed-Adresse ein.</p>
 
   <div class="tabs" role="tablist" aria-label="Plattform">
@@ -203,7 +219,7 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
 
   <div class="warn"><b>Spotify geht nicht:</b> Die Spotify-App nimmt keine eigenen RSS-Adressen an. Ich habe den Podcast bewusst in keinem Verzeichnis eingetragen – darum findest du ihn nicht über die Suche nach dem Namen, sondern nur über die Feed-Adresse.</div>
 
-  <h2>So funktioniert’s</h2>
+  <h2 id="ablauf">So funktioniert’s</h2>
   <p>Technisch ist ein Podcast nichts anderes als eine öffentliche Liste (der RSS-Feed) mit Links auf MP3-Dateien. Deine App schaut regelmässig in diese Liste und lädt neue Folgen selbständig herunter. Dazwischen steht keine Plattform – nur eine Datei auf GitHub.</p>
   <ol class="flow">
     <li><b>Montag, 06:00 – Recherche</b><span>Meine automatisierte Claude-Routine sammelt die KI-News der Vorwoche aus kuratierten Quellen und schreibt den Wochenrückblick.</span></li>
@@ -213,7 +229,7 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
     <li><b>Deine App</b><span>Sie bemerkt den neuen Eintrag im Feed und lädt die Folge herunter – meist innerhalb weniger Stunden, je nach App.</span></li>
   </ol>
 
-  <h2>Fragen</h2>
+  <h2 id="fragen">Fragen</h2>
   <dl>
     <dt>Wann kommt eine neue Folge?</dt>
     <dd>Jeden Montagmorgen, mit den News der Kalenderwoche davor.</dd>
@@ -227,7 +243,7 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
     <dd>Öffne in der App den Podcast und wähle «Nicht mehr folgen» bzw. «Abo beenden». Mehr ist nicht nötig.</dd>
   </dl>
 
-  <h2>Dein Feedback</h2>
+  <h2 id="feedback">Dein Feedback</h2>
   <div class="feedback">
     <p>Der Podcast ist ein persönliches Experiment, und ich freue mich über jede Rückmeldung: Was ist dir zu lang oder zu kurz, welche Themen fehlen, wie wirken die Stimmen auf dich, und hat das Abonnieren auf deinem Gerät geklappt?</p>
     <p>Schreib mir am einfachsten eine Nachricht auf <a id="linkedin" href="https://www.linkedin.com/search/results/people/?keywords=Roger%20Infanger%20Weibel">LinkedIn</a> – oder sag es mir direkt, wenn wir uns sehen.</p>
