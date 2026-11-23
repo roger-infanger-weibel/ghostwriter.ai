@@ -41,7 +41,6 @@ Hier sind die größten KI-Community-Plattformen im gewünschten Tabellenformat:
 |---|---|---|
 | Hugging Face | Hauptseite & Model-Hub | huggingface.co |
 | Civitai | Community & Art-Models | civitai.com |
-| The AI Collective | Globale Netzwerk-Plattform | aicollective.com |
 | Global AI Community | Entwickler-Netzwerk & Events | globalai.community |
 | Stack Exchange | Artificial Intelligence Q&A | stackexchange.com |
 | Alignify | Community Tools & Insights | alignify.co |
