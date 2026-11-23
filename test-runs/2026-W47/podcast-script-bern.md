@@ -6,7 +6,7 @@ description: >-
   Konsultation zum EU AI Act.
 ---
 
-Lena [sachlich, fründlech, ruhigs Tempo, redt Bärndütsch]: Grüessech u willkomme bim Rogers drei-Minute-KI-Radar, Kalenderwuche sibenevierzg. Dä Podcast entsteit mit KI, d Quellen findet dir i de Shownotes.
+Lena [sachlich, fründlech, ruhigs Tempo, redt Bärndütsch]: Grüessech u willkomme bim Rogers drei-Minute-KI-Radar, Kalenderwuche sibenevierzg. Dä Podcast isch mit KI erstellt worde u wird ou vo KI-Persone verzeut. D Quellen findet dir i de Shownotes.
 
 Marc [neugierig, locker, ruhigs Tempo, redt Bärndütsch]: Mir fö global a. OpenAI het zwöi nöii Modäll usegä: GPT sächs Punkt zwöi Astra für aspruchsvoui Projekt u GPT sächs Punkt zwöi Sol für d Alltagsarbeit.
 
