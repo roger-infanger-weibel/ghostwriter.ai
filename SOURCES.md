@@ -25,7 +25,7 @@ Hier ist die erweiterte Tabelle mit weiteren Top-AI-Quellen, Plattformen und Dev
 | Google | Google AI Blog | [https://blog.google/innovation-and-ai/technology/ai/](https://blog.google/innovation-and-ai/technology/ai/) |
 | Meta | Meta AI / Llama Blog | [https://ai.meta.com/blog/](https://ai.meta.com/blog/) |
 | Meta | Llama GitHub / Releases | [https://github.com/meta-llama/llama-models/releases](https://github.com/meta-llama/llama-models/releases) |
-| Mistral AI | News & Announcements | [https://mistral.ai/news/](https://mistral.ai/news/) |
+| Microsoft | AI News | https://microsoft.ai/blog/ |
 | DeepSeek | DeepSeek API / Docs | [https://api-docs.deepseek.com/news/](https://api-docs.deepseek.com/news/) |
 | Hugging Face | Daily Papers & Blog | [https://huggingface.co/blog](https://huggingface.co/blog) |
 | GitHub | GitHub Copilot Changelog | [https://github.blog/changelog/label/copilot/](https://github.blog/changelog/label/copilot/) |
@@ -61,6 +61,7 @@ Hier sind die größten KI-Community-Plattformen im gewünschten Tabellenformat:
 | EU AI Act – Kommission | https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai |
 | Rapporteur (ehem. Euractiv) | https://www.rapporteur.com |
 | Mistral AI News | https://mistral.ai/news |
+| Mistral AI | News & Announcements | [https://mistral.ai/news/](https://mistral.ai/news/) |
 
 ---
 
@@ -82,6 +83,3 @@ Hier sind die größten KI-Community-Plattformen im gewünschten Tabellenformat:
 
 - Neue Quelle nur aufnehmen, wenn sie in den letzten 4 Wochen **mindestens einmal** einen Eintrag geliefert hätte.
 - Quellen, die 8 Wochen lang nichts liefern → prüfen und ggf. streichen.
-- Vorschläge des Agenten (im PR-Text) → manuell hier einpflegen.
-
-**Letzte Aktualisierung:** 2026-10-05
