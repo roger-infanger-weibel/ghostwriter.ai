@@ -124,7 +124,7 @@ description: >-
   <2–3 Sätze Zusammenfassung für die Podcast-App, ohne Links>
 ---
 
-Lena: Grüessech u willkomme bim Rogers drei-Minute-KI-Radar, Kalenderwuche ...
+Lena: Grüessech u willkomme bim wöchentleche drei-Minute-KI-News-Radar, Kalenderwuche ...
 Marc: ...
 ```
 
@@ -136,7 +136,7 @@ Marc: ...
   (kostet kein API-Kontingent), bevor das Audio erzeugt wird.
 - **Aufteilung (Richtwerte):**
   - Intro (≈ 30 Wörter), immer mit diesem Wortlaut am Anfang: «Grüessech u willkomme bim
-    Rogers drei-Minute-KI-Radar, Kalenderwuche <Zahl uf Bärndütsch usgschribe, z. B. sibenevierzg>.»
+    wöchentleche drei-Minute-KI-News-Radar, Kalenderwuche <Zahl uf Bärndütsch usgschribe, z. B. sibenevierzg>.»
     Danach der Hinweis «Dä Podcast isch mit KI erstellt worde u wird ou vo KI-Persone verzeut.
     D Quellen findet dir i de Shownotes.»
   - Global ≈ 1 Minute, Europa ≈ 1 Minute, Schweiz ≈ 1 Minute
