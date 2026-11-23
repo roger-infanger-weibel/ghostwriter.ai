@@ -11,6 +11,10 @@ Aufruf:
   python podcast/tools/build_episode.py               # alle Skripte ohne Episode
   python podcast/tools/build_episode.py --week 2026-W46
   python podcast/tools/build_episode.py --dry-run     # nur parsen, kein API-Aufruf
+
+Testmodus (ändert weder episodes.json noch feed.xml noch docs/):
+  python podcast/tools/build_episode.py --week 2026-W47 \
+      --script test-runs/2026-W47/podcast-script.md --out test-runs/2026-W47/podcast.mp3
 """
 from __future__ import annotations
 
@@ -248,8 +252,9 @@ def save_episodes(eps: list[dict]) -> None:
     EPISODES_JSON.write_text(json.dumps(eps, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def build(week: str, cfg: dict, api_key: str | None, dry_run: bool) -> dict | None:
-    path = SCRIPTS / f"{week}.md"
+def build(week: str, cfg: dict, api_key: str | None, dry_run: bool,
+          script: Path | None = None, out: Path | None = None) -> dict | None:
+    path = script or SCRIPTS / f"{week}.md"
     names = [s["name"] for s in cfg["tts"]["speakers"]]
     meta, turns = parse_script(path, names)
     chunks = chunk_turns(turns, int(cfg["tts"]["max_chars_per_request"]))
@@ -268,8 +273,8 @@ def build(week: str, cfg: dict, api_key: str | None, dry_run: bool) -> dict | No
         print(f"  Teil {i}/{len(chunks)} …", flush=True)
         pcm += synthesize(chunk, cfg, api_key)
 
-    EPISODE_DIR.mkdir(parents=True, exist_ok=True)
-    mp3 = EPISODE_DIR / f"{week}.mp3"
+    mp3 = out or EPISODE_DIR / f"{week}.mp3"
+    mp3.parent.mkdir(parents=True, exist_ok=True)
     meta["episode_title"] = episode_title(week, meta["title"])
     encode_mp3(pcm, mp3, meta, cfg)
     return {
@@ -289,12 +294,27 @@ def main() -> int:
     ap.add_argument("--week", help="ISO-Woche, z. B. 2026-W46")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--force", action="store_true", help="bestehende Episode neu erzeugen")
+    ap.add_argument("--script", type=Path, help="Testmodus: Skript-Datei (statt podcast/scripts/)")
+    ap.add_argument("--out", type=Path, help="Testmodus: Ziel-MP3; Feed und episodes.json bleiben unverändert")
     args = ap.parse_args()
 
     cfg = yaml.safe_load((PODCAST / "show.yaml").read_text(encoding="utf-8"))
     if len(cfg["tts"]["speakers"]) != 2:
         print("show.yaml: genau zwei Sprecher nötig", file=sys.stderr)
         return 1
+
+    if args.script or args.out:
+        if not (args.script and args.out and args.week and WEEK_RE.match(args.week)):
+            print("Testmodus braucht --week, --script und --out", file=sys.stderr)
+            return 1
+        if args.out.resolve().is_relative_to(SITE.resolve()):
+            print("Testmodus: --out darf nicht unter docs/podcast liegen", file=sys.stderr)
+            return 1
+        ep = build(args.week, cfg, os.environ.get("GEMINI_API_KEY"), args.dry_run,
+                   script=args.script, out=args.out)
+        if ep:
+            print(f"  -> {args.out} ({ep['duration_seconds']} s, {ep['bytes'] // 1024} KB) [Test]")
+        return 0
 
     episodes = load_episodes()
     done = {e["id"] for e in episodes}
