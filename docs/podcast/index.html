@@ -63,6 +63,24 @@ dd{margin:4px 0 0;color:var(--muted)}
 a{color:var(--accent)}
 .feedback{background:var(--accent-soft);border-radius:var(--radius);padding:18px 20px}
 .feedback p:last-child{margin:0}
+.player{margin-top:20px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.now{font-size:13px;font-weight:600;color:var(--muted);margin-bottom:4px}
+.nowtitle{font-family:Fraunces,Georgia,serif;font-size:19px;line-height:1.3;margin-bottom:12px}
+.player audio{width:100%}
+.ctrl{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px;align-items:center}
+.ctrl span{font-size:13px;color:var(--muted);margin-right:4px}
+.speed{background:var(--bg);color:var(--ink);border:1px solid var(--line);padding:6px 12px;font-weight:500}
+.speed[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.eps{list-style:none;margin:16px 0 0;padding:0;border-top:1px solid var(--line);max-height:340px;overflow:auto}
+.eps li{border-bottom:1px solid var(--line)}
+.ep{all:unset;box-sizing:border-box;display:flex;gap:12px;align-items:flex-start;width:100%;padding:12px 4px;cursor:pointer}
+.ep:focus-visible{outline:3px solid var(--accent);outline-offset:-3px;border-radius:8px}
+.ep .ic{flex:0 0 30px;height:30px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-size:12px}
+.ep.playing .ic{background:var(--accent);color:#fff}
+.ep .t{font-weight:500;line-height:1.35}
+.ep .m{font-size:13px;color:var(--muted)}
+.ep .sn{font-size:13px}
+.pmsg{font-size:14px;color:var(--muted);margin:8px 0 0}
 footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
 </style>
 </head>
@@ -80,6 +98,20 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
     </div>
     <p class="note" id="copynote">Kopieren klappt nicht? Adresse antippen und gedrückt halten, um sie zu markieren.</p>
   </div>
+
+  <section class="player" aria-labelledby="hoeren">
+    <div class="now" id="hoeren">Direkt hier reinhören</div>
+    <div class="nowtitle" id="nowtitle">Folgen werden geladen …</div>
+    <audio id="audio" controls preload="none"></audio>
+    <div class="ctrl" role="group" aria-label="Geschwindigkeit">
+      <span>Tempo</span>
+      <button type="button" class="speed" data-r="1" aria-pressed="true">1×</button>
+      <button type="button" class="speed" data-r="1.25" aria-pressed="false">1,25×</button>
+      <button type="button" class="speed" data-r="1.5" aria-pressed="false">1,5×</button>
+    </div>
+    <ul class="eps" id="eps"></ul>
+    <p class="pmsg" id="pmsg" hidden></p>
+  </section>
 
   <h2>Abonnieren</h2>
   <p>Wähle dein Gerät. Das Prinzip ist überall gleich: Such in deiner App die Funktion «Podcast per URL hinzufügen» und füge die Feed-Adresse ein.</p>
@@ -233,6 +265,59 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
   else if(/Linux/.test(ua))pick='t-linux';
   select(document.getElementById(pick));
 })();
+
+  // Web-Player: liest den Feed von derselben Adresse
+  (function(){
+    var FEED='https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml';
+    var src=/github\.io$/.test(location.hostname)?new URL('feed.xml',location.href).href:FEED;
+    var audio=document.getElementById('audio'), list=document.getElementById('eps'),
+        now=document.getElementById('nowtitle'), msg=document.getElementById('pmsg'), cur=null;
+    function fmt(d){try{return new Date(d).toLocaleDateString('de-CH',{day:'numeric',month:'long',year:'numeric'});}catch(e){return '';}}
+    function dur(t){if(!t)return '';var p=t.split(':').map(Number);var sec=p.reduce(function(a,b){return a*60+b;},0);var m=Math.floor(sec/60),r=sec%60;return m+':'+(r<10?'0':'')+r+' Min.';}
+    function choose(btn,ep,play){
+      if(cur)cur.classList.remove('playing'),cur.querySelector('.ic').textContent='▶';
+      cur=btn;btn.classList.add('playing');btn.querySelector('.ic').textContent='♪';
+      if(audio.getAttribute('src')!==ep.url){audio.src=ep.url;}
+      audio.playbackRate=rate;now.textContent=ep.title;
+      if(play){var pr=audio.play();if(pr&&pr.catch)pr.catch(function(){});}
+    }
+    var rate=1;
+    [].forEach.call(document.querySelectorAll('.speed'),function(b){
+      b.addEventListener('click',function(){
+        rate=parseFloat(b.dataset.r);audio.playbackRate=rate;
+        [].forEach.call(document.querySelectorAll('.speed'),function(x){x.setAttribute('aria-pressed',x===b);});
+      });
+    });
+    audio.addEventListener('loadedmetadata',function(){audio.playbackRate=rate;});
+    audio.addEventListener('ended',function(){
+      var li=cur&&cur.parentNode.nextElementSibling; if(li)li.firstChild.click();
+    });
+    fetch(src,{cache:'no-cache'}).then(function(r){if(!r.ok)throw 0;return r.text();}).then(function(x){
+      var doc=new DOMParser().parseFromString(x,'application/xml');
+      var items=[].slice.call(doc.getElementsByTagName('item')).map(function(it){
+        function g(n){var e=it.getElementsByTagName(n)[0];return e?e.textContent.trim():'';}
+        var enc=it.getElementsByTagName('enclosure')[0];
+        return {title:g('title'),date:g('pubDate'),url:enc?enc.getAttribute('url'):'',link:g('link'),dur:g('itunes:duration')};
+      }).filter(function(e){return e.url;});
+      if(!items.length)throw 0;
+      items.forEach(function(ep,i){
+        var li=document.createElement('li'), b=document.createElement('button');
+        b.type='button';b.className='ep';
+        b.innerHTML='<span class="ic" aria-hidden="true">▶</span><span><span class="t"></span><br><span class="m"></span> · <a class="sn" target="_blank" rel="noopener">Shownotes</a></span>';
+        b.querySelector('.t').textContent=ep.title;
+        b.querySelector('.m').textContent=[fmt(ep.date),dur(ep.dur)].filter(Boolean).join(' · ');
+        var a=b.querySelector('.sn'); if(ep.link){a.href=ep.link;a.addEventListener('click',function(e){e.stopPropagation();});}else a.remove();
+        b.addEventListener('click',function(){choose(b,ep,true);});
+        li.appendChild(b);list.appendChild(li);
+        if(i===0)choose(b,ep,false);
+      });
+    }).catch(function(){
+      now.textContent='Player hier nicht verfügbar';
+      audio.hidden=true;document.querySelector('.ctrl').hidden=true;
+      msg.hidden=false;
+      msg.innerHTML='Der Player läuft auf der öffentlichen Seite: <a href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/">roger-infanger-weibel.github.io/ghostwriter.ai/podcast</a>';
+    });
+  })();
 </script>
 </body>
 </html>
