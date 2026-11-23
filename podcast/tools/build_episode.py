@@ -252,6 +252,31 @@ def save_episodes(eps: list[dict]) -> None:
     EPISODES_JSON.write_text(json.dumps(eps, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def check_length(chars: int, cfg: dict) -> None:
+    """Warnt, wenn das Skript deutlich von der Ziellänge (fast 3 Minuten) abweicht."""
+    lo, hi = cfg.get("length", {}).get("min_chars"), cfg.get("length", {}).get("max_chars")
+    secs = chars / 15  # gemessen: ca. 15 Zeichen pro Sekunde
+    if lo and chars < lo:
+        print(f"  WARNUNG ZU KURZ: {chars} Zeichen (≈ {secs:.0f} s Sprache), Ziel {lo}–{hi}. "
+              "Skript mit weiteren Meldungen aus dem Post auffüllen.")
+    elif hi and chars > hi:
+        print(f"  WARNUNG ZU LANG: {chars} Zeichen (≈ {secs:.0f} s Sprache), Ziel {lo}–{hi}. "
+              "Skript kürzen.")
+    else:
+        print(f"  Länge OK: {chars} Zeichen (≈ {secs:.0f} s Sprache)")
+
+
+def load_intro(cfg: dict) -> bytes:
+    """Startmusik als PCM (24 kHz mono 16 Bit) oder leer, wenn keine konfiguriert ist."""
+    rel = cfg.get("audio", {}).get("intro")
+    if not rel:
+        return b""
+    path = PODCAST / rel
+    if not path.exists():
+        raise FileNotFoundError(f"Startmusik fehlt: {path} (python podcast/tools/make_jingle.py)")
+    return _to_pcm(path.read_bytes())
+
+
 def build(week: str, cfg: dict, api_key: str | None, dry_run: bool,
           script: Path | None = None, out: Path | None = None) -> dict | None:
     path = script or SCRIPTS / f"{week}.md"
@@ -261,6 +286,8 @@ def build(week: str, cfg: dict, api_key: str | None, dry_run: bool,
     chars = sum(len(t["text"]) for t in turns)
     print(f"{episode_title(week, meta['title'])} | {pub_date(week)}")
     print(f"{week}: {len(turns)} Wortmeldungen, {chars} Zeichen, {len(chunks)} API-Aufrufe")
+    check_length(chars, cfg)
+    intro = load_intro(cfg)
     if dry_run:
         return None
 
@@ -272,6 +299,8 @@ def build(week: str, cfg: dict, api_key: str | None, dry_run: bool,
             pcm += silence
         print(f"  Teil {i}/{len(chunks)} …", flush=True)
         pcm += synthesize(chunk, cfg, api_key)
+    if intro:
+        pcm = intro + b"\x00\x00" * int(SAMPLE_RATE * 0.2) + pcm
 
     mp3 = out or EPISODE_DIR / f"{week}.mp3"
     mp3.parent.mkdir(parents=True, exist_ok=True)

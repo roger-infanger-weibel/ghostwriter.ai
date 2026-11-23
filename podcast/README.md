@@ -55,6 +55,12 @@ Später doch in Verzeichnisse (Spotify, Apple)? Dann `owner_email` in `show.yaml
   `python podcast/tools/build_episode.py --week 2026-W46 --force`
 - **Lokal:** mit `GEMINI_API_KEY` als Umgebungsvariable gleich aufrufen.
 - **Skript prüfen ohne API:** `python podcast/tools/build_episode.py --dry-run`
+- **Startmusik:** `podcast/assets/intro-radar.wav` (ca. 4 s, rein synthetisch, Radar-Sweep mit
+  Sonar-Pings) läuft vor jeder Folge. Neu erzeugen/anpassen: `python podcast/tools/make_jingle.py`;
+  abschalten: `audio.intro` in `show.yaml` leeren.
+- **Länge:** Ziel fast 3 Minuten (`length` in `show.yaml`, 2400–2800 Zeichen). Der Dry-Run meldet
+  «ZU KURZ» / «ZU LANG».
+- **Testfolge ohne Feed:** `--script <datei> --out test-runs/.../podcast.mp3` (siehe `test-runs/README.md`).
 - **Stimmen ändern:** `tts.speakers[].voice` in `show.yaml` (30 vordefinierte Stimmen, z. B. Kore,
   Puck, Charon, Aoede, Leda, Orus).
 

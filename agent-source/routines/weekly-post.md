@@ -127,20 +127,31 @@ description: >-
   <2–3 Sätze Zusammenfassung für die Podcast-App, ohne Links>
 ---
 
-Lena: Grüezi und willkommen beim 3-Minuten-KI-Radar, Kalenderwoche ...
+Lena: Grüezi und willkommen beim Rogers drei-Minuten-KI-Radar, Kalenderwoche ...
 Marc: ...
 ```
 
 **Regeln:**
 - **Quelle:** Nur die Abschnitte `## Global`, `## Europa` und `## Schweiz` des Posts. Alles ab «Für mich relevant» (inkl. «Nicht erreichbare Quellen») kommt **nicht** in den Podcast.
-- **Nur Highlights, keine Details:** Pro Meldung das Wichtigste in 1–2 Sätzen – was ist passiert, warum relevant. Keine Preistabellen, Breaking-Change-Listen, Token-Zahlen oder Nebenaspekte. Höchstens eine Kennzahl pro Meldung, wenn sie die Nachricht ausmacht.
-- **Gesamtlänge ca. 3 Minuten (≈ 400–450 Wörter):**
-  - Intro: 1–2 Sätze (≈ 30 Wörter): «Grüezi und willkommen beim 3-Minuten-KI-Radar, Kalenderwoche …», inkl. Hinweis «entsteht mit KI, Quellen in den Shownotes». Der Sendungsname steht in `podcast/show.yaml` (`title`)
-  - Global: **max. 1 Minute (≈ 130 Wörter)**
-  - Europa: **max. 1 Minute (≈ 130 Wörter)**; ruhige Woche → ein Satz genügt
-  - Schweiz: **max. 1 Minute (≈ 130 Wörter)**
+- **Gesamtlänge immer fast 3 Minuten: 2400–2800 Zeichen Sprechtext (≈ 360–400 Wörter).**
+  Das gilt jede Woche, auch in ruhigen Wochen. `build_episode.py --dry-run` zeigt die Länge an.
+  Bei «WARNUNG ZU KURZ» oder «ZU LANG» das Skript anpassen und den Dry-Run wiederholen
+  (kostet kein API-Kontingent), bevor das Audio erzeugt wird.
+- **Aufteilung (Richtwerte):**
+  - Intro (≈ 30 Wörter), immer mit diesem Wortlaut am Anfang: «Grüezi und willkommen beim
+    Rogers drei-Minuten-KI-Radar, Kalenderwoche <Zahl ausgeschrieben>.» Danach der Hinweis
+    «Dieser Podcast entsteht mit KI, die Quellen findet ihr in den Shownotes.»
+  - Global ≈ 1 Minute, Europa ≈ 1 Minute, Schweiz ≈ 1 Minute
   - Abschluss: 1 Satz + «Tschüss zäme» (≈ 20 Wörter), keine Zusammenfassung
-- Zu viele Meldungen für eine Minute? Nur die wichtigsten nehmen, Rest weglassen.
+- **Auffüllen statt kürzer werden:** Hat eine Region wenig oder nichts (z. B. Schweiz-Quellen
+  nicht erreichbar, ruhige Woche in Europa), dort ein bis zwei Sätze sagen und die frei
+  gewordene Zeit mit den anderen Meldungen füllen: zuerst alle Global-Einträge des Posts
+  aufnehmen, dann pro Meldung mehr Kontext aus dem Post erzählen (was genau ist neu, für wen
+  verfügbar, was ändert sich für Nutzerinnen und Nutzer, warum ist es wichtig).
+- **Zu viel Stoff?** Dann die wichtigsten Meldungen nehmen und den Rest weglassen, bis die
+  Länge stimmt.
+- Höchstens eine Kennzahl pro Meldung, keine Preistabellen, Breaking-Change-Listen oder
+  Token-Zahlen.
 - Reihenfolge fix: Intro → Global → Europa → Schweiz → Abschluss.
 - Sprecher `Lena` und `Marc`, jede Zeile beginnt mit `Lena:` oder `Marc:`. Optional Stil in eckigen Klammern: `Marc [überrascht]: ...`. Kurze, abwechselnde Wortmeldungen, kein Smalltalk.
 - **Inhalt nur aus dem Post.** Keine zusätzlichen Fakten, Zahlen oder Wertungen, keine Superlative.
@@ -153,7 +164,7 @@ Marc: ...
 
 ```bash
 pip install -q requests pyyaml   # falls nötig
-python podcast/tools/build_episode.py --dry-run --week YYYY-Www   # Skript prüfen
+python podcast/tools/build_episode.py --dry-run --week YYYY-Www   # Skript + Länge prüfen («Länge OK»)
 python podcast/tools/build_episode.py --week YYYY-Www
 ```
 

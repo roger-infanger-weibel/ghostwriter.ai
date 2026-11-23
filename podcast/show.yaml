@@ -36,3 +36,11 @@ tts:
 
 audio:
   bitrate: "64k"
+  # Startmusik vor jeder Folge (rein synthetisch, neu erzeugen: python podcast/tools/make_jingle.py)
+  intro: "assets/intro-radar.wav"
+
+# Ziellänge: fast 3 Minuten. ca. 15 Zeichen Sprache pro Sekunde (gemessen KW 35–47).
+# build_episode.py warnt beim --dry-run, wenn das Skript ausserhalb liegt.
+length:
+  min_chars: 2400
+  max_chars: 2800
