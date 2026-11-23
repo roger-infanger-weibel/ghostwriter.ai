@@ -1,7 +1,9 @@
 # Podcast: KI-Wochenrückblick
 
 Der Wochenrückblick wird automatisch zu einem berndeutschen Podcast mit zwei Stimmen
-(Lena und Marc) und als RSS-Feed auf GitHub Pages veröffentlicht – ohne Spotify, ohne Hoster. Der Gemini-Key liegt **nicht** in GitHub,
+(Lena und Marc) und als RSS-Feed auf GitHub Pages veröffentlicht – ohne Hoster. Zusätzlich ist der Feed bei Spotify eingereicht:
+https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY
+ Der Gemini-Key liegt **nicht** in GitHub,
 sondern als Network Secret im Claude-Cloud-Environment.
 
 ## Ablauf
@@ -34,10 +36,10 @@ Feed: https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml
    `python podcast/tools/build_episode.py --week 2026-W46`, Ergebnis committen und pushen.
 5. **Abonnieren:** Feed-URL in einer Podcast-App einfügen, die eigene Feeds annimmt:
    Apple Podcasts (Mediathek → «…» → «Sendung per URL folgen»), Pocket Casts, Overcast,
-   AntennaPod, Podcast Addict. Die Spotify-App nimmt keine RSS-Adressen an.
+   AntennaPod, Podcast Addict. Auf Spotify: https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY
 
-Später doch in Verzeichnisse (Spotify, Apple)? Dann `owner_email` in `show.yaml` ergänzen
-(wird für die Bestätigung gebraucht und ist im Feed öffentlich) und den Feed dort einreichen.
+Verzeichnisse: `owner_email` in `show.yaml` ist gesetzt (für die Bestätigung nötig, im Feed
+öffentlich). Spotify: eingereicht, Link in `show.yaml` (`spotify_url`). Apple Podcasts: noch nicht.
 
 ## Dateien
 

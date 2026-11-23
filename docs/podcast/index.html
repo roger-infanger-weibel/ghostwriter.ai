@@ -55,6 +55,13 @@ button:focus-visible,.tab:focus-visible{outline:3px solid var(--accent);outline-
 .panel ol{padding-left:22px;margin:0 0 8px}
 .panel li{margin-bottom:4px}
 .tag{display:inline-block;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent);margin-left:6px;vertical-align:2px}
+.hero{display:flex;gap:24px;align-items:center}
+.hero img{width:168px;height:168px;flex:none;border-radius:var(--radius);box-shadow:0 6px 24px rgba(0,0,0,.18)}
+.hero .txt{min-width:0}
+@media (max-width:560px){.hero{flex-direction:column;align-items:flex-start;gap:18px}.hero img{width:140px;height:140px}}
+.spotify{display:inline-flex;align-items:center;gap:10px;margin-top:6px;font:600 15px Inter,sans-serif;text-decoration:none;color:#fff;background:#1db954;border-radius:999px;padding:11px 20px}
+.spotify:hover,.spotify:focus-visible{background:#17a34a;outline:none}
+.spotify svg{width:20px;height:20px;flex:none}
 .warn{border-left:3px solid var(--accent);padding:10px 14px;background:var(--card);border-radius:0 10px 10px 0;margin-top:18px;font-size:15px}
 
 dl{margin:0}
@@ -93,9 +100,15 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
 </head>
 <body>
 <main>
-  <div class="kicker"><span class="radar" aria-hidden="true"></span>Podcast · jeden Montag</div>
-  <h1>Rogers 3-Minuten-KI-Radar</h1>
-  <p class="lead">Die wichtigsten KI-News der Woche – Global, Europa, Schweiz – in rund drei Minuten. Kostenlos, ohne Konto, ohne Spotify: Du abonnierst den Podcast direkt über seinen RSS-Feed.</p>
+  <div class="hero">
+    <img src="cover-web.jpg" width="600" height="600" alt="Cover: KI-Wochenrückblick – Global, Europa, Schweiz">
+    <div class="txt">
+      <div class="kicker"><span class="radar" aria-hidden="true"></span>Podcast · jeden Montag</div>
+      <h1>Rogers 3-Minuten-KI-Radar</h1>
+    </div>
+  </div>
+  <p class="lead">Die wichtigsten KI-News der Woche – Global, Europa, Schweiz – in rund drei Minuten, auf Berndeutsch. Kostenlos: Hör auf Spotify rein oder abonniere den Podcast direkt über seinen RSS-Feed in jeder anderen Podcast-App.</p>
+  <a class="spotify" href="https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#fff"/><path d="M6.5 9.3c3.6-1.1 8-.8 11 1M7 12.4c3-.9 6.6-.6 9.2.9M7.6 15.3c2.4-.7 5-.5 7.1.7" stroke="#1db954" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>Auf Spotify hören</a>
 
   <nav class="toc" aria-label="Inhalt">
     <span>Auf dieser Seite:</span>
@@ -217,7 +230,7 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
     <p>Du willst nur die neuste Folge hören? <a href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml">Öffne den Feed</a> und klick auf den MP3-Link der obersten Episode. Shownotes und Quellen findest du in meinem <a href="https://github.com/roger-infanger-weibel/ghostwriter.ai/tree/main/posts">GitHub-Repository</a>.</p>
   </section>
 
-  <div class="warn"><b>Spotify geht nicht:</b> Die Spotify-App nimmt keine eigenen RSS-Adressen an. Ich habe den Podcast bewusst in keinem Verzeichnis eingetragen – darum findest du ihn nicht über die Suche nach dem Namen, sondern nur über die Feed-Adresse.</div>
+  <div class="warn"><b>Spotify:</b> Dort findest du den Podcast unter <a href="https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY" target="_blank" rel="noopener">diesem Link</a> – einfach öffnen und auf «Folgen» tippen. Neue Folgen erscheinen auf Spotify meist ein paar Stunden nach der Veröffentlichung im Feed. Die Feed-Adresse oben brauchst du dafür nicht.</div>
 
   <h2 id="ablauf">So funktioniert’s</h2>
   <p>Technisch ist ein Podcast nichts anderes als eine öffentliche Liste (der RSS-Feed) mit Links auf MP3-Dateien. Deine App schaut regelmässig in diese Liste und lädt neue Folgen selbständig herunter. Dazwischen steht keine Plattform – nur eine Datei auf GitHub.</p>

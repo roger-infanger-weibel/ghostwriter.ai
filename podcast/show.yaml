@@ -11,6 +11,8 @@ description: >-
 author: "Roger Infanger Weibel"
 # Kontakt-Adresse im Feed (itunes:owner) – nötig für die Verifizierung bei Spotify / Apple Podcasts
 owner_email: "a470264@gmail.com"
+# Podcast auf Spotify (Link auch auf docs/podcast/index.html)
+spotify_url: "https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY"
 language: "de-ch"
 category: "Technology"
 explicit: false
