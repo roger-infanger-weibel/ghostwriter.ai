@@ -9,6 +9,8 @@ description: >-
   Recherche und Skript entstehen mit Claude, die Stimmen mit Gemini TTS.
   Alle Quellen stehen in den Shownotes.
 author: "Roger Infanger Weibel"
+# Kontakt-Adresse im Feed (itunes:owner) – nötig für die Verifizierung bei Spotify / Apple Podcasts
+owner_email: "a470264@gmail.com"
 language: "de-ch"
 category: "Technology"
 explicit: false

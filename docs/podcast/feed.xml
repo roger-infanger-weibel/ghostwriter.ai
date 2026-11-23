@@ -9,10 +9,14 @@
     <atom:link href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Jede Woche ein kompakter Rückblick auf die wichtigsten Neuigkeiten zu Claude, ChatGPT, Gemini und NotebookLM sowie zu KI-Regulierung in Europa und der Schweiz. Recherche und Skript entstehen mit Claude, die Stimmen mit Gemini TTS. Alle Quellen stehen in den Shownotes.</description>
     <language>de-ch</language>
-    <lastBuildDate>Mon, 23 Nov 2026 14:36:25 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 14:58:01 +0000</lastBuildDate>
     <itunes:subtitle>Die wichtigsten KI-News der Woche – Global, Europa, Schweiz</itunes:subtitle>
     <itunes:summary>Jede Woche ein kompakter Rückblick auf die wichtigsten Neuigkeiten zu Claude, ChatGPT, Gemini und NotebookLM sowie zu KI-Regulierung in Europa und der Schweiz. Recherche und Skript entstehen mit Claude, die Stimmen mit Gemini TTS. Alle Quellen stehen in den Shownotes.</itunes:summary>
     <itunes:author>Roger Infanger Weibel</itunes:author>
+    <itunes:owner>
+      <itunes:name>Roger Infanger Weibel</itunes:name>
+      <itunes:email>a470264@gmail.com</itunes:email>
+    </itunes:owner>
     <itunes:image href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/cover.png"/>
     <image>
       <url>https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/cover.png</url>
@@ -167,27 +171,27 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
     </item>
     <item>
       <title>KW 36 · 31. August – 6. September 2026: GPT-6 Astra, Claude Fable 5.1 und ein Jahr Apertus</title>
-      <description>Zeitraum: 31. August – 6. September 2026. Die Highlights der Woche: neue Flaggschiffe von OpenAI und Anthropic, Gemini 3.8 Flash, Claudes Wasserzeichen für den EU AI Act sowie Apertus und die Swiss AI Weeks.
+      <description>Zeitraum: 31. August – 6. September 2026. Die Highlights der Woche in drei Minuten: neue Flaggschiffe von OpenAI und Anthropic, Gemini 3.8 Flash, Claudes Wasserzeichen für den EU AI Act sowie Apertus und die Swiss AI Weeks.
 
 Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W36.md</description>
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W36.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W36</guid>
       <pubDate>Sun, 06 Sep 2026 17:00:00 +0000</pubDate>
-      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W36.mp3?v=649846" length="649846" type="audio/mpeg"/>
-      <itunes:duration>00:01:21</itunes:duration>
+      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W36.mp3?v=1614646" length="1614646" type="audio/mpeg"/>
+      <itunes:duration>00:03:22</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
       <title>KW 35 · 24.–30. August 2026: Claude steuert Hardware, o3 verlässt ChatGPT, Aufruf zur Cyberabwehr</title>
-      <description>Zeitraum: 24.–30. August 2026. Die Highlights der Woche: Anthropics Model Hardware Standard, das Ende von o3 in ChatGPT, «Ask Gemini» in Google Chat und ein gemeinsamer Aufruf von über hundert Firmen zur Cyberabwehr.
+      <description>Zeitraum: 24.–30. August 2026. Die Highlights der Woche in drei Minuten: Anthropics Model Hardware Standard, das Ende von o3 in ChatGPT, «Ask Gemini» in Google Chat und ein gemeinsamer Aufruf von über hundert Firmen zur Cyberabwehr.
 
 Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W35.md</description>
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W35.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W35</guid>
       <pubDate>Sun, 30 Aug 2026 17:00:00 +0000</pubDate>
-      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W35.mp3?v=534660" length="534660" type="audio/mpeg"/>
-      <itunes:duration>00:01:07</itunes:duration>
+      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W35.mp3?v=1528260" length="1528260" type="audio/mpeg"/>
+      <itunes:duration>00:03:11</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
     </item>
