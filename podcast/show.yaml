@@ -29,10 +29,10 @@ tts:
   speakers:
     - name: "Lena"
       voice: "Kore"
-      style: "sachlich, freundlich, ruhiges Tempo, Schweizer Hochdeutsch"
+      style: "sachlich, fründlech, ruhigs Tempo, redt Bärndütsch"
     - name: "Marc"
       voice: "Puck"
-      style: "neugierig, locker, ruhiges Tempo, Schweizer Hochdeutsch"
+      style: "neugierig, locker, ruhigs Tempo, redt Bärndütsch"
 
 audio:
   bitrate: "64k"

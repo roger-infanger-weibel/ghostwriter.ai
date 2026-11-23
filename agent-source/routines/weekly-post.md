@@ -127,7 +127,7 @@ description: >-
   <2–3 Sätze Zusammenfassung für die Podcast-App, ohne Links>
 ---
 
-Lena: Grüezi und willkommen beim Rogers drei-Minuten-KI-Radar, Kalenderwoche ...
+Lena: Grüessech u willkomme bim Rogers drei-Minute-KI-Radar, Kalenderwuche ...
 Marc: ...
 ```
 
@@ -138,9 +138,10 @@ Marc: ...
   Bei «WARNUNG ZU KURZ» oder «ZU LANG» das Skript anpassen und den Dry-Run wiederholen
   (kostet kein API-Kontingent), bevor das Audio erzeugt wird.
 - **Aufteilung (Richtwerte):**
-  - Intro (≈ 30 Wörter), immer mit diesem Wortlaut am Anfang: «Grüezi und willkommen beim
-    Rogers drei-Minuten-KI-Radar, Kalenderwoche <Zahl ausgeschrieben>.» Danach der Hinweis
-    «Dieser Podcast entsteht mit KI, die Quellen findet ihr in den Shownotes.»
+  - Intro (≈ 30 Wörter), immer mit diesem Wortlaut am Anfang: «Grüessech u willkomme bim
+    Rogers drei-Minute-KI-Radar, Kalenderwuche <Zahl uf Bärndütsch usgschribe, z. B. sibenevierzg>.»
+    Danach der Hinweis «Dä Podcast isch mit KI erstellt worde u wird ou vo KI-Persone verzeut.
+    D Quellen findet dir i de Shownotes.»
   - Global ≈ 1 Minute, Europa ≈ 1 Minute, Schweiz ≈ 1 Minute
   - Abschluss: 1 Satz + «Tschüss zäme» (≈ 20 Wörter), keine Zusammenfassung
 - **Auffüllen statt kürzer werden:** Hat eine Region wenig oder nichts (z. B. Schweiz-Quellen
@@ -155,8 +156,12 @@ Marc: ...
 - Reihenfolge fix: Intro → Global → Europa → Schweiz → Abschluss.
 - Sprecher `Lena` und `Marc`, jede Zeile beginnt mit `Lena:` oder `Marc:`. Optional Stil in eckigen Klammern: `Marc [überrascht]: ...`. Kurze, abwechselnde Wortmeldungen, kein Smalltalk.
 - **Inhalt nur aus dem Post.** Keine zusätzlichen Fakten, Zahlen oder Wertungen, keine Superlative.
-- **Fürs Ohr schreiben:** Zahlen und Versionen ausschreiben («Fable fünf Punkt zwei», «fünfundfünfzig Millionen Franken»). Keine URLs, kein Markdown, keine Klammern, keine Code-Bezeichner.
-- Schweizer Hochdeutsch (ss statt ß).
+- **Fürs Ohr schreiben:** Zahlen und Versionen auf Berndeutsch ausschreiben («Fable foif Punkt zwöi», «foifefüfzg Millione Franke»). Keine URLs, kein Markdown, keine Klammern, keine Code-Bezeichner.
+- **Berndeutsch:** Das ganze Skript auf Bärndütsch schreiben, nicht Hochdeutsch (z. B. «u» statt «und»,
+  «isch», «het/hei», «ou», «jitz», «Wuche», l-Vokalisierung wie «aui», «viu», «Modäll»). Produkt- und
+  Firmennamen bleiben unverändert. Vorlage: `test-runs/2026-W47/podcast-script-bern.md`.
+  Der Sprechstil «redt Bärndütsch» ist in `podcast/show.yaml` hinterlegt; eckige Klammern pro Zeile
+  sind nur für Abweichungen nötig.
 
 ---
 

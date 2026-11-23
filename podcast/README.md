@@ -1,6 +1,6 @@
 # Podcast: KI-Wochenrückblick
 
-Der Wochenrückblick wird automatisch zu einem deutschsprachigen Podcast mit zwei Stimmen
+Der Wochenrückblick wird automatisch zu einem berndeutschen Podcast mit zwei Stimmen
 (Lena und Marc) und als RSS-Feed auf GitHub Pages veröffentlicht – ohne Spotify, ohne Hoster. Der Gemini-Key liegt **nicht** in GitHub,
 sondern als Network Secret im Claude-Cloud-Environment.
 
