@@ -18,7 +18,8 @@ def build_feed(cfg: dict, episodes: list[dict], site: Path) -> Path:
     e = escape
     items = []
     for ep in sorted(episodes, key=lambda x: x["id"], reverse=True):
-        url = f"{base}/{ep['file']}"
+        # ?v=<Grösse>: neue Adresse, sobald eine Folge neu erzeugt wird (umgeht Browser-/CDN-Cache)
+        url = f"{base}/{ep['file']}?v={ep['bytes']}"
         post_url = f"{cfg['website']}/blob/main/{ep['post']}"
         desc = f"{ep['description']}\n\nShownotes und Quellen: {post_url}"
         items.append(f"""    <item>

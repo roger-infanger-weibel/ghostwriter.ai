@@ -9,7 +9,7 @@
     <atom:link href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Jede Woche ein kompakter Rückblick auf die wichtigsten Neuigkeiten zu Claude, ChatGPT, Gemini und NotebookLM sowie zu KI-Regulierung in Europa und der Schweiz. Recherche und Skript entstehen mit Claude, die Stimmen mit Gemini TTS. Alle Quellen stehen in den Shownotes.</description>
     <language>de-ch</language>
-    <lastBuildDate>Mon, 23 Nov 2026 14:34:40 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 14:36:25 +0000</lastBuildDate>
     <itunes:subtitle>Die wichtigsten KI-News der Woche – Global, Europa, Schweiz</itunes:subtitle>
     <itunes:summary>Jede Woche ein kompakter Rückblick auf die wichtigsten Neuigkeiten zu Claude, ChatGPT, Gemini und NotebookLM sowie zu KI-Regulierung in Europa und der Schweiz. Recherche und Skript entstehen mit Claude, die Stimmen mit Gemini TTS. Alle Quellen stehen in den Shownotes.</itunes:summary>
     <itunes:author>Roger Infanger Weibel</itunes:author>
@@ -30,7 +30,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W47.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W47</guid>
       <pubDate>Sun, 22 Nov 2026 17:00:00 +0000</pubDate>
-      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W47.mp3" length="1516142" type="audio/mpeg"/>
+      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W47.mp3?v=1516142" length="1516142" type="audio/mpeg"/>
       <itunes:duration>00:03:09</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
@@ -43,7 +43,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W46.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W46</guid>
       <pubDate>Sun, 15 Nov 2026 17:00:00 +0000</pubDate>
-      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W46.mp3" length="732400" type="audio/mpeg"/>
+      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W46.mp3?v=732400" length="732400" type="audio/mpeg"/>
       <itunes:duration>00:01:31</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
@@ -56,7 +56,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W45.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W45</guid>
       <pubDate>Sun, 08 Nov 2026 17:00:00 +0000</pubDate>
-      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W45.mp3" length="407720" type="audio/mpeg"/>
+      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W45.mp3?v=407720" length="407720" type="audio/mpeg"/>
       <itunes:duration>00:00:51</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
@@ -69,7 +69,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W44.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W44</guid>
       <pubDate>Sun, 01 Nov 2026 17:00:00 +0000</pubDate>
-      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W44.mp3" length="488592" type="audio/mpeg"/>
+      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W44.mp3?v=488592" length="488592" type="audio/mpeg"/>
       <itunes:duration>00:01:01</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
@@ -82,7 +82,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W43.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W43</guid>
       <pubDate>Sun, 25 Oct 2026 17:00:00 +0000</pubDate>
-      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W43.mp3" length="455918" type="audio/mpeg"/>
+      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W43.mp3?v=455918" length="455918" type="audio/mpeg"/>
       <itunes:duration>00:00:57</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
@@ -95,7 +95,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W42.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W42</guid>
       <pubDate>Sun, 18 Oct 2026 17:00:00 +0000</pubDate>
-      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W42.mp3" length="390598" type="audio/mpeg"/>
+      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W42.mp3?v=390598" length="390598" type="audio/mpeg"/>
       <itunes:duration>00:00:49</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
@@ -108,7 +108,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W41.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W41</guid>
       <pubDate>Sun, 11 Oct 2026 17:00:00 +0000</pubDate>
-      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W41.mp3" length="474920" type="audio/mpeg"/>
+      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W41.mp3?v=474920" length="474920" type="audio/mpeg"/>
       <itunes:duration>00:00:59</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
@@ -121,7 +121,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W40.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W40</guid>
       <pubDate>Sun, 04 Oct 2026 17:00:00 +0000</pubDate>
-      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W40.mp3" length="383746" type="audio/mpeg"/>
+      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W40.mp3?v=383746" length="383746" type="audio/mpeg"/>
       <itunes:duration>00:00:48</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
@@ -134,7 +134,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W39.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W39</guid>
       <pubDate>Sun, 27 Sep 2026 17:00:00 +0000</pubDate>
-      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W39.mp3" length="547138" type="audio/mpeg"/>
+      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W39.mp3?v=547138" length="547138" type="audio/mpeg"/>
       <itunes:duration>00:01:08</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
@@ -147,7 +147,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W38.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W38</guid>
       <pubDate>Sun, 20 Sep 2026 17:00:00 +0000</pubDate>
-      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W38.mp3" length="582642" type="audio/mpeg"/>
+      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W38.mp3?v=582642" length="582642" type="audio/mpeg"/>
       <itunes:duration>00:01:13</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
@@ -160,7 +160,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W37.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W37</guid>
       <pubDate>Sun, 13 Sep 2026 17:00:00 +0000</pubDate>
-      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W37.mp3" length="533504" type="audio/mpeg"/>
+      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W37.mp3?v=533504" length="533504" type="audio/mpeg"/>
       <itunes:duration>00:01:07</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
@@ -173,7 +173,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W36.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W36</guid>
       <pubDate>Sun, 06 Sep 2026 17:00:00 +0000</pubDate>
-      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W36.mp3" length="649846" type="audio/mpeg"/>
+      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W36.mp3?v=649846" length="649846" type="audio/mpeg"/>
       <itunes:duration>00:01:21</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
@@ -186,7 +186,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W35.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W35</guid>
       <pubDate>Sun, 30 Aug 2026 17:00:00 +0000</pubDate>
-      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W35.mp3" length="534660" type="audio/mpeg"/>
+      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W35.mp3?v=534660" length="534660" type="audio/mpeg"/>
       <itunes:duration>00:01:07</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
