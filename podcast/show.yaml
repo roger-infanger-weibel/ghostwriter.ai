@@ -1,7 +1,7 @@
 # Podcast-Konfiguration – Single Source of Truth für Feed und Stimmen.
 # Nach Änderungen: python podcast/tools/build_feed.py (oder beim nächsten Routine-Lauf).
 
-title: "Rogers 3-Minuten-KI-Radar"
+title: "Rogers KI-Radar"
 subtitle: "Die wichtigsten KI-News der Woche – Global, Europa, Schweiz"
 description: >-
   Jede Woche ein kompakter Rückblick auf die wichtigsten Neuigkeiten zu Claude,
