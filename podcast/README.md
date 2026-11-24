@@ -1,10 +1,12 @@
 # Podcast: KI-Wochenrückblick
 
 Der Wochenrückblick wird automatisch zu einem berndeutschen Podcast mit zwei Stimmen
-(Lena und Marc) und als RSS-Feed auf GitHub Pages veröffentlicht – ohne Hoster. Zusätzlich ist der Feed bei Spotify eingereicht:
-https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY
- Der Gemini-Key liegt **nicht** in GitHub,
-sondern als Network Secret im Claude-Cloud-Environment.
+(Lena und Marc) und als RSS-Feed auf GitHub Pages veröffentlicht – ohne Hoster.
+
+## Links
+User Doku: https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/
+RSS Feed: https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml
+Spotify: https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY
 
 ## Ablauf
 
@@ -18,11 +20,9 @@ GitHub    Pages veröffentlicht docs/ (Deploy from branch main /docs)
 Podcast-App  holt neue Episoden selbständig über den RSS-Feed
 ```
 
-Feed: https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml
-
 ## Einmalige Einrichtung
 
-1. **Gemini API Key** (gratis, ohne Kreditkarte): Google AI Studio → «Get API key» → Key erstellen.
+1. **Gemini API Key** (gratis, ohne Kreditkarte): Google AI Studio → «Get API key» → Key erstellen. Der Gemini-Key liegt **nicht** in GitHub, sondern als Network Secret im Claude-Cloud-Environment.
 2. **Network Secret in der Claude-Cloud:** claude.ai/code → Environment der Routine bearbeiten →
    **Network secrets** → **Add secret**
    - Name: `Gemini API`
