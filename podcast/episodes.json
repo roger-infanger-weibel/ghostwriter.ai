@@ -102,11 +102,11 @@
   {
     "id": "2026-W45",
     "title": "KW 45 · 2.–8. November 2026: GPT-6 Cyber, Images 2.6 und Message Threads bei Claude",
-    "description": "Zeitraum: 2.–8. November 2026. Die Highlights der Woche: OpenAIs Sicherheitsmodell GPT-6 Cyber, Images 2.6 sowie Message Threads und IP-Allowlists in der Claude API.",
+    "description": "Zeitraum: 2.–8. November 2026. Die Highlights der Woche in drei Minuten: OpenAI stellt das Sicherheitsmodell GPT-6 Cyber und Images 2.6 vor. Anthropic bringt Message Threads und IP-Allowlists in die Claude API und Console.",
     "post": "posts/2026-W45.md",
     "file": "episodes/2026-W45.mp3",
-    "bytes": 407720,
-    "duration_seconds": 51,
+    "bytes": 1426088,
+    "duration_seconds": 178,
     "pub_date": "Sun, 08 Nov 2026 17:00:00 +0000"
   },
   {

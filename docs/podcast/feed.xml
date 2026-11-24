@@ -9,7 +9,7 @@
     <atom:link href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Jede Woche ein kompakter Rückblick auf die wichtigsten Neuigkeiten zu Claude, ChatGPT, Gemini und NotebookLM sowie zu KI-Regulierung in Europa und der Schweiz. Recherche und Skript entstehen mit Claude, die Stimmen mit Gemini TTS. Alle Quellen stehen in den Shownotes.</description>
     <language>de-ch</language>
-    <lastBuildDate>Mon, 23 Nov 2026 14:58:01 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 09:30:43 +0000</lastBuildDate>
     <itunes:subtitle>Die wichtigsten KI-News der Woche – Global, Europa, Schweiz</itunes:subtitle>
     <itunes:summary>Jede Woche ein kompakter Rückblick auf die wichtigsten Neuigkeiten zu Claude, ChatGPT, Gemini und NotebookLM sowie zu KI-Regulierung in Europa und der Schweiz. Recherche und Skript entstehen mit Claude, die Stimmen mit Gemini TTS. Alle Quellen stehen in den Shownotes.</itunes:summary>
     <itunes:author>Roger Infanger Weibel</itunes:author>
@@ -54,14 +54,14 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
     </item>
     <item>
       <title>KW 45 · 2.–8. November 2026: GPT-6 Cyber, Images 2.6 und Message Threads bei Claude</title>
-      <description>Zeitraum: 2.–8. November 2026. Die Highlights der Woche: OpenAIs Sicherheitsmodell GPT-6 Cyber, Images 2.6 sowie Message Threads und IP-Allowlists in der Claude API.
+      <description>Zeitraum: 2.–8. November 2026. Die Highlights der Woche in drei Minuten: OpenAI stellt das Sicherheitsmodell GPT-6 Cyber und Images 2.6 vor. Anthropic bringt Message Threads und IP-Allowlists in die Claude API und Console.
 
 Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W45.md</description>
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W45.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W45</guid>
       <pubDate>Sun, 08 Nov 2026 17:00:00 +0000</pubDate>
-      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W45.mp3?v=407720" length="407720" type="audio/mpeg"/>
-      <itunes:duration>00:00:51</itunes:duration>
+      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W45.mp3?v=1426088" length="1426088" type="audio/mpeg"/>
+      <itunes:duration>00:02:58</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
     </item>
