@@ -5,6 +5,8 @@ Der Wochenrückblick wird automatisch zu einem berndeutschen Podcast mit zwei St
 
 ## Links
 
+<img width="128" height="128" alt="cover (1)" src="https://github.com/user-attachments/assets/ef4e684e-783a-40f9-9f36-fda4e6ace387" />
+
 * User Doku: https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/
 * RSS Feed: https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml
 * Spotify: https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY
