@@ -4,9 +4,10 @@ Der Wochenrückblick wird automatisch zu einem berndeutschen Podcast mit zwei St
 (Lena und Marc) und als RSS-Feed auf GitHub Pages veröffentlicht – ohne Hoster.
 
 ## Links
-User Doku: https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/
-RSS Feed: https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml
-Spotify: https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY
+
+* User Doku: https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/
+* RSS Feed: https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml
+* Spotify: https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY
 
 ## Ablauf
 
