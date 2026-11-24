@@ -9,7 +9,7 @@
     <atom:link href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Jede Woche ein kompakter Rückblick auf die wichtigsten Neuigkeiten zu Claude, ChatGPT, Gemini und NotebookLM sowie zu KI-Regulierung in Europa und der Schweiz. Recherche und Skript entstehen mit Claude, die Stimmen mit Gemini TTS. Alle Quellen stehen in den Shownotes.</description>
     <language>de-ch</language>
-    <lastBuildDate>Tue, 24 Nov 2026 09:58:19 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 10:13:19 +0000</lastBuildDate>
     <itunes:subtitle>Die wichtigsten KI-News der Woche – Global, Europa, Schweiz</itunes:subtitle>
     <itunes:summary>Jede Woche ein kompakter Rückblick auf die wichtigsten Neuigkeiten zu Claude, ChatGPT, Gemini und NotebookLM sowie zu KI-Regulierung in Europa und der Schweiz. Recherche und Skript entstehen mit Claude, die Stimmen mit Gemini TTS. Alle Quellen stehen in den Shownotes.</itunes:summary>
     <itunes:author>Roger Infanger Weibel</itunes:author>
@@ -158,14 +158,14 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
     </item>
     <item>
       <title>KW 37 · 7.–13. September 2026: OpenAI Agents API, Gemini für Windows und Robotik in der Schweiz</title>
-      <description>Zeitraum: 7.–13. September 2026. Die Highlights der Woche: OpenAIs Agents API und GPT-Live-1, Anthropics Threat Report, die Gemini-Desktop-App für Windows sowie Robotik-Initiativen in der Schweiz.
+      <description>Zeitraum: 7.–13. September 2026. Die Highlights der Woche in drei Minuten: OpenAIs Agents API, GPT-Live-1 und ChatGPT Images 2.5, Anthropics Threat Report, die Gemini-Desktop-App für Windows sowie Robotik-Initiativen in der Schweiz.
 
 Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W37.md</description>
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W37.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W37</guid>
       <pubDate>Sun, 13 Sep 2026 17:00:00 +0000</pubDate>
-      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W37.mp3?v=533504" length="533504" type="audio/mpeg"/>
-      <itunes:duration>00:01:07</itunes:duration>
+      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W37.mp3?v=1517696" length="1517696" type="audio/mpeg"/>
+      <itunes:duration>00:03:10</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
     </item>
