@@ -20,8 +20,11 @@ Gefragt ist, **was die Nachricht der Woche ist** – nicht das Datenblatt.
   ein Verbot, ein Sicherheitsvorfall, eine neue Regulierung. Ein weiteres Modell-Update ohne
   Folgen ist keine Breaking News.
 - **Pro Eintrag:** 2–3 Sätze: *Was ist passiert?* und *Warum ist es wichtig?* (Folgen, Einordnung).
+- **Ein Thema pro Eintrag:** keine angehängte Zweitmeldung (z. B. nicht noch einen Chip an eine
+  Modell-Meldung hängen). Ist das zweite Thema wichtig, ist es ein eigener Eintrag.
 - **Weglassen:** Parameterzahlen, Kontextfenster, Token- und API-Preise, Modell-IDs und
-  Code-Bezeichner, Architektur (MoE, aktive Parameter …), Lizenznamen, Benchmark-Werte, Listen
+  Code-Bezeichner, Architektur (MoE, aktive Parameter …), Lizenznamen, Benchmarks und
+  Vergleiche mit anderen Modellen, Listen
   von Abo-Stufen oder Zielgruppen («für Plus-, Pro-, Enterprise-Nutzer …»), Plattform-Listen.
 - **Erlaubt:** höchstens **eine** Zahl pro Eintrag, und nur wenn sie die Nachricht selbst ist
   (z. B. der Erlös eines Börsengangs).
@@ -31,9 +34,14 @@ Gefragt ist, **was die Nachricht der Woche ist** – nicht das Datenblatt.
 
 ## NICHT relevant (raus)
 
-- Funding-Runden, Bewertungen, Personalwechsel (ausser CEO)
+- Funding-Runden, Bewertungen
+- **Personenbezogene News:** Personalwechsel aller Art (auch CEO-Rücktritte und -Wechsel),
+  Abgänge, Aussagen, Interviews, Posts oder Streit einzelner Personen. Entscheide von Firmen,
+  Behörden und Organisationen sind erlaubt (z. B. «die UNO fordert …»), aber ohne Personen ins
+  Zentrum zu stellen.
 - "X ist das Ende von Y" – reine Meinung ohne Fakten
-- Benchmark-Rankings ohne konkrete Relevanz für deine Arbeit
+- **Benchmarks:** keine Benchmark-Ergebnisse, Ranglisten-Plätze, Testvergleiche oder «so gut
+  wie Modell X»-Aussagen – weder als Meldung noch als Detail in einer Meldung
 - Ankündigungen ohne Verfügbarkeit oder Datum ("coming soon")
 - Dinge ohne Primärquelle oder Link
 - normale Release Updates ohne major changes
@@ -100,7 +108,8 @@ Zwei Teile im selben Abschnitt `## Global`, Werkzeuge zuerst:
 
 Nur für Neues, das **noch nicht nutzbar** ist, aber weltweit auffällt:
 - Modelle oder Anbieter ohne Verfügbarkeit (z. B. ein geheimes Modell an der Spitze einer
-  Rangliste), angekündigte Modelle mit konkretem Signal (Training abgeschlossen, Beta gestartet)
+  Rangliste – die Rangliste darf Fundstelle sein, im Text aber keine Plätze oder Werte nennen),
+  angekündigte Modelle mit konkretem Signal (Training abgeschlossen, Beta gestartet)
 - **Was schon verfügbar ist** (API, App oder Gewichte zum Download – auch ein Aufsteiger auf
   Hugging Face Trending), gehört **nicht** hierher, sondern ist ein Kandidat für «Weltweit»
 - Max. **2 Einträge**, je 1–2 Sätze, klar als «noch nicht verfügbar» / «angekündigt» bezeichnet
@@ -194,6 +203,8 @@ Commit-Message.
 - [ ] Zeitraum: `Zeitraum: D.–D. Monat YYYY`
 - [ ] Jeder Eintrag: Titel + 2–3 Sätze (Was ist passiert? Warum wichtig?) + Link
 - [ ] Keine Modell-Details: keine Parameter, Preise, Token, Modell-IDs, Abo-Stufen, Benchmarks
+- [ ] Keine personenbezogenen News (Personalwechsel inkl. CEO, Aussagen einzelner Personen)
+- [ ] Ein Thema pro Eintrag (keine angehängten Zweitmeldungen)
 - [ ] "Für mich relevant" Sektion: Mit Bezug zu Parking-Forecasting / CAS / Claude-Config
 - [ ] Kein Abschnitt «Nicht erreichbare Quellen» (Post endet mit «Für mich relevant»)
 - [ ] Umfang: Global max. 5 (Werkzeuge 3–4, Weltweit bis 2), Europa max. 3, Schweiz max. 3

@@ -43,8 +43,9 @@ Wende Rogers Regeln an:
 
 **Zu vermeiden:**
 - Ankündigungen ohne Verfügbarkeit ("coming soon")
-- Benchmark-Rankings ohne Praxis-Relevanz
-- Fundingfonds-News (ausser CEO-Changes bei OpenAI/Anthropic)
+- Benchmarks jeder Art (Ergebnisse, Ranglisten-Plätze, «so gut wie Modell X»)
+- Funding-News
+- Personenbezogene News: Personalwechsel inkl. CEO, Aussagen/Interviews/Posts einzelner Personen
 - Meiningsartikel
 
 **Zu priorisieren – Breaking News, nicht Datenblätter:**
@@ -98,9 +99,9 @@ Quelle: [PLS AG](https://www.zurich-pls.ch/news), 10. September 2026
 
 ## Auf dem Radar
 
-### Gestalt: unbekanntes Design-Modell an der Spitze eines Benchmarks
-Ein noch nicht veröffentlichtes Modell namens «Gestalt» führt die Design-Rangliste von Contra Labs an;
-Hersteller, Preis und Verfügbarkeit sind nicht bekannt.
+### Gestalt: unbekanntes Design-Modell aufgetaucht
+Ein noch nicht veröffentlichtes Modell namens «Gestalt» ist bei Contra Labs aufgetaucht;
+Hersteller und Verfügbarkeit sind nicht bekannt.
 Quelle: [Contra Labs](https://…), 18. November 2026
 
 ## Für mich relevant
@@ -256,6 +257,7 @@ Details
 - [ ] Abschnitte: `## Global`, `## Europa`, `## Schweiz` (in dieser Reihenfolge), optional `## Auf dem Radar` (max. 2)
 - [ ] Jeder Eintrag: Titel + 2–3 Sätze (Was ist passiert? Warum wichtig?) + [Link](URL)
 - [ ] Keine Modell-Details (Parameter, Preise, Token, Modell-IDs, Abo-Stufen, Benchmarks)
+- [ ] Keine personenbezogenen News, ein Thema pro Eintrag
 - [ ] Sektion "Für mich relevant": 2–4 Sätze mit Parking/CAS/Claude-Bezug
 - [ ] Kein Abschnitt «Nicht erreichbare Quellen» im Post
 - [ ] Umfang: Global ≤ 5 (Werkzeuge ≤ 4, Weltweit 1–2 wenn vorhanden), Europa ≤ 3, Schweiz ≤ 3
