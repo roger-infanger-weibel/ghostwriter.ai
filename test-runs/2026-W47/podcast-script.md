@@ -1,43 +1,42 @@
 ---
-title: "GPT-6.2, Gemini 4 Neon und der Börsengang von Anthropic"
+title: "GPT-6.2, Gemini 4 Neon und Anthropic an der Börse"
 description: >-
-  Die Highlights der Woche in drei Minuten: neue Modelle von OpenAI und Google,
-  interaktive Sites in Gemini Notebook, Anthropic an der Börse und eine
-  Konsultation zum EU AI Act.
+  Neue Modelle von OpenAI, Google und Tencent, interaktive Sites in Gemini
+  Notebook, der Börsengang von Anthropic und eine Konsultation zum EU AI Act.
 ---
 
-Lena: Grüezi und willkommen beim Rogers drei-Minuten-KI-Radar, Kalenderwoche siebenundvierzig. Dieser Podcast entsteht mit KI, die Quellen findet ihr in den Shownotes.
+Lena: Grüessech u willkomme bim wöchentleche drei-Minute-KI-News-Radar, Kalenderwuche sibenevierzg. Dä Podcast isch mit KI erstellt worde u wird ou vo KI-Persone verzeut. D Quellen findet dir i de Shownotes.
 
-Marc: Wir starten global. OpenAI hat zwei neue Modelle veröffentlicht: GPT sechs Punkt zwei Astra für anspruchsvolle Projekte und GPT sechs Punkt zwei Sol für die alltägliche Arbeit.
+Marc: Mir fö global a. OpenAI het zwöi nöii Modäll usegä: GPT sächs Punkt zwöi Astra u GPT sächs Punkt zwöi Sol.
 
-Lena: Beide sind ab sofort für Plus-, Pro-, Enterprise- und Edu-Nutzer in ChatGPT Work und in Codex verfügbar, und Entwickler erreichen sie über die API.
+Lena: Beidi si ab sofort für Plus-, Pro-, Enterprise- u Edu-Nutzer i ChatGPT Work u i Codex verfüegbar. Entwickler chöi se ou über d API bruuche.
 
-Marc: Astra ist in der API zwanzig Prozent günstiger als der Vorgänger GPT sechs Astra. Sol behält die Preise von GPT sechs Punkt eins Sol.
+Marc: Astra isch i dr API zwänzg Prozänt günstiger aus dr Vorgänger GPT sächs Astra. Sol bhautet d Prise vo GPT sächs Punkt eis Sol.
 
-Lena: Auch Google legt nach, mit Gemini vier Neon. Das Modell ist für Software-Entwicklung, Wissensarbeit und wissenschaftliche Workflows gedacht.
+Lena: Ou Google het es nöis Modäll: Gemini vier Neon. Es isch für Software-Entwicklig, Wüsseschaftsarbeit u wüsseschaftlechi Workflows dänkt.
 
-Marc: Neon wird in der Gemini API in Google AI Studio, in Gemini for business, in Google Antigravity und für Pro- und Ultra-Abonnenten in der Gemini-App ausgerollt.
+Marc: Neon wird i dr Gemini API im Google AI Studio, i Gemini for business, i Google Antigravity u für Pro- u Ultra-Abonnänte i dr Gemini-App usgrouet. S Kontextfänschter isch e Million Tokens gross.
 
-Lena: Neu ist auch etwas für alle, die mit Gemini Notebook arbeiten, dem früheren NotebookLM. Aus den eigenen Quellen lassen sich jetzt interaktive Websites erstellen.
+Lena: Nöi isch ou öppis für aui, wo mit Gemini Notebook schaffe, em früechere NotebookLM. Us de eigete Quellen cha me jitz interaktivi Websites mache.
 
-Marc: Man tippt im Chat einfach «make me a site» und beschreibt, was man braucht, zum Beispiel eine Lernhilfe, ein Dashboard oder einen Projekt-Tracker. Die Funktion wird weltweit im Web ausgerollt, die Mobile-App folgt später.
+Marc: Me tippt im Chat «make me a site» u beschribt, was me wott, zum Bispiu e Lärnhiuf oder es Dashboard. Di fertigi Site cha me imne nöie Tab ufmache oder teile. D Funktion chunnt wäutwit im Web, d Mobile-App speter.
 
-Lena: Für Entwickler gibt es in der Gemini API ausserdem Tool Retrieval als Vorschau. Agenten laden die Details eines Werkzeugs erst dann, wenn sie es wirklich brauchen.
+Lena: U Anthropic isch jitz a dr Börse. D Aktie wird sit em nüünzächete November a dr Nasdaq ghandlet, under em Kürzu A N T.
 
-Marc: Das Modell sieht weiterhin Name und Beschreibung jedes Werkzeugs. Laut Google spart das Tokens und Zeit und macht die Auswahl genauer, wenn ein Agent viele Werkzeuge hat.
+Marc: Dr Usgabepris isch bi drüenachtzg Dollar pro Aktie gläge. Glichzitig hei under anderem AMD, Google, Microsoft u NVIDIA i nere Privatplatzierig Aktie kouft.
 
-Lena: Und Anthropic ist jetzt an der Börse. Die Aktie wird seit dem neunzehnten November an der Nasdaq gehandelt, unter dem Kürzel A N T.
+Lena: U us Asie: Tencent het Hy vier flash aus offnigs Modäll veröffentlecht. Me cha d Gwicht ufem Hugging Face, ufem ModelScope u ufem GitCode abelade.
 
-Marc: Der Ausgabepreis lag bei dreiundachtzig Dollar pro Aktie. Parallel haben unter anderem AMD, Google, Microsoft und NVIDIA in einer Privatplatzierung Aktien gekauft.
+Marc: Das Modäll verarbeitet Text u Biuder u het es Kontextfänschter vo bis zu ere Million Tokens.
 
-Lena: Weiter nach Europa. Die EU-Kommission sammelt Feedback zu einer Vorlage für die Grundrechte-Folgenabschätzung nach dem AI Act.
+Lena: Wiiter uf Europa. D EU-Kommission sammlet Feedback zu nere Vorlag für d Grundrächts-Fougeabschätzig nach em AI Act.
 
-Marc: Diese Abschätzung müssen bestimmte Betreiber von Hochrisiko-KI-Systemen erstellen, bevor sie ein solches System einsetzen.
+Marc: Die Abschätzig müesse gwüssi Betriber vo Höchrisiko-KI-System mache. D Resultat gö de a d Marktüberwachigsbehörde.
 
-Lena: Ist die Vorlage fertig, wird sie verbindlich und steht auch als Online-Tool zur Verfügung. Rückmeldungen sind bis Mitte Januar möglich, und betroffene Betreiber können sich für einen Test melden.
+Lena: Isch d Vorlag fertig, wird si verbindlech u steit ou aus Online-Tool zur Verfüegig. Rückmäldige si bis am füfzächete Januar müglech, u Betriber chöi sech für ne Tescht vo dr Vorlag mäude.
 
-Marc: In der Schweiz war es diese Woche ruhig, wir haben keine Top-News gefunden.
+Marc: I dr Schwiz isch es die Wuche ruhig gsi, mir hei kener Top-News gfunde.
 
-Lena: Das war unser Radar für diese Woche, danke fürs Zuhören. Tschüss zäme.
+Lena: U no churz uf em Radar: S Modäll Inkling zwöi Mini vo Thinking Machines steit zoberscht uf dr Trending-Lischte vo Hugging Face. D Gwicht si frei verfüegbar.
 
-Marc: Tschüss zäme.
+Marc: Das isch üse Radar für die Wuche gsi, merci fürs Zuelose. Tschüss zäme.
