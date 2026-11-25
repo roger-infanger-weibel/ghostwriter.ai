@@ -28,6 +28,10 @@ Wird von Hand gepflegt. Der Agent liest diese Seite, ändert sie nicht - aber ma
 | GitHub | GitHub Copilot Changelog | [https://github.blog/changelog/label/copilot/](https://github.blog/changelog/label/copilot/) |
 | LangChain | Blog & Releases | [https://www.langchain.com/blog](https://www.langchain.com/blog) |
 | Perplexity | Blog | [https://www.perplexity.ai/hub/blog](https://www.perplexity.ai/hub/blog) |
+| Microsoft | Microsoft AI News (MAI-Modelle, Copilot) – Host `microsoft.ai` muss im Environment freigegeben sein | [https://microsoft.ai/news/](https://microsoft.ai/news/) |
+| Microsoft | Official Microsoft Blog (AI) – Host `blogs.microsoft.com` | [https://blogs.microsoft.com/ai/](https://blogs.microsoft.com/ai/) |
+| Microsoft | Azure Blog AI + Machine Learning (RSS, mit Datum) – Host `azure.microsoft.com` | [https://azure.microsoft.com/en-us/blog/category/ai-machine-learning/feed/](https://azure.microsoft.com/en-us/blog/category/ai-machine-learning/feed/) |
+| Microsoft | Hugging Face (offene Modelle mit Datum, z. B. Phi) – funktioniert ohne neue Freigabe | [https://huggingface.co/microsoft](https://huggingface.co/microsoft) |
 
 ---
 
@@ -86,7 +90,6 @@ Werden nicht geprüft. Wieder aufnehmen, sobald sie erreichbar sind.
 |---|---|---|
 | Meta AI / Llama Blog | https://ai.meta.com/blog/ | HTTP 400 für automatisierte Abrufe |
 | Meta Llama GitHub Releases | https://github.com/meta-llama/llama-models/releases | HTTP 403, GitHub-Zugriff der Session nur auf eigenes Repo |
-| Microsoft AI News | https://microsoft.ai/blog/ | Host vom Environment blockiert (Netzwerk-Policy) |
 | Rapporteur (ehem. Euractiv) | https://www.rapporteur.com | HTTP 403, Cloudflare-Sperre |
 
 ---
