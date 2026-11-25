@@ -15,14 +15,14 @@ Wird von Hand gepflegt. Der Agent liest diese Seite, ändert sie nicht - aber ma
 | OpenAI | News (RSS, bevorzugt: vollständige Liste mit Datum) | [https://openai.com/news/rss.xml](https://openai.com/news/rss.xml) |
 | OpenAI | ChatGPT Release Notes | [https://learn.chatgpt.com/docs/whats-new](https://learn.chatgpt.com/docs/whats-new) |
 | Anthropic | News | [https://www.anthropic.com/news](https://www.anthropic.com/news) |
-| Anthropic | Claude Code Changelog | [https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md) |
+| Anthropic | Claude Code Changelog (Raw, die GitHub-Ansicht liefert HTTP 403) | [https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md) |
 | Anthropic | API Release Notes | [https://platform.claude.com/docs/en/release-notes/overview](https://platform.claude.com/docs/en/release-notes/overview) |
 | Google | Gemini API Changelog (lädt nur per JavaScript) | [https://aistudio.google.com/docs/changelog](https://aistudio.google.com/docs/changelog) |
 | Google | Developer Tools Blog (Gemini API, AI Studio) | [https://blog.google/innovation-and-ai/technology/developers-tools/](https://blog.google/innovation-and-ai/technology/developers-tools/) |
 | Google | Gemini App Updates | [https://gemini.google/release-notes/](https://gemini.google/release-notes/) |
 | Google | Gemini Notebook (ehem. NotebookLM) Blog | [https://blog.google/innovation-and-ai/products/gemini-notebook/](https://blog.google/innovation-and-ai/products/gemini-notebook/) |
 | Google | Google AI Blog | [https://blog.google/innovation-and-ai/technology/ai/](https://blog.google/innovation-and-ai/technology/ai/) |
-| Google | Blog-Sitemap mit Datum (Fallback, falls Blog-Listen nur per JavaScript laden) | [https://blog.google/en-us/sitemap.xml](https://blog.google/en-us/sitemap.xml) |
+| Google | **Blog-Sitemap mit Datum – Hauptquelle für alle Google-Blogs** (die Blog-Listen laden nur per JavaScript; Einträge über `lastmod` filtern) | [https://blog.google/en-us/sitemap.xml](https://blog.google/en-us/sitemap.xml) |
 | DeepSeek | API Change Log | [https://api-docs.deepseek.com/updates](https://api-docs.deepseek.com/updates) |
 | Hugging Face | Blog | [https://huggingface.co/blog](https://huggingface.co/blog) |
 | GitHub | GitHub Copilot Changelog | [https://github.blog/changelog/label/copilot/](https://github.blog/changelog/label/copilot/) |
@@ -30,23 +30,11 @@ Wird von Hand gepflegt. Der Agent liest diese Seite, ändert sie nicht - aber ma
 | Perplexity | Blog | [https://www.perplexity.ai/hub/blog](https://www.perplexity.ai/hub/blog) |
 | Microsoft | Microsoft AI News (MAI-Modelle, Copilot) | [https://microsoft.ai/news/](https://microsoft.ai/news/) |
 | Microsoft | Azure Blog AI + Machine Learning (RSS, mit Datum) | [https://azure.microsoft.com/en-us/blog/category/ai-machine-learning/feed/](https://azure.microsoft.com/en-us/blog/category/ai-machine-learning/feed/) |
-| Microsoft | Hugging Face (offene Modelle mit Datum, z. B. Phi) | [https://huggingface.co/microsoft](https://huggingface.co/microsoft) |
-| Alibaba | Qwen Research (Qwen-Modelle) | [https://qwen.ai/research](https://qwen.ai/research) |
+| Microsoft | Hugging Face API (offene Modelle mit Datum, z. B. Phi) | [https://huggingface.co/api/models?author=microsoft&sort=createdAt&direction=-1&limit=10](https://huggingface.co/api/models?author=microsoft&sort=createdAt&direction=-1&limit=10) |
+| Alibaba | Qwen – Hugging Face API (offene Qwen-Modelle mit Datum) | [https://huggingface.co/api/models?author=Qwen&sort=createdAt&direction=-1&limit=10](https://huggingface.co/api/models?author=Qwen&sort=createdAt&direction=-1&limit=10) |
+| Alibaba | Qwen Research (lädt nur per JavaScript; geschlossene Modelle wie Qwen4-Max über SCMP / Last Week in AI / The Decoder finden) | [https://qwen.ai/research](https://qwen.ai/research) |
+| Tencent | Hunyuan – Hugging Face API (offene Modelle mit Datum) | [https://huggingface.co/api/models?author=tencent&sort=createdAt&direction=-1&limit=10](https://huggingface.co/api/models?author=tencent&sort=createdAt&direction=-1&limit=10) |
 | Alle Anbieter | Hugging Face Trending (neue offene Modelle, API mit Datum) | [https://huggingface.co/api/models?sort=trendingScore&limit=30](https://huggingface.co/api/models?sort=trendingScore&limit=30) |
-
----
-
-## Global – Community
-
-Nur ergänzend: Diese Seiten liefern keine datierten Meldungen.
-
-| Anbieter | Quelle | URL |
-|---|---|---|
-| Hugging Face | Model-Hub | https://huggingface.co |
-| Civitai | Community & Art-Models | https://civitai.com |
-| Global AI Community | Entwickler-Netzwerk & Events | https://globalai.community |
-| Stack Exchange | Artificial Intelligence Q&A | https://ai.stackexchange.com |
-| Alignify | Community Tools & Insights | https://alignify.co |
 
 ---
 
@@ -72,7 +60,7 @@ Primärquelle verlinkt, sonst diese Seite mit «laut <Quelle>».
 
 | Quelle | URL |
 |---|---|
-| EU AI Act – Kommission | https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai |
+| EU AI Act – Kommission (statische Übersicht, nur Referenz; Meldungen kommen über die News-Zeile) | https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai |
 | EU Digital Strategy – News (AI Act, AI Office, AI Board) | https://digital-strategy.ec.europa.eu/en/news |
 | Mistral AI News | https://mistral.ai/news |
 

@@ -35,8 +35,8 @@ Fokus: Claude, ChatGPT, Gemini, Google AI Studio, NotebookLM. Dazu Regulierung &
 Wende Rogers Regeln an:
 
 - **Global – Werkzeuge (Vorrang):** Claude, ChatGPT, Gemini, Google AI Studio, NotebookLM / Gemini Notebook
-- **Global – Weltweit:** 1–2 echte Top-News ausserhalb dieser Werkzeuge (neue Spitzenmodelle anderer Anbieter wie Qwen, DeepSeek, Kimi, GLM, Grok; UNO/OECD; grosse Markt-News). Nicht nur USA: gleichwertige Meldung aus Asien o. ä. bevorzugen. Details: CRITERIA.md
-- **Auf dem Radar (optional, max. 2):** Neues ohne Verfügbarkeit, das weltweit auffällt (neue Anbieter, geheime Modelle in Ranglisten, Hugging-Face-Trending). Zum Finden die Wochenrückblicke aus «Markt & Einordnung» in SOURCES.md querlesen (Last Week in AI, The Batch, SCMP, Rest of World), damit nichts Wichtiges fehlt. Details: CRITERIA.md
+- **Global – Weltweit:** bis 2 echte Top-News ausserhalb dieser Werkzeuge (neue Spitzenmodelle anderer Anbieter wie Qwen, DeepSeek, Kimi, GLM, Tencent, ERNIE, Microsoft MAI, Grok; UNO/OECD; grosse Markt-News). Gibt es zwei starke, bekommen die Werkzeuge nur 3 Plätze. Rangfolge nach Bedeutung; Asien o. ä. nur bei gleichwertigen Meldungen bevorzugen. Jede Woche gezielt nach Releases der grossen Labs ausserhalb der USA suchen (SCMP, Last Week in AI, The Decoder, Hugging-Face-APIs). Details: CRITERIA.md
+- **Auf dem Radar (optional, max. 2):** nur Neues, das noch **nicht** nutzbar ist (geheime Modelle in Ranglisten, angekündigte Modelle). Bereits Verfügbares (auch Hugging-Face-Aufsteiger) → Kandidat für «Weltweit». Zum Finden die Wochenrückblicke aus «Markt & Einordnung» in SOURCES.md querlesen (Last Week in AI, The Batch, SCMP, Rest of World), damit nichts Wichtiges fehlt. Details: CRITERIA.md
 - **Sicherheit:** Prompt Injection, Agent Safety, Datenabfluss
 - **Schweiz:** EDÖB, PLS (Parking Guidance System), HWZ/ETH/EPFL
 - **Im Zweifel:** Streichen. Top-News, nicht Hype.
@@ -59,7 +59,7 @@ Wende Rogers Regeln an:
 
 Drei Abschnitte (Reihenfolge erzwingt nur ein Thema pro Region):
 
-**Global:** zuerst deine Werkzeuge (OpenAI, Anthropic, Google; max. 4), danach Weltweit (1–2, wenn vorhanden); zusammen max. 5 Einträge
+**Global:** zuerst deine Werkzeuge (OpenAI, Anthropic, Google; 3–4), danach Weltweit (bis 2); zusammen max. 5 Einträge
 **Europa:** EU AI Act, europäische Anbieter (max. 3 Einträge)
 **Schweiz:** EDÖB, Behörden, PLS, HWZ/ETH (max. 3 Einträge)
 
@@ -133,7 +133,7 @@ description: >-
   <2–3 Sätze Zusammenfassung für die Podcast-App, ohne Links>
 ---
 
-Lena: Grüessech u willkomme bim wöchentleche drei-Minute-KI-News-Radar, Kalenderwuche ...
+Lena: Grüessech u willkomme bim Rogers KI-Radar, Kalenderwuche ...
 Marc: ...
 ```
 
@@ -145,7 +145,7 @@ Marc: ...
   (kostet kein API-Kontingent), bevor das Audio erzeugt wird.
 - **Aufteilung (Richtwerte):**
   - Intro (≈ 30 Wörter), immer mit diesem Wortlaut am Anfang: «Grüessech u willkomme bim
-    wöchentleche drei-Minute-KI-News-Radar, Kalenderwuche <Zahl uf Bärndütsch usgschribe, z. B. sibenevierzg>.»
+    Rogers KI-Radar, Kalenderwuche <Zahl uf Bärndütsch usgschribe, z. B. sibenevierzg>.»
     Danach der Hinweis «Dä Podcast isch mit KI erstellt worde u wird ou vo KI-Persone verzeut.
     D Quellen findet dir i de Shownotes.»
   - Global ≈ 1 Minute, Europa ≈ 1 Minute, Schweiz ≈ 1 Minute
