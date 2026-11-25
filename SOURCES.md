@@ -33,7 +33,7 @@ Wird von Hand gepflegt. Der Agent liest diese Seite, ändert sie nicht - aber ma
 | Microsoft | Hugging Face API (offene Modelle mit Datum, z. B. Phi) | [https://huggingface.co/api/models?author=microsoft&sort=createdAt&direction=-1&limit=10](https://huggingface.co/api/models?author=microsoft&sort=createdAt&direction=-1&limit=10) |
 | Alibaba | Qwen – Hugging Face API (offene Qwen-Modelle mit Datum) | [https://huggingface.co/api/models?author=Qwen&sort=createdAt&direction=-1&limit=10](https://huggingface.co/api/models?author=Qwen&sort=createdAt&direction=-1&limit=10) |
 | Alibaba | Qwen Research (lädt nur per JavaScript; geschlossene Modelle wie Qwen4-Max über SCMP / Last Week in AI / The Decoder finden) | [https://qwen.ai/research](https://qwen.ai/research) |
-| Tencent | Hunyuan – Hugging Face API (offene Modelle mit Datum) | [https://huggingface.co/api/models?author=tencent&sort=createdAt&direction=-1&limit=10](https://huggingface.co/api/models?author=tencent&sort=createdAt&direction=-1&limit=10) |
+| Tencent | Hunyuan – Hugging Face API (offene Modelle mit Datum) | [https://huggingface.co/api/models?author=tencent&sort=createdAt&direction=-1&limit=40](https://huggingface.co/api/models?author=tencent&sort=createdAt&direction=-1&limit=40) |
 | Alle Anbieter | Hugging Face Trending (neue offene Modelle, API mit Datum) | [https://huggingface.co/api/models?sort=trendingScore&limit=30](https://huggingface.co/api/models?sort=trendingScore&limit=30) |
 
 ---

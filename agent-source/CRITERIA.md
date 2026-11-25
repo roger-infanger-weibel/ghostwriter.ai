@@ -51,6 +51,14 @@ Zwei Teile im selben Abschnitt `## Global`, Werkzeuge zuerst:
   Baidu (ERNIE), ByteDance, MiniMax – in SCMP Tech, Last Week in AI, The Decoder und den
   Hugging-Face-APIs. Auch geschlossene Modelle (ohne Gewichte) zählen, wenn sie per API oder App
   verfügbar sind.
+- **Websuche als Absicherung:** Viele Anbieterseiten laden nur per JavaScript (z. B. qwen.ai), und
+  die Wochenrückblicke decken nicht alles ab – Qwen4-Max (16.11.2026) fehlte in allen. Darum, wenn
+  das Werkzeug WebSearch verfügbar ist, pro Lab eine Suche wie «<Lab> new model release <Monat Jahr>»
+  (z. B. «Alibaba Qwen new model release November 2026») und nur Treffer aus der Berichtswoche
+  nehmen. Eine Meldung gilt als gesichert, wenn sie von der Primärquelle oder von mindestens zwei
+  unabhängigen seriösen Medien bestätigt wird; verlinkt wird die beste erreichbare Quelle, mit
+  «laut <Quelle>», wenn es nicht die Primärquelle ist. Im Quellen-Report eine Zeile «Websuche»
+  mit den gesuchten Labs und Treffern.
 - Fundstellen: die Quellen in SOURCES.md, insbesondere The Decoder, Last Week in AI, The Batch,
   SCMP Tech, Hugging Face, Microsoft AI News, DeepSeek. Ist eine Anbieterseite in der Cloud nicht erreichbar, darf die Meldung über eine
   seriöse Einordnungsquelle (z. B. The Decoder) gefunden und verlinkt werden; in diesem Fall
