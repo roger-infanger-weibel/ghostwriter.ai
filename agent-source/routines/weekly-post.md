@@ -52,7 +52,13 @@ Wende Rogers Regeln an:
 - Was verändert Markt, Branche, Gesellschaft oder Regeln? (Börsengänge, grosse Deals,
   Spitzenmodelle, die die Konkurrenz unter Druck setzen, Verbote, Sicherheitsvorfälle,
   Regulierung)
-- Neue Modelle nur, wenn sie eine Nachricht sind – nicht jedes Update
+- **Keine Modell-Verbesserungen als News:** Dass Modelle besser, schneller oder günstiger werden,
+  ist der Normalfall und keine Top-News – auch nicht bei OpenAI, Anthropic oder Google. Das gilt
+  für Versionssprünge wie «6.1 → 6.2», neue Varianten (Flash, Mini, Pro …) und Preissenkungen.
+  Ein neues Modell ist nur dann eine Meldung, wenn es **etwas grundsätzlich ändert**: eine neue
+  Fähigkeit, die es so vorher nicht gab; ein neuer Anbieter, der an die Spitze aufschliesst
+  (z. B. Microsoft mit eigenen Modellen statt OpenAI); oder ein strategischer Schritt mit Folgen
+  für den Markt. Im Zweifel: streichen.
 - Details: Abschnitt «Breaking News statt Modell-Details» in CRITERIA.md
 
 ---

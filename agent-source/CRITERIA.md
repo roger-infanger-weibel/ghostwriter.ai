@@ -45,6 +45,13 @@ Gefragt ist, **was die Nachricht der Woche ist** – nicht das Datenblatt.
 - Ankündigungen ohne Verfügbarkeit oder Datum ("coming soon")
 - Dinge ohne Primärquelle oder Link
 - normale Release Updates ohne major changes
+- **Modell-Verbesserungen:** Dass Modelle besser, schneller oder günstiger werden,
+  ist der Normalfall und keine Top-News – auch nicht bei OpenAI, Anthropic oder Google. Das gilt
+  für Versionssprünge wie «6.1 → 6.2», neue Varianten (Flash, Mini, Pro …) und Preissenkungen.
+  Ein neues Modell ist nur dann eine Meldung, wenn es **etwas grundsätzlich ändert**: eine neue
+  Fähigkeit, die es so vorher nicht gab; ein neuer Anbieter, der an die Spitze aufschliesst
+  (z. B. Microsoft mit eigenen Modellen statt OpenAI); oder ein strategischer Schritt mit Folgen
+  für den Markt. Im Zweifel: streichen.
 
 ---
 
