@@ -47,7 +47,8 @@ Prüfzeitraum: 16.–22. November 2026. Abruf per HTTP-GET (curl, Browser-User-A
 | inside-it.ch | https://www.inside-it.ch | ✅ OK | ~5 | Fedpol beschafft Anti-Deepfake-Modul für E-ID (19.11.) – Beschaffung, Sekundärquelle, gestrichen; BACS zu KI-Angriffen erst 25.11. (KW 48) |
 | Netzwoche | https://www.netzwoche.ch | ✅ OK | ~5 | Keine Top-News |
 | swissinfo.ch | https://www.swissinfo.ch | ✅ OK | ~1 | Keine Top-News |
-| Websuche (CRITERIA) | WebSearch | ✅ OK | 1 | Gesucht: Alibaba/Qwen, DeepSeek, Moonshot/Kimi, Zhipu/GLM, MiniMax, Baidu/ERNIE, ByteDance, Tencent. Treffer in der Woche: **Qwen4-Max (16.11.)**, bestätigt durch Alibaba-Cloud-Pressemitteilung, SCMP, Constellation Research, Techloy → übernommen. ERNIE 5.5 Flash (12.11.) liegt in KW 46. Alibaba-Cloud-Seite selbst vom Environment blockiert (HTTP 403 Proxy). |
+| Alibaba Cloud Press Room (neu, Nachtest) | https://www.alibabacloud.com/press-room | ✅ OK | 1 | Nach Freigabe des Hosts HTTP 200. Liste neueste zuerst, aber ohne Datum; Datum steht im Artikel. Qwen4-Max (16.11.) direkt aus Primärquelle bestätigt, Eintrag angepasst |
+| Websuche (CRITERIA) | WebSearch | ✅ OK | 1 | Gesucht: Alibaba/Qwen, DeepSeek, Moonshot/Kimi, Zhipu/GLM, MiniMax, Baidu/ERNIE, ByteDance, Tencent. Treffer in der Woche: **Qwen4-Max (16.11.)**, bestätigt durch Alibaba-Cloud-Pressemitteilung, SCMP, Constellation Research, Techloy → übernommen. ERNIE 5.5 Flash (12.11.) liegt in KW 46. Alibaba-Cloud-Seite im ersten Durchgang vom Environment blockiert, im Nachtest erreichbar. |
 
 ## Zusammenfassung
 - Quellen geprüft: 41, davon OK: 37, teilweise: 4, Fehler: 0
@@ -57,7 +58,7 @@ Prüfzeitraum: 16.–22. November 2026. Abruf per HTTP-GET (curl, Browser-User-A
 - Nicht in KW 47: Nvidia-CEO-Rücktritt (12.11.), Gemini 4 Hydrogen (12.11.), ERNIE 5.5 Flash (12.11.).
 
 ## Vorschläge
-- **Alibaba Cloud Press Room** als Quelle prüfen: https://www.alibabacloud.com/press-room – hätte Qwen4-Max direkt geliefert; Host `www.alibabacloud.com` ist im Environment zurzeit blockiert und müsste freigegeben werden.
-- **Tencent – Hugging Face API:** auch `limit=40` reicht nicht (27 neue Modelle in einer Woche, v. a. WeMM-Ecom-Varianten). Vorschlag: zusätzlich `&search=Hy` an die URL hängen, z. B. https://huggingface.co/api/models?author=tencent&search=Hy&sort=createdAt&direction=-1&limit=20
-- **Gemini API Changelog** war diesmal ohne JavaScript lesbar – den Hinweis «lädt nur per JavaScript» in SOURCES.md beim nächsten Lauf nochmals prüfen.
-- **Google-Blog-Sitemap:** `lastmod` ändert sich bei nachträglichen Updates (Neon: 24.11. statt 18.11.); den Filter auf ±7 Tage erweitern und das Datum im Artikel prüfen.
+- ~~Alibaba Cloud Press Room als Quelle~~ – umgesetzt, Host freigegeben, Nachtest OK.
+- *(umgesetzt)* **Tencent – Hugging Face API:** auch `limit=40` reicht nicht (27 neue Modelle in einer Woche, v. a. WeMM-Ecom-Varianten). Vorschlag: zusätzlich `&search=Hy` an die URL hängen, z. B. https://huggingface.co/api/models?author=tencent&search=Hy&sort=createdAt&direction=-1&limit=20
+- *(umgesetzt)* **Gemini API Changelog** war diesmal ohne JavaScript lesbar – den Hinweis «lädt nur per JavaScript» in SOURCES.md beim nächsten Lauf nochmals prüfen.
+- *(umgesetzt)* **Google-Blog-Sitemap:** `lastmod` ändert sich bei nachträglichen Updates (Neon: 24.11. statt 18.11.); den Filter auf ±7 Tage erweitern und das Datum im Artikel prüfen.

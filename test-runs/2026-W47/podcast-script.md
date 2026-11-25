@@ -22,9 +22,9 @@ Lena: U dä Prisdruck chunnt grad vo Google. Gemini vier Neon isch es nöis Mod�
 
 Marc: Bim Programmiere chunnt Neon nach Tescht nach a Claude Opus foif Punkt foif häre, choschtet aber füfezwänzg Prozänt weniger. Das setzt Anthropic u OpenAI under Druck.
 
-Lena: Ou us China chunnt Konkurränz. Alibaba het Qwen vier Max vorgsteut, sis nöie Spitzemodäll für Programmiere, Cybersicherheit u Forschig.
+Lena: Ou us China chunnt Konkurränz. Alibaba het Qwen vier Max usegä, laut Alibaba ds bishär stärchste Modäll vo dr Qwen-Familie, für Programmiere, Agänte, Büroarbeit u Forschig.
 
-Marc: Das Modäll isch nid offe, sondern über Alibabas eigeti Plattforme nutzbar. Alibaba gseht sech dermit uf Ougehöchi mit Anthropic u OpenAI. Dr Druck uf d US-Abieter wachst.
+Marc: Das Modäll isch nid offe, sondern ab sofort über Alibabas eigeti Plattforme nutzbar. Dermit bringt eis vo de grosse chinesische Labs es nöis Spitzemodäll i Wettbewärb mit de US-Abieter.
 
 Lena: U Microsoft, bis jitz eng mit OpenAI verbunde, het a dr Ignite sibe eigeti Modäll zeigt, für Programmiere, Sicherheit, Bilder u Sprach.
 

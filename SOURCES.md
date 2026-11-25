@@ -32,7 +32,7 @@ Wird von Hand gepflegt. Der Agent liest diese Seite, ändert sie nicht - aber ma
 | Microsoft | Azure Blog AI + Machine Learning (RSS, mit Datum) | [https://azure.microsoft.com/en-us/blog/category/ai-machine-learning/feed/](https://azure.microsoft.com/en-us/blog/category/ai-machine-learning/feed/) |
 | Microsoft | Hugging Face API (offene Modelle mit Datum, z. B. Phi) | [https://huggingface.co/api/models?author=microsoft&sort=createdAt&direction=-1&limit=10](https://huggingface.co/api/models?author=microsoft&sort=createdAt&direction=-1&limit=10) |
 | Alibaba | Qwen – Hugging Face API (offene Qwen-Modelle mit Datum) | [https://huggingface.co/api/models?author=Qwen&sort=createdAt&direction=-1&limit=10](https://huggingface.co/api/models?author=Qwen&sort=createdAt&direction=-1&limit=10) |
-| Alibaba | Alibaba Cloud Press Room (Pressemitteilungen, u. a. geschlossene Qwen-Modelle; Host im Environment noch freizugeben) | [https://www.alibabacloud.com/press-room](https://www.alibabacloud.com/press-room) |
+| Alibaba | Alibaba Cloud Press Room (Pressemitteilungen, u. a. geschlossene Qwen-Modelle; Liste neueste zuerst ohne Datum, Datum im Artikel) | [https://www.alibabacloud.com/press-room](https://www.alibabacloud.com/press-room) |
 | Alibaba | Qwen Research (lädt nur per JavaScript; geschlossene Modelle wie Qwen4-Max über SCMP / Last Week in AI / The Decoder finden) | [https://qwen.ai/research](https://qwen.ai/research) |
 | Tencent | Hunyuan – Hugging Face API (nur Hy-Modelle, mit Datum; ohne Filter verdrängen Varianten die Hauptmodelle) | [https://huggingface.co/api/models?author=tencent&search=Hy&sort=createdAt&direction=-1&limit=20](https://huggingface.co/api/models?author=tencent&search=Hy&sort=createdAt&direction=-1&limit=20) |
 | Alle Anbieter | Hugging Face Trending (neue offene Modelle, API mit Datum) | [https://huggingface.co/api/models?sort=trendingScore&limit=30](https://huggingface.co/api/models?sort=trendingScore&limit=30) |
@@ -103,7 +103,7 @@ Am 25.11.2026 erfolgreich abgerufen, im Environment freizugeben: `microsoft.ai`,
 `azure.microsoft.com`, `qwen.ai`, `lastweekin.ai`, `www.deeplearning.ai`, `www.scmp.com`,
 `restofworld.org`, `press.un.org` (`huggingface.co` ist schon freigegeben).
 
-Noch freizugeben (Testlauf 25.11.2026 vom Proxy blockiert, HTTP 403): `www.alibabacloud.com`.
+`www.alibabacloud.com` am 25.11.2026 freigegeben und erfolgreich abgerufen.
 
 ---
 
