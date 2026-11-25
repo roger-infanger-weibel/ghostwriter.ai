@@ -34,7 +34,8 @@ Fokus: Claude, ChatGPT, Gemini, Google AI Studio, NotebookLM. Dazu Regulierung &
 
 Wende Rogers Regeln an:
 
-- **Global:** Nur Claude, ChatGPT, Gemini, Google AI Studio, NotebookLM News
+- **Global – Werkzeuge (Vorrang):** Claude, ChatGPT, Gemini, Google AI Studio, NotebookLM / Gemini Notebook
+- **Global – Weltweit:** 1–2 echte Top-News ausserhalb dieser Werkzeuge (neue Spitzenmodelle anderer Anbieter wie Qwen, DeepSeek, Kimi, GLM, Grok; UNO/OECD; grosse Markt-News). Nicht nur USA: gleichwertige Meldung aus Asien o. ä. bevorzugen. Details: CRITERIA.md
 - **Sicherheit:** Prompt Injection, Agent Safety, Datenabfluss
 - **Schweiz:** EDÖB, PLS (Parking Guidance System), HWZ/ETH/EPFL
 - **Im Zweifel:** Streichen. Top-News, nicht Hype.
@@ -57,7 +58,7 @@ Wende Rogers Regeln an:
 
 Drei Abschnitte (Reihenfolge erzwingt nur ein Thema pro Region):
 
-**Global:** OpenAI, Anthropic, Google zentral (max. 5 Einträge)
+**Global:** zuerst deine Werkzeuge (OpenAI, Anthropic, Google; max. 4), danach Weltweit (1–2, wenn vorhanden); zusammen max. 5 Einträge
 **Europa:** EU AI Act, europäische Anbieter (max. 3 Einträge)
 **Schweiz:** EDÖB, Behörden, PLS, HWZ/ETH (max. 3 Einträge)
 
@@ -237,7 +238,7 @@ Details
 - [ ] Jeder Eintrag: Titel + 2–3 Sätze + [Link](URL)
 - [ ] Sektion "Für mich relevant": 2–4 Sätze mit Parking/CAS/Claude-Bezug
 - [ ] Sektion "Nicht erreichbare Quellen": Liste oder "keine"
-- [ ] Umfang: Global ≤ 5, Europa ≤ 3, Schweiz ≤ 3
+- [ ] Umfang: Global ≤ 5 (Werkzeuge ≤ 4, Weltweit 1–2 wenn vorhanden), Europa ≤ 3, Schweiz ≤ 3
 - [ ] Keine Spekulationen, nur Fakten mit Links
 - [ ] Podcast-Skript `podcast/scripts/YYYY-Www.md` mit Frontmatter (`title`, `description`)
 - [ ] Jede Skriptzeile beginnt mit `Lena:` oder `Marc:`, Zahlen ausgeschrieben, keine URLs
