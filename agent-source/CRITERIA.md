@@ -60,6 +60,16 @@ Zwei Teile im selben Abschnitt `## Global`, Werkzeuge zuerst:
 - Schweizer Unternehmen & Initiativen
 - Schweizer Verfügbarkeit / Einschränkungen der Tools
 
+### Auf dem Radar (optional)
+
+Für Neues, das **noch nicht** die Top-News-Kriterien erfüllt, aber weltweit auffällt:
+- Neue Anbieter oder Modelle ohne Verfügbarkeit (z. B. ein geheimes Modell an der Spitze einer
+  Rangliste), angekündigte Modelle mit konkretem Signal (Training abgeschlossen, Beta gestartet)
+- Neue offene Modelle, die auf Hugging Face Trending stark steigen
+- Max. **2 Einträge**, je 1–2 Sätze, klar als «noch nicht verfügbar» / «angekündigt» bezeichnet
+- Auch hier: jeder Eintrag mit Link, keine Spekulation über Leistung oder Datum
+- Kein passender Kandidat → Abschnitt weglassen
+
 ---
 
 ## Format des Posts
@@ -93,6 +103,11 @@ Quelle: [Anthropic News](https://www.anthropic.com/news), 12. September 2026
 ### Zurich PLS AG: Neue Sensoren für Parkleitsystem
 ...
 
+## Auf dem Radar
+
+- Optional, max. 2 Einträge, je 1–2 Sätze + Link
+...
+
 ## Für mich relevant
 
 2–4 Sätze: Wie betrifft mich das?
@@ -116,6 +131,7 @@ agentischen Systemen."
 | **Global** | 5 | Werkzeuge max. 4, dann Weltweit 1–2 (wenn vorhanden) |
 | **Europa** | 3 | EU AI Act, wenn aktiv; sonst "Keine Top-News" OK |
 | **Schweiz** | 3 | PLS-News, EDÖB, Behörden; sonst "Keine Top-News" OK |
+| **Auf dem Radar** | 2 | optional; Abschnitt weglassen, wenn nichts Passendes |
 
 ### Sprache & Stil
 - **Deutsch**, sachlich, präzise

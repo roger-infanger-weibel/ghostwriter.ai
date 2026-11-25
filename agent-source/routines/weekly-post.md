@@ -36,6 +36,7 @@ Wende Rogers Regeln an:
 
 - **Global – Werkzeuge (Vorrang):** Claude, ChatGPT, Gemini, Google AI Studio, NotebookLM / Gemini Notebook
 - **Global – Weltweit:** 1–2 echte Top-News ausserhalb dieser Werkzeuge (neue Spitzenmodelle anderer Anbieter wie Qwen, DeepSeek, Kimi, GLM, Grok; UNO/OECD; grosse Markt-News). Nicht nur USA: gleichwertige Meldung aus Asien o. ä. bevorzugen. Details: CRITERIA.md
+- **Auf dem Radar (optional, max. 2):** Neues ohne Verfügbarkeit, das weltweit auffällt (neue Anbieter, geheime Modelle in Ranglisten, Hugging-Face-Trending). Zum Finden die Wochenrückblicke aus «Markt & Einordnung» in SOURCES.md querlesen (Last Week in AI, The Batch, SCMP, Rest of World), damit nichts Wichtiges fehlt. Details: CRITERIA.md
 - **Sicherheit:** Prompt Injection, Agent Safety, Datenabfluss
 - **Schweiz:** EDÖB, PLS (Parking Guidance System), HWZ/ETH/EPFL
 - **Im Zweifel:** Streichen. Top-News, nicht Hype.
@@ -94,6 +95,13 @@ Die Zurich Parking Guidance (PLS AG) hat eine neue Sensor-Generation mit bessere
 vorgestellt. Relevante Datenquelle für das Parking-Forecasting-Projekt.
 Quelle: [PLS AG](https://www.zurich-pls.ch/news), 10. September 2026
 
+## Auf dem Radar
+
+### Gestalt: unbekanntes Design-Modell an der Spitze eines Benchmarks
+Ein noch nicht veröffentlichtes Modell namens «Gestalt» führt die Design-Rangliste von Contra Labs an;
+Hersteller, Preis und Verfügbarkeit sind nicht bekannt.
+Quelle: [Contra Labs](https://…), 18. November 2026
+
 ## Für mich relevant
 
 Claude 3.6 mit stärkerem Reasoning könnte ich direkt für die Parking-Forecasting-Logik
@@ -130,7 +138,7 @@ Marc: ...
 ```
 
 **Regeln:**
-- **Quelle:** Nur die Abschnitte `## Global`, `## Europa` und `## Schweiz` des Posts. Alles ab «Für mich relevant» (inkl. «Nicht erreichbare Quellen») kommt **nicht** in den Podcast.
+- **Quelle:** Nur die Abschnitte `## Global`, `## Europa`, `## Schweiz` und (falls vorhanden) `## Auf dem Radar` des Posts. Alles ab «Für mich relevant» (inkl. «Nicht erreichbare Quellen») kommt **nicht** in den Podcast.
 - **Gesamtlänge immer fast 3 Minuten: 2400–2800 Zeichen Sprechtext (≈ 360–400 Wörter).**
   Das gilt jede Woche, auch in ruhigen Wochen. `build_episode.py --dry-run` zeigt die Länge an.
   Bei «WARNUNG ZU KURZ» oder «ZU LANG» das Skript anpassen und den Dry-Run wiederholen
@@ -141,6 +149,8 @@ Marc: ...
     Danach der Hinweis «Dä Podcast isch mit KI erstellt worde u wird ou vo KI-Persone verzeut.
     D Quellen findet dir i de Shownotes.»
   - Global ≈ 1 Minute, Europa ≈ 1 Minute, Schweiz ≈ 1 Minute
+  - Auf dem Radar (nur wenn im Post): 1–2 Sätze, eingeleitet mit «Und noch kurz auf dem Radar: …»,
+    klar als noch nicht verfügbar bzw. angekündigt bezeichnet
   - Abschluss: 1 Satz + «Tschüss zäme» (≈ 20 Wörter), keine Zusammenfassung
 - **Auffüllen statt kürzer werden:** Hat eine Region wenig oder nichts (z. B. Schweiz-Quellen
   nicht erreichbar, ruhige Woche in Europa), dort ein bis zwei Sätze sagen und die frei
@@ -151,7 +161,7 @@ Marc: ...
   Länge stimmt.
 - Höchstens eine Kennzahl pro Meldung, keine Preistabellen, Breaking-Change-Listen oder
   Token-Zahlen.
-- Reihenfolge fix: Intro → Global → Europa → Schweiz → Abschluss.
+- Reihenfolge fix: Intro → Global → Europa → Schweiz → Auf dem Radar (optional) → Abschluss.
 - Sprecher `Lena` und `Marc`, jede Zeile beginnt mit `Lena:` oder `Marc:`. Optional Stil in eckigen Klammern: `Marc [überrascht]: ...`. Kurze, abwechselnde Wortmeldungen, kein Smalltalk.
 - **Inhalt nur aus dem Post.** Keine zusätzlichen Fakten, Zahlen oder Wertungen, keine Superlative.
 - **Fürs Ohr schreiben:** Zahlen und Versionen auf Berndeutsch ausschreiben («Fable foif Punkt zwöi», «foifefüfzg Millione Franke»). Keine URLs, kein Markdown, keine Klammern, keine Code-Bezeichner.
@@ -234,7 +244,7 @@ Details
 - [ ] Dateiname: `posts/YYYY-Www.md` (ISO-Woche exakt)
 - [ ] Überschrift: `# KI-Wochenrückblick – KW ww / YYYY`
 - [ ] Zeitraum: `Zeitraum: D.–D. Monat YYYY`
-- [ ] Abschnitte: `## Global`, `## Europa`, `## Schweiz` (in dieser Reihenfolge)
+- [ ] Abschnitte: `## Global`, `## Europa`, `## Schweiz` (in dieser Reihenfolge), optional `## Auf dem Radar` (max. 2)
 - [ ] Jeder Eintrag: Titel + 2–3 Sätze + [Link](URL)
 - [ ] Sektion "Für mich relevant": 2–4 Sätze mit Parking/CAS/Claude-Bezug
 - [ ] Sektion "Nicht erreichbare Quellen": Liste oder "keine"
