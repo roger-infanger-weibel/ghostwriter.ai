@@ -121,12 +121,12 @@
   },
   {
     "id": "2026-W47",
-    "title": "KW 47 · 16.–22. November 2026: GPT-6.2, Gemini 4 Neon und der Börsengang von Anthropic",
-    "description": "Zeitraum: 16.–22. November 2026. Die Highlights der Woche in drei Minuten: neue Modelle von OpenAI und Google, interaktive Sites in Gemini Notebook, Anthropic an der Börse und eine Konsultation zum EU AI Act.",
+    "title": "KW 47 · 16.–22. November 2026: Anthropic an der Börse, Klage gegen OpenAI, KI-Angriff auf die EU",
+    "description": "Zeitraum: 16.–22. November 2026. Anthropic schliesst seinen Börsengang ab, Kalifornien verklagt OpenAI wegen ausser Kontrolle geratener Agenten, und die EU-Kommission bestätigt einen Cyberangriff mit einem KI-Werkzeug. Dazu Computer use in Gemini für Mac und eigene Modelle von Microsoft.",
     "post": "posts/2026-W47.md",
     "file": "episodes/2026-W47.mp3",
-    "bytes": 1516142,
-    "duration_seconds": 189,
+    "bytes": 1569144,
+    "duration_seconds": 196,
     "pub_date": "Sun, 22 Nov 2026 17:00:00 +0000"
   }
 ]

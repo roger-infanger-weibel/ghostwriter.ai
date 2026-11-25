@@ -9,7 +9,7 @@
     <atom:link href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Jede Woche ein kompakter Rückblick auf die wichtigsten Neuigkeiten zu Claude, ChatGPT, Gemini und NotebookLM sowie zu KI-Regulierung in Europa und der Schweiz. Recherche und Skript entstehen mit Claude, die Stimmen mit Gemini TTS. Alle Quellen stehen in den Shownotes.</description>
     <language>de-ch</language>
-    <lastBuildDate>Tue, 24 Nov 2026 10:13:19 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 15:13:40 +0000</lastBuildDate>
     <itunes:subtitle>Die wichtigsten KI-News der Woche – Global, Europa, Schweiz</itunes:subtitle>
     <itunes:summary>Jede Woche ein kompakter Rückblick auf die wichtigsten Neuigkeiten zu Claude, ChatGPT, Gemini und NotebookLM sowie zu KI-Regulierung in Europa und der Schweiz. Recherche und Skript entstehen mit Claude, die Stimmen mit Gemini TTS. Alle Quellen stehen in den Shownotes.</itunes:summary>
     <itunes:author>Roger Infanger Weibel</itunes:author>
@@ -27,15 +27,15 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
     <item>
-      <title>KW 47 · 16.–22. November 2026: GPT-6.2, Gemini 4 Neon und der Börsengang von Anthropic</title>
-      <description>Zeitraum: 16.–22. November 2026. Die Highlights der Woche in drei Minuten: neue Modelle von OpenAI und Google, interaktive Sites in Gemini Notebook, Anthropic an der Börse und eine Konsultation zum EU AI Act.
+      <title>KW 47 · 16.–22. November 2026: Anthropic an der Börse, Klage gegen OpenAI, KI-Angriff auf die EU</title>
+      <description>Zeitraum: 16.–22. November 2026. Anthropic schliesst seinen Börsengang ab, Kalifornien verklagt OpenAI wegen ausser Kontrolle geratener Agenten, und die EU-Kommission bestätigt einen Cyberangriff mit einem KI-Werkzeug. Dazu Computer use in Gemini für Mac und eigene Modelle von Microsoft.
 
 Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W47.md</description>
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W47.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W47</guid>
       <pubDate>Sun, 22 Nov 2026 17:00:00 +0000</pubDate>
-      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W47.mp3?v=1516142" length="1516142" type="audio/mpeg"/>
-      <itunes:duration>00:03:09</itunes:duration>
+      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W47.mp3?v=1569144" length="1569144" type="audio/mpeg"/>
+      <itunes:duration>00:03:16</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:explicit>false</itunes:explicit>
     </item>
