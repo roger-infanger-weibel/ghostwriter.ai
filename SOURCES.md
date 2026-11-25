@@ -17,12 +17,12 @@ Wird von Hand gepflegt. Der Agent liest diese Seite, ändert sie nicht - aber ma
 | Anthropic | News | [https://www.anthropic.com/news](https://www.anthropic.com/news) |
 | Anthropic | Claude Code Changelog (Raw, die GitHub-Ansicht liefert HTTP 403) | [https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md](https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md) |
 | Anthropic | API Release Notes | [https://platform.claude.com/docs/en/release-notes/overview](https://platform.claude.com/docs/en/release-notes/overview) |
-| Google | Gemini API Changelog (lädt nur per JavaScript) | [https://aistudio.google.com/docs/changelog](https://aistudio.google.com/docs/changelog) |
+| Google | Gemini API Changelog (Einträge mit Datum im Seiteninhalt lesbar, Testlauf 25.11.2026) | [https://aistudio.google.com/docs/changelog](https://aistudio.google.com/docs/changelog) |
 | Google | Developer Tools Blog (Gemini API, AI Studio) | [https://blog.google/innovation-and-ai/technology/developers-tools/](https://blog.google/innovation-and-ai/technology/developers-tools/) |
 | Google | Gemini App Updates | [https://gemini.google/release-notes/](https://gemini.google/release-notes/) |
 | Google | Gemini Notebook (ehem. NotebookLM) Blog | [https://blog.google/innovation-and-ai/products/gemini-notebook/](https://blog.google/innovation-and-ai/products/gemini-notebook/) |
 | Google | Google AI Blog | [https://blog.google/innovation-and-ai/technology/ai/](https://blog.google/innovation-and-ai/technology/ai/) |
-| Google | **Blog-Sitemap mit Datum – Hauptquelle für alle Google-Blogs** (die Blog-Listen laden nur per JavaScript; Einträge über `lastmod` filtern) | [https://blog.google/en-us/sitemap.xml](https://blog.google/en-us/sitemap.xml) |
+| Google | **Blog-Sitemap mit Datum – Hauptquelle für alle Google-Blogs** (die Blog-Listen laden nur per JavaScript; Einträge über `lastmod` filtern, Fenster ±7 Tage, da `lastmod` bei nachträglichen Updates wechselt; massgebend ist das Datum im Artikel) | [https://blog.google/en-us/sitemap.xml](https://blog.google/en-us/sitemap.xml) |
 | DeepSeek | API Change Log | [https://api-docs.deepseek.com/updates](https://api-docs.deepseek.com/updates) |
 | Hugging Face | Blog | [https://huggingface.co/blog](https://huggingface.co/blog) |
 | GitHub | GitHub Copilot Changelog | [https://github.blog/changelog/label/copilot/](https://github.blog/changelog/label/copilot/) |
@@ -32,8 +32,9 @@ Wird von Hand gepflegt. Der Agent liest diese Seite, ändert sie nicht - aber ma
 | Microsoft | Azure Blog AI + Machine Learning (RSS, mit Datum) | [https://azure.microsoft.com/en-us/blog/category/ai-machine-learning/feed/](https://azure.microsoft.com/en-us/blog/category/ai-machine-learning/feed/) |
 | Microsoft | Hugging Face API (offene Modelle mit Datum, z. B. Phi) | [https://huggingface.co/api/models?author=microsoft&sort=createdAt&direction=-1&limit=10](https://huggingface.co/api/models?author=microsoft&sort=createdAt&direction=-1&limit=10) |
 | Alibaba | Qwen – Hugging Face API (offene Qwen-Modelle mit Datum) | [https://huggingface.co/api/models?author=Qwen&sort=createdAt&direction=-1&limit=10](https://huggingface.co/api/models?author=Qwen&sort=createdAt&direction=-1&limit=10) |
+| Alibaba | Alibaba Cloud Press Room (Pressemitteilungen, u. a. geschlossene Qwen-Modelle; Host im Environment noch freizugeben) | [https://www.alibabacloud.com/press-room](https://www.alibabacloud.com/press-room) |
 | Alibaba | Qwen Research (lädt nur per JavaScript; geschlossene Modelle wie Qwen4-Max über SCMP / Last Week in AI / The Decoder finden) | [https://qwen.ai/research](https://qwen.ai/research) |
-| Tencent | Hunyuan – Hugging Face API (offene Modelle mit Datum) | [https://huggingface.co/api/models?author=tencent&sort=createdAt&direction=-1&limit=40](https://huggingface.co/api/models?author=tencent&sort=createdAt&direction=-1&limit=40) |
+| Tencent | Hunyuan – Hugging Face API (nur Hy-Modelle, mit Datum; ohne Filter verdrängen Varianten die Hauptmodelle) | [https://huggingface.co/api/models?author=tencent&search=Hy&sort=createdAt&direction=-1&limit=20](https://huggingface.co/api/models?author=tencent&search=Hy&sort=createdAt&direction=-1&limit=20) |
 | Alle Anbieter | Hugging Face Trending (neue offene Modelle, API mit Datum) | [https://huggingface.co/api/models?sort=trendingScore&limit=30](https://huggingface.co/api/models?sort=trendingScore&limit=30) |
 
 ---
@@ -101,6 +102,8 @@ Werden nicht geprüft. Wieder aufnehmen, sobald sie erreichbar sind.
 Am 25.11.2026 erfolgreich abgerufen, im Environment freizugeben: `microsoft.ai`,
 `azure.microsoft.com`, `qwen.ai`, `lastweekin.ai`, `www.deeplearning.ai`, `www.scmp.com`,
 `restofworld.org`, `press.un.org` (`huggingface.co` ist schon freigegeben).
+
+Noch freizugeben (Testlauf 25.11.2026 vom Proxy blockiert, HTTP 403): `www.alibabacloud.com`.
 
 ---
 
