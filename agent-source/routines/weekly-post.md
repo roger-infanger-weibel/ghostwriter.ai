@@ -47,11 +47,12 @@ Wende Rogers Regeln an:
 - Fundingfonds-News (ausser CEO-Changes bei OpenAI/Anthropic)
 - Meiningsartikel
 
-**Zu priorisieren:**
-- Feature-Releases (Claude 3.6, GPT-o1, Gemini 2.0)
-- Preisänderungen
-- Sicherheits-Patches
-- Neue Modelle / API-Updates
+**Zu priorisieren – Breaking News, nicht Datenblätter:**
+- Was verändert Markt, Branche, Gesellschaft oder Regeln? (Börsengänge, grosse Deals,
+  Spitzenmodelle, die die Konkurrenz unter Druck setzen, Verbote, Sicherheitsvorfälle,
+  Regulierung)
+- Neue Modelle nur, wenn sie eine Nachricht sind – nicht jedes Update
+- Details: Abschnitt «Breaking News statt Modell-Details» in CRITERIA.md
 
 ---
 
@@ -111,9 +112,11 @@ CAS-Projekt "Innovation Management" – hier sind Transparenz-Anforderungen jetz
 ```
 
 **Tipps:**
-- Jeder Eintrag: **Titel** + 2–3 Sätze + **Link**
+- Jeder Eintrag: **Titel** + 2–3 Sätze (*Was ist passiert? Warum ist es wichtig?*) + **Link**
+- **Keine Modell-Details:** keine Parameter, Kontextfenster, Token-/API-Preise, Modell-IDs,
+  Architektur, Lizenznamen, Benchmarks, Listen von Abo-Stufen oder Zielgruppen
+- Höchstens **eine** Zahl pro Eintrag, nur wenn sie die Nachricht ist – dann **wörtlich** wie in der Quelle
 - Keine Spekulationen ("könnte sein", "wird wohl")
-- Zahlen & Versionen **wörtlich** wie in der Quelle
 - "Für mich relevant": Bezug zu Parking-Forecasting und Claude-Config
 - "Nicht erreichbare": Liste oder "keine"
 
@@ -156,12 +159,15 @@ Marc: ...
   nicht erreichbar, ruhige Woche in Europa), dort nur einen kurzen Satz sagen (z. B. «I dr Schwiz hets die Wuche kener Top-News gä.») –
   **keine Aufzählung**, welche Quellen oder Behörden nichts publiziert haben – und die frei
   gewordene Zeit mit den anderen Meldungen füllen: zuerst alle Global-Einträge des Posts
-  aufnehmen, dann pro Meldung mehr Kontext aus dem Post erzählen (was genau ist neu, für wen
-  verfügbar, was ändert sich für Nutzerinnen und Nutzer, warum ist es wichtig).
+  aufnehmen, dann pro Meldung mehr Einordnung aus dem Post erzählen (was ändert sich,
+  wer gerät unter Druck, warum ist es wichtig) – keine technischen Details.
 - **Zu viel Stoff?** Dann die wichtigsten Meldungen nehmen und den Rest weglassen, bis die
   Länge stimmt.
-- Höchstens eine Kennzahl pro Meldung, keine Preistabellen, Breaking-Change-Listen oder
-  Token-Zahlen.
+- **Breaking News erzählen, nicht Datenblätter:** pro Meldung was passiert ist und warum es
+  wichtig ist. Keine Parameter, Preise, Token, Modell-IDs, Abo-Stufen oder Zielgruppen-Listen.
+  Höchstens eine Zahl pro Meldung, nur wenn sie die Nachricht ist.
+- **Auffüllen mit Einordnung, nicht mit Details:** Fehlt Länge, mehr zu Folgen und Bedeutung
+  erzählen (was ändert sich, wer gerät unter Druck), keine technischen Angaben nachschieben.
 - **Kein Name «Roger»** im gesprochenen Text – weder in Begrüssung, Abschluss noch sonst im Skript
   (auch nicht «Rogers KI-Radar»; der Podcast heisst gesprochen nur «KI-Radar»).
 - Reihenfolge fix: Intro → Global → Europa → Schweiz → Auf dem Radar (optional) → Abschluss.
@@ -248,7 +254,8 @@ Details
 - [ ] Überschrift: `# KI-Wochenrückblick – KW ww / YYYY`
 - [ ] Zeitraum: `Zeitraum: D.–D. Monat YYYY`
 - [ ] Abschnitte: `## Global`, `## Europa`, `## Schweiz` (in dieser Reihenfolge), optional `## Auf dem Radar` (max. 2)
-- [ ] Jeder Eintrag: Titel + 2–3 Sätze + [Link](URL)
+- [ ] Jeder Eintrag: Titel + 2–3 Sätze (Was ist passiert? Warum wichtig?) + [Link](URL)
+- [ ] Keine Modell-Details (Parameter, Preise, Token, Modell-IDs, Abo-Stufen, Benchmarks)
 - [ ] Sektion "Für mich relevant": 2–4 Sätze mit Parking/CAS/Claude-Bezug
 - [ ] Sektion "Nicht erreichbare Quellen": Liste oder "keine"
 - [ ] Umfang: Global ≤ 5 (Werkzeuge ≤ 4, Weltweit 1–2 wenn vorhanden), Europa ≤ 3, Schweiz ≤ 3

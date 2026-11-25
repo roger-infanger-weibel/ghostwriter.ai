@@ -11,6 +11,24 @@ Nur **Top-News**, nicht Hype. Ein Post mit 3–4 starken Einträgen ist besser a
 
 ---
 
+## Breaking News statt Modell-Details
+
+Gefragt ist, **was die Nachricht der Woche ist** – nicht das Datenblatt.
+
+- **Auswahl:** Was verändert den Markt, die Branche, die Gesellschaft oder die Regeln? Zum Beispiel
+  ein Börsengang, ein neues Spitzenmodell, das die Konkurrenz unter Druck setzt, ein grosser Deal,
+  ein Verbot, ein Sicherheitsvorfall, eine neue Regulierung. Ein weiteres Modell-Update ohne
+  Folgen ist keine Breaking News.
+- **Pro Eintrag:** 2–3 Sätze: *Was ist passiert?* und *Warum ist es wichtig?* (Folgen, Einordnung).
+- **Weglassen:** Parameterzahlen, Kontextfenster, Token- und API-Preise, Modell-IDs und
+  Code-Bezeichner, Architektur (MoE, aktive Parameter …), Lizenznamen, Benchmark-Werte, Listen
+  von Abo-Stufen oder Zielgruppen («für Plus-, Pro-, Enterprise-Nutzer …»), Plattform-Listen.
+- **Erlaubt:** höchstens **eine** Zahl pro Eintrag, und nur wenn sie die Nachricht selbst ist
+  (z. B. der Erlös eines Börsengangs).
+
+---
+
+
 ## NICHT relevant (raus)
 
 - Funding-Runden, Bewertungen, Personalwechsel (ausser CEO)
@@ -103,7 +121,7 @@ Zeitraum: 7.–13. September 2026
 ## Global
 
 ### Anthropic: Claude 3.6 veröffentlicht
-2–3 Sätze: Was ist neu? Welche Auswirkung hat es auf meine Arbeit?
+2–3 Sätze: Was ist passiert? Warum ist es wichtig? (keine technischen Details, siehe oben)
 Quelle: [Anthropic News](https://www.anthropic.com/news), 12. September 2026
 
 ### OpenAI: GPT-o1 Preview verfügbar
@@ -174,7 +192,8 @@ Commit-Message.
 - [ ] Dateiname: `posts/YYYY-Www.md` (ISO-Woche)
 - [ ] Überschrift: `# KI-Wochenrückblick – KW ww / YYYY`
 - [ ] Zeitraum: `Zeitraum: D.–D. Monat YYYY`
-- [ ] Jeder Eintrag: Titel + 2–3 Sätze + Link
+- [ ] Jeder Eintrag: Titel + 2–3 Sätze (Was ist passiert? Warum wichtig?) + Link
+- [ ] Keine Modell-Details: keine Parameter, Preise, Token, Modell-IDs, Abo-Stufen, Benchmarks
 - [ ] "Für mich relevant" Sektion: Mit Bezug zu Parking-Forecasting / CAS / Claude-Config
 - [ ] "Nicht erreichbare Quellen": Liste oder "keine"
 - [ ] Umfang: Global max. 5 (Werkzeuge 3–4, Weltweit bis 2), Europa max. 3, Schweiz max. 3
