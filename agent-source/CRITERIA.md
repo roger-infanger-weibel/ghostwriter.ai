@@ -16,7 +16,7 @@ Nur **Top-News**, nicht Hype. Ein Post mit 3–4 starken Einträgen ist besser a
 Gefragt ist, **was die Nachricht der Woche ist** – nicht das Datenblatt.
 
 - **Auswahl:** Was verändert den Markt, die Branche, die Gesellschaft oder die Regeln? Zum Beispiel
-  ein Börsengang, ein neues Spitzenmodell, das die Konkurrenz unter Druck setzt, ein grosser Deal,
+  ein Börsengang, ein Modell mit einer völlig neuen Fähigkeit, ein grosser Deal,
   ein Verbot, ein Sicherheitsvorfall, eine neue Regulierung. Ein weiteres Modell-Update ohne
   Folgen ist keine Breaking News.
 - **Pro Eintrag:** 2–3 Sätze: *Was ist passiert?* und *Warum ist es wichtig?* (Folgen, Einordnung).
@@ -52,10 +52,14 @@ Gefragt ist, **was die Nachricht der Woche ist** – nicht das Datenblatt.
 - **Modell-Verbesserungen:** Dass Modelle besser, schneller oder günstiger werden,
   ist der Normalfall und keine Top-News – auch nicht bei OpenAI, Anthropic oder Google. Das gilt
   für Versionssprünge wie «6.1 → 6.2», neue Varianten (Flash, Mini, Pro …) und Preissenkungen.
-  Ein neues Modell ist nur dann eine Meldung, wenn es **etwas grundsätzlich ändert**: eine neue
-  Fähigkeit, die es so vorher nicht gab; ein neuer Anbieter, der an die Spitze aufschliesst
-  (z. B. Microsoft mit eigenen Modellen statt OpenAI); oder ein strategischer Schritt mit Folgen
-  für den Markt. Im Zweifel: streichen.
+  Ein neues Modell eines **etablierten Labs** (OpenAI, Anthropic, Google, Meta, Alibaba,
+  DeepSeek, Mistral …) ist nur dann eine Meldung, wenn es eine **neue Fähigkeit** bringt, die es
+  so vorher nicht gab. «Besser», «schneller», «günstiger» oder «neues Spitzenmodell» reichen nicht.
+  Ausnahme: ein **neuer Anbieter**, der erstmals an die Spitze aufschliesst (z. B. Microsoft mit
+  eigenen Modellen statt OpenAI). Im Zweifel: streichen.
+- **Kein Preisdruck / Preiswettbewerb:** Preissenkungen, «günstiger als die Konkurrenz» und
+  «verschärfter Wettbewerb» sind Alltag und keine Meldung – auch nicht als Begründung, um ein
+  Modell doch aufzunehmen.
 
 ---
 

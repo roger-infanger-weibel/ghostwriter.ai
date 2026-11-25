@@ -54,15 +54,19 @@ Wende Rogers Regeln an:
 
 **Zu priorisieren – Breaking News, nicht Datenblätter:**
 - Was verändert Markt, Branche, Gesellschaft oder Regeln? (Börsengänge, grosse Deals,
-  Spitzenmodelle, die die Konkurrenz unter Druck setzen, Verbote, Sicherheitsvorfälle,
+  Modelle mit einer völlig neuen Fähigkeit, Verbote, Sicherheitsvorfälle, Klagen,
   Regulierung)
 - **Keine Modell-Verbesserungen als News:** Dass Modelle besser, schneller oder günstiger werden,
   ist der Normalfall und keine Top-News – auch nicht bei OpenAI, Anthropic oder Google. Das gilt
   für Versionssprünge wie «6.1 → 6.2», neue Varianten (Flash, Mini, Pro …) und Preissenkungen.
-  Ein neues Modell ist nur dann eine Meldung, wenn es **etwas grundsätzlich ändert**: eine neue
-  Fähigkeit, die es so vorher nicht gab; ein neuer Anbieter, der an die Spitze aufschliesst
-  (z. B. Microsoft mit eigenen Modellen statt OpenAI); oder ein strategischer Schritt mit Folgen
-  für den Markt. Im Zweifel: streichen.
+  Ein neues Modell eines **etablierten Labs** (OpenAI, Anthropic, Google, Meta, Alibaba,
+  DeepSeek, Mistral …) ist nur dann eine Meldung, wenn es eine **neue Fähigkeit** bringt, die es
+  so vorher nicht gab. «Besser», «schneller», «günstiger» oder «neues Spitzenmodell» reichen nicht.
+  Ausnahme: ein **neuer Anbieter**, der erstmals an die Spitze aufschliesst (z. B. Microsoft mit
+  eigenen Modellen statt OpenAI). Im Zweifel: streichen.
+- **Kein Preisdruck / Preiswettbewerb:** Preissenkungen, «günstiger als die Konkurrenz» und
+  «verschärfter Wettbewerb» sind Alltag und keine Meldung – auch nicht als Begründung, um ein
+  Modell doch aufzunehmen.
 - Details: Abschnitt «Breaking News statt Modell-Details» in CRITERIA.md
 
 ---
@@ -171,14 +175,14 @@ Marc: ...
   **keine Aufzählung**, welche Quellen oder Behörden nichts publiziert haben – und die frei
   gewordene Zeit mit den anderen Meldungen füllen: zuerst alle Global-Einträge des Posts
   aufnehmen, dann pro Meldung mehr Einordnung aus dem Post erzählen (was ändert sich,
-  wer gerät unter Druck, warum ist es wichtig) – keine technischen Details.
+  für wen hat es Folgen, warum ist es wichtig) – keine technischen Details, kein Preisvergleich.
 - **Zu viel Stoff?** Dann die wichtigsten Meldungen nehmen und den Rest weglassen, bis die
   Länge stimmt.
 - **Breaking News erzählen, nicht Datenblätter:** pro Meldung was passiert ist und warum es
   wichtig ist. Keine Parameter, Preise, Token, Modell-IDs, Abo-Stufen oder Zielgruppen-Listen.
   Höchstens eine Zahl pro Meldung, nur wenn sie die Nachricht ist.
 - **Auffüllen mit Einordnung, nicht mit Details:** Fehlt Länge, mehr zu Folgen und Bedeutung
-  erzählen (was ändert sich, wer gerät unter Druck), keine technischen Angaben nachschieben.
+  erzählen (was ändert sich, für wen hat es Folgen), keine technischen Angaben oder Preisvergleiche.
 - **Kein Name «Roger»** im gesprochenen Text – weder in Begrüssung, Abschluss noch sonst im Skript
   (auch nicht «Rogers KI-Radar»; der Podcast heisst gesprochen nur «KI-Radar»).
 - Reihenfolge fix: Intro → Global → Europa → Schweiz → Auf dem Radar (optional) → Abschluss.
