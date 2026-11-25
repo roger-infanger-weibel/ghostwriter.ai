@@ -1,64 +1,64 @@
 # Quellen-Report – Testlauf KW 47 / 2026
 
-Gestartet: 25. November 2026, 15:19 Uhr (Zürich)
+Gestartet: 25. November 2026, 15:41 Uhr (Zürich)
 
-Prüfzeitraum: 16.–22. November 2026. Abruf per HTTP-GET (curl, Browser-User-Agent), danach Auswertung des Seiteninhalts. Geprüft wurden alle 41 aktiven Quellen aus `SOURCES.md`; die Tabelle «Ausgesetzt» wird laut SOURCES.md nicht geprüft. Neue Regeln «Breaking News statt Modell-Details» angewendet.
+Prüfzeitraum: 16.–22. November 2026. Abruf per HTTP-GET (curl, Browser-User-Agent), danach Auswertung des Seiteninhalts. Geprüft wurden alle 42 aktiven Quellen aus `SOURCES.md`; die Tabelle «Ausgesetzt» wird laut SOURCES.md nicht geprüft. Neue Regeln angewendet: keine Benchmarks, keine personenbezogenen News, ein Thema pro Eintrag.
 
 | Quelle (aus SOURCES.md) | URL | Status | Treffer letzte 7 Tage | Bemerkung |
 |---|---|---|---|---|
-| OpenAI News | https://openai.com/news | ✅ OK | 31 | HTTP 200; Auswertung über RSS (gleicher Inhalt) |
-| OpenAI News (RSS) | https://openai.com/news/rss.xml | ✅ OK | 31 | Viele Kundenstorys/Partnerschaften; GPT-6.2 Astra/Sol (17.11.) übernommen |
-| OpenAI ChatGPT Release Notes | https://learn.chatgpt.com/docs/whats-new | ✅ OK | 1 | GPT-6.2 (identisch mit News) |
+| OpenAI News | https://openai.com/news | ✅ OK | 39 | HTTP 200; Auswertung über RSS (gleicher Inhalt) |
+| OpenAI News (RSS) | https://openai.com/news/rss.xml | ✅ OK | 39 | Viele Kundenstorys; GPT-6.2 Astra/Sol (17.11.), «Combatting adversarial distillation» (20.11.), «Managing frontier AI risk» (18.11.) – Platzregel, nicht übernommen |
+| OpenAI ChatGPT Release Notes | https://learn.chatgpt.com/docs/whats-new | ✅ OK | 1 | GPT-6.2 (17.11.), identisch mit News |
 | Anthropic News | https://www.anthropic.com/news | ✅ OK | 2 | IPO-Preisfestsetzung (18.11.) und -Abschluss (20.11.); Abschluss übernommen |
-| Anthropic Claude Code Changelog (Raw) | https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md | ✅ OK | n/a | Keine Datumsangaben, nur reguläre Releases – nicht übernommen |
-| Anthropic API Release Notes | https://platform.claude.com/docs/en/release-notes/overview | ✅ OK | mehrere | Detail-Updates – keine Breaking News |
-| Google Gemini API Changelog | https://aistudio.google.com/docs/changelog | ✅ OK | 4 | Diesmal lesbar (Markdown im HTML): Neon (18.11.), Tool Retrieval, Genie 4 GA (19.11.), Transcribe-Update (17.11.) |
-| Google Developer Tools Blog | https://blog.google/innovation-and-ai/technology/developers-tools/ | ⚠️ teilweise | 3 | Liste per JavaScript; über Sitemap: Tool Retrieval, Genie 4 in Gemini API, EmbeddingGemma 2 – nicht übernommen |
-| Google Gemini App Updates | https://gemini.google/release-notes/ | ✅ OK | ~5 | Tasks gratis, Computer use für Mac, Chatverlauf-Übernahme – nicht übernommen |
-| Google Gemini Notebook Blog | https://blog.google/innovation-and-ai/products/gemini-notebook/ | ⚠️ teilweise | 1 | Liste per JavaScript; über Sitemap: interaktive Sites (16.11.) – Platzregel, nicht übernommen |
+| Anthropic Claude Code Changelog (Raw) | https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md | ✅ OK | n/a | Keine Datumsangaben, nur reguläre Releases (2.1.332) – nicht übernommen |
+| Anthropic API Release Notes | https://platform.claude.com/docs/en/release-notes/overview | ✅ OK | 5 | Text-Wasserzeichen für ältere Modelle (16.11.), Linked billing Beta (17.11.), Analytics-API-Fixes – keine Breaking News |
+| Google Gemini API Changelog | https://aistudio.google.com/docs/changelog | ✅ OK | 3 | Neon GA (18.11.), Genie 4 GA (19.11.), Transcribe-Update (17.11.) |
+| Google Developer Tools Blog | https://blog.google/innovation-and-ai/technology/developers-tools/ | ⚠️ teilweise | 3 | Liste per JavaScript; über Sitemap: Tool Retrieval, Genie 4 in Gemini API (19.11.), EmbeddingGemma 2 (17.11.) – nicht übernommen |
+| Google Gemini App Updates | https://gemini.google/release-notes/ | ✅ OK | 6 | Tasks gratis in sechs Ländern (17.11.), Computer use für Mac (19.11.), Google-Pay-Checkout, Anrufe – Platzregel, nicht übernommen |
+| Google Gemini Notebook Blog | https://blog.google/innovation-and-ai/products/gemini-notebook/ | ⚠️ teilweise | 1 | Liste per JavaScript; über Sitemap: interaktive Sites (16.11.) – nicht übernommen |
 | Google AI Blog | https://blog.google/innovation-and-ai/technology/ai/ | ⚠️ teilweise | 1 | Liste per JavaScript; über Sitemap, nicht relevant |
-| Google Blog-Sitemap | https://blog.google/en-us/sitemap.xml | ✅ OK | ~38 | Hauptquelle Google. Achtung: Neon-Artikel hat `lastmod` 24.11. (nachträglich aktualisiert), Datum aus dem Artikel (18.11.) |
+| Google Blog-Sitemap | https://blog.google/en-us/sitemap.xml | ✅ OK | ~60 | Hauptquelle Google. Neon-Artikel `lastmod` 24.11., `datePublished` 18.11.; Hydrogen `lastmod` 16.11., erschienen 12.11. (KW 46) |
 | DeepSeek API Change Log | https://api-docs.deepseek.com/updates | ✅ OK | 0 | Letzter Eintrag 13.11.2026 |
-| Hugging Face Blog | https://huggingface.co/blog | ✅ OK | ~10 | u. a. Inkling 2 Mini – nicht übernommen |
-| GitHub Copilot Changelog | https://github.blog/changelog/label/copilot/ | ✅ OK | mehrere | Bestätigt MAI Code 2 in Copilot |
-| LangChain Blog | https://www.langchain.com/blog | ✅ OK | ~10 | Ausserhalb Fokus |
-| Perplexity Blog | https://www.perplexity.ai/hub/blog | ✅ OK | ~3 | Ausserhalb Fokus |
+| Hugging Face Blog | https://huggingface.co/blog | ✅ OK | n/a | Seite geladen, Datumsangaben nicht maschinell auswertbar; keine Top-News gefunden |
+| GitHub Copilot Changelog | https://github.blog/changelog/label/copilot/ | ✅ OK | mehrere | Modell-Abkündigungen (16.11.), MAI Code 2 – nicht separat übernommen |
+| LangChain Blog | https://www.langchain.com/blog | ✅ OK | n/a | Ausserhalb Fokus |
+| Perplexity Blog | https://www.perplexity.ai/hub/blog | ✅ OK | n/a | Ausserhalb Fokus |
 | Microsoft AI News | https://microsoft.ai/news/ | ✅ OK | 7 | Ignite (17.11.): sieben MAI-Modelle → «Weltweit» übernommen |
-| Microsoft Azure Blog AI (RSS) | https://azure.microsoft.com/en-us/blog/category/ai-machine-learning/feed/ | ✅ OK | 5 | Ignite-Enterprise-Posts – nicht übernommen |
+| Microsoft Azure Blog AI (RSS) | https://azure.microsoft.com/en-us/blog/category/ai-machine-learning/feed/ | ✅ OK | 5 | Ignite-Enterprise-Posts (17.11.) – nicht übernommen |
 | Microsoft – Hugging Face API | https://huggingface.co/api/models?author=microsoft&sort=createdAt&direction=-1&limit=10 | ✅ OK | 2 | Aion-1.0-Instruct-2.3B (18.11.) – kleines Modell |
-| Qwen – Hugging Face API | https://huggingface.co/api/models?author=Qwen&sort=createdAt&direction=-1&limit=10 | ✅ OK | 0 | Qwen4-Max ist geschlossen, daher nicht auf HF |
-| Qwen Research | https://qwen.ai/research | ⚠️ teilweise | 0 | HTTP 200, Inhalt lädt nur per JavaScript; Qwen4-Max nur über Websuche gefunden |
-| Tencent – Hugging Face API | https://huggingface.co/api/models?author=tencent&sort=createdAt&direction=-1&limit=40 | ✅ OK | 27 | Meist WeMM-Ecom-Varianten; Hy4-flash (17.11.) auch mit `limit=40` nicht mehr enthalten, nur über Trending |
-| Hugging Face Trending (API) | https://huggingface.co/api/models?sort=trendingScore&limit=30 | ✅ OK | 15 | Inkling 2 Mini, Tencent Hy4-flash, Qwen3.8-Derivate – Platzregel, nicht übernommen |
-| The Decoder (DE) | https://the-decoder.de | ✅ OK | ~10 | Zur Absicherung; kein Qwen4-Max-Artikel auf der Startseite |
-| Simon Willison Weblog | https://simonwillison.net | ✅ OK | ~5 | Nicht übernommen |
-| Last Week in AI (RSS) | https://lastweekin.ai/feed | ✅ OK | 1 | #348 (21.11.): IPO + Börsenkorrektur, GPT-6.2-Kritik, Gemini 4 Neon, MAI-Modelle; für Einordnung verlinkt |
-| The Batch (DeepLearning.AI) | https://www.deeplearning.ai/the-batch/ | ✅ OK | 1 | Ausgabe 20.11.: Nvidia, Anthropic-IPO |
-| SCMP Tech (RSS) | https://www.scmp.com/rss/36/feed | ✅ OK | 22 | Tencent Hy4 (22.11.), US-Chip-Exportdaten, Anthropic-IPO aus China-Sicht. Einzelartikel liefern HTTP 403 (Cloudflare) |
-| Rest of World | https://restofworld.org/ | ✅ OK | ~2 | Keine KI-Top-News |
-| UNO – Medienmitteilungen | https://press.un.org/en | ✅ OK | 0 | KI-Resolution Second Committee erst 24.11. – Kandidat für KW 48 |
+| Qwen – Hugging Face API | https://huggingface.co/api/models?author=Qwen&sort=createdAt&direction=-1&limit=10 | ✅ OK | 0 | Letztes Modell 9.10.; Qwen4-Max ist geschlossen |
+| Alibaba Cloud Press Room | https://www.alibabacloud.com/press-room | ✅ OK | 1 | Qwen4-Max (16.11.), Datum im Artikel bestätigt → übernommen |
+| Qwen Research | https://qwen.ai/research | ⚠️ teilweise | 0 | HTTP 200, Inhalt lädt nur per JavaScript |
+| Tencent – Hugging Face API (`search=Hy`) | https://huggingface.co/api/models?author=tencent&search=Hy&sort=createdAt&direction=-1&limit=20 | ✅ OK | 14 | Filter wirkt: Hy4-flash (17.11.), Hy4-base/FP8 (18.11.), Hy-MT3-Übersetzungsmodelle – kleineres offenes Modell, nicht übernommen |
+| Hugging Face Trending (API) | https://huggingface.co/api/models?sort=trendingScore&limit=30 | ✅ OK | 17 | Inkling 2 Mini (17.11.), Tencent Hy4-flash, Aleph Alpha Kolibri-1.1 (20.11.), ERNIE 5.5 Flash Preview (Gewichte 23.11., KW 48) – nicht übernommen |
+| The Decoder (DE) | https://the-decoder.de | ✅ OK | ~10 | Zur Absicherung; keine zusätzlichen Kandidaten |
+| Simon Willison Weblog | https://simonwillison.net | ✅ OK | ~6 | Nicht übernommen |
+| Last Week in AI (RSS) | https://lastweekin.ai/feed | ✅ OK | 1 | #348 (21.11.): IPO, GPT-6.2, Neon, MAI, Klage Kaliforniens gegen OpenAI (16.11.), US-Exportregel (16.11.); Klage übernommen und verlinkt |
+| The Batch (DeepLearning.AI) | https://www.deeplearning.ai/the-batch/ | ✅ OK | 1 | Ausgabe 20.11.: Nvidia (personenbezogen), Fable 5.2 (KW 46), Anthropic-IPO |
+| SCMP Tech (RSS) | https://www.scmp.com/rss/36/feed | ✅ OK | ~30 | Viel Nvidia/Huang (personenbezogen, raus), Tencent Hy4 Sicherheitstests (22.11.), Anthropic-IPO aus China-Sicht |
+| Rest of World | https://restofworld.org/ | ❌ Fehler (HTTP 429) | – | Zwei Abrufe im Abstand von mehreren Minuten, beide «Too Many Requests» |
+| UNO – Medienmitteilungen | https://press.un.org/en | ✅ OK | 0 | KI-Themen erst am 24.11. (Second Committee, Sicherheitsrat) – Kandidaten für KW 48 |
 | EU AI Act – Kommission | https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai | ✅ OK | 0 | Statische Übersicht (Referenz) |
-| EU Digital Strategy – News | https://digital-strategy.ec.europa.eu/en/news | ✅ OK | ~5 | Art.-27-Vorlage (16.11.) übernommen; Apply AI Summit (16.11.), Temu-DSA (17.11.), Bildungs-Konsortium (20.11.) nicht |
+| EU Digital Strategy – News | https://digital-strategy.ec.europa.eu/en/news | ✅ OK | 14 | Ohne Parameter nur 1 Treffer (25.11.) sichtbar; mit `?page=0`/`?page=1` vollständig. Art.-27-Vorlage (16.11.) übernommen; Apply AI Summit (16.11.), Aufruf an europäische KI-Anbieter (17.11.), Temu-DSA (17.11.) nicht |
 | Mistral AI News | https://mistral.ai/news | ✅ OK | 0 | Letzter Eintrag 5.11.2026 |
-| Bund – Digitale Schweiz (BAKOM) | https://www.bakom.admin.ch | ✅ OK | 0 | Keine KI-Meldung im Zeitraum |
-| EDÖB – Mitteilungen | https://www.edoeb.admin.ch/de/mitteilungen | ✅ OK | 0 | Keine Mitteilung im Zeitraum |
+| Bund – Digitale Schweiz (BAKOM) | https://www.bakom.admin.ch | ✅ OK | 0 | Medienförderung (18.11.), keine KI-Meldung |
+| EDÖB – Mitteilungen | https://www.edoeb.admin.ch/de/mitteilungen | ✅ OK | 0 | Keine Mitteilung im Zeitraum (6.11., dann 24.11. – Personalie) |
 | Swiss AI Initiative (ETH/EPFL) | https://www.swiss-ai.org | ✅ OK | 0 | Keine datierten neuen Meldungen |
-| Swiss AI Anwenderverband | https://www.swissai.ch/blog | ✅ OK | 0–1 | Praxisbeispiel – nicht übernommen |
-| inside-it.ch | https://www.inside-it.ch | ✅ OK | ~5 | Fedpol beschafft Anti-Deepfake-Modul für E-ID (19.11.) – Beschaffung, Sekundärquelle, gestrichen; BACS zu KI-Angriffen erst 25.11. (KW 48) |
-| Netzwoche | https://www.netzwoche.ch | ✅ OK | ~5 | Keine Top-News |
-| swissinfo.ch | https://www.swissinfo.ch | ✅ OK | ~1 | Keine Top-News |
-| Alibaba Cloud Press Room (neu, Nachtest) | https://www.alibabacloud.com/press-room | ✅ OK | 1 | Nach Freigabe des Hosts HTTP 200. Liste neueste zuerst, aber ohne Datum; Datum steht im Artikel. Qwen4-Max (16.11.) direkt aus Primärquelle bestätigt, Eintrag angepasst |
-| Websuche (CRITERIA) | WebSearch | ✅ OK | 1 | Gesucht: Alibaba/Qwen, DeepSeek, Moonshot/Kimi, Zhipu/GLM, MiniMax, Baidu/ERNIE, ByteDance, Tencent. Treffer in der Woche: **Qwen4-Max (16.11.)**, bestätigt durch Alibaba-Cloud-Pressemitteilung, SCMP, Constellation Research, Techloy → übernommen. ERNIE 5.5 Flash (12.11.) liegt in KW 46. Alibaba-Cloud-Seite im ersten Durchgang vom Environment blockiert, im Nachtest erreichbar. |
+| Swiss AI Anwenderverband | https://www.swissai.ch/blog | ✅ OK | 1 | Weekly Case (20.11.) – Praxisbeispiel, nicht übernommen |
+| inside-it.ch | https://www.inside-it.ch | ✅ OK | ~6 | Fedpol Anti-Deepfake-Modul für E-ID (19.11.) – Beschaffung, gestrichen; Cyberangriff Baselbieter Verwaltung (20.11.) – kein KI-Bezug |
+| Netzwoche | https://www.netzwoche.ch | ✅ OK | ~5 | KI-Cyberangriff auf EU-Kommission (20.11.) → Europa übernommen; NDB-KI-Software, BACS zu KI-Agenten erst 24./25.11. (KW 48) |
+| swissinfo.ch | https://www.swissinfo.ch | ✅ OK | 0 | Anthropic-Büro in Zürich erst 25.11. (KW 48, «reportedly») |
+| Websuche (CRITERIA) | WebSearch | ✅ OK | 2 | Gesucht: Alibaba/Qwen, DeepSeek, Moonshot/Kimi, Zhipu/GLM, MiniMax, Baidu/ERNIE, ByteDance, Tencent. Treffer in der Woche: Qwen4-Max (16.11., Alibaba Cloud, SCMP, Constellation Research, Techloy). Keine neuen Modelle von DeepSeek, Kimi, GLM, MiniMax, ByteDance; ERNIE 5.5 Flash (12.11.) und Tencent Hy4 (4.11.) ausserhalb. Zusätzlich abgesichert: Klage Kaliforniens gegen OpenAI (KPBS/NPR, BleepingComputer, SF Standard) und KI-Angriff auf EU-Kommission (AP, The Register, Brussels Times). oag.ca.gov und kpbs.org vom Environment blockiert. |
 
 ## Zusammenfassung
-- Quellen geprüft: 41, davon OK: 37, teilweise: 4, Fehler: 0
-- Kandidaten vor Filter: 17, Einträge nach Filter: 6 (Global 5 – davon Werkzeuge 3, Weltweit 2 –, Europa 1, Schweiz 0, Auf dem Radar 0)
-- Platzregel: zwei starke weltweite Meldungen (Alibaba Qwen4-Max, Microsoft MAI), daher 3 Werkzeug-Einträge. Gestrichen u. a.: Gemini Notebook interaktive Sites, Gemini API Tool Retrieval, Genie 4, Tencent Hy4 flash (kleineres offenes Modell, Rang 3 bei Weltweit), Inkling 2 Mini.
-- Breaking-News-Regel: Einträge ohne Parameter, Token-Preise, Modell-IDs und Abo-Stufen; max. eine Zahl pro Eintrag.
-- Nicht in KW 47: Nvidia-CEO-Rücktritt (12.11.), Gemini 4 Hydrogen (12.11.), ERNIE 5.5 Flash (12.11.).
+- Quellen geprüft: 42, davon OK: 37, teilweise: 4, Fehler: 1 (Rest of World, HTTP 429)
+- Kandidaten vor Filter: 23, Einträge nach Filter: 7 (Global 5 – davon Werkzeuge 3, Weltweit 2 –, Europa 2, Schweiz 0, Auf dem Radar 0)
+- Platzregel: zwei starke weltweite Meldungen (Alibaba Qwen4-Max, Microsoft MAI), daher 3 Werkzeug-Einträge (Anthropic-IPO, Klage gegen OpenAI, Gemini 4 Neon). Gestrichen u. a.: GPT-6.2 Astra/Sol, Gemini Tasks gratis, Computer use für Mac, Gemini Notebook interaktive Sites, Tool Retrieval, Genie 4, Claude-Text-Wasserzeichen, OpenAI-Distillation-Bericht.
+- Neue Regeln: Benchmark-Vergleich bei Neon (frühere Version «nahe an Claude Opus 5.5») entfernt; Privatplatzierung beim IPO als Zweitthema weggelassen; Nvidia/Jensen Huang (Personalie) und Trump-Xi-Absprache (Aussage, kein Text veröffentlicht) ausgeschlossen.
+- US-Exportregel für Fernzugriff auf KI-Chips (16.11.) nur über Last Week in AI gefunden, Primärquelle nicht geprüft – nicht übernommen.
 
 ## Vorschläge
-- ~~Alibaba Cloud Press Room als Quelle~~ – umgesetzt, Host freigegeben, Nachtest OK.
-- *(umgesetzt)* **Tencent – Hugging Face API:** auch `limit=40` reicht nicht (27 neue Modelle in einer Woche, v. a. WeMM-Ecom-Varianten). Vorschlag: zusätzlich `&search=Hy` an die URL hängen, z. B. https://huggingface.co/api/models?author=tencent&search=Hy&sort=createdAt&direction=-1&limit=20
-- *(umgesetzt)* **Gemini API Changelog** war diesmal ohne JavaScript lesbar – den Hinweis «lädt nur per JavaScript» in SOURCES.md beim nächsten Lauf nochmals prüfen.
-- *(umgesetzt)* **Google-Blog-Sitemap:** `lastmod` ändert sich bei nachträglichen Updates (Neon: 24.11. statt 18.11.); den Filter auf ±7 Tage erweitern und das Datum im Artikel prüfen.
+- **Rest of World:** liefert wiederholt HTTP 429. Vorschlag: RSS-Feed testen (https://restofworld.org/feed/) oder vorübergehend unter «Ausgesetzt» führen.
+- **EU Digital Strategy – News:** Die Seite ohne Parameter zeigte nur einen Treffer; `https://digital-strategy.ec.europa.eu/en/news?page=0` lieferte die vollständige Liste. Vorschlag: URL in SOURCES.md mit `?page=0` hinterlegen.
+- **Kalifornien Attorney General:** `oag.ca.gov` ist vom Environment blockiert. Für Klagen/Regulierung in den USA als Primärquelle freigeben (https://oag.ca.gov/news) und ggf. in SOURCES.md aufnehmen.
+- **Hugging Face Blog:** Datumsangaben im HTML nicht auswertbar; Vorschlag: Feed https://huggingface.co/blog/feed.xml verwenden.
