@@ -37,6 +37,6 @@ Lena: Die Abschätzig müesse gwüssi Betriber vo Höchrisiko-KI-System mache. D
 
 Marc: Rückmäldige si bis Mitti Januar müglech. U wär d Vorlag i dr Praxis wott teschte, cha sech bis am vierte Dezämber bim AI Office mäude.
 
-Lena: I dr Schwiz isch es die Wuche ruhig gsi. Weder dr EDÖB no ds BAKOM no d Swiss AI Initiative hei öppis zu KI publiziert, mir hei kener Top-News gfunde.
+Lena: I dr Schwiz hets die Wuche kener Top-News gä.
 
 Marc: Das isch üse Radar für die Wuche gsi, merci fürs Zuelose. Tschüss zäme.

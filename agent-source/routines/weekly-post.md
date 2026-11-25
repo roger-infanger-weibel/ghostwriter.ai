@@ -153,7 +153,8 @@ Marc: ...
     klar als noch nicht verfügbar bzw. angekündigt bezeichnet
   - Abschluss: 1 Satz + «Tschüss zäme» (≈ 20 Wörter), keine Zusammenfassung
 - **Auffüllen statt kürzer werden:** Hat eine Region wenig oder nichts (z. B. Schweiz-Quellen
-  nicht erreichbar, ruhige Woche in Europa), dort ein bis zwei Sätze sagen und die frei
+  nicht erreichbar, ruhige Woche in Europa), dort nur einen kurzen Satz sagen (z. B. «I dr Schwiz hets die Wuche kener Top-News gä.») –
+  **keine Aufzählung**, welche Quellen oder Behörden nichts publiziert haben – und die frei
   gewordene Zeit mit den anderen Meldungen füllen: zuerst alle Global-Einträge des Posts
   aufnehmen, dann pro Meldung mehr Kontext aus dem Post erzählen (was genau ist neu, für wen
   verfügbar, was ändert sich für Nutzerinnen und Nutzer, warum ist es wichtig).

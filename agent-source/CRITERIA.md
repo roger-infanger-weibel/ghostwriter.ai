@@ -150,6 +150,10 @@ agentischen Systemen."
 | **Global** | 5 | Werkzeuge 3–4, Weltweit bis 2 (Platzregel) |
 | **Europa** | 3 | EU AI Act, wenn aktiv; sonst "Keine Top-News" OK |
 | **Schweiz** | 3 | PLS-News, EDÖB, Behörden; sonst "Keine Top-News" OK |
+
+**Region ohne Meldung:** Im Post nur die Zeile «Keine Top-News.» – **keine Aufzählung**, welche
+Seiten geprüft wurden oder nichts hatten. Diese Details gehören nur in den Quellen-Report bzw. die
+Commit-Message.
 | **Auf dem Radar** | 2 | optional; Abschnitt weglassen, wenn nichts Passendes |
 
 ### Sprache & Stil
