@@ -5,7 +5,7 @@ description: >-
   Anthropic und eine Konsultation zur Grundrechte-Folgenabschätzung im EU AI Act.
 ---
 
-Lena: Grüessech u willkomme bim Rogers KI-Radar, Kalenderwuche sibenevierzg. Dä Podcast isch mit KI erstellt worde u wird ou vo KI-Persone verzeut. D Quellen findet dir i de Shownotes.
+Lena: Grüessech u willkomme bim KI-Radar, Kalenderwuche sibenevierzg. Dä Podcast isch mit KI erstellt worde u wird ou vo KI-Persone verzeut. D Quellen findet dir i de Shownotes.
 
 Marc: Mir fö global a. OpenAI het zwöi nöii Modäll usegä: GPT sächs Punkt zwöi Astra u GPT sächs Punkt zwöi Sol.
 

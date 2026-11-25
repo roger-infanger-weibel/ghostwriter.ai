@@ -133,7 +133,7 @@ description: >-
   <2–3 Sätze Zusammenfassung für die Podcast-App, ohne Links>
 ---
 
-Lena: Grüessech u willkomme bim Rogers KI-Radar, Kalenderwuche ...
+Lena: Grüessech u willkomme bim KI-Radar, Kalenderwuche ...
 Marc: ...
 ```
 
@@ -145,7 +145,7 @@ Marc: ...
   (kostet kein API-Kontingent), bevor das Audio erzeugt wird.
 - **Aufteilung (Richtwerte):**
   - Intro (≈ 30 Wörter), immer mit diesem Wortlaut am Anfang: «Grüessech u willkomme bim
-    Rogers KI-Radar, Kalenderwuche <Zahl uf Bärndütsch usgschribe, z. B. sibenevierzg>.»
+    KI-Radar, Kalenderwuche <Zahl uf Bärndütsch usgschribe, z. B. sibenevierzg>.»
     Danach der Hinweis «Dä Podcast isch mit KI erstellt worde u wird ou vo KI-Persone verzeut.
     D Quellen findet dir i de Shownotes.»
   - Global ≈ 1 Minute, Europa ≈ 1 Minute, Schweiz ≈ 1 Minute
@@ -161,6 +161,8 @@ Marc: ...
   Länge stimmt.
 - Höchstens eine Kennzahl pro Meldung, keine Preistabellen, Breaking-Change-Listen oder
   Token-Zahlen.
+- **Kein Name «Roger»** im gesprochenen Text – weder in Begrüssung, Abschluss noch sonst im Skript
+  (auch nicht «Rogers KI-Radar»; der Podcast heisst gesprochen nur «KI-Radar»).
 - Reihenfolge fix: Intro → Global → Europa → Schweiz → Auf dem Radar (optional) → Abschluss.
 - Sprecher `Lena` und `Marc`, jede Zeile beginnt mit `Lena:` oder `Marc:`. Optional Stil in eckigen Klammern: `Marc [überrascht]: ...`. Kurze, abwechselnde Wortmeldungen, kein Smalltalk.
 - **Inhalt nur aus dem Post.** Keine zusätzlichen Fakten, Zahlen oder Wertungen, keine Superlative.
