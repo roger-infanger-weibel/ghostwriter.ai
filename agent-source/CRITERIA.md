@@ -153,11 +153,11 @@ Beispiel: "Claude 3.6 mit besserer Reasoning-Fähigkeit könnte die Vorhersage-G
 Parking-Forecasting-Modells verbessern. Zudem relevant für mein CAS-Projekt zur Fehlertoleranz in
 agentischen Systemen."
 
-## Nicht erreichbare Quellen
-
-- [Gemini API Release Notes](https://ai.google.dev/release-notes) – 403 Forbidden
-- Oder: "keine"
 ```
+
+**Kein Abschnitt «Nicht erreichbare Quellen»** im Post – weder im Test noch produktiv. Der Post endet
+mit «Für mich relevant». Nicht erreichbare Quellen stehen nur im Quellen-Report (Test) bzw. in der
+Commit-Message (produktiv).
 
 ---
 
@@ -195,7 +195,7 @@ Commit-Message.
 - [ ] Jeder Eintrag: Titel + 2–3 Sätze (Was ist passiert? Warum wichtig?) + Link
 - [ ] Keine Modell-Details: keine Parameter, Preise, Token, Modell-IDs, Abo-Stufen, Benchmarks
 - [ ] "Für mich relevant" Sektion: Mit Bezug zu Parking-Forecasting / CAS / Claude-Config
-- [ ] "Nicht erreichbare Quellen": Liste oder "keine"
+- [ ] Kein Abschnitt «Nicht erreichbare Quellen» (Post endet mit «Für mich relevant»)
 - [ ] Umfang: Global max. 5 (Werkzeuge 3–4, Weltweit bis 2), Europa max. 3, Schweiz max. 3
 - [ ] Weltweit: gezielt nach Qwen, DeepSeek, Kimi, GLM, Tencent, ERNIE, ByteDance, MiniMax gesucht
 - [ ] Auf dem Radar: nur noch nicht Verfügbares
