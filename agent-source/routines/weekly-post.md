@@ -45,6 +45,10 @@ Wende Rogers Regeln an:
 - Ankündigungen ohne Verfügbarkeit ("coming soon")
 - Benchmarks jeder Art (Ergebnisse, Ranglisten-Plätze, «so gut wie Modell X»)
 - Funding-News
+- **Fokus Software – keine Hardware-News:** KI-Chips und Prozessoren, Server, Rechenzentren und
+  deren Ausbau, Geräte (Smartphones, Brillen, PCs, Roboter-Hardware), Chip-Exportregeln und
+  Halbleiter-Deals kommen nicht in den Post. Gefragt sind Software, Modelle, Dienste, Werkzeuge,
+  Sicherheit und Regulierung von KI-Software.
 - Personenbezogene News: Personalwechsel inkl. CEO, Aussagen/Interviews/Posts einzelner Personen
 - Meiningsartikel
 
@@ -263,7 +267,7 @@ Details
 - [ ] Abschnitte: `## Global`, `## Europa`, `## Schweiz` (in dieser Reihenfolge), optional `## Auf dem Radar` (max. 2)
 - [ ] Jeder Eintrag: Titel + 2–3 Sätze (Was ist passiert? Warum wichtig?) + [Link](URL)
 - [ ] Keine Modell-Details (Parameter, Preise, Token, Modell-IDs, Abo-Stufen, Benchmarks)
-- [ ] Keine personenbezogenen News, ein Thema pro Eintrag
+- [ ] Keine personenbezogenen News, ein Thema pro Eintrag, keine Hardware-News
 - [ ] Sektion "Für mich relevant": 2–4 Sätze mit Parking/CAS/Claude-Bezug
 - [ ] Kein Abschnitt «Nicht erreichbare Quellen» im Post
 - [ ] Umfang: Global ≤ 5 (Werkzeuge ≤ 4, Weltweit 1–2 wenn vorhanden), Europa ≤ 3, Schweiz ≤ 3

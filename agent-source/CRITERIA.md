@@ -45,6 +45,10 @@ Gefragt ist, **was die Nachricht der Woche ist** – nicht das Datenblatt.
 - Ankündigungen ohne Verfügbarkeit oder Datum ("coming soon")
 - Dinge ohne Primärquelle oder Link
 - normale Release Updates ohne major changes
+- **Fokus Software – keine Hardware-News:** KI-Chips und Prozessoren, Server, Rechenzentren und
+  deren Ausbau, Geräte (Smartphones, Brillen, PCs, Roboter-Hardware), Chip-Exportregeln und
+  Halbleiter-Deals kommen nicht in den Post. Gefragt sind Software, Modelle, Dienste, Werkzeuge,
+  Sicherheit und Regulierung von KI-Software.
 - **Modell-Verbesserungen:** Dass Modelle besser, schneller oder günstiger werden,
   ist der Normalfall und keine Top-News – auch nicht bei OpenAI, Anthropic oder Google. Das gilt
   für Versionssprünge wie «6.1 → 6.2», neue Varianten (Flash, Mini, Pro …) und Preissenkungen.
@@ -212,6 +216,7 @@ Commit-Message.
 - [ ] Keine Modell-Details: keine Parameter, Preise, Token, Modell-IDs, Abo-Stufen, Benchmarks
 - [ ] Keine personenbezogenen News (Personalwechsel inkl. CEO, Aussagen einzelner Personen)
 - [ ] Ein Thema pro Eintrag (keine angehängten Zweitmeldungen)
+- [ ] Keine Hardware-News (Chips, Rechenzentren, Geräte, Chip-Exportregeln)
 - [ ] "Für mich relevant" Sektion: Mit Bezug zu Parking-Forecasting / CAS / Claude-Config
 - [ ] Kein Abschnitt «Nicht erreichbare Quellen» (Post endet mit «Für mich relevant»)
 - [ ] Umfang: Global max. 5 (Werkzeuge 3–4, Weltweit bis 2), Europa max. 3, Schweiz max. 3
