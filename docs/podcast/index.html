@@ -78,8 +78,14 @@ a{color:var(--accent)}
 .ctrl span{font-size:13px;color:var(--muted);margin-right:4px}
 .speed,.lang{background:var(--bg);color:var(--ink);border:1px solid var(--line);padding:6px 12px;font-weight:500}
 .lang[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.langs{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:18px}
-.langs span{font-size:14px;color:var(--muted);font-weight:600;margin-right:2px}
+.langs{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:center;margin:0 0 22px;padding:8px;background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.langs .lang{display:inline-flex;align-items:center;gap:7px;border-radius:999px;padding:7px 13px;font:600 14px Inter,sans-serif;cursor:pointer}
+@media (min-width:480px){.langs .lang{padding:8px 16px;font-size:15px;gap:8px}}
+@media (max-width:479px){.langs{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;padding:5px}.langs .lang{justify-content:center;padding:8px 4px;font-size:13px;gap:5px;white-space:nowrap}}
+.langs .lang[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.flag{width:22px;height:16px;border-radius:3px;flex:none;box-shadow:0 0 0 1px rgba(0,0,0,.12)}
+.langs .lang:first-child .flag{width:16px;height:16px}
+.warn[hidden]{display:none}
 .speed[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .eps{list-style:none;margin:16px 0 0;padding:0;border-top:1px solid var(--line);max-height:340px;overflow:auto}
 .eps li{border-bottom:1px solid var(--line)}
@@ -103,47 +109,46 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
 </head>
 <body>
 <main>
+  <div class="langs" role="group" aria-label="Sprache / Language">
+    <button type="button" class="lang" data-lang="be" aria-pressed="true"><svg class="flag" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="4" fill="#d52b1e"/><path d="M13 6h6v7h7v6h-7v7h-6v-7H6v-6h7z" fill="#fff"/></svg>Bärndütsch</button>
+    <button type="button" class="lang" data-lang="de" aria-pressed="false"><svg class="flag" viewBox="0 0 32 24" aria-hidden="true"><rect width="32" height="8" fill="#000"/><rect y="8" width="32" height="8" fill="#dd0000"/><rect y="16" width="32" height="8" fill="#ffce00"/></svg>Deutsch</button>
+    <button type="button" class="lang" data-lang="en" aria-pressed="false"><svg class="flag" viewBox="0 0 60 30" aria-hidden="true"><clipPath id="gbc"><path d="M30,15h30v15zv15h-30zh-30v-15zv-15h30z"/></clipPath><path d="M0,0v30h60v-30z" fill="#012169"/><path d="M0,0 60,30M60,0 0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 60,30M60,0 0,30" clip-path="url(#gbc)" stroke="#C8102E" stroke-width="4"/><path d="M30,0v30M0,15h60" stroke="#fff" stroke-width="10"/><path d="M30,0v30M0,15h60" stroke="#C8102E" stroke-width="6"/></svg>English</button>
+  </div>
+
   <div class="hero">
-    <img src="cover-web.jpg" width="600" height="600" alt="Cover: Rogers KI-Radar – Global, Europa, Schweiz, uf Chuchichäschtlidütsch, jeden Montag, rund 3 Minuten">
+    <img id="cover" src="cover-web.jpg" width="600" height="600" alt="Cover: Rogers KI-Radar – Global, Europa, Schweiz, uf Chuchichäschtlidütsch, jeden Montag, rund 3 Minuten">
     <div class="txt">
-      <div class="kicker"><span class="radar" aria-hidden="true"></span>Podcast · jeden Montag</div>
-      <h1>Rogers KI-Radar</h1>
+      <div class="kicker" data-i18n="kicker"><span class="radar" aria-hidden="true"></span>Podcast · jeden Montag</div>
+      <h1 id="h1">Rogers KI-Radar</h1>
     </div>
   </div>
-  <p class="lead">Die wichtigsten KI-News der Woche – Global, Europa, Schweiz – in rund drei Minuten, auf <span id="langname">Berndeutsch</span>. Kostenlos: <span id="leadsub">Hör auf Spotify rein oder abonniere den Podcast direkt über seinen RSS-Feed in jeder anderen Podcast-App.</span></p>
-  <a class="spotify" id="spotify" href="https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#fff"/><path d="M6.5 9.3c3.6-1.1 8-.8 11 1M7 12.4c3-.9 6.6-.6 9.2.9M7.6 15.3c2.4-.7 5-.5 7.1.7" stroke="#1db954" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>Auf Spotify hören</a>
-
-  <div class="langs" role="group" aria-label="Sprache des Podcasts">
-    <span>Sprache:</span>
-    <button type="button" class="lang" data-lang="be" aria-pressed="true">Bärndütsch</button>
-    <button type="button" class="lang" data-lang="de" aria-pressed="false">Deutsch</button>
-    <button type="button" class="lang" data-lang="en" aria-pressed="false">English</button>
-  </div>
+  <p class="lead" id="lead">Die wichtigsten KI-News der Woche – Global, Europa, Schweiz – in rund drei Minuten, auf Berndeutsch. Kostenlos: Hör auf Spotify rein oder abonniere den Podcast direkt über seinen RSS-Feed in jeder anderen Podcast-App.</p>
+  <a class="spotify" id="spotify" href="https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#fff"/><path d="M6.5 9.3c3.6-1.1 8-.8 11 1M7 12.4c3-.9 6.6-.6 9.2.9M7.6 15.3c2.4-.7 5-.5 7.1.7" stroke="#1db954" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg><span data-i18n="spotifyBtn">Auf Spotify hören</span></a>
 
   <nav class="toc" aria-label="Inhalt">
-    <span>Auf dieser Seite:</span>
-    <a href="#reinhoeren">Reinhören</a>
-    <a href="#abonnieren">Abonnieren</a>
-    <a href="#ablauf">So funktioniert’s</a>
-    <a href="#fragen">Fragen</a>
-    <a href="#feedback">Feedback</a>
+    <span data-i18n="tocLabel">Auf dieser Seite:</span>
+    <a href="#reinhoeren" data-i18n="tocListen">Reinhören</a>
+    <a href="#abonnieren" data-i18n="tocSub">Abonnieren</a>
+    <a href="#ablauf" data-i18n="tocHow">So funktioniert’s</a>
+    <a href="#fragen" data-i18n="tocFaq">Fragen</a>
+    <a href="#feedback" data-i18n="tocFb">Feedback</a>
   </nav>
 
   <div class="feed">
-    <label for="feedurl">Feed-Adresse – kopieren und in deiner Podcast-App einfügen</label>
+    <label for="feedurl" data-i18n="feedLabel">Feed-Adresse – kopieren und in deiner Podcast-App einfügen</label>
     <div class="feedrow">
       <code id="feedurl">https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml</code>
-      <button id="copy" type="button">Kopieren</button>
+      <button id="copy" type="button" data-i18n="copy">Kopieren</button>
     </div>
-    <p class="note" id="copynote">Kopieren klappt nicht? Adresse antippen und gedrückt halten, um sie zu markieren.</p>
+    <p class="note" id="copynote" data-i18n="copyNote">Kopieren klappt nicht? Adresse antippen und gedrückt halten, um sie zu markieren.</p>
   </div>
 
   <section class="player" id="reinhoeren" aria-labelledby="hoeren">
-    <div class="now" id="hoeren">Direkt hier reinhören</div>
+    <div class="now" id="hoeren" data-i18n="listenHere">Direkt hier reinhören</div>
     <div class="nowtitle" id="nowtitle">Folgen werden geladen …</div>
     <audio id="audio" controls preload="none"></audio>
     <div class="ctrl" role="group" aria-label="Geschwindigkeit">
-      <span>Tempo</span>
+      <span data-i18n="speed">Tempo</span>
       <button type="button" class="speed" data-r="1" aria-pressed="true">1×</button>
       <button type="button" class="speed" data-r="1.25" aria-pressed="false">1,25×</button>
       <button type="button" class="speed" data-r="1.5" aria-pressed="false">1,5×</button>
@@ -152,8 +157,8 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
     <p class="pmsg" id="pmsg" hidden></p>
   </section>
 
-  <h2 id="abonnieren">Abonnieren</h2>
-  <p>Wähle dein Gerät. Das Prinzip ist überall gleich: Such in deiner App die Funktion «Podcast per URL hinzufügen» und füge die Feed-Adresse ein.</p>
+  <h2 id="abonnieren" data-i18n="h2Sub">Abonnieren</h2>
+  <p data-i18n="subIntro">Wähle dein Gerät. Das Prinzip ist überall gleich: Such in deiner App die Funktion «Podcast per URL hinzufügen» und füge die Feed-Adresse ein.</p>
 
   <div class="tabs" role="tablist" aria-label="Plattform">
     <button class="tab" role="tab" id="t-apple" aria-controls="p-apple" aria-selected="true">Apple</button>
@@ -163,7 +168,7 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
     <button class="tab" role="tab" id="t-web" aria-controls="p-web" aria-selected="false" tabindex="-1">Web</button>
   </div>
 
-  <section class="panel" role="tabpanel" id="p-apple" aria-labelledby="t-apple">
+  <section class="panel" role="tabpanel" id="p-apple" aria-labelledby="t-apple" data-i18n="pApple">
     <h3>iPhone und iPad – Apple Podcasts <span class="tag">vorinstalliert</span></h3>
     <ol>
       <li>Kopiere oben die Feed-Adresse.</li>
@@ -181,7 +186,7 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
     <p>Overcast und Pocket Casts nehmen ebenfalls eigene Feeds an: Füge die URL jeweils über das <b>+</b> bzw. die Suche ein.</p>
   </section>
 
-  <section class="panel" role="tabpanel" id="p-android" aria-labelledby="t-android" hidden>
+  <section class="panel" role="tabpanel" id="p-android" aria-labelledby="t-android" hidden data-i18n="pAndroid">
     <h3>AntennaPod <span class="tag">gratis, Open Source</span></h3>
     <ol>
       <li>Installiere AntennaPod aus dem Play Store oder von F-Droid.</li>
@@ -198,7 +203,7 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
     <p>Bei beiden kannst du die URL direkt ins Suchfeld einfügen bzw. unter «Podcast hinzufügen → RSS-Feed».</p>
   </section>
 
-  <section class="panel" role="tabpanel" id="p-windows" aria-labelledby="t-windows" hidden>
+  <section class="panel" role="tabpanel" id="p-windows" aria-labelledby="t-windows" hidden data-i18n="pWindows">
     <h3>Pocket Casts (Desktop-App oder Web)</h3>
     <ol>
       <li>Installiere Pocket Casts oder öffne es im Browser und melde dich an.</li>
@@ -214,7 +219,7 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
     <p class="note">Windows hat keine eingebaute Podcast-App. Willst du nichts installieren, nimm den Weg im Tab «Web».</p>
   </section>
 
-  <section class="panel" role="tabpanel" id="p-linux" aria-labelledby="t-linux" hidden>
+  <section class="panel" role="tabpanel" id="p-linux" aria-labelledby="t-linux" hidden data-i18n="pLinux">
     <h3>gPodder <span class="tag">in den meisten Distributionen</span></h3>
     <ol>
       <li>Installiere es, z. B. mit <code>sudo apt install gpodder</code> oder via Flathub.</li>
@@ -227,7 +232,7 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
     <p>Arbeitest du gern im Terminal? Nimm <code>newsboat</code> mit <code>podboat</code> und trag die Feed-URL in <code>~/.newsboat/urls</code> ein.</p>
   </section>
 
-  <section class="panel" role="tabpanel" id="p-web" aria-labelledby="t-web" hidden>
+  <section class="panel" role="tabpanel" id="p-web" aria-labelledby="t-web" hidden data-i18n="pWeb">
     <h3>YouTube Music im Browser</h3>
     <ol>
       <li>Öffne <a href="https://music.youtube.com/library/podcasts">music.youtube.com/library/podcasts</a> und melde dich an.</li>
@@ -240,11 +245,11 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
     <p>Du willst nur die neuste Folge hören? <a id="feedlink" href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml">Öffne den Feed</a> und klick auf den MP3-Link der obersten Episode. Shownotes und Quellen findest du in meinem <a href="https://github.com/roger-infanger-weibel/ghostwriter.ai/tree/main/posts">GitHub-Repository</a>.</p>
   </section>
 
-  <div class="warn"><b>Spotify:</b> Dort findest du den Podcast unter <a href="https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY" target="_blank" rel="noopener">diesem Link</a> – einfach öffnen und auf «Folgen» tippen. Neue Folgen erscheinen auf Spotify meist ein paar Stunden nach der Veröffentlichung im Feed. Die Feed-Adresse oben brauchst du dafür nicht.</div>
+  <div class="warn" id="spotwarn" data-i18n="warn"><b>Spotify:</b> Dort findest du den Podcast unter <a class="spotlink" href="https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY" target="_blank" rel="noopener">diesem Link</a> – einfach öffnen und auf «Folgen» tippen. Neue Folgen erscheinen auf Spotify meist ein paar Stunden nach der Veröffentlichung im Feed. Die Feed-Adresse oben brauchst du dafür nicht.</div>
 
-  <h2 id="ablauf">So funktioniert’s</h2>
-  <p>Technisch ist ein Podcast nichts anderes als eine öffentliche Liste (der RSS-Feed) mit Links auf MP3-Dateien. Deine App schaut regelmässig in diese Liste und lädt neue Folgen selbständig herunter. Dazwischen steht keine Plattform – nur eine Datei auf GitHub.</p>
-  <ol class="flow">
+  <h2 id="ablauf" data-i18n="h2How">So funktioniert’s</h2>
+  <p data-i18n="howIntro">Technisch ist ein Podcast nichts anderes als eine öffentliche Liste (der RSS-Feed) mit Links auf MP3-Dateien. Deine App schaut regelmässig in diese Liste und lädt neue Folgen selbständig herunter. Dazwischen steht keine Plattform – nur eine Datei auf GitHub.</p>
+  <ol class="flow" data-i18n="flow">
     <li><b>Montag, 06:00 – Recherche</b><span>Meine automatisierte Claude-Routine sammelt die KI-News der Vorwoche aus kuratierten Quellen und schreibt den Wochenrückblick.</span></li>
     <li><b>Skript</b><span>Daraus entsteht ein kurzer Dialog mit den Highlights: Global, Europa, Schweiz – je Region höchstens eine Minute.</span></li>
     <li><b>Stimmen</b><span>Gemini TTS spricht das Skript mit zwei synthetischen Stimmen, Lena und Marc. Das Ergebnis ist eine MP3-Datei.</span></li>
@@ -252,8 +257,8 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
     <li><b>Deine App</b><span>Sie bemerkt den neuen Eintrag im Feed und lädt die Folge herunter – meist innerhalb weniger Stunden, je nach App.</span></li>
   </ol>
 
-  <h2 id="fragen">Fragen</h2>
-  <dl>
+  <h2 id="fragen" data-i18n="h2Faq">Fragen</h2>
+  <dl data-i18n="faq">
     <dt>Wann kommt eine neue Folge?</dt>
     <dd>Jeden Montagmorgen, mit den News der Kalenderwoche davor.</dd>
     <dt>Was kostet dich das?</dt>
@@ -266,13 +271,13 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
     <dd>Öffne in der App den Podcast und wähle «Nicht mehr folgen» bzw. «Abo beenden». Mehr ist nicht nötig.</dd>
   </dl>
 
-  <h2 id="feedback">Dein Feedback</h2>
-  <div class="feedback">
+  <h2 id="feedback" data-i18n="h2Fb">Dein Feedback</h2>
+  <div class="feedback" data-i18n="fb">
     <p>Der Podcast ist ein persönliches Experiment, und ich freue mich über jede Rückmeldung: Was ist dir zu lang oder zu kurz, welche Themen fehlen, wie wirken die Stimmen auf dich, und hat das Abonnieren auf deinem Gerät geklappt?</p>
     <p>Schreib mir am einfachsten eine Nachricht auf <a id="linkedin" href="https://www.linkedin.com/search/results/people/?keywords=Roger%20Infanger%20Weibel">LinkedIn</a> – oder sag es mir direkt, wenn wir uns sehen.</p>
   </div>
 
-  <footer>Rogers KI-Radar · von mir, Roger Infanger Weibel · Recherche und Skript mit Claude, Stimmen mit Gemini TTS · <a href="https://github.com/roger-infanger-weibel/ghostwriter.ai">Quellcode auf GitHub</a></footer>
+  <footer data-i18n="footer">Rogers KI-Radar · von mir, Roger Infanger Weibel · Recherche und Skript mit Claude, Stimmen mit Gemini TTS · <a href="https://github.com/roger-infanger-weibel/ghostwriter.ai">Quellcode auf GitHub</a></footer>
 </main>
 
 <script>
@@ -280,8 +285,8 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
   var btn=document.getElementById('copy');
   btn.addEventListener('click',function(){
     var url=document.getElementById('feedurl').textContent.trim();
-    function ok(){btn.textContent='Kopiert ✓';btn.classList.add('copied');setTimeout(function(){btn.textContent='Kopieren';btn.classList.remove('copied');},2200);}
-    function fail(){var r=document.createRange();r.selectNodeContents(document.getElementById('feedurl'));var s=getSelection();s.removeAllRanges();s.addRange(r);document.getElementById('copynote').textContent='Adresse ist markiert – jetzt mit Ctrl/Cmd+C bzw. «Kopieren» übernehmen.';}
+    var T=window.PODCAST_UI();function ok(){btn.textContent=T.copied;btn.classList.add('copied');setTimeout(function(){btn.textContent=T.copy;btn.classList.remove('copied');},2200);}
+    function fail(){var r=document.createRange();r.selectNodeContents(document.getElementById('feedurl'));var s=getSelection();s.removeAllRanges();s.addRange(r);document.getElementById('copynote').textContent=T.selected;}
     try{navigator.clipboard.writeText(url).then(ok,fail);}catch(e){fail();}
   });
 
@@ -310,15 +315,26 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
   (function(){
     var BASE='https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/';
     // spotify: Link zur Sendung pro Sprache; leer = Spotify-Button ausblenden
-    var LANGS={be:{feed:'feed.xml',name:'Berndeutsch',spotify:'https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY'},
-               de:{feed:'feed-de.xml',name:'Hochdeutsch',spotify:''},
-               en:{feed:'feed-en.xml',name:'Englisch',spotify:''}};
+    var LANGS={be:{feed:'feed.xml',name:'Berndeutsch',ui:'de',cover:'cover-web.jpg',spotify:'https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY'},
+               de:{feed:'feed-de.xml',name:'Hochdeutsch',ui:'de',cover:'cover-web-de.jpg',spotify:''},
+               en:{feed:'feed-en.xml',name:'English',ui:'en',cover:'cover-web-en.jpg',spotify:''}};
+    var EN={"kicker": "<span class=\"radar\" aria-hidden=\"true\"></span>Podcast · every Monday", "spotifyBtn": "Listen on Spotify", "tocLabel": "On this page:", "tocListen": "Listen", "tocSub": "Subscribe", "tocHow": "How it works", "tocFaq": "Questions", "tocFb": "Feedback", "feedLabel": "Feed address – copy it and paste it into your podcast app", "copy": "Copy", "copyNote": "Copying doesn’t work? Tap and hold the address to select it.", "listenHere": "Listen right here", "speed": "Speed", "h2Sub": "Subscribe", "subIntro": "Choose your device. The principle is the same everywhere: look for «Add podcast by URL» in your app and paste the feed address.", "pApple": "\n    <h3>iPhone and iPad – Apple Podcasts <span class=\"tag\">pre-installed</span></h3>\n    <ol>\n      <li>Copy the feed address above.</li>\n      <li>Open the <b>Podcasts</b> app and tap <b>Library</b> at the bottom.</li>\n      <li>Tap <b>«…»</b> in the top right and choose <b>«Follow a Show by URL…»</b>.</li>\n      <li>Paste the address and tap <b>Follow</b>.</li>\n    </ol>\n    <h3>Mac – Apple Podcasts</h3>\n    <ol>\n      <li>Open the <b>Podcasts</b> app.</li>\n      <li>In the menu bar choose <b>File → «Follow a Show by URL…»</b>.</li>\n      <li>Paste the address and confirm.</li>\n    </ol>\n    <h3>Alternatives</h3>\n    <p>Overcast and Pocket Casts also accept custom feeds: paste the URL via <b>+</b> or the search field.</p>\n  ", "pAndroid": "\n    <h3>AntennaPod <span class=\"tag\">free, open source</span></h3>\n    <ol>\n      <li>Install AntennaPod from the Play Store or F-Droid.</li>\n      <li>Tap <b>Add podcast</b> and choose <b>«Add podcast by RSS address»</b>.</li>\n      <li>Paste the feed address, tap <b>Confirm</b> and then <b>Subscribe</b>.</li>\n    </ol>\n    <h3>YouTube Music</h3>\n    <ol>\n      <li>Open the <b>Library</b> and choose the <b>Podcasts</b> filter at the top.</li>\n      <li>Tap <b>Add podcast</b> in the bottom right.</li>\n      <li>Choose <b>«Add podcast by RSS feed»</b>, confirm the notice, paste the address and tap <b>Add</b>.</li>\n    </ol>\n    <h3>Pocket Casts, Podcast Addict</h3>\n    <p>In both you can paste the URL straight into the search field, or use «Add podcast → RSS feed».</p>\n  ", "pWindows": "\n    <h3>Pocket Casts (desktop app or web)</h3>\n    <ol>\n      <li>Install Pocket Casts or open it in your browser and sign in.</li>\n      <li>Paste the feed address into the search field.</li>\n      <li>Open the podcast it finds and click <b>Subscribe</b>.</li>\n    </ol>\n    <h3>gPodder <span class=\"tag\">free, open source</span></h3>\n    <ol>\n      <li>Download gPodder from gpodder.github.io and install it.</li>\n      <li>In the menu choose <b>Subscriptions → «Add podcast via URL»</b>.</li>\n      <li>Paste the address and click <b>Add</b>.</li>\n    </ol>\n    <p class=\"note\">Windows has no built-in podcast app. If you don’t want to install anything, use the «Web» tab.</p>\n  ", "pLinux": "\n    <h3>gPodder <span class=\"tag\">in most distributions</span></h3>\n    <ol>\n      <li>Install it, e.g. with <code>sudo apt install gpodder</code> or via Flathub.</li>\n      <li>In the menu choose <b>Subscriptions → «Add podcast via URL»</b>.</li>\n      <li>Paste the address and click <b>Add</b>.</li>\n    </ol>\n    <h3>Kasts (KDE) or Rhythmbox (GNOME)</h3>\n    <p>Kasts: choose <b>Discover → «Add podcast»</b> and paste the URL. Rhythmbox: open the <b>Podcasts</b> section and choose <b>«New Podcast Feed»</b>.</p>\n    <h3>Command line</h3>\n    <p>Prefer the terminal? Use <code>newsboat</code> with <code>podboat</code> and add the feed URL to <code>~/.newsboat/urls</code>.</p>\n  ", "pWeb": "\n    <h3>YouTube Music in the browser</h3>\n    <ol>\n      <li>Open <a href=\"https://music.youtube.com/library/podcasts\">music.youtube.com/library/podcasts</a> and sign in.</li>\n      <li>Choose <b>+ Add podcast → «Add RSS feed»</b>.</li>\n      <li>Paste the address. The podcast then also appears in the app on your phone – including on iPhone.</li>\n    </ol>\n    <h3>Pocket Casts Web</h3>\n    <p>Open <a href=\"https://play.pocketcasts.com\">play.pocketcasts.com</a>, paste the feed address into the search field and subscribe. The web version syncs with the phone app.</p>\n    <h3>No app at all</h3>\n    <p>Just want the latest episode? <a id=\"feedlink\" href=\"feed-en.xml\">Open the feed</a> and click the MP3 link of the top episode. Show notes and sources are in my <a href=\"https://github.com/roger-infanger-weibel/ghostwriter.ai/tree/main/posts\">GitHub repository</a>.</p>\n  ", "warn": "<b>Spotify:</b> You’ll find the podcast at <a class=\"spotlink\" href=\"#\" target=\"_blank\" rel=\"noopener\">this link</a> – just open it and tap «Follow». New episodes usually appear on Spotify a few hours after they are published in the feed. You don’t need the feed address above for this.", "h2How": "How it works", "howIntro": "Technically, a podcast is nothing more than a public list (the RSS feed) with links to MP3 files. Your app checks this list regularly and downloads new episodes on its own. There is no platform in between – just a file on GitHub.", "flow": "\n    <li><b>Monday, 06:00 – Research</b><span>My automated Claude routine collects the previous week’s AI news from curated sources and writes the weekly review.</span></li>\n    <li><b>Script</b><span>It is turned into a short dialogue with the highlights: global, Europe, Switzerland.</span></li>\n    <li><b>Voices</b><span>Gemini TTS reads the script with two synthetic voices, Lena and Marc – in Bernese German, German and English. The result is an MP3 file per language.</span></li>\n    <li><b>Publishing</b><span>The MP3s and updated feeds land in my GitHub repository; GitHub Pages makes them public.</span></li>\n    <li><b>Your app</b><span>It notices the new entry in the feed and downloads the episode – usually within a few hours, depending on the app.</span></li>\n  ", "h2Faq": "Questions", "faq": "\n    <dt>When is a new episode released?</dt>\n    <dd>Every Monday morning, with the news of the previous calendar week.</dd>\n    <dt>What does it cost you?</dt>\n    <dd>Nothing. You don’t need an account, there are no ads and no tracking by a podcast host.</dd>\n    <dt>Who can see that you’re listening?</dt>\n    <dd>When you download an episode, GitHub as the host sees your IP address, as with any website. I don’t receive any listener statistics.</dd>\n    <dt>The new episode doesn’t show up?</dt>\n    <dd>Pull down the episode list in your app or choose «Refresh». Some apps only check custom feeds every few hours.</dd>\n    <dt>How do you unsubscribe?</dt>\n    <dd>Open the podcast in your app and choose «Unfollow» or «Unsubscribe». That’s all.</dd>\n  ", "h2Fb": "Your feedback", "fb": "\n    <p>The podcast is a personal experiment, and I welcome any feedback: Is it too long or too short, which topics are missing, how do the voices come across, and did subscribing work on your device?</p>\n    <p>The easiest way is to send me a message on <a id=\"linkedin\" href=\"https://www.linkedin.com/search/results/people/?keywords=Roger%20Infanger%20Weibel\">LinkedIn</a> – or tell me in person when we meet.</p>\n  ", "footer": "Roger’s AI Radar · by me, Roger Infanger Weibel · research and script with Claude, voices with Gemini TTS · <a href=\"https://github.com/roger-infanger-weibel/ghostwriter.ai\">Source code on GitHub</a>"};
+    var UI={"en": {"loading": "Loading episodes …", "min": " min", "shownotes": "Show notes", "locale": "en-GB", "copied": "Copied ✓", "copy": "Copy", "selected": "Address selected – now copy it with Ctrl/Cmd+C.", "unavail": "Player not available here", "title": "Roger’s AI Radar – subscribe to the podcast", "h1": "Roger’s AI Radar", "htmlLang": "en", "lead1": "The week’s most important AI news – global, Europe, Switzerland – in about three minutes, in ", "leadSpot": "Listen on Spotify or subscribe directly via its RSS feed in any other podcast app.", "leadNoSpot": "Subscribe via its RSS feed in your podcast app or listen right here.", "free": ". Free: "}, "de": {"loading": "Folgen werden geladen …", "min": " Min.", "shownotes": "Shownotes", "locale": "de-CH", "copied": "Kopiert ✓", "copy": "Kopieren", "selected": "Adresse ist markiert – jetzt mit Ctrl/Cmd+C bzw. «Kopieren» übernehmen.", "unavail": "Player hier nicht verfügbar", "title": "Rogers KI-Radar – Podcast abonnieren", "h1": "Rogers KI-Radar", "htmlLang": "de-CH", "lead1": "Die wichtigsten KI-News der Woche – Global, Europa, Schweiz – in rund drei Minuten, auf ", "leadSpot": "Hör auf Spotify rein oder abonniere den Podcast direkt über seinen RSS-Feed in jeder anderen Podcast-App.", "leadNoSpot": "Abonniere den Podcast über seinen RSS-Feed in deiner Podcast-App oder hör direkt hier rein.", "free": ". Kostenlos: "}};
+    var DE={};[].forEach.call(document.querySelectorAll('[data-i18n]'),function(el){DE[el.dataset.i18n]=el.innerHTML;});
+    window.PODCAST_UI=function(){return UI[LANGS[lang].ui];};
+    function setUI(){
+      var u=LANGS[lang].ui, T=UI[u];
+      [].forEach.call(document.querySelectorAll('[data-i18n]'),function(el){var k=el.dataset.i18n;var h=u==='en'&&EN[k]!=null?EN[k]:DE[k];if(el.innerHTML!==h)el.innerHTML=h;});
+      document.documentElement.lang=T.htmlLang;document.title=T.title;
+      document.getElementById('h1').textContent=T.h1;
+      var c=document.getElementById('cover');c.onerror=function(){c.onerror=null;c.src='cover-web.jpg';};c.src=LANGS[lang].cover;
+    }
     var lang='be';
     try{var q=new URLSearchParams(location.search).get('lang');if(LANGS[q])lang=q;else{var st=localStorage.getItem('podcastLang');if(LANGS[st])lang=st;}}catch(e){}
     var audio=document.getElementById('audio'), list=document.getElementById('eps'),
         now=document.getElementById('nowtitle'), msg=document.getElementById('pmsg'), cur=null;
-    function fmt(d){try{return new Date(d).toLocaleDateString('de-CH',{day:'numeric',month:'long',year:'numeric'});}catch(e){return '';}}
-    function dur(t){if(!t)return '';var p=t.split(':').map(Number);var sec=p.reduce(function(a,b){return a*60+b;},0);var m=Math.floor(sec/60),r=sec%60;return m+':'+(r<10?'0':'')+r+' Min.';}
+    function fmt(d){try{return new Date(d).toLocaleDateString(UI[LANGS[lang].ui].locale,{day:'numeric',month:'long',year:'numeric'});}catch(e){return '';}}
+    function dur(t){if(!t)return '';var p=t.split(':').map(Number);var sec=p.reduce(function(a,b){return a*60+b;},0);var m=Math.floor(sec/60),r=sec%60;return m+':'+(r<10?'0':'')+r+UI[LANGS[lang].ui].min;}
     function choose(btn,ep,play){
       if(cur)cur.classList.remove('playing'),cur.querySelector('.ic').textContent='▶';
       cur=btn;btn.classList.add('playing');btn.querySelector('.ic').textContent='♪';
@@ -341,12 +357,13 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
     var feed=LANGS[lang].feed, abs=BASE+feed;
     var src=/github\.io$/.test(location.hostname)?new URL(feed,location.href).href:abs;
     document.getElementById('feedurl').textContent=abs;
+    setUI(); var T=UI[LANGS[lang].ui];
     document.getElementById('feedlink').href=abs;
-    document.getElementById('langname').textContent=LANGS[lang].name;
     var sp=document.getElementById('spotify'), spl=LANGS[lang].spotify; if(sp){sp.hidden=!spl;if(spl)sp.href=spl;}
-    document.getElementById('leadsub').textContent=spl?'Hör auf Spotify rein oder abonniere den Podcast direkt über seinen RSS-Feed in jeder anderen Podcast-App.':'Abonniere den Podcast über seinen RSS-Feed in deiner Podcast-App oder hör direkt hier rein.';
+    var w=document.getElementById('spotwarn'); w.hidden=!spl; [].forEach.call(w.querySelectorAll('.spotlink'),function(a){if(spl)a.href=spl;});
+    document.getElementById('lead').textContent=T.lead1+LANGS[lang].name+T.free+(spl?T.leadSpot:T.leadNoSpot);
     [].forEach.call(document.querySelectorAll('.lang'),function(b){b.setAttribute('aria-pressed',b.dataset.lang===lang);});
-    list.innerHTML='';cur=null;audio.removeAttribute('src');audio.load();now.textContent='Folgen werden geladen …';
+    list.innerHTML='';cur=null;audio.removeAttribute('src');audio.load();now.textContent=T.loading;
     fetch(src,{cache:'no-cache'}).then(function(r){if(!r.ok)throw 0;return r.text();}).then(function(x){
       var doc=new DOMParser().parseFromString(x,'application/xml');
       var items=[].slice.call(doc.getElementsByTagName('item')).map(function(it){
@@ -358,16 +375,16 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
       items.forEach(function(ep,i){
         var li=document.createElement('li'), b=document.createElement('button');
         b.type='button';b.className='ep';
-        b.innerHTML='<span class="ic" aria-hidden="true">▶</span><span><span class="t"></span><br><span class="m"></span> · <a class="sn" target="_blank" rel="noopener">Shownotes</a></span>';
+        b.innerHTML='<span class="ic" aria-hidden="true">▶</span><span><span class="t"></span><br><span class="m"></span> · <a class="sn" target="_blank" rel="noopener"></a></span>';
         b.querySelector('.t').textContent=ep.title;
         b.querySelector('.m').textContent=[fmt(ep.date),dur(ep.dur)].filter(Boolean).join(' · ');
-        var a=b.querySelector('.sn'); if(ep.link){a.href=ep.link;a.addEventListener('click',function(e){e.stopPropagation();});}else a.remove();
+        var a=b.querySelector('.sn'); a.textContent=UI[LANGS[lang].ui].shownotes; if(ep.link){a.href=ep.link;a.addEventListener('click',function(e){e.stopPropagation();});}else a.remove();
         b.addEventListener('click',function(){choose(b,ep,true);});
         li.appendChild(b);list.appendChild(li);
         if(i===0)choose(b,ep,false);
       });
     }).catch(function(){
-      now.textContent='Player hier nicht verfügbar';
+      now.textContent=UI[LANGS[lang].ui].unavail;
       audio.hidden=true;document.querySelector('.ctrl').hidden=true;
       msg.hidden=false;
       msg.innerHTML='Der Player läuft auf der öffentlichen Seite: <a href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/">roger-infanger-weibel.github.io/ghostwriter.ai/podcast</a>';

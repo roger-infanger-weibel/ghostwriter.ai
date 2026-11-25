@@ -9,7 +9,7 @@
     <atom:link href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed-de.xml" rel="self" type="application/rss+xml"/>
     <description>Jede Woche ein kompakter Rückblick auf die wichtigsten KI-News – global, in Europa und in der Schweiz – auf Hochdeutsch. Recherche und Skript entstehen mit Claude, die Stimmen mit Gemini TTS. Alle Quellen stehen in den Shownotes.</description>
     <language>de</language>
-    <lastBuildDate>Wed, 25 Nov 2026 15:34:31 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 15:43:41 +0000</lastBuildDate>
     <itunes:subtitle>Die wichtigsten KI-News der Woche – Global, Europa, Schweiz</itunes:subtitle>
     <itunes:summary>Jede Woche ein kompakter Rückblick auf die wichtigsten KI-News – global, in Europa und in der Schweiz – auf Hochdeutsch. Recherche und Skript entstehen mit Claude, die Stimmen mit Gemini TTS. Alle Quellen stehen in den Shownotes.</itunes:summary>
     <itunes:author>Roger Infanger Weibel</itunes:author>
@@ -17,9 +17,9 @@
       <itunes:name>Roger Infanger Weibel</itunes:name>
       <itunes:email>a470264@gmail.com</itunes:email>
     </itunes:owner>
-    <itunes:image href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/cover.png"/>
+    <itunes:image href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/cover-de.png"/>
     <image>
-      <url>https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/cover.png</url>
+      <url>https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/cover-de.png</url>
       <title>Rogers KI-Radar (Deutsch)</title>
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai</link>
     </image>

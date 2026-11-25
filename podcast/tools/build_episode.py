@@ -70,7 +70,7 @@ def apply_lang(cfg: dict, lang: str) -> dict:
         raise SystemExit(f"Unbekannte Sprache: {lang} (show.yaml → languages)")
     over = langs.get(lang, {})
     merged = {k: v for k, v in cfg.items() if k != "languages"}
-    for key in ("title", "subtitle", "description", "language", "feed_file", "length"):
+    for key in ("title", "subtitle", "description", "language", "feed_file", "length", "cover_file"):
         if key in over:
             merged[key] = over[key]
     if "styles" in over:

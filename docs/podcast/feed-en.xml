@@ -9,7 +9,7 @@
     <atom:link href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed-en.xml" rel="self" type="application/rss+xml"/>
     <description>A compact weekly round-up of the most important AI news – global, in Europe and in Switzerland – in English. Research and script are made with Claude, the voices with Gemini TTS. All sources are in the show notes.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Nov 2026 15:34:31 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 15:43:41 +0000</lastBuildDate>
     <itunes:subtitle>The week's most important AI news – global, Europe, Switzerland</itunes:subtitle>
     <itunes:summary>A compact weekly round-up of the most important AI news – global, in Europe and in Switzerland – in English. Research and script are made with Claude, the voices with Gemini TTS. All sources are in the show notes.</itunes:summary>
     <itunes:author>Roger Infanger Weibel</itunes:author>
@@ -17,9 +17,9 @@
       <itunes:name>Roger Infanger Weibel</itunes:name>
       <itunes:email>a470264@gmail.com</itunes:email>
     </itunes:owner>
-    <itunes:image href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/cover.png"/>
+    <itunes:image href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/cover-en.png"/>
     <image>
-      <url>https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/cover.png</url>
+      <url>https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/cover-en.png</url>
       <title>Roger's AI Radar (English)</title>
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai</link>
     </image>
