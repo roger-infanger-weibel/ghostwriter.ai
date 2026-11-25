@@ -48,7 +48,7 @@ def build_feed(cfg: dict, episodes: list[dict], site: Path) -> Path:
   <channel>
     <title>{e(cfg['title'])}</title>
     <link>{e(cfg['website'])}</link>
-    <atom:link href="{e(base)}/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="{e(base)}/{e(cfg.get('feed_file', 'feed.xml'))}" rel="self" type="application/rss+xml"/>
     <description>{e(cfg['description'])}</description>
     <language>{e(cfg['language'])}</language>
     <lastBuildDate>{now}</lastBuildDate>
@@ -69,7 +69,7 @@ def build_feed(cfg: dict, episodes: list[dict], site: Path) -> Path:
 </rss>
 """
     site.mkdir(parents=True, exist_ok=True)
-    out = site / "feed.xml"
+    out = site / cfg.get("feed_file", "feed.xml")
     out.write_text(xml, encoding="utf-8")
     return out
 
@@ -77,10 +77,18 @@ def build_feed(cfg: dict, episodes: list[dict], site: Path) -> Path:
 if __name__ == "__main__":
     # Nur Feed neu schreiben (z. B. nach Änderung von show.yaml), ohne Audio/API:
     #   python podcast/tools/build_feed.py
+    #   python podcast/tools/build_feed.py --lang de
+    import argparse
     import json
+    import sys
     import yaml
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import build_episode as be  # noqa: E402
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--lang", default="be")
+    lang = ap.parse_args().lang
     root = Path(__file__).resolve().parents[2]
-    cfg = yaml.safe_load((root / "podcast" / "show.yaml").read_text(encoding="utf-8"))
-    eps = json.loads((root / "podcast" / "episodes.json").read_text(encoding="utf-8"))
+    cfg = be.apply_lang(yaml.safe_load((root / "podcast" / "show.yaml").read_text(encoding="utf-8")), lang)
+    eps = json.loads(be.EPISODES_JSON.read_text(encoding="utf-8")) if be.EPISODES_JSON.exists() else []
     out = build_feed(cfg, eps, root / "docs" / "podcast")
     print(f"{out.relative_to(root)}: «{cfg['title']}», {len(eps)} Episoden")

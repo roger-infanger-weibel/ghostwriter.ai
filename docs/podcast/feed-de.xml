@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Rogers KI-Radar (Deutsch)</title>
+    <link>https://github.com/roger-infanger-weibel/ghostwriter.ai</link>
+    <atom:link href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed-de.xml" rel="self" type="application/rss+xml"/>
+    <description>Jede Woche ein kompakter Rückblick auf die wichtigsten KI-News – global, in Europa und in der Schweiz – auf Hochdeutsch. Recherche und Skript entstehen mit Claude, die Stimmen mit Gemini TTS. Alle Quellen stehen in den Shownotes.</description>
+    <language>de</language>
+    <lastBuildDate>Wed, 25 Nov 2026 15:34:31 +0000</lastBuildDate>
+    <itunes:subtitle>Die wichtigsten KI-News der Woche – Global, Europa, Schweiz</itunes:subtitle>
+    <itunes:summary>Jede Woche ein kompakter Rückblick auf die wichtigsten KI-News – global, in Europa und in der Schweiz – auf Hochdeutsch. Recherche und Skript entstehen mit Claude, die Stimmen mit Gemini TTS. Alle Quellen stehen in den Shownotes.</itunes:summary>
+    <itunes:author>Roger Infanger Weibel</itunes:author>
+    <itunes:owner>
+      <itunes:name>Roger Infanger Weibel</itunes:name>
+      <itunes:email>a470264@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/cover.png"/>
+    <image>
+      <url>https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/cover.png</url>
+      <title>Rogers KI-Radar (Deutsch)</title>
+      <link>https://github.com/roger-infanger-weibel/ghostwriter.ai</link>
+    </image>
+    <itunes:category text="Technology"/>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <item>
+      <title>KW 47 · 16.–22. November 2026: Anthropic an der Börse, Klage gegen OpenAI, KI-Angriff auf die EU</title>
+      <description>Zeitraum: 16.–22. November 2026. Anthropic schliesst seinen Börsengang ab, Kalifornien verklagt OpenAI wegen ausser Kontrolle geratener Agenten, und die EU-Kommission bestätigt einen Cyberangriff mit einem KI-Werkzeug. Dazu Computer use in Gemini für Mac und eigene Modelle von Microsoft.
+
+Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W47.md</description>
+      <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W47.md</link>
+      <guid isPermaLink="false">ghostwriter-ai-2026-W47</guid>
+      <pubDate>Sun, 22 Nov 2026 17:00:00 +0000</pubDate>
+      <enclosure url="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/episodes/2026-W47-de.mp3?v=1525954" length="1525954" type="audio/mpeg"/>
+      <itunes:duration>00:03:11</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+  </channel>
+</rss>

@@ -51,7 +51,7 @@ button:focus-visible,.tab:focus-visible{outline:3px solid var(--accent);outline-
 .tab{background:var(--card);color:var(--ink);border:1px solid var(--line);padding:9px 14px;border-radius:999px;font-weight:500}
 .tab[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:6px 22px 18px}
-.panel[hidden]{display:none}
+.panel[hidden],.spotify[hidden]{display:none}
 .panel ol{padding-left:22px;margin:0 0 8px}
 .panel li{margin-bottom:4px}
 .tag{display:inline-block;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent);margin-left:6px;vertical-align:2px}
@@ -76,7 +76,10 @@ a{color:var(--accent)}
 .player audio{width:100%}
 .ctrl{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px;align-items:center}
 .ctrl span{font-size:13px;color:var(--muted);margin-right:4px}
-.speed{background:var(--bg);color:var(--ink);border:1px solid var(--line);padding:6px 12px;font-weight:500}
+.speed,.lang{background:var(--bg);color:var(--ink);border:1px solid var(--line);padding:6px 12px;font-weight:500}
+.lang[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.langs{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:18px}
+.langs span{font-size:14px;color:var(--muted);font-weight:600;margin-right:2px}
 .speed[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .eps{list-style:none;margin:16px 0 0;padding:0;border-top:1px solid var(--line);max-height:340px;overflow:auto}
 .eps li{border-bottom:1px solid var(--line)}
@@ -107,8 +110,15 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
       <h1>Rogers KI-Radar</h1>
     </div>
   </div>
-  <p class="lead">Die wichtigsten KI-News der Woche – Global, Europa, Schweiz – in rund drei Minuten, auf Berndeutsch. Kostenlos: Hör auf Spotify rein oder abonniere den Podcast direkt über seinen RSS-Feed in jeder anderen Podcast-App.</p>
-  <a class="spotify" href="https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#fff"/><path d="M6.5 9.3c3.6-1.1 8-.8 11 1M7 12.4c3-.9 6.6-.6 9.2.9M7.6 15.3c2.4-.7 5-.5 7.1.7" stroke="#1db954" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>Auf Spotify hören</a>
+  <p class="lead">Die wichtigsten KI-News der Woche – Global, Europa, Schweiz – in rund drei Minuten, auf <span id="langname">Berndeutsch</span>. Kostenlos: <span id="leadsub">Hör auf Spotify rein oder abonniere den Podcast direkt über seinen RSS-Feed in jeder anderen Podcast-App.</span></p>
+  <a class="spotify" id="spotify" href="https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#fff"/><path d="M6.5 9.3c3.6-1.1 8-.8 11 1M7 12.4c3-.9 6.6-.6 9.2.9M7.6 15.3c2.4-.7 5-.5 7.1.7" stroke="#1db954" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>Auf Spotify hören</a>
+
+  <div class="langs" role="group" aria-label="Sprache des Podcasts">
+    <span>Sprache:</span>
+    <button type="button" class="lang" data-lang="be" aria-pressed="true">Bärndütsch</button>
+    <button type="button" class="lang" data-lang="de" aria-pressed="false">Deutsch</button>
+    <button type="button" class="lang" data-lang="en" aria-pressed="false">English</button>
+  </div>
 
   <nav class="toc" aria-label="Inhalt">
     <span>Auf dieser Seite:</span>
@@ -227,7 +237,7 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
     <h3>Pocket Casts Web</h3>
     <p>Öffne <a href="https://play.pocketcasts.com">play.pocketcasts.com</a>, füge die Feed-Adresse ins Suchfeld ein und abonniere. Die Web-Version synchronisiert mit der Handy-App.</p>
     <h3>Ganz ohne App</h3>
-    <p>Du willst nur die neuste Folge hören? <a href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml">Öffne den Feed</a> und klick auf den MP3-Link der obersten Episode. Shownotes und Quellen findest du in meinem <a href="https://github.com/roger-infanger-weibel/ghostwriter.ai/tree/main/posts">GitHub-Repository</a>.</p>
+    <p>Du willst nur die neuste Folge hören? <a id="feedlink" href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml">Öffne den Feed</a> und klick auf den MP3-Link der obersten Episode. Shownotes und Quellen findest du in meinem <a href="https://github.com/roger-infanger-weibel/ghostwriter.ai/tree/main/posts">GitHub-Repository</a>.</p>
   </section>
 
   <div class="warn"><b>Spotify:</b> Dort findest du den Podcast unter <a href="https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY" target="_blank" rel="noopener">diesem Link</a> – einfach öffnen und auf «Folgen» tippen. Neue Folgen erscheinen auf Spotify meist ein paar Stunden nach der Veröffentlichung im Feed. Die Feed-Adresse oben brauchst du dafür nicht.</div>
@@ -267,8 +277,9 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
 
 <script>
 (function(){
-  var btn=document.getElementById('copy'), url=document.getElementById('feedurl').textContent.trim();
+  var btn=document.getElementById('copy');
   btn.addEventListener('click',function(){
+    var url=document.getElementById('feedurl').textContent.trim();
     function ok(){btn.textContent='Kopiert ✓';btn.classList.add('copied');setTimeout(function(){btn.textContent='Kopieren';btn.classList.remove('copied');},2200);}
     function fail(){var r=document.createRange();r.selectNodeContents(document.getElementById('feedurl'));var s=getSelection();s.removeAllRanges();s.addRange(r);document.getElementById('copynote').textContent='Adresse ist markiert – jetzt mit Ctrl/Cmd+C bzw. «Kopieren» übernehmen.';}
     try{navigator.clipboard.writeText(url).then(ok,fail);}catch(e){fail();}
@@ -297,8 +308,13 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
 
   // Web-Player: liest den Feed von derselben Adresse
   (function(){
-    var FEED='https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml';
-    var src=/github\.io$/.test(location.hostname)?new URL('feed.xml',location.href).href:FEED;
+    var BASE='https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/';
+    // spotify: Link zur Sendung pro Sprache; leer = Spotify-Button ausblenden
+    var LANGS={be:{feed:'feed.xml',name:'Berndeutsch',spotify:'https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY'},
+               de:{feed:'feed-de.xml',name:'Hochdeutsch',spotify:''},
+               en:{feed:'feed-en.xml',name:'Englisch',spotify:''}};
+    var lang='be';
+    try{var q=new URLSearchParams(location.search).get('lang');if(LANGS[q])lang=q;else{var st=localStorage.getItem('podcastLang');if(LANGS[st])lang=st;}}catch(e){}
     var audio=document.getElementById('audio'), list=document.getElementById('eps'),
         now=document.getElementById('nowtitle'), msg=document.getElementById('pmsg'), cur=null;
     function fmt(d){try{return new Date(d).toLocaleDateString('de-CH',{day:'numeric',month:'long',year:'numeric'});}catch(e){return '';}}
@@ -321,6 +337,16 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
     audio.addEventListener('ended',function(){
       var li=cur&&cur.parentNode.nextElementSibling; if(li)li.firstChild.click();
     });
+    function load(){
+    var feed=LANGS[lang].feed, abs=BASE+feed;
+    var src=/github\.io$/.test(location.hostname)?new URL(feed,location.href).href:abs;
+    document.getElementById('feedurl').textContent=abs;
+    document.getElementById('feedlink').href=abs;
+    document.getElementById('langname').textContent=LANGS[lang].name;
+    var sp=document.getElementById('spotify'), spl=LANGS[lang].spotify; if(sp){sp.hidden=!spl;if(spl)sp.href=spl;}
+    document.getElementById('leadsub').textContent=spl?'Hör auf Spotify rein oder abonniere den Podcast direkt über seinen RSS-Feed in jeder anderen Podcast-App.':'Abonniere den Podcast über seinen RSS-Feed in deiner Podcast-App oder hör direkt hier rein.';
+    [].forEach.call(document.querySelectorAll('.lang'),function(b){b.setAttribute('aria-pressed',b.dataset.lang===lang);});
+    list.innerHTML='';cur=null;audio.removeAttribute('src');audio.load();now.textContent='Folgen werden geladen …';
     fetch(src,{cache:'no-cache'}).then(function(r){if(!r.ok)throw 0;return r.text();}).then(function(x){
       var doc=new DOMParser().parseFromString(x,'application/xml');
       var items=[].slice.call(doc.getElementsByTagName('item')).map(function(it){
@@ -346,6 +372,17 @@ footer{margin-top:56px;font-size:13px;color:var(--muted);border-top:1px solid va
       msg.hidden=false;
       msg.innerHTML='Der Player läuft auf der öffentlichen Seite: <a href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/">roger-infanger-weibel.github.io/ghostwriter.ai/podcast</a>';
     });
+    }
+    [].forEach.call(document.querySelectorAll('.lang'),function(b){
+      b.addEventListener('click',function(){
+        if(b.dataset.lang===lang)return;
+        lang=b.dataset.lang;
+        try{localStorage.setItem('podcastLang',lang);}catch(e){}
+        try{var u=new URL(location.href);if(lang==='be')u.searchParams.delete('lang');else u.searchParams.set('lang',lang);history.replaceState(null,'',u);}catch(e){}
+        load();
+      });
+    });
+    load();
   })();
 </script>
 </body>

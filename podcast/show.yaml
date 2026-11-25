@@ -48,3 +48,48 @@ audio:
 length:
   min_chars: 2400
   max_chars: 2800
+
+# Weitere Sprachfassungen (ab KW 47). Berndeutsch (be) nutzt die Werte oben unverändert:
+# feed.xml, podcast/episodes.json, podcast/scripts/YYYY-Www.md, episodes/YYYY-Www.mp3.
+# Aufruf: python podcast/tools/build_episode.py --week YYYY-Www --lang de|en
+languages:
+  de:
+    title: "Rogers KI-Radar (Deutsch)"
+    subtitle: "Die wichtigsten KI-News der Woche – Global, Europa, Schweiz"
+    description: >-
+      Jede Woche ein kompakter Rückblick auf die wichtigsten KI-News – global, in Europa und
+      in der Schweiz – auf Hochdeutsch. Recherche und Skript entstehen mit Claude, die
+      Stimmen mit Gemini TTS. Alle Quellen stehen in den Shownotes.
+    language: "de"
+    suffix: "-de"
+    feed_file: "feed-de.xml"
+    spotify_url: ""   # Link folgt; auch in docs/podcast/index.html (LANGS) eintragen
+    episodes_file: "episodes-de.json"
+    scripts_dir: "scripts/de"
+    styles:
+      Lena: "sachlich, freundlich, ruhiges Tempo, Hochdeutsch mit leichtem Schweizer Akzent"
+      Marc: "neugierig, locker, ruhiges Tempo, Hochdeutsch mit leichtem Schweizer Akzent"
+    # Hochdeutsch braucht für denselben Inhalt mehr Zeichen (KW 47: 2958 Zeichen = 3:11)
+    length:
+      min_chars: 2500
+      max_chars: 2950
+  en:
+    title: "Roger's AI Radar (English)"
+    subtitle: "The week's most important AI news – global, Europe, Switzerland"
+    description: >-
+      A compact weekly round-up of the most important AI news – global, in Europe and in
+      Switzerland – in English. Research and script are made with Claude, the voices with
+      Gemini TTS. All sources are in the show notes.
+    language: "en"
+    suffix: "-en"
+    feed_file: "feed-en.xml"
+    spotify_url: ""   # Link folgt; auch in docs/podcast/index.html (LANGS) eintragen
+    episodes_file: "episodes-en.json"
+    scripts_dir: "scripts/en"
+    styles:
+      Lena: "factual, friendly, calm pace, clear international English"
+      Marc: "curious, relaxed, calm pace, clear international English"
+    # KW 47: 2727 Zeichen = 3:01
+    length:
+      min_chars: 2400
+      max_chars: 2850

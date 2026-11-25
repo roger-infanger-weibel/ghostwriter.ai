@@ -60,6 +60,10 @@ Verzeichnisse: `owner_email` in `show.yaml` ist gesetzt (für die Bestätigung n
   `python podcast/tools/build_episode.py --week 2026-W46 --force`
 - **Lokal:** mit `GEMINI_API_KEY` als Umgebungsvariable gleich aufrufen.
 - **Skript prüfen ohne API:** `python podcast/tools/build_episode.py --dry-run`
+- **Drei Sprachen** (ab KW 47): Berndeutsch (`feed.xml`, unverändert), Hochdeutsch (`feed-de.xml`)
+  und Englisch (`feed-en.xml`). Einstellungen unter `languages` in `show.yaml`, Skripte in
+  `podcast/scripts/`, `podcast/scripts/de/`, `podcast/scripts/en/`. Erzeugen mit `--lang be|de|en`.
+  Die Abo-Seite hat einen Sprachumschalter (auch per `?lang=de` / `?lang=en`).
 - **Startmusik:** `podcast/assets/intro-radar.wav` (ca. 4 s, rein synthetisch, Radar-Sweep mit
   Sonar-Pings) läuft vor jeder Folge. Neu erzeugen/anpassen: `python podcast/tools/make_jingle.py`;
   abschalten: `audio.intro` in `show.yaml` leeren.

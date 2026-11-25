@@ -12,6 +12,11 @@ Aufruf:
   python podcast/tools/build_episode.py --week 2026-W46
   python podcast/tools/build_episode.py --dry-run     # nur parsen, kein API-Aufruf
 
+Sprachen (--lang, Standard be = Berndeutsch; Konfiguration in show.yaml unter «languages»):
+  be  podcast/scripts/YYYY-Www.md     -> episodes/YYYY-Www.mp3     podcast/episodes.json     feed.xml
+  de  podcast/scripts/de/YYYY-Www.md  -> episodes/YYYY-Www-de.mp3  podcast/episodes-de.json  feed-de.xml
+  en  podcast/scripts/en/YYYY-Www.md  -> episodes/YYYY-Www-en.mp3  podcast/episodes-en.json  feed-en.xml
+
 Testmodus (ändert weder episodes.json noch feed.xml noch docs/):
   python podcast/tools/build_episode.py --week 2026-W47 \
       --script test-runs/2026-W47/podcast-script.md --out test-runs/2026-W47/podcast.mp3
@@ -47,9 +52,36 @@ SITE = ROOT / "docs" / "podcast"
 EPISODE_DIR = SITE / "episodes"
 
 API_URL = "https://generativelanguage.googleapis.com/v1beta/interactions"
+SUFFIX = ""          # Dateiendung der Sprache, z. B. "-de"; leer für Berndeutsch
+LANG = "be"
 SAMPLE_RATE = 24000
 WEEK_RE = re.compile(r"^\d{4}-W\d{2}$")
 TURN_RE = re.compile(r"^(?P<speaker>[^\s:\[\]]+)\s*(?:\[(?P<style>[^\]]+)\])?\s*:\s*(?P<text>.*)$")
+
+
+# ---------------------------------------------------------------- Sprache
+
+def apply_lang(cfg: dict, lang: str) -> dict:
+    """Mischt die Sprach-Einstellungen aus show.yaml («languages») in die Grundkonfiguration
+    und setzt die Pfade. Berndeutsch (be) ohne Eintrag = bisheriges Verhalten."""
+    global SCRIPTS, EPISODES_JSON, SUFFIX, LANG
+    langs = cfg.get("languages", {})
+    if lang != "be" and lang not in langs:
+        raise SystemExit(f"Unbekannte Sprache: {lang} (show.yaml → languages)")
+    over = langs.get(lang, {})
+    merged = {k: v for k, v in cfg.items() if k != "languages"}
+    for key in ("title", "subtitle", "description", "language", "feed_file", "length"):
+        if key in over:
+            merged[key] = over[key]
+    if "styles" in over:
+        merged["tts"] = dict(cfg["tts"])
+        merged["tts"]["speakers"] = [dict(sp, style=over["styles"].get(sp["name"], sp.get("style", "")))
+                                     for sp in cfg["tts"]["speakers"]]
+    LANG = lang
+    SUFFIX = over.get("suffix", "")
+    SCRIPTS = PODCAST / over.get("scripts_dir", "scripts")
+    EPISODES_JSON = PODCAST / over.get("episodes_file", "episodes.json")
+    return merged
 
 
 # ---------------------------------------------------------------- Skript
@@ -199,9 +231,19 @@ def week_range(week: str) -> tuple[date, date]:
     return date.fromisocalendar(y, w, 1), date.fromisocalendar(y, w, 7)
 
 
+MONTHS_EN = ["January", "February", "March", "April", "May", "June", "July", "August",
+             "September", "October", "November", "December"]
+
+
 def zeitraum(week: str) -> str:
-    """z. B. «9.–15. November 2026» oder «31. August – 6. September 2026»."""
+    """z. B. «9.–15. November 2026» oder «31. August – 6. September 2026» (englisch: «9–15 November 2026»)."""
     a, b = week_range(week)
+    if LANG == "en":
+        if a.year != b.year:
+            return f"{a.day} {MONTHS_EN[a.month - 1]} {a.year} – {b.day} {MONTHS_EN[b.month - 1]} {b.year}"
+        if a.month != b.month:
+            return f"{a.day} {MONTHS_EN[a.month - 1]} – {b.day} {MONTHS_EN[b.month - 1]} {b.year}"
+        return f"{a.day}–{b.day} {MONTHS_EN[b.month - 1]} {b.year}"
     if a.year != b.year:
         return f"{a.day}. {MONATE[a.month - 1]} {a.year} – {b.day}. {MONATE[b.month - 1]} {b.year}"
     if a.month != b.month:
@@ -212,7 +254,8 @@ def zeitraum(week: str) -> str:
 def episode_title(week: str, title: str) -> str:
     """«KW 46 · 9.–15. November 2026: <Themen>» – Datum steht so in jeder Podcast-App."""
     topics = KW_PREFIX_RE.sub("", title).strip()
-    return f"KW {int(week[6:])} · {zeitraum(week)}: {topics}"
+    label = "Week" if LANG == "en" else "KW"
+    return f"{label} {int(week[6:])} · {zeitraum(week)}: {topics}"
 
 
 def pub_date(week: str) -> str:
@@ -302,16 +345,16 @@ def build(week: str, cfg: dict, api_key: str | None, dry_run: bool,
     if intro:
         pcm = intro + b"\x00\x00" * int(SAMPLE_RATE * 0.2) + pcm
 
-    mp3 = out or EPISODE_DIR / f"{week}.mp3"
+    mp3 = out or EPISODE_DIR / f"{week}{SUFFIX}.mp3"
     mp3.parent.mkdir(parents=True, exist_ok=True)
     meta["episode_title"] = episode_title(week, meta["title"])
     encode_mp3(pcm, mp3, meta, cfg)
     return {
         "id": week,
         "title": meta["episode_title"],
-        "description": f"Zeitraum: {zeitraum(week)}. " + str(meta["description"]).strip(),
+        "description": f"{'Period' if LANG == 'en' else 'Zeitraum'}: {zeitraum(week)}. " + str(meta["description"]).strip(),
         "post": f"posts/{week}.md",
-        "file": f"episodes/{week}.mp3",
+        "file": f"episodes/{week}{SUFFIX}.mp3",
         "bytes": mp3.stat().st_size,
         "duration_seconds": round(len(pcm) / 2 / SAMPLE_RATE),
         "pub_date": pub_date(week),
@@ -321,13 +364,14 @@ def build(week: str, cfg: dict, api_key: str | None, dry_run: bool,
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--week", help="ISO-Woche, z. B. 2026-W46")
+    ap.add_argument("--lang", default="be", help="Sprache: be (Berndeutsch, Standard), de, en")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--force", action="store_true", help="bestehende Episode neu erzeugen")
     ap.add_argument("--script", type=Path, help="Testmodus: Skript-Datei (statt podcast/scripts/)")
     ap.add_argument("--out", type=Path, help="Testmodus: Ziel-MP3; Feed und episodes.json bleiben unverändert")
     args = ap.parse_args()
 
-    cfg = yaml.safe_load((PODCAST / "show.yaml").read_text(encoding="utf-8"))
+    cfg = apply_lang(yaml.safe_load((PODCAST / "show.yaml").read_text(encoding="utf-8")), args.lang)
     if len(cfg["tts"]["speakers"]) != 2:
         print("show.yaml: genau zwei Sprecher nötig", file=sys.stderr)
         return 1

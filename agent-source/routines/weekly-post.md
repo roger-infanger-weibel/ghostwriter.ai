@@ -139,10 +139,21 @@ CAS-Projekt "Innovation Management" – hier sind Transparenz-Anforderungen jetz
 
 ### Phase 4b: Podcast-Skript schreiben
 
-Aus dem fertigen Post entsteht ein Dialog-Skript für den Podcast, danach erzeugst
+Aus dem fertigen Post entstehen **drei Dialog-Skripte** mit gleichem Inhalt, danach erzeugst
 du in Phase 4c das Audio. Details: `podcast/README.md`.
 
-Dateiname: `podcast/scripts/YYYY-Www.md` (gleiche Woche wie der Post)
+| Sprache | Datei | Begrüssung (fester Wortlaut) | Abschluss |
+|---|---|---|---|
+| Berndeutsch | `podcast/scripts/YYYY-Www.md` | «Grüessech u willkomme bim KI-Radar, Kalenderwuche …» | «… Tschüss zäme.» |
+| Hochdeutsch | `podcast/scripts/de/YYYY-Www.md` | «Grüezi und willkommen beim KI-Radar, Kalenderwoche …» | «… Tschüss zäme.» |
+| Englisch | `podcast/scripts/en/YYYY-Www.md` | «Hello and welcome to AI Radar, week …» | «… see you next week.» |
+
+- Zuerst das Berndeutsch-Skript schreiben, dann Hochdeutsch und Englisch als **inhaltlich gleiche**
+  Fassungen (gleiche Meldungen, gleiche Reihenfolge, gleiche Sprecherwechsel). Alle Regeln unten
+  gelten für alle drei; die Berndeutsch-Regel nur für die Berndeutsch-Fassung.
+- Hochdeutsch: Schweizer Schreibweise (ss statt ß). Englisch: einfaches, internationales Englisch,
+  Zahlen ebenfalls ausgeschrieben («forty-seven», «ninety-three point five billion dollars»).
+- Frontmatter `title`/`description` in der jeweiligen Sprache.
 
 ```markdown
 ---
@@ -201,13 +212,23 @@ Marc: ...
 
 ```bash
 pip install -q requests pyyaml   # falls nötig
-python podcast/tools/build_episode.py --dry-run --week YYYY-Www   # Skript + Länge prüfen («Länge OK»)
-python podcast/tools/build_episode.py --week YYYY-Www
+for L in be de en; do python podcast/tools/build_episode.py --dry-run --week YYYY-Www --lang $L; done   # Länge prüfen («Länge OK»)
+python podcast/tools/build_episode.py --week YYYY-Www --lang be
+python podcast/tools/build_episode.py --week YYYY-Www --lang de
+python podcast/tools/build_episode.py --week YYYY-Www --lang en
 ```
 
+- Die Länge wird **pro Sprache** geprüft (Ziele in `podcast/show.yaml`). Bei «ZU KURZ»/«ZU LANG»
+  das betroffene Skript anpassen und den Dry-Run wiederholen.
+
 - Der Gemini-Key ist als **Network Secret** im Cloud-Environment hinterlegt; der Proxy setzt ihn selbst. **Nicht** nach einem Key suchen, keinen Key in Dateien oder Umgebungsvariablen schreiben.
-- Ergebnis: `docs/podcast/episodes/YYYY-Www.mp3`, aktualisierte `podcast/episodes.json` und `docs/podcast/feed.xml` → alles in denselben Commit.
-- Schlägt die Audio-Erzeugung fehl (z. B. HTTP 401/403/429): Post und Skript trotzdem committen, Fehlermeldung in der Commit-Message unter «Podcast» notieren. Nicht mehrfach neu versuchen (Gratis-Kontingent).
+- Ergebnis pro Sprache (alles in denselben Commit):
+  - Berndeutsch: `docs/podcast/episodes/YYYY-Www.mp3`, `podcast/episodes.json`, `docs/podcast/feed.xml`
+  - Hochdeutsch: `docs/podcast/episodes/YYYY-Www-de.mp3`, `podcast/episodes-de.json`, `docs/podcast/feed-de.xml`
+  - Englisch: `docs/podcast/episodes/YYYY-Www-en.mp3`, `podcast/episodes-en.json`, `docs/podcast/feed-en.xml`
+- Reihenfolge Berndeutsch → Hochdeutsch → Englisch. Schlägt eine Sprache fehl (z. B. HTTP 401/403/429):
+  die anderen trotzdem versuchen, Post und alle Skripte committen, Fehlermeldung je Sprache in der
+  Commit-Message unter «Podcast» notieren. Nicht mehrfach neu versuchen (Gratis-Kontingent).
 
 ---
 
@@ -251,7 +272,7 @@ Details
 - Falls auffällig → in der Commit-Message melden
 
 ### Dateien & Scope
-- **Ändere nur:** `posts/YYYY-Www.md`, `podcast/scripts/YYYY-Www.md` sowie die von `build_episode.py` erzeugten Dateien (`docs/podcast/episodes/YYYY-Www.mp3`, `docs/podcast/feed.xml`, `podcast/episodes.json`)
+- **Ändere nur:** `posts/YYYY-Www.md`, die drei Skripte `podcast/scripts/YYYY-Www.md`, `podcast/scripts/de/YYYY-Www.md`, `podcast/scripts/en/YYYY-Www.md` sowie die von `build_episode.py` erzeugten Dateien (`docs/podcast/episodes/YYYY-Www.mp3`, `…-de.mp3`, `…-en.mp3`, `docs/podcast/feed.xml`, `feed-de.xml`, `feed-en.xml`, `podcast/episodes.json`, `episodes-de.json`, `episodes-en.json`)
 - **Nicht ändern:** SOURCES.md, agent-source/, README, `podcast/show.yaml`, `podcast/tools/`, ältere Episoden
 - **Direkt auf `main`**, kein Branch, kein PR, **nie** `--force`
 
@@ -278,7 +299,8 @@ Details
 - [ ] Keine Spekulationen, nur Fakten mit Links
 - [ ] Podcast-Skript `podcast/scripts/YYYY-Www.md` mit Frontmatter (`title`, `description`)
 - [ ] Jede Skriptzeile beginnt mit `Lena:` oder `Marc:`, Zahlen ausgeschrieben, keine URLs
-- [ ] MP3, `episodes.json` und `feed.xml` im Commit – oder Fehlergrund in der Commit-Message
+- [ ] Drei Skripte (be, de, en) mit gleichem Inhalt
+- [ ] Pro Sprache MP3, Episodenliste und Feed im Commit – oder Fehlergrund in der Commit-Message
 
 ---
 
