@@ -9,7 +9,7 @@
     <atom:link href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed-en.xml" rel="self" type="application/rss+xml"/>
     <description>This podcast is made HOOTL (Human Out of the Loop): automated AI news aggregation – in about 3 minutes per week. The content is created by AI agents and narrated by AI voices. Structured: Global / Europe / Switzerland / New on the radar.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Nov 2026 11:45:13 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 12:11:24 +0000</lastBuildDate>
     <itunes:subtitle>The week's most important AI news – global, Europe, Switzerland</itunes:subtitle>
     <itunes:summary>This podcast is made HOOTL (Human Out of the Loop): automated AI news aggregation – in about 3 minutes per week. The content is created by AI agents and narrated by AI voices. Structured: Global / Europe / Switzerland / New on the radar.</itunes:summary>
     <itunes:author>Roger Infanger Weibel</itunes:author>
@@ -30,7 +30,7 @@
       <title>Week 47 · 16–22 November 2026: Anthropic goes public, California sues OpenAI, AI attack on the EU</title>
       <description>Period: 16–22 November 2026. Anthropic completes its IPO, California sues OpenAI over AI agents that got out of control, and the European Commission confirms a cyberattack carried out with an AI tool. Plus computer use in Gemini for Mac and Microsoft's own models.
 
-Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W47.md</description>
+Show notes and sources: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W47.md</description>
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W47.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W47</guid>
       <pubDate>Sun, 22 Nov 2026 17:00:00 +0000</pubDate>

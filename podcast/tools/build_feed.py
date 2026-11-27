@@ -21,7 +21,7 @@ def build_feed(cfg: dict, episodes: list[dict], site: Path) -> Path:
         # ?v=<Grösse>: neue Adresse, sobald eine Folge neu erzeugt wird (umgeht Browser-/CDN-Cache)
         url = f"{base}/{ep['file']}?v={ep['bytes']}"
         post_url = f"{cfg['website']}/blob/main/{ep['post']}"
-        desc = f"{ep['description']}\n\nShownotes und Quellen: {post_url}"
+        desc = f"{ep['description']}\n\n{cfg.get('shownotes_label', 'Shownotes und Quellen')}: {post_url}"
         items.append(f"""    <item>
       <title>{e(ep['title'])}</title>
       <description>{e(desc)}</description>

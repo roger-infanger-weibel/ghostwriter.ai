@@ -2,14 +2,16 @@
 # Nach Änderungen: python podcast/tools/build_feed.py (oder beim nächsten Routine-Lauf).
 
 title: "🇨🇭 Rogers KI-Radar (Schweizerdeutsch)"
-subtitle: "Die wichtigsten KI-News der Woche – Global, Europa, Schweiz"
+subtitle: "Di wichtigschte KI-News vo de Wuche – Global, Europa, Schwiiz"
 description: >-
-  Dieser Podcast entsteht HOOTL (Human Out of the Loop): automatisierte KI-News-Aggregation – in rund 3 Minuten pro Woche. Der Inhalt wird von KI-Agenten erstellt und von KI-Personen erzählt. Gegliedert: Global / Europa / Schweiz / Neues im Radar.
+  De Podcast entstaht HOOTL (Human Out of the Loop): automatisierti KI-News-Aggregation – i öppe 3 Minute pro Wuche. De Inhalt wird vo KI-Agänte erstellt und vo KI-Persone verzellt. Gliederet: Global / Europa / Schwiiz / Neus im Radar.
 author: "Roger Infanger Weibel"
 # Kontakt-Adresse im Feed (itunes:owner) – nötig für die Verifizierung bei Spotify / Apple Podcasts
 owner_email: "a470264@gmail.com"
 # Podcast auf Spotify (Link auch auf docs/podcast/index.html)
 spotify_url: "https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY"
+# Text vor dem Link zu den Shownotes in jeder Folge (pro Sprache überschreibbar)
+shownotes_label: "Shownotes und Quelle"
 # Apple Podcasts (Link auch auf docs/podcast/index.html)
 apple_url: "https://podcasts.apple.com/us/podcast/%F0%9F%87%A8%F0%9F%87%AD-rogers-ki-radar-schweizerdeutsch/id6839993864"
 language: "de-ch"
@@ -60,6 +62,7 @@ languages:
     language: "de"
     suffix: "-de"
     feed_file: "feed-de.xml"
+    shownotes_label: "Shownotes und Quellen"
     cover_file: "cover-de.png"   # erzeugt mit podcast/tools/make_covers.py
     spotify_url: "https://open.spotify.com/show/7ytNG2UAbV6zwNEaoxxWaY"
     apple_url: "https://podcasts.apple.com/us/podcast/%F0%9F%87%A9%F0%9F%87%AA-rogers-ki-radar-deutsch/id6839994962"
@@ -80,6 +83,7 @@ languages:
     language: "en"
     suffix: "-en"
     feed_file: "feed-en.xml"
+    shownotes_label: "Show notes and sources"
     cover_file: "cover-en.png"   # erzeugt mit podcast/tools/make_covers.py
     spotify_url: "https://open.spotify.com/show/06c7isJWADMvwYlrwEUqcq"
     apple_url: "https://podcasts.apple.com/us/podcast/%F0%9F%87%AC%F0%9F%87%A7-rogers-ai-radar-english/id6839994867"

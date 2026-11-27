@@ -7,11 +7,11 @@
     <title>🇨🇭 Rogers KI-Radar (Schweizerdeutsch)</title>
     <link>https://github.com/roger-infanger-weibel/ghostwriter.ai</link>
     <atom:link href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml" rel="self" type="application/rss+xml"/>
-    <description>Dieser Podcast entsteht HOOTL (Human Out of the Loop): automatisierte KI-News-Aggregation – in rund 3 Minuten pro Woche. Der Inhalt wird von KI-Agenten erstellt und von KI-Personen erzählt. Gegliedert: Global / Europa / Schweiz / Neues im Radar.</description>
+    <description>De Podcast entstaht HOOTL (Human Out of the Loop): automatisierti KI-News-Aggregation – i öppe 3 Minute pro Wuche. De Inhalt wird vo KI-Agänte erstellt und vo KI-Persone verzellt. Gliederet: Global / Europa / Schwiiz / Neus im Radar.</description>
     <language>de-ch</language>
-    <lastBuildDate>Fri, 27 Nov 2026 11:45:12 +0000</lastBuildDate>
-    <itunes:subtitle>Die wichtigsten KI-News der Woche – Global, Europa, Schweiz</itunes:subtitle>
-    <itunes:summary>Dieser Podcast entsteht HOOTL (Human Out of the Loop): automatisierte KI-News-Aggregation – in rund 3 Minuten pro Woche. Der Inhalt wird von KI-Agenten erstellt und von KI-Personen erzählt. Gegliedert: Global / Europa / Schweiz / Neues im Radar.</itunes:summary>
+    <lastBuildDate>Fri, 27 Nov 2026 12:11:31 +0000</lastBuildDate>
+    <itunes:subtitle>Di wichtigschte KI-News vo de Wuche – Global, Europa, Schwiiz</itunes:subtitle>
+    <itunes:summary>De Podcast entstaht HOOTL (Human Out of the Loop): automatisierti KI-News-Aggregation – i öppe 3 Minute pro Wuche. De Inhalt wird vo KI-Agänte erstellt und vo KI-Persone verzellt. Gliederet: Global / Europa / Schwiiz / Neus im Radar.</itunes:summary>
     <itunes:author>Roger Infanger Weibel</itunes:author>
     <itunes:owner>
       <itunes:name>Roger Infanger Weibel</itunes:name>
@@ -30,7 +30,7 @@
       <title>KW 47 · 16.–22. November 2026: Anthropic an der Börse, Klage gegen OpenAI, KI-Angriff auf die EU</title>
       <description>Zeitraum: 16.–22. November 2026. Anthropic schliesst seinen Börsengang ab, Kalifornien verklagt OpenAI wegen ausser Kontrolle geratener Agenten, und die EU-Kommission bestätigt einen Cyberangriff mit einem KI-Werkzeug. Dazu Computer use in Gemini für Mac und eigene Modelle von Microsoft.
 
-Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W47.md</description>
+Shownotes und Quelle: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W47.md</description>
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W47.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W47</guid>
       <pubDate>Sun, 22 Nov 2026 17:00:00 +0000</pubDate>
@@ -43,7 +43,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <title>KW 46 · 9.–15. November 2026: Claude Fable 5.2, Gemini 4 Hydrogen und KI in Zug und Uri</title>
       <description>Zeitraum: 9.–15. November 2026. Die Highlights der Woche in drei Minuten: neue Modelle von Anthropic und Google, selbst gehostete Managed Agents und die Gemini Decisions API. In der Schweiz investieren die Kantone Zug und Uri in KI.
 
-Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W46.md</description>
+Shownotes und Quelle: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W46.md</description>
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W46.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W46</guid>
       <pubDate>Sun, 15 Nov 2026 17:00:00 +0000</pubDate>
@@ -56,7 +56,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <title>KW 45 · 2.–8. November 2026: GPT-6 Cyber, Images 2.6 und Message Threads bei Claude</title>
       <description>Zeitraum: 2.–8. November 2026. Die Highlights der Woche in drei Minuten: OpenAI stellt das Sicherheitsmodell GPT-6 Cyber und Images 2.6 vor. Anthropic bringt Message Threads und IP-Allowlists in die Claude API und Console.
 
-Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W45.md</description>
+Shownotes und Quelle: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W45.md</description>
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W45.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W45</guid>
       <pubDate>Sun, 08 Nov 2026 17:00:00 +0000</pubDate>
@@ -69,7 +69,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <title>KW 44 · 26. Oktober – 1. November 2026: Gemini Computer Use, Le Chonk und KI-Regulierung des Bundesrats</title>
       <description>Zeitraum: 26. Oktober – 1. November 2026. Die Highlights der Woche in drei Minuten: Computer Use in der Gemini API ist allgemein verfügbar, Google ändert die Speicher-Voreinstellung und Mistral veröffentlicht «Le Chonk». In der Schweiz zeigt der Bundesrat, wie er KI regeln will.
 
-Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W44.md</description>
+Shownotes und Quelle: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W44.md</description>
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W44.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W44</guid>
       <pubDate>Sun, 01 Nov 2026 17:00:00 +0000</pubDate>
@@ -82,7 +82,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <title>KW 43 · 19.–25. Oktober 2026: Neue Claude-SDKs, Claude über Google Cloud und Voxtral 3</title>
       <description>Zeitraum: 19.–25. Oktober 2026. Die Highlights der Woche in drei Minuten: eine neue API-Version und neue SDKs von Anthropic, Claude über Google Cloud und Agent Skills für die Agentic AI Foundation. Aus Europa kommt Mistrals Sprach-Agent Voxtral 3.
 
-Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W43.md</description>
+Shownotes und Quelle: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W43.md</description>
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W43.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W43</guid>
       <pubDate>Sun, 25 Oct 2026 17:00:00 +0000</pubDate>
@@ -95,7 +95,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <title>KW 42 · 12.–18. Oktober 2026: Gemini 4 Argon und Mistral Timestral</title>
       <description>Zeitraum: 12.–18. Oktober 2026. Die Highlights der Woche in drei Minuten: Google veröffentlicht mit Gemini 4 Argon ein neues Frontier-Modell für komplexe Aufgaben. Aus Europa kommt Timestral, die erste Familie von Zeitreihen-Modellen von Mistral AI.
 
-Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W42.md</description>
+Shownotes und Quelle: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W42.md</description>
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W42.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W42</guid>
       <pubDate>Sun, 18 Oct 2026 17:00:00 +0000</pubDate>
@@ -108,7 +108,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <title>KW 41 · 5.–11. Oktober 2026: Claude Haiku 5.5, GPT-6 für alle und neue Usage Policy</title>
       <description>Zeitraum: 5.–11. Oktober 2026. Die Highlights der Woche in drei Minuten: Claude Haiku 5.5, GPT-6 mit Intelligent UI für alle ChatGPT-Nutzer und die neuen Nutzungsregeln von Anthropic. Dazu Aufräumen in der Gemini API, Dynamic Workflows für Claude Managed Agents und OpenAIs Text-Wasserzeichen für die EU.
 
-Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W41.md</description>
+Shownotes und Quelle: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W41.md</description>
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W41.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W41</guid>
       <pubDate>Sun, 11 Oct 2026 17:00:00 +0000</pubDate>
@@ -121,7 +121,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <title>KW 40 · 28. September – 4. Oktober 2026: Claude Sonnet 5.5, OpenAI DevDay und Mistral in München</title>
       <description>Zeitraum: 28. September – 4. Oktober 2026. Die Highlights der Woche in drei Minuten: Anthropic veröffentlicht Claude Sonnet 5.5 und kündigt das Abschaltdatum von Sonnet 4.5 an. Dazu der DevDay von OpenAI und ein neuer Standort von Mistral AI in München.
 
-Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W40.md</description>
+Shownotes und Quelle: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W40.md</description>
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W40.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W40</guid>
       <pubDate>Sun, 04 Oct 2026 17:00:00 +0000</pubDate>
@@ -134,7 +134,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <title>KW 39 · 21.–27. September 2026: Claude Opus 5.5, GPT-6 Sol und Luna, KI in der Genfer Verwaltung</title>
       <description>Zeitraum: 21.–27. September 2026. Die Highlights der Woche: Claude Opus 5.5, günstigere GPT-6-Modelle, neue Gemini-Stimmen, ein OpenAI-Agent auf einem australischen Regierungsportal und Genfer KI-Empfehlungen.
 
-Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W39.md</description>
+Shownotes und Quelle: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W39.md</description>
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W39.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W39</guid>
       <pubDate>Sun, 27 Sep 2026 17:00:00 +0000</pubDate>
@@ -147,7 +147,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <title>KW 38 · 14.–20. September 2026: Cowork wird Claude, KI-Hacks im Test und Apertus in Lumo</title>
       <description>Zeitraum: 14.–20. September 2026. Die Highlights der Woche: Claude Cowork und Chat werden ein Produkt, zwei Sicherheitsvorfälle mit KI-Agenten, Gemini 3.8 Live sowie Datenschutz-Leitfaden und Apertus in der Schweiz.
 
-Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W38.md</description>
+Shownotes und Quelle: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W38.md</description>
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W38.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W38</guid>
       <pubDate>Sun, 20 Sep 2026 17:00:00 +0000</pubDate>
@@ -160,7 +160,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <title>KW 37 · 7.–13. September 2026: OpenAI Agents API, Gemini für Windows und Robotik in der Schweiz</title>
       <description>Zeitraum: 7.–13. September 2026. Die Highlights der Woche in drei Minuten: OpenAIs Agents API, GPT-Live-1 und ChatGPT Images 2.5, Anthropics Threat Report, die Gemini-Desktop-App für Windows sowie Robotik-Initiativen in der Schweiz.
 
-Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W37.md</description>
+Shownotes und Quelle: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W37.md</description>
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W37.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W37</guid>
       <pubDate>Sun, 13 Sep 2026 17:00:00 +0000</pubDate>
@@ -173,7 +173,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <title>KW 36 · 31. August – 6. September 2026: GPT-6 Astra, Claude Fable 5.1 und ein Jahr Apertus</title>
       <description>Zeitraum: 31. August – 6. September 2026. Die Highlights der Woche in drei Minuten: neue Flaggschiffe von OpenAI und Anthropic, Gemini 3.8 Flash, Claudes Wasserzeichen für den EU AI Act sowie Apertus und die Swiss AI Weeks.
 
-Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W36.md</description>
+Shownotes und Quelle: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W36.md</description>
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W36.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W36</guid>
       <pubDate>Sun, 06 Sep 2026 17:00:00 +0000</pubDate>
@@ -186,7 +186,7 @@ Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/b
       <title>KW 35 · 24.–30. August 2026: Claude steuert Hardware, o3 verlässt ChatGPT, Aufruf zur Cyberabwehr</title>
       <description>Zeitraum: 24.–30. August 2026. Die Highlights der Woche in drei Minuten: Anthropics Model Hardware Standard, das Ende von o3 in ChatGPT, «Ask Gemini» in Google Chat und ein gemeinsamer Aufruf von über hundert Firmen zur Cyberabwehr.
 
-Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W35.md</description>
+Shownotes und Quelle: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W35.md</description>
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W35.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W35</guid>
       <pubDate>Sun, 30 Aug 2026 17:00:00 +0000</pubDate>
