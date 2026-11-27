@@ -4,7 +4,7 @@
 title: "🇨🇭 Rogers KI-Radar (Schweizerdeutsch)"
 subtitle: "Die wichtigsten KI-News der Woche – Global, Europa, Schweiz"
 description: >-
-  Automatisierte KI-News-Aggregation – in maximal 3 Minuten pro Woche. Der Inhalt wird von KI-Agenten erstellt und von KI-Personen erzählt. Gegliedert: Global / Europa / Schweiz / Neues im Radar.
+  Dieser Podcast entsteht HOOTL (Human Out of the Loop): automatisierte KI-News-Aggregation – in rund 3 Minuten pro Woche. Der Inhalt wird von KI-Agenten erstellt und von KI-Personen erzählt. Gegliedert: Global / Europa / Schweiz / Neues im Radar.
 author: "Roger Infanger Weibel"
 # Kontakt-Adresse im Feed (itunes:owner) – nötig für die Verifizierung bei Spotify / Apple Podcasts
 owner_email: "a470264@gmail.com"
@@ -54,7 +54,7 @@ languages:
     title: "🇩🇪 Rogers KI-Radar (Deutsch)"
     subtitle: "Die wichtigsten KI-News der Woche – Global, Europa, Schweiz"
     description: >-
-      Automatisierte KI-News-Aggregation – in maximal 3 Minuten pro Woche. Der Inhalt wird von KI-Agenten erstellt und von KI-Personen erzählt. Gegliedert: Global / Europa / Schweiz / Neues im Radar.
+      Dieser Podcast entsteht HOOTL (Human Out of the Loop): automatisierte KI-News-Aggregation – in rund 3 Minuten pro Woche. Der Inhalt wird von KI-Agenten erstellt und von KI-Personen erzählt. Gegliedert: Global / Europa / Schweiz / Neues im Radar.
     language: "de"
     suffix: "-de"
     feed_file: "feed-de.xml"
@@ -73,7 +73,7 @@ languages:
     title: "🇬🇧 Roger's AI Radar (English)"
     subtitle: "The week's most important AI news – global, Europe, Switzerland"
     description: >-
-      Automated AI news aggregation – in 3 minutes or less per week. The content is created by AI agents and narrated by AI voices. Structured: Global / Europe / Switzerland / New on the radar.
+      This podcast is made HOOTL (Human Out of the Loop): automated AI news aggregation – in about 3 minutes per week. The content is created by AI agents and narrated by AI voices. Structured: Global / Europe / Switzerland / New on the radar.
     language: "en"
     suffix: "-en"
     feed_file: "feed-en.xml"
