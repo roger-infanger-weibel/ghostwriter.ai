@@ -1,15 +1,20 @@
 # Podcast: KI-Wochenrückblick
 
-Der Wochenrückblick wird automatisch zu einem berndeutschen Podcast mit zwei Stimmen
-(Lena und Marc) und als RSS-Feed auf GitHub Pages veröffentlicht – ohne Hoster.
+Der Wochenrückblick wird automatisch zu einem Podcast mit zwei Stimmen (Lena und Marc) in drei
+Sprachen – Schweizerdeutsch (Berndeutsch), Deutsch und Englisch – und als RSS-Feed auf GitHub Pages
+veröffentlicht – ohne Hoster. Gelistet auf Spotify und Apple Podcasts.
 
 ## Links
 
 <img width="128" height="128" alt="cover (1)" src="https://github.com/user-attachments/assets/ef4e684e-783a-40f9-9f36-fda4e6ace387" />
 
-* User Doku: https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/
-* RSS Feed: https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml
-* Spotify: https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY
+* User Doku (mit Sprachwahl): https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/
+
+| Sprache | RSS-Feed | Spotify | Apple Podcasts |
+|---|---|---|---|
+| 🇨🇭 Schweizerdeutsch | [feed.xml](https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed.xml) | [Spotify](https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY) | [Apple Podcasts](https://podcasts.apple.com/us/podcast/%F0%9F%87%A8%F0%9F%87%AD-rogers-ki-radar-schweizerdeutsch/id6839993864) |
+| 🇩🇪 Deutsch | [feed-de.xml](https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed-de.xml) | [Spotify](https://open.spotify.com/show/7ytNG2UAbV6zwNEaoxxWaY) | [Apple Podcasts](https://podcasts.apple.com/us/podcast/%F0%9F%87%A9%F0%9F%87%AA-rogers-ki-radar-deutsch/id6839994962) |
+| 🇬🇧 English | [feed-en.xml](https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed-en.xml) | [Spotify](https://open.spotify.com/show/06c7isJWADMvwYlrwEUqcq) | [Apple Podcasts](https://podcasts.apple.com/us/podcast/%F0%9F%87%AC%F0%9F%87%A7-rogers-ai-radar-english/id6839994867) |
 
 ## Ablauf
 
@@ -39,10 +44,11 @@ Podcast-App  holt neue Episoden selbständig über den RSS-Feed
    `python podcast/tools/build_episode.py --week 2026-W46`, Ergebnis committen und pushen.
 5. **Abonnieren:** Feed-URL in einer Podcast-App einfügen, die eigene Feeds annimmt:
    Apple Podcasts (Mediathek → «…» → «Sendung per URL folgen»), Pocket Casts, Overcast,
-   AntennaPod, Podcast Addict. Auf Spotify: https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY
+   AntennaPod, Podcast Addict. Oder direkt auf Spotify bzw. Apple Podcasts (Links oben).
 
 Verzeichnisse: `owner_email` in `show.yaml` ist gesetzt (für die Bestätigung nötig, im Feed
-öffentlich). Spotify: eingereicht, Link in `show.yaml` (`spotify_url`). Apple Podcasts: noch nicht.
+öffentlich). Spotify und Apple Podcasts: alle drei Sprachen live, Links in `show.yaml`
+(`spotify_url`, `apple_url`) und auf der Abo-Seite.
 
 ## Dateien
 
