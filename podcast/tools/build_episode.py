@@ -232,6 +232,8 @@ def week_range(week: str) -> tuple[date, date]:
     return date.fromisocalendar(y, w, 1), date.fromisocalendar(y, w, 7)
 
 
+PERIOD_LABEL = {"be": "Zitruum", "de": "Zeitraum", "en": "Period"}
+
 MONTHS_EN = ["January", "February", "March", "April", "May", "June", "July", "August",
              "September", "October", "November", "December"]
 
@@ -353,7 +355,7 @@ def build(week: str, cfg: dict, api_key: str | None, dry_run: bool,
     return {
         "id": week,
         "title": meta["episode_title"],
-        "description": f"{'Period' if LANG == 'en' else 'Zeitraum'}: {zeitraum(week)}. " + str(meta["description"]).strip(),
+        "description": f"{PERIOD_LABEL.get(LANG, 'Zeitraum')}: {zeitraum(week)}. " + str(meta["description"]).strip(),
         "post": f"posts/{week}.md",
         "file": f"episodes/{week}{SUFFIX}.mp3",
         "bytes": mp3.stat().st_size,

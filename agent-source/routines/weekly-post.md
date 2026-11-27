@@ -153,7 +153,10 @@ du in Phase 4c das Audio. Details: `podcast/README.md`.
   gelten für alle drei; die Dialekt-Regel nur für die Schweizerdeutsch-Fassung.
 - Hochdeutsch: Schweizer Schreibweise (ss statt ß). Englisch: einfaches, internationales Englisch,
   Zahlen ebenfalls ausgeschrieben («forty-seven», «ninety-three point five billion dollars»).
-- Frontmatter `title`/`description` in der jeweiligen Sprache.
+- Frontmatter `title`/`description` in der jeweiligen Sprache – also auch in der Schweizerdeutsch-Fassung
+  auf Schweizerdeutsch (z. B. title: «Anthropic a de Börse, Klag gäge OpenAI, KI-Angriff uf d EU»,
+  description: «D Highlights vo de Wuche i drei Minute: …»). Diese Texte erscheinen in Spotify und
+  Apple Podcasts als Folgentitel und -beschreibung.
 
 ```markdown
 ---
