@@ -4,14 +4,14 @@
      xmlns:atom="http://www.w3.org/2005/Atom"
      xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Roger's AI Radar (English)</title>
+    <title>🇬🇧 Roger's AI Radar (English)</title>
     <link>https://github.com/roger-infanger-weibel/ghostwriter.ai</link>
     <atom:link href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed-en.xml" rel="self" type="application/rss+xml"/>
-    <description>A compact weekly round-up of the most important AI news – global, in Europe and in Switzerland – in English. Research and script are made with Claude, the voices with Gemini TTS. All sources are in the show notes.</description>
+    <description>Automated AI news aggregation – in 3 minutes or less per week. The content is created by AI agents and narrated by AI voices. Structured: Global / Europe / Switzerland / New on the radar.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Nov 2026 15:43:41 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 11:26:50 +0000</lastBuildDate>
     <itunes:subtitle>The week's most important AI news – global, Europe, Switzerland</itunes:subtitle>
-    <itunes:summary>A compact weekly round-up of the most important AI news – global, in Europe and in Switzerland – in English. Research and script are made with Claude, the voices with Gemini TTS. All sources are in the show notes.</itunes:summary>
+    <itunes:summary>Automated AI news aggregation – in 3 minutes or less per week. The content is created by AI agents and narrated by AI voices. Structured: Global / Europe / Switzerland / New on the radar.</itunes:summary>
     <itunes:author>Roger Infanger Weibel</itunes:author>
     <itunes:owner>
       <itunes:name>Roger Infanger Weibel</itunes:name>
@@ -20,7 +20,7 @@
     <itunes:image href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/cover-en.png"/>
     <image>
       <url>https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/cover-en.png</url>
-      <title>Roger's AI Radar (English)</title>
+      <title>🇬🇧 Roger's AI Radar (English)</title>
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai</link>
     </image>
     <itunes:category text="Technology"/>

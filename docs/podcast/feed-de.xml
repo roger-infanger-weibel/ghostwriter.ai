@@ -4,14 +4,14 @@
      xmlns:atom="http://www.w3.org/2005/Atom"
      xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Rogers KI-Radar (Deutsch)</title>
+    <title>🇩🇪 Rogers KI-Radar (Deutsch)</title>
     <link>https://github.com/roger-infanger-weibel/ghostwriter.ai</link>
     <atom:link href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed-de.xml" rel="self" type="application/rss+xml"/>
-    <description>Jede Woche ein kompakter Rückblick auf die wichtigsten KI-News – global, in Europa und in der Schweiz – auf Hochdeutsch. Recherche und Skript entstehen mit Claude, die Stimmen mit Gemini TTS. Alle Quellen stehen in den Shownotes.</description>
+    <description>Automatisierte KI-News-Aggregation – in maximal 3 Minuten pro Woche. Der Inhalt wird von KI-Agenten erstellt und von KI-Personen erzählt. Gegliedert: Global / Europa / Schweiz / Neues im Radar.</description>
     <language>de</language>
-    <lastBuildDate>Wed, 25 Nov 2026 15:43:41 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 11:26:50 +0000</lastBuildDate>
     <itunes:subtitle>Die wichtigsten KI-News der Woche – Global, Europa, Schweiz</itunes:subtitle>
-    <itunes:summary>Jede Woche ein kompakter Rückblick auf die wichtigsten KI-News – global, in Europa und in der Schweiz – auf Hochdeutsch. Recherche und Skript entstehen mit Claude, die Stimmen mit Gemini TTS. Alle Quellen stehen in den Shownotes.</itunes:summary>
+    <itunes:summary>Automatisierte KI-News-Aggregation – in maximal 3 Minuten pro Woche. Der Inhalt wird von KI-Agenten erstellt und von KI-Personen erzählt. Gegliedert: Global / Europa / Schweiz / Neues im Radar.</itunes:summary>
     <itunes:author>Roger Infanger Weibel</itunes:author>
     <itunes:owner>
       <itunes:name>Roger Infanger Weibel</itunes:name>
@@ -20,7 +20,7 @@
     <itunes:image href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/cover-de.png"/>
     <image>
       <url>https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/cover-de.png</url>
-      <title>Rogers KI-Radar (Deutsch)</title>
+      <title>🇩🇪 Rogers KI-Radar (Deutsch)</title>
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai</link>
     </image>
     <itunes:category text="Technology"/>

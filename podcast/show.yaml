@@ -1,13 +1,10 @@
 # Podcast-Konfiguration – Single Source of Truth für Feed und Stimmen.
 # Nach Änderungen: python podcast/tools/build_feed.py (oder beim nächsten Routine-Lauf).
 
-title: "Rogers KI-Radar"
+title: "🇨🇭 Rogers KI-Radar (Schweizerdeutsch)"
 subtitle: "Die wichtigsten KI-News der Woche – Global, Europa, Schweiz"
 description: >-
-  Jede Woche ein kompakter Rückblick auf die wichtigsten Neuigkeiten zu Claude,
-  ChatGPT, Gemini und NotebookLM sowie zu KI-Regulierung in Europa und der Schweiz.
-  Recherche und Skript entstehen mit Claude, die Stimmen mit Gemini TTS.
-  Alle Quellen stehen in den Shownotes.
+  Automatisierte KI-News-Aggregation – in maximal 3 Minuten pro Woche. Der Inhalt wird von KI-Agenten erstellt und von KI-Personen erzählt. Gegliedert: Global / Europa / Schweiz / Neues im Radar.
 author: "Roger Infanger Weibel"
 # Kontakt-Adresse im Feed (itunes:owner) – nötig für die Verifizierung bei Spotify / Apple Podcasts
 owner_email: "a470264@gmail.com"
@@ -54,12 +51,10 @@ length:
 # Aufruf: python podcast/tools/build_episode.py --week YYYY-Www --lang de|en
 languages:
   de:
-    title: "Rogers KI-Radar (Deutsch)"
+    title: "🇩🇪 Rogers KI-Radar (Deutsch)"
     subtitle: "Die wichtigsten KI-News der Woche – Global, Europa, Schweiz"
     description: >-
-      Jede Woche ein kompakter Rückblick auf die wichtigsten KI-News – global, in Europa und
-      in der Schweiz – auf Hochdeutsch. Recherche und Skript entstehen mit Claude, die
-      Stimmen mit Gemini TTS. Alle Quellen stehen in den Shownotes.
+      Automatisierte KI-News-Aggregation – in maximal 3 Minuten pro Woche. Der Inhalt wird von KI-Agenten erstellt und von KI-Personen erzählt. Gegliedert: Global / Europa / Schweiz / Neues im Radar.
     language: "de"
     suffix: "-de"
     feed_file: "feed-de.xml"
@@ -75,12 +70,10 @@ languages:
       min_chars: 2500
       max_chars: 2950
   en:
-    title: "Roger's AI Radar (English)"
+    title: "🇬🇧 Roger's AI Radar (English)"
     subtitle: "The week's most important AI news – global, Europe, Switzerland"
     description: >-
-      A compact weekly round-up of the most important AI news – global, in Europe and in
-      Switzerland – in English. Research and script are made with Claude, the voices with
-      Gemini TTS. All sources are in the show notes.
+      Automated AI news aggregation – in 3 minutes or less per week. The content is created by AI agents and narrated by AI voices. Structured: Global / Europe / Switzerland / New on the radar.
     language: "en"
     suffix: "-en"
     feed_file: "feed-en.xml"
