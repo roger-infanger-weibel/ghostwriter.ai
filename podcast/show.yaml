@@ -48,7 +48,7 @@ length:
   min_chars: 2400
   max_chars: 2800
 
-# Weitere Sprachfassungen (ab KW 47). Berndeutsch (be) nutzt die Werte oben unverändert:
+# Weitere Sprachfassungen (ab KW 47). Schweizerdeutsch (be) nutzt die Werte oben unverändert:
 # feed.xml, podcast/episodes.json, podcast/scripts/YYYY-Www.md, episodes/YYYY-Www.mp3.
 # Aufruf: python podcast/tools/build_episode.py --week YYYY-Www --lang de|en
 languages:

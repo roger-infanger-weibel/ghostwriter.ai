@@ -20,7 +20,7 @@ Stimmen, Länge und den Gemini-Key.
 
    | Sprache | Skript | MP3 |
    |---|---|---|
-   | be (Berndeutsch) | `test-runs/YYYY-Www/podcast-script.md` | `test-runs/YYYY-Www/podcast.mp3` |
+   | be (Schweizerdeutsch) | `test-runs/YYYY-Www/podcast-script.md` | `test-runs/YYYY-Www/podcast.mp3` |
    | de (Hochdeutsch) | `test-runs/YYYY-Www/podcast-script-de.md` | `test-runs/YYYY-Www/podcast-de.mp3` |
    | en (Englisch) | `test-runs/YYYY-Www/podcast-script-en.md` | `test-runs/YYYY-Www/podcast-en.mp3` |
 

@@ -144,13 +144,13 @@ du in Phase 4c das Audio. Details: `podcast/README.md`.
 
 | Sprache | Datei | Begrüssung (fester Wortlaut) | Abschluss |
 |---|---|---|---|
-| Berndeutsch | `podcast/scripts/YYYY-Www.md` | «Grüessech u willkomme bim KI-Radar, Kalenderwuche …» | «… Tschüss zäme.» |
+| Schweizerdeutsch | `podcast/scripts/YYYY-Www.md` | «Grüessech u willkomme bim KI-Radar, Kalenderwuche …» | «… Tschüss zäme.» |
 | Hochdeutsch | `podcast/scripts/de/YYYY-Www.md` | «Grüezi und willkommen beim KI-Radar, Kalenderwoche …» | «… Tschüss zäme.» |
 | Englisch | `podcast/scripts/en/YYYY-Www.md` | «Hello and welcome to AI Radar, week …» | «… see you next week.» |
 
-- Zuerst das Berndeutsch-Skript schreiben, dann Hochdeutsch und Englisch als **inhaltlich gleiche**
+- Zuerst das Schweizerdeutsch-Skript schreiben, dann Hochdeutsch und Englisch als **inhaltlich gleiche**
   Fassungen (gleiche Meldungen, gleiche Reihenfolge, gleiche Sprecherwechsel). Alle Regeln unten
-  gelten für alle drei; die Berndeutsch-Regel nur für die Berndeutsch-Fassung.
+  gelten für alle drei; die Dialekt-Regel nur für die Schweizerdeutsch-Fassung.
 - Hochdeutsch: Schweizer Schreibweise (ss statt ß). Englisch: einfaches, internationales Englisch,
   Zahlen ebenfalls ausgeschrieben («forty-seven», «ninety-three point five billion dollars»).
 - Frontmatter `title`/`description` in der jeweiligen Sprache.
@@ -199,8 +199,8 @@ Marc: ...
 - Reihenfolge fix: Intro → Global → Europa → Schweiz → Auf dem Radar (optional) → Abschluss.
 - Sprecher `Lena` und `Marc`, jede Zeile beginnt mit `Lena:` oder `Marc:`. Optional Stil in eckigen Klammern: `Marc [überrascht]: ...`. Kurze, abwechselnde Wortmeldungen, kein Smalltalk.
 - **Inhalt nur aus dem Post.** Keine zusätzlichen Fakten, Zahlen oder Wertungen, keine Superlative.
-- **Fürs Ohr schreiben:** Zahlen und Versionen auf Berndeutsch ausschreiben («Fable foif Punkt zwöi», «foifefüfzg Millione Franke»). Keine URLs, kein Markdown, keine Klammern, keine Code-Bezeichner.
-- **Berndeutsch:** Das ganze Skript auf Bärndütsch schreiben, nicht Hochdeutsch (z. B. «u» statt «und»,
+- **Fürs Ohr schreiben:** Zahlen und Versionen ausschreiben (Schweizerdeutsch-Fassung im Berner Dialekt) («Fable foif Punkt zwöi», «foifefüfzg Millione Franke»). Keine URLs, kein Markdown, keine Klammern, keine Code-Bezeichner.
+- **Dialekt (Schweizerdeutsch-Fassung):** Das ganze Skript auf Schweizerdeutsch im Berner Dialekt (Bärndütsch) schreiben, nicht Hochdeutsch (z. B. «u» statt «und»,
   «isch», «het/hei», «ou», «jitz», «Wuche», l-Vokalisierung wie «aui», «viu», «Modäll»). Produkt- und
   Firmennamen bleiben unverändert. Vorlage: `test-runs/2026-W47/podcast-script-bern.md`.
   Der Sprechstil «redt Bärndütsch» ist in `podcast/show.yaml` hinterlegt; eckige Klammern pro Zeile
@@ -223,10 +223,10 @@ python podcast/tools/build_episode.py --week YYYY-Www --lang en
 
 - Der Gemini-Key ist als **Network Secret** im Cloud-Environment hinterlegt; der Proxy setzt ihn selbst. **Nicht** nach einem Key suchen, keinen Key in Dateien oder Umgebungsvariablen schreiben.
 - Ergebnis pro Sprache (alles in denselben Commit):
-  - Berndeutsch: `docs/podcast/episodes/YYYY-Www.mp3`, `podcast/episodes.json`, `docs/podcast/feed.xml`
+  - Schweizerdeutsch: `docs/podcast/episodes/YYYY-Www.mp3`, `podcast/episodes.json`, `docs/podcast/feed.xml`
   - Hochdeutsch: `docs/podcast/episodes/YYYY-Www-de.mp3`, `podcast/episodes-de.json`, `docs/podcast/feed-de.xml`
   - Englisch: `docs/podcast/episodes/YYYY-Www-en.mp3`, `podcast/episodes-en.json`, `docs/podcast/feed-en.xml`
-- Reihenfolge Berndeutsch → Hochdeutsch → Englisch. Schlägt eine Sprache fehl (z. B. HTTP 401/403/429):
+- Reihenfolge Schweizerdeutsch → Deutsch → Englisch. Schlägt eine Sprache fehl (z. B. HTTP 401/403/429):
   die anderen trotzdem versuchen, Post und alle Skripte committen, Fehlermeldung je Sprache in der
   Commit-Message unter «Podcast» notieren. Nicht mehrfach neu versuchen (Gratis-Kontingent).
 

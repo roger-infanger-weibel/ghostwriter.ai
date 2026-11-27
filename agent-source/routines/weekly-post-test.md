@@ -20,7 +20,7 @@ Roger prüft damit, ob die Quellen funktionieren und wie der Post aussieht.
    | Datei | Inhalt |
    |---|---|
    | `test-runs/YYYY-Www/YYYY-Www.md` | Post im exakt gleichen Format wie `posts/YYYY-Www.md` |
-   | `test-runs/YYYY-Www/podcast-script.md` | Podcast-Skript Berndeutsch nach Phase 4b |
+   | `test-runs/YYYY-Www/podcast-script.md` | Podcast-Skript Schweizerdeutsch nach Phase 4b |
    | `test-runs/YYYY-Www/podcast-script-de.md` | Podcast-Skript Hochdeutsch nach Phase 4b |
    | `test-runs/YYYY-Www/podcast-script-en.md` | Podcast-Skript Englisch nach Phase 4b |
    | `test-runs/YYYY-Www/quellen-report.md` | Prüfbericht zu den Quellen (siehe unten) |

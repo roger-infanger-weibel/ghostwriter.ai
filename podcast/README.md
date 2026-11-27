@@ -1,7 +1,7 @@
 # Podcast: KI-Wochenrückblick
 
 Der Wochenrückblick wird automatisch zu einem Podcast mit zwei Stimmen (Lena und Marc) in drei
-Sprachen – Schweizerdeutsch (Berndeutsch), Deutsch und Englisch – und als RSS-Feed auf GitHub Pages
+Sprachen – Schweizerdeutsch, Deutsch und Englisch – und als RSS-Feed auf GitHub Pages
 veröffentlicht – ohne Hoster. Gelistet auf Spotify und Apple Podcasts.
 
 ## Links
@@ -66,7 +66,7 @@ Verzeichnisse: `owner_email` in `show.yaml` ist gesetzt (für die Bestätigung n
   `python podcast/tools/build_episode.py --week 2026-W46 --force`
 - **Lokal:** mit `GEMINI_API_KEY` als Umgebungsvariable gleich aufrufen.
 - **Skript prüfen ohne API:** `python podcast/tools/build_episode.py --dry-run`
-- **Drei Sprachen** (ab KW 47): Berndeutsch (`feed.xml`, unverändert), Hochdeutsch (`feed-de.xml`)
+- **Drei Sprachen** (ab KW 47): Schweizerdeutsch (`feed.xml`, unverändert), Deutsch (`feed-de.xml`)
   und Englisch (`feed-en.xml`). Einstellungen unter `languages` in `show.yaml`, Skripte in
   `podcast/scripts/`, `podcast/scripts/de/`, `podcast/scripts/en/`. Erzeugen mit `--lang be|de|en`.
   Die Abo-Seite hat oben einen Sprachumschalter mit Flaggen (auch per `?lang=de` / `?lang=en`);
