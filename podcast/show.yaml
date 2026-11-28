@@ -12,6 +12,15 @@ owner_email: "a470264@gmail.com"
 spotify_url: "https://open.spotify.com/show/3C4tP9QIc022wpRr49xEsY"
 # Text vor dem Link zu den Shownotes in jeder Folge (pro Sprache überschreibbar)
 shownotes_label: "Shownotes und Quelle"
+# Überschriften und Linktexte der Shownotes (Meldungen mit Links, siehe build_feed.py)
+shownotes_labels:
+  global: "Global"
+  europa: "Europa"
+  schweiz: "Schwiiz"
+  radar: "Uf em Radar"
+  none: "Kener Top-News"
+  shownotes: "Ganzi Shownotes"
+  sources: "Alli dursuechte Quelle"
 # Apple Podcasts (Link auch auf docs/podcast/index.html)
 apple_url: "https://podcasts.apple.com/us/podcast/%F0%9F%87%A8%F0%9F%87%AD-rogers-ki-radar-schweizerdeutsch/id6839993864"
 language: "de-ch"
@@ -62,6 +71,14 @@ languages:
     language: "de"
     suffix: "-de"
     feed_file: "feed-de.xml"
+    shownotes_labels:
+      global: "Global"
+      europa: "Europa"
+      schweiz: "Schweiz"
+      radar: "Auf dem Radar"
+      none: "Keine Top-News"
+      shownotes: "Ausführliche Shownotes"
+      sources: "Alle durchsuchten Quellen"
     shownotes_label: "Shownotes und Quellen"
     cover_file: "cover-de.png"   # erzeugt mit podcast/tools/make_covers.py
     spotify_url: "https://open.spotify.com/show/7ytNG2UAbV6zwNEaoxxWaY"
@@ -83,6 +100,14 @@ languages:
     language: "en"
     suffix: "-en"
     feed_file: "feed-en.xml"
+    shownotes_labels:
+      global: "Global"
+      europa: "Europe"
+      schweiz: "Switzerland"
+      radar: "On the radar"
+      none: "No top news"
+      shownotes: "Full show notes"
+      sources: "All sources searched"
     shownotes_label: "Show notes and sources"
     cover_file: "cover-en.png"   # erzeugt mit podcast/tools/make_covers.py
     spotify_url: "https://open.spotify.com/show/06c7isJWADMvwYlrwEUqcq"

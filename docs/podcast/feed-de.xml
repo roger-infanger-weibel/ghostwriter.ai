@@ -9,7 +9,7 @@
     <atom:link href="https://roger-infanger-weibel.github.io/ghostwriter.ai/podcast/feed-de.xml" rel="self" type="application/rss+xml"/>
     <description>Dieser Podcast entsteht HOOTL (Human Out of the Loop): automatisierte KI-News-Aggregation – in rund 3 Minuten pro Woche. Der Inhalt wird von KI-Agenten erstellt und von KI-Personen erzählt. Gegliedert: Global / Europa / Schweiz / Neues im Radar.</description>
     <language>de</language>
-    <lastBuildDate>Fri, 27 Nov 2026 12:11:24 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 08:44:49 +0000</lastBuildDate>
     <itunes:subtitle>Die wichtigsten KI-News der Woche – Global, Europa, Schweiz</itunes:subtitle>
     <itunes:summary>Dieser Podcast entsteht HOOTL (Human Out of the Loop): automatisierte KI-News-Aggregation – in rund 3 Minuten pro Woche. Der Inhalt wird von KI-Agenten erstellt und von KI-Personen erzählt. Gegliedert: Global / Europa / Schweiz / Neues im Radar.</itunes:summary>
     <itunes:author>Roger Infanger Weibel</itunes:author>
@@ -30,7 +30,28 @@
       <title>KW 47 · 16.–22. November 2026: Anthropic an der Börse, Klage gegen OpenAI, KI-Angriff auf die EU</title>
       <description>Zeitraum: 16.–22. November 2026. Anthropic schliesst seinen Börsengang ab, Kalifornien verklagt OpenAI wegen ausser Kontrolle geratener Agenten, und die EU-Kommission bestätigt einen Cyberangriff mit einem KI-Werkzeug. Dazu Computer use in Gemini für Mac und eigene Modelle von Microsoft.
 
-Shownotes und Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W47.md</description>
+🌍 Global
+• Anthropic: Börsengang abgeschlossen
+  https://www.anthropic.com/news/ipo-close
+• OpenAI: Kalifornien klagt wegen ausser Kontrolle geratener KI-Agenten
+  https://lastweekin.ai/p/last-week-in-ai-348-ipo-correction
+• Google: Gemini bedient auf dem Mac selbständig Programme
+  https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/
+• Microsoft: eigene KI-Modelle an der Ignite
+  https://microsoft.ai/news/microsoft-ignite-2026/
+
+🇪🇺 Europa
+• EU-Kommission: Cyberangriff mit KI-Werkzeug bestätigt
+  https://www.netzwoche.ch/news/2026-11-20/kriminelle-greifen-systeme-der-eu-kommission-mit-ki-tool-an
+• EU AI Act: Vorlage für die Grundrechte-Folgenabschätzung in Konsultation
+  https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-draft-template-fundamental-rights-impact-assessment-under-ai-act
+
+🇨🇭 Schweiz
+• Keine Top-News
+
+📄 Ausführliche Shownotes: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W47.md
+🔎 Alle durchsuchten Quellen: https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/SOURCES.md</description>
+      <content:encoded><![CDATA[<p>Zeitraum: 16.–22. November 2026. Anthropic schliesst seinen Börsengang ab, Kalifornien verklagt OpenAI wegen ausser Kontrolle geratener Agenten, und die EU-Kommission bestätigt einen Cyberangriff mit einem KI-Werkzeug. Dazu Computer use in Gemini für Mac und eigene Modelle von Microsoft.</p><p><b>🌍 Global</b></p><ul><li><a href="https://www.anthropic.com/news/ipo-close">Anthropic: Börsengang abgeschlossen</a></li><li><a href="https://lastweekin.ai/p/last-week-in-ai-348-ipo-correction">OpenAI: Kalifornien klagt wegen ausser Kontrolle geratener KI-Agenten</a></li><li><a href="https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/">Google: Gemini bedient auf dem Mac selbständig Programme</a></li><li><a href="https://microsoft.ai/news/microsoft-ignite-2026/">Microsoft: eigene KI-Modelle an der Ignite</a></li></ul><p><b>🇪🇺 Europa</b></p><ul><li><a href="https://www.netzwoche.ch/news/2026-11-20/kriminelle-greifen-systeme-der-eu-kommission-mit-ki-tool-an">EU-Kommission: Cyberangriff mit KI-Werkzeug bestätigt</a></li><li><a href="https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-draft-template-fundamental-rights-impact-assessment-under-ai-act">EU AI Act: Vorlage für die Grundrechte-Folgenabschätzung in Konsultation</a></li></ul><p><b>🇨🇭 Schweiz</b></p><ul><li>Keine Top-News</li></ul><p>📄 <a href="https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W47.md">Ausführliche Shownotes</a><br>🔎 <a href="https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/SOURCES.md">Alle durchsuchten Quellen</a></p>]]></content:encoded>
       <link>https://github.com/roger-infanger-weibel/ghostwriter.ai/blob/main/posts/2026-W47.md</link>
       <guid isPermaLink="false">ghostwriter-ai-2026-W47</guid>
       <pubDate>Sun, 22 Nov 2026 17:00:00 +0000</pubDate>

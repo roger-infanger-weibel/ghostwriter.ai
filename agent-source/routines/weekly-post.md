@@ -153,6 +153,11 @@ du in Phase 4c das Audio. Details: `podcast/README.md`.
   gelten für alle drei; die Dialekt-Regel nur für die Schweizerdeutsch-Fassung.
 - Hochdeutsch: Schweizer Schreibweise (ss statt ß). Englisch: einfaches, internationales Englisch,
   Zahlen ebenfalls ausgeschrieben («forty-seven», «ninety-three point five billion dollars»).
+- **Shownotes (`news`):** Im Frontmatter jedes Skripts alle Meldungen des Posts (Global, Europa, Schweiz,
+  Auf dem Radar) mit Titel und Link auflisten. Der Titel ist der `###`-Titel des Posts, übersetzt in die
+  Sprache des Skripts; der Link ist in allen drei Fassungen derselbe (erster Link der Zeile «Quelle:»).
+  Region ohne Meldung: einfach keinen Eintrag – «Keine Top-News» setzt der Feed selbst. Daraus entstehen
+  die Shownotes in Spotify und Apple Podcasts (mit Link auf den Post und auf SOURCES.md).
 - Frontmatter `title`/`description` in der jeweiligen Sprache – also auch in der Schweizerdeutsch-Fassung
   auf Schweizerdeutsch (z. B. title: «Anthropic a de Börse, Klag gäge OpenAI, KI-Angriff uf d EU»,
   description: «D Highlights vo de Wuche i drei Minute: …»). Diese Texte erscheinen in Spotify und
@@ -163,6 +168,10 @@ du in Phase 4c das Audio. Details: `podcast/README.md`.
 title: "<2–3 Hauptthemen, max. 80 Zeichen>"   # KW und Datum setzt build_episode.py automatisch davor
 description: >-
   <2–3 Sätze Zusammenfassung für die Podcast-App, ohne Links>
+news:                     # Shownotes: jede Meldung des Posts, gleiche Reihenfolge, Titel in der Sprache des Skripts
+  - region: global        # global | europa | schweiz | radar
+    title: "<Titel der Meldung>"
+    url: <Link aus der Zeile «Quelle:» des Posts>
 ---
 
 Lena: Grüessech u willkomme bim KI-Radar, Kalenderwuche ...

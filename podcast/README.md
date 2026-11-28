@@ -72,6 +72,10 @@ Verzeichnisse: `owner_email` in `show.yaml` ist gesetzt (für die Bestätigung n
   Die Abo-Seite hat oben einen Sprachumschalter mit Flaggen (auch per `?lang=de` / `?lang=en`);
   bei English wechseln auch alle Seitentexte. Covers pro Sprache: `cover-de.png`, `cover-en.png`
   (aus `cover.png` erzeugt mit `python podcast/tools/make_covers.py docs/podcast`).
+- **Shownotes:** Jede Folge listet im Feed die Meldungen der Woche mit Titel und Link (gruppiert nach
+  Global / Europa / Schweiz / Radar), dazu Links auf den Wochenpost und auf `SOURCES.md`. Quelle: `news`
+  im Frontmatter des Skripts (pro Sprache übersetzt); fehlt es, nimmt `build_feed.py` die Titel aus dem
+  Post. Text-Fassung in `<description>` (Spotify), HTML in `<content:encoded>` (Apple).
 - **Startmusik:** `podcast/assets/intro-radar.wav` (ca. 4 s, rein synthetisch, Radar-Sweep mit
   Sonar-Pings) läuft vor jeder Folge. Neu erzeugen/anpassen: `python podcast/tools/make_jingle.py`;
   abschalten: `audio.intro` in `show.yaml` leeren.

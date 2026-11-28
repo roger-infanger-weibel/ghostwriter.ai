@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from email.utils import format_datetime
 from datetime import datetime, timezone
+import re
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -13,6 +14,61 @@ def _dur(sec: int) -> str:
     return f"{h:02d}:{m:02d}:{s:02d}"
 
 
+REGIONS = ("global", "europa", "schweiz", "radar")
+ICONS = {"global": "🌍", "europa": "🇪🇺", "schweiz": "🇨🇭", "radar": "📡"}
+DEFAULT_LABELS = {"global": "Global", "europa": "Europa", "schweiz": "Schweiz", "radar": "Auf dem Radar",
+                  "none": "Keine Top-News", "shownotes": "Ausführliche Shownotes",
+                  "sources": "Alle durchsuchten Quellen"}
+
+
+def news_from_post(post: Path) -> list[dict]:
+    """Fallback für ältere Folgen: Titel und Link jeder Meldung aus dem Wochenpost (hochdeutsch)."""
+    if not post.exists():
+        return []
+    items, region, title = [], None, None
+    names = {"global": "global", "europa": "europa", "schweiz": "schweiz", "auf dem radar": "radar"}
+    for line in post.read_text(encoding="utf-8").splitlines():
+        if line.startswith("## "):
+            region = names.get(line[3:].strip().lower())
+        elif line.startswith("### ") and region:
+            title = line[4:].strip()
+        elif line.startswith("Quelle:") and region and title:
+            m = re.search(r"\]\((https?://[^)\s]+)\)", line)
+            items.append({"region": region, "title": title, "url": m.group(1) if m else ""})
+            title = None
+    return items
+
+
+def shownotes(ep: dict, cfg: dict, root: Path) -> tuple[str, str]:
+    """Shownotes als Text (für <description>, z. B. Spotify) und als HTML (für <content:encoded>, z. B. Apple)."""
+    L = {**DEFAULT_LABELS, **cfg.get("shownotes_labels", {})}
+    news = ep.get("news") or news_from_post(root / ep["post"])
+    post_url = f"{cfg['website']}/blob/main/{ep['post']}"
+    src_url = f"{cfg['website']}/blob/main/SOURCES.md"
+    txt, html = [ep["description"]], [f"<p>{escape(ep['description'])}</p>"]
+    if news:
+        for r in REGIONS:
+            part = [n for n in news if n.get("region") == r]
+            if not part and r == "radar":
+                continue
+            txt.append(f"\n{ICONS[r]} {L[r]}")
+            html.append(f"<p><b>{ICONS[r]} {escape(L[r])}</b></p>")
+            if not part:
+                txt.append(f"• {L['none']}")
+                html.append(f"<ul><li>{escape(L['none'])}</li></ul>")
+                continue
+            lis = []
+            for n in part:
+                txt.append(f"• {n['title']}" + (f"\n  {n['url']}" if n.get("url") else ""))
+                t = escape(n["title"])
+                lis.append(f'<li><a href="{escape(n["url"])}">{t}</a></li>' if n.get("url") else f"<li>{t}</li>")
+            html.append("<ul>" + "".join(lis) + "</ul>")
+    txt.append(f"\n📄 {L['shownotes']}: {post_url}\n🔎 {L['sources']}: {src_url}")
+    html.append(f'<p>📄 <a href="{escape(post_url)}">{escape(L["shownotes"])}</a><br>'
+                f'🔎 <a href="{escape(src_url)}">{escape(L["sources"])}</a></p>')
+    return "\n".join(txt), "".join(html)
+
+
 def build_feed(cfg: dict, episodes: list[dict], site: Path) -> Path:
     base = cfg["base_url"].rstrip("/")
     e = escape
@@ -21,10 +77,11 @@ def build_feed(cfg: dict, episodes: list[dict], site: Path) -> Path:
         # ?v=<Grösse>: neue Adresse, sobald eine Folge neu erzeugt wird (umgeht Browser-/CDN-Cache)
         url = f"{base}/{ep['file']}?v={ep['bytes']}"
         post_url = f"{cfg['website']}/blob/main/{ep['post']}"
-        desc = f"{ep['description']}\n\n{cfg.get('shownotes_label', 'Shownotes und Quellen')}: {post_url}"
+        desc, desc_html = shownotes(ep, cfg, site.parents[1])
         items.append(f"""    <item>
       <title>{e(ep['title'])}</title>
       <description>{e(desc)}</description>
+      <content:encoded><![CDATA[{desc_html.replace(']]>', ']]&gt;')}]]></content:encoded>
       <link>{e(post_url)}</link>
       <guid isPermaLink="false">ghostwriter-ai-{e(ep['id'])}</guid>
       <pubDate>{e(ep['pub_date'])}</pubDate>

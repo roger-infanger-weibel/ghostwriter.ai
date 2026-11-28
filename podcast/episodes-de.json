@@ -7,6 +7,38 @@
     "file": "episodes/2026-W47-de.mp3",
     "bytes": 1525954,
     "duration_seconds": 191,
-    "pub_date": "Sun, 22 Nov 2026 17:00:00 +0000"
+    "pub_date": "Sun, 22 Nov 2026 17:00:00 +0000",
+    "news": [
+      {
+        "region": "global",
+        "title": "Anthropic: Börsengang abgeschlossen",
+        "url": "https://www.anthropic.com/news/ipo-close"
+      },
+      {
+        "region": "global",
+        "title": "OpenAI: Kalifornien klagt wegen ausser Kontrolle geratener KI-Agenten",
+        "url": "https://lastweekin.ai/p/last-week-in-ai-348-ipo-correction"
+      },
+      {
+        "region": "global",
+        "title": "Google: Gemini bedient auf dem Mac selbständig Programme",
+        "url": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/"
+      },
+      {
+        "region": "global",
+        "title": "Microsoft: eigene KI-Modelle an der Ignite",
+        "url": "https://microsoft.ai/news/microsoft-ignite-2026/"
+      },
+      {
+        "region": "europa",
+        "title": "EU-Kommission: Cyberangriff mit KI-Werkzeug bestätigt",
+        "url": "https://www.netzwoche.ch/news/2026-11-20/kriminelle-greifen-systeme-der-eu-kommission-mit-ki-tool-an"
+      },
+      {
+        "region": "europa",
+        "title": "EU AI Act: Vorlage für die Grundrechte-Folgenabschätzung in Konsultation",
+        "url": "https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-draft-template-fundamental-rights-impact-assessment-under-ai-act"
+      }
+    ]
   }
 ]

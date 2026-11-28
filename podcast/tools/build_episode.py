@@ -71,7 +71,7 @@ def apply_lang(cfg: dict, lang: str) -> dict:
     over = langs.get(lang, {})
     merged = {k: v for k, v in cfg.items() if k != "languages"}
     for key in ("title", "subtitle", "description", "language", "feed_file", "length", "cover_file",
-                "shownotes_label"):
+                "shownotes_label", "shownotes_labels"):
         if key in over:
             merged[key] = over[key]
     if "styles" in over:
@@ -357,6 +357,7 @@ def build(week: str, cfg: dict, api_key: str | None, dry_run: bool,
         "title": meta["episode_title"],
         "description": f"{PERIOD_LABEL.get(LANG, 'Zeitraum')}: {zeitraum(week)}. " + str(meta["description"]).strip(),
         "post": f"posts/{week}.md",
+        "news": meta.get("news", []),
         "file": f"episodes/{week}{SUFFIX}.mp3",
         "bytes": mp3.stat().st_size,
         "duration_seconds": round(len(pcm) / 2 / SAMPLE_RATE),
