@@ -18,7 +18,8 @@ REGIONS = ("global", "europa", "schweiz", "radar")
 ICONS = {"global": "🌍", "europa": "🇪🇺", "schweiz": "🇨🇭", "radar": "📡"}
 DEFAULT_LABELS = {"global": "Global", "europa": "Europa", "schweiz": "Schweiz", "radar": "Auf dem Radar",
                   "none": "Keine Top-News", "shownotes": "Ausführliche Shownotes",
-                  "sources": "Alle durchsuchten Quellen"}
+                  "sources": "Alle durchsuchten Quellen",
+                  "ai": "Recherchiert und geschrieben von KI-Agenten, gesprochen von KI-Stimmen (HOOTL – Human Out of the Loop)."}
 
 
 def news_from_post(post: Path) -> list[dict]:
@@ -63,6 +64,8 @@ def shownotes(ep: dict, cfg: dict, root: Path) -> tuple[str, str]:
                 t = escape(n["title"])
                 lis.append(f'<li><a href="{escape(n["url"])}">{t}</a></li>' if n.get("url") else f"<li>{t}</li>")
             html.append("<ul>" + "".join(lis) + "</ul>")
+    txt.append(f"\n🤖 {L['ai']}")
+    html.append(f"<p>🤖 {escape(L['ai'])}</p>")
     txt.append(f"\n📄 {L['shownotes']}: {post_url}\n🔎 {L['sources']}: {src_url}")
     html.append(f'<p>📄 <a href="{escape(post_url)}">{escape(L["shownotes"])}</a><br>'
                 f'🔎 <a href="{escape(src_url)}">{escape(L["sources"])}</a></p>')

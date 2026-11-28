@@ -21,6 +21,7 @@ shownotes_labels:
   none: "Kener Top-News"
   shownotes: "Ganzi Shownotes"
   sources: "Alli dursuechte Quelle"
+  ai: "Recherchiert und gschribe vo KI-Agänte, gsproche vo KI-Stimme (HOOTL – Human Out of the Loop)."
 # Apple Podcasts (Link auch auf docs/podcast/index.html)
 apple_url: "https://podcasts.apple.com/us/podcast/%F0%9F%87%A8%F0%9F%87%AD-rogers-ki-radar-schweizerdeutsch/id6839993864"
 language: "de-ch"
@@ -79,6 +80,7 @@ languages:
       none: "Keine Top-News"
       shownotes: "Ausführliche Shownotes"
       sources: "Alle durchsuchten Quellen"
+      ai: "Recherchiert und geschrieben von KI-Agenten, gesprochen von KI-Stimmen (HOOTL – Human Out of the Loop)."
     shownotes_label: "Shownotes und Quellen"
     cover_file: "cover-de.png"   # erzeugt mit podcast/tools/make_covers.py
     spotify_url: "https://open.spotify.com/show/7ytNG2UAbV6zwNEaoxxWaY"
@@ -108,6 +110,7 @@ languages:
       none: "No top news"
       shownotes: "Full show notes"
       sources: "All sources searched"
+      ai: "Researched and written by AI agents, voiced by AI (HOOTL – Human Out of the Loop)."
     shownotes_label: "Show notes and sources"
     cover_file: "cover-en.png"   # erzeugt mit podcast/tools/make_covers.py
     spotify_url: "https://open.spotify.com/show/06c7isJWADMvwYlrwEUqcq"
